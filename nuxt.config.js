@@ -82,6 +82,10 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+        config.node = Object.assign({
+            fs: 'empty',
+        }, config.node);
+        console.log(`dbg extend`, config.node);
     }
   }
 }
