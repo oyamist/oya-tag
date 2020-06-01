@@ -49,7 +49,7 @@ methods: {
 },
 computed: {
     timelines() {
-        var assetStore = g.assetStore;
+        var assetStore = this.$store.state.assets.assetStore;
         return assetStore && assetStore.timelines() || [];
     }
 },

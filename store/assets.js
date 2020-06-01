@@ -2,6 +2,10 @@ const CropStore = require('../src/crop-store');
 const Crop = require('../src/crop');
 const Axios = require('axios');
 
+const COMPARE_ASSETS = (a,b)=>{
+    return a.ageMillis - b.ageMillis;
+}
+
 export const state = () => ({
     list: [],
     assetStore: null,
@@ -10,7 +14,7 @@ export const state = () => ({
 export const mutations = {
     set(state, assetStore) {
         state.assetStore = assetStore;
-        state.list = state.assetStore.assets();
+        state.list = state.assetStore.assets().sort(COMPARE_ASSETS);
         console.log('state.assetStore.set() ', state.list.length);
     },
     load(state, url=`/sample-data.json`) {
@@ -27,10 +31,10 @@ export const mutations = {
             console.error(e.stack, data);
         });
     },
-    add (state, text) {
-        state.list.push({
-            text,
-        })
+    add (state, opts) {
+        var asset = state.assetStore.createAsset(opts);
+        console.log(`state.assetStore.add`, asset);
+        state.list = state.assetStore.assets().sort(COMPARE_ASSETS);
     },
     remove (state, { asset }) {
         state.list.splice(state.list.indexOf(asset), 1)

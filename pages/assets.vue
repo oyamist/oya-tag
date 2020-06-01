@@ -52,7 +52,6 @@ export default {
     return {
       g,
       search: '',
-      assets: [],
       assetsPerPage: 6,
       headers: [{
         text: "Age",
@@ -99,15 +98,7 @@ export default {
       if (!type) {
         return;
       } 
-      var asset = g.assetStore.createAsset({type});
-      console.log(`new asset`, asset);
-      this.syncAssets();
-    },
-    syncAssets() {
-      var assetStore = window.g.assetStore;
-      this.assets = (assetStore && assetStore.assets() || [])
-        .sort((a,b)=>a.ageMillis-b.ageMillis);
-      return this.assets;
+      this.$store.commit('assets/add', {type});
     },
     save () {
       console.log('Dialog saved')
@@ -143,10 +134,12 @@ export default {
     },
   },
   computed: {
+    assets() {
+      return this.$store.state.assets.list;
+    },
   },
   mounted() {
     this.$store.commit('increment');
-    this.syncAssets();
     this.routeAsset();
   },
   components: {
