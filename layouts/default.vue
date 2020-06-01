@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="green darken-4" flat dark>
+    <v-app-bar dark fixed app>
       <div class="d-flex align-center">
         <v-img
           src="/leaf.png"
@@ -40,19 +40,22 @@
       </v-menu>
     </v-app-bar>
 
-    <v-container>
-      <nuxt />
-      <!--
-      <router-view />
-      <EditAsset v-if="g.selection.items.length" :g="g" />
-      -->
-    </v-container>
+    <v-content>
+        <v-container>
+          <nuxt />
+          <!--
+          <router-view />
+          <EditAsset v-if="g.selection.items.length" :g="g" />
+          -->
+        </v-container>
+    </v-content>
   </v-app>
 </template>
 
 <script>
 // import EditAsset from './components/edit-asset';
 import AppGlobal from '../src/app-global'
+import axios from "axios";
 const g = AppGlobal.g()
 
 export default {
@@ -97,6 +100,10 @@ export default {
   computed: {
   },
   mounted () {
+    this.$store.commit('increment');
+    this.$store.commit('assets/load');
+    console.log(`dbg default`, this.$store.state, this.$store.state.assets.list);
+    g.load(this, axios);
   },
   methods: {
     onMenu (item) {
