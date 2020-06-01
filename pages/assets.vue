@@ -1,5 +1,5 @@
 <template>
-    <v-card v-if="g.assetStore && assets" flat>
+    <v-card v-if="assets" flat>
       <v-card-title>
         <v-text-field
           v-model="search"
@@ -15,7 +15,7 @@
           @click="addAsset()"
           ><v-icon>mdi-clipboard-plus</v-icon></v-btn>
       </v-card-title>
-      <v-data-table class="elevation-1" v-if="g.assetStore"
+      <v-data-table class="elevation-1" 
         :search="search"
         :headers="headers"
         :items="assets" :items-per-page.sync="assetsPerPage"
@@ -141,6 +141,7 @@ export default {
   mounted() {
     this.$store.commit('increment');
     this.routeAsset();
+    console.log(`assets.mounted() hash:${this.$route.hash}`);
   },
   components: {
   },

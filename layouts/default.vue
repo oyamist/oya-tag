@@ -55,7 +55,6 @@
 <script>
 // import EditAsset from './components/edit-asset';
 import AppGlobal from '../src/app-global'
-import axios from "axios";
 const g = AppGlobal.g()
 
 export default {
@@ -103,7 +102,6 @@ export default {
     this.$store.commit('increment');
     this.$store.commit('assets/load');
     console.log(`dbg default`, this.$store.state, this.$store.state.assets.list);
-    g.load(this, axios);
   },
   methods: {
     onMenu (item) {
