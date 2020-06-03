@@ -15,13 +15,13 @@ export const mutations = {
     set(state, assetStore) {
         state.assetStore = assetStore;
         state.list = state.assetStore.assets().sort(COMPARE_ASSETS);
-        console.log('state.assetStore.set() ', state.list.length);
+        console.log(`state.assetStore.set() assets:`, state.list.length);
     },
     load(state, url=`/sample-data.json`) {
         var assetMap = {
             crop: Crop,
         }
-        console.log('state.assetStore.load() get ', url);
+        console.log('assets.load() url:', url);
         var that = this;
         Axios.get(url).then(res => {
             var assetStore = new CropStore(res.data, assetMap);

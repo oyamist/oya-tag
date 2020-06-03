@@ -85,7 +85,6 @@ export default {
         config.node = Object.assign({
             fs: 'empty',
         }, config.node);
-        console.log(`dbg extend`, config.node);
     }
   }
 }

@@ -9,10 +9,10 @@
         class="gr-day" :style="cssDay(day)">
       <div>{{dateOfDay(day)}}</div>
     </div>
-      <div v-for="item in items" :key="item.id"
-        @click="onClickItem(item, $event)"
-        class="gr-item" :style="cssItem(item)">
-        {{item.id}}
+      <div v-for="asset in items" :key="asset.id"
+        @click="onClickAsset(asset, $event)"
+        class="gr-item" :style="cssItem(asset)">
+        {{asset.id}}
       </div><!-- item -->
     </div><!-- timeline -->
   </div>
@@ -22,7 +22,6 @@
   export default {
     name: "Timeline",
     props: {
-      g: Object,
       label: {
         type: String,
         default: "Timeline",
@@ -56,8 +55,8 @@
     data: () => ({
     }),
     methods: {
-      onClickItem(item, /*event*/) {
-        this.$router.push(`/assets/${item.id}`);
+      onClickAsset(asset, /*event*/) {
+        this.$router.push(`/assets#${asset.id}`);
       },
       cssTitle() {
         return [
@@ -70,7 +69,8 @@
           `width:${this.itemW}px`,
           `top:${days*this.itemH}px`,
         ];
-        if (this.g.selection.contains(item)) {
+        var curAsset = this.$store.state.selection;
+        if (curAsset === item) {
           css.push(`box-shadow: 0px 1px 1px 4px #18FFFF`);
         }
         if (item.started) {
@@ -145,7 +145,7 @@
     computed: {
     },
     mounted() {
-        console.log(`mounted Timeline ${this.days} `, this.g);
+        console.log(`mounted Timeline ${this.days} `);
     },
   }
 </script>

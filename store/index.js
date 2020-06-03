@@ -1,13 +1,12 @@
 export const state = () => {
-    console.log(`dbg store default`);
     return {
-        counter: 0,
+        selection: null,
     }
 }
 
 export const mutations = {
-    increment (state) {
-        console.log(`dbg store increment`, state.counter);
-        state.counter++;
-    }
+    select(state, value) {
+        console.log(`$store.select`, value && value.name);
+        state.selection = value;
+    },
 }

@@ -54,7 +54,6 @@ computed: {
     }
 },
 mounted() {
-    this.$store.commit('increment');
 },
 components: {
   Timeline,

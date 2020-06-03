@@ -29,20 +29,17 @@
           <v-icon
             small
             class="mr-2"
-            @click="$router.push(`/assets/${item.id}`)"
+            @click="$router.push(`/assets#${item.id}`)"
           >
             mdi-pencil
           </v-icon>
         </template>
       </v-data-table>
+        {{$store.state.selection}}
     </v-card>
 </template>
 
 <script>
-import AppGlobal from "../src/app-global"
-
-const g = AppGlobal.g();
-
 export default {
   name: 'ViewAssets',
 
@@ -50,7 +47,6 @@ export default {
   },
   data: () => {
     return {
-      g,
       search: '',
       assetsPerPage: 6,
       headers: [{
@@ -80,15 +76,17 @@ export default {
   methods: {
     validNotes: v=> v ? true : true,
     routeAsset() {
-      var id = this.$route.params.id;
-      var asset = g.assetStore && g.assetStore.assetOfId(id);
-      if (asset) {
-        asset && this.editItem(asset);
+      var hash = this.$route.hash;
+      var id = hash && hash.substring(1);
+      var store = this.$store;
+      var assetStore = store.state.assets.assetStore;
+      if (assetStore) {
+          var asset = assetStore && assetStore.assetOfId(id);
+          asset && store.commit('select', asset);
+          console.log(`assets.routeAsset`, this.$route, id, asset);
+      } else {
+          console.log(`assets.routeAsset (waiting for assetStore...)`);
       }
-    },
-    editItem(item) {
-      console.log(`editItem`, item);
-      g.selection.clear().add(item);
     },
     click(...args) {
       console.log(`click`, args);
@@ -139,9 +137,14 @@ export default {
     },
   },
   mounted() {
-    this.$store.commit('increment');
-    this.routeAsset();
-    console.log(`assets.mounted() hash:${this.$route.hash}`);
+    var {
+      $store,
+    } = this;
+    $store.state.assets.assetStore && this.routeAsset(); 
+    this.$store.watch(
+      ()=>($store.state.assets.assetStore),
+      (/*assetStore, getters*/)=>(this.routeAsset())
+    );
   },
   components: {
   },

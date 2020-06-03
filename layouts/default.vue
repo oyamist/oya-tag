@@ -43,28 +43,22 @@
     <v-content>
         <v-container>
           <nuxt />
-          <!--
-          <router-view />
-          <EditAsset v-if="g.selection.items.length" :g="g" />
-          -->
+          <EditAsset v-if="curAsset" />
         </v-container>
     </v-content>
   </v-app>
 </template>
 
 <script>
-// import EditAsset from './components/edit-asset';
-import AppGlobal from '../src/app-global'
-const g = AppGlobal.g()
+import EditAsset from '../components/edit-asset';
 
 export default {
   name: 'App',
   components: {
-    //EditAsset
+    EditAsset
   },
   data () {
     return {
-      g,
       menu: [{
         title: 'Home',
         route: '/'
@@ -97,11 +91,12 @@ export default {
     }
   },
   computed: {
+    curAsset() {
+      return this.$store.state.selection;
+    },
   },
   mounted () {
-    this.$store.commit('increment');
     this.$store.commit('assets/load');
-    console.log(`dbg default`, this.$store.state, this.$store.state.assets.list);
   },
   methods: {
     onMenu (item) {

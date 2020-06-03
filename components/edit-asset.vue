@@ -1,18 +1,8 @@
 <template>
-  <v-dialog v-model="isVisible"
-    persistent
-    v-if="selection.items.length"
-    >
+  <v-dialog v-model="isVisible" persistent v-if="asset" >
     <v-card>
       <v-card-text>
         <div class="field-row" >
-          <div>
-            <v-text-field v-model="asset.type" 
-              outlined
-              :label="`Type`"
-              @blur="onBlurTitle()"
-              />
-          </div>
           <div >
             <v-text-field v-model="asset.id" 
               outlined
@@ -20,6 +10,13 @@
               :hint="asset.guid"
               @blur="onBlurTitle()"
                 />
+          </div>
+          <div>
+            <v-text-field v-model="asset.type" 
+              outlined
+              :label="`Type`"
+              @blur="onBlurTitle()"
+              />
           </div>
         </div><!--field-row-->
         <div class="field-row" v-if="asset.type==='crop'" >
@@ -148,8 +145,6 @@
   import DateField from "./date-field";
   import Asset from "../src/asset.js";
   import Tag from "../src/tag.js";
-  import AppGlobal from "../src/app-global";
-  var g = AppGlobal.g();
 
   export default {
     name: "EditAsset",
@@ -252,7 +247,7 @@
       },
       closeAsset() {
         console.log(`closeAsset()`);
-        g.selection.clear();
+        this.$store.commit('select', null);
         this.$router.go(-1);
       },
       noteSummary(tag) {
@@ -263,12 +258,14 @@
       },
     },
     computed: {
-      selection() {
-        return g.selection;
+      asset() {
+        return this.$store.state.selection;
+      },
+      assetStore() {
+        return this.$store.state.assets.assetStore;
       },
       plantItems() {
-        var plants = g.assetStore.assetsOfType("plant");
-        console.log(`dbg plantItems`, plants);
+        var plants = this.assetStore.assetsOfType("plant");
         return plants;
       },
       nameHint() {
@@ -276,29 +273,26 @@
           tagModel,
         } = this;
         var name = tagModel.name;
-        var asset = g.assetStore.assetOfId(name);
+        var asset = this.assetStore.assetOfId(name);
         var hint = asset && asset.name || 
           name || 
           "Enter tag name or asset id";
         return hint;
-      },
-      asset() {
-        return g.selection.items[0];
       },
       title() {
         return this.asset.id;
       },
       isVisible: {
         get: function() {
-          return !!g.selection.items.length;
+          return !!this.asset
         },
         set: function() { 
-          g.selection.clear();
+          this.$store.commit('select', null);
         },
       },
     },
     mounted() {
-      console.log(`edit-asset.mounted() `, g.selection.items);
+      console.log(`edit-asset.mounted() `, this.asset);
       var asset = this.asset instanceof Asset ? this.asset : null;
       if (asset) {
         this.tagList = asset.tagList.slice();
