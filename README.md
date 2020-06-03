@@ -1,6 +1,6 @@
 # oya-tag
 
-> Tag that asset!
+> Tag that asset! [Demo](https://gifted-visvesvaraya-bb90f2.netlify.app)
 
 ## Build Setup
 
@@ -20,3 +20,4 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
