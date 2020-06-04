@@ -17,6 +17,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "file-saver": "^2.0.2",
     "just-simple": "^0.1.10",
     "nuxt": "^2.0.0"
   },

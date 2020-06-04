@@ -28,13 +28,16 @@
         </template>
 
         <v-list>
-          <v-list-item
-            v-for="(item, i) in menu"
-            :key="i"
-            :disabled="itemDisabled(item)"
-            @click="onMenu(item)"
-          >
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          <v-list-item v-for="(menuItem, i) in viewMenu" :key="`view${i}`"
+            :disabled="menuItemDisabled(menuItem)"
+            @click="onMenu(menuItem)" >
+            <v-list-item-title>{{ menuItem.title }}</v-list-item-title>
+          </v-list-item>
+          <v-divider/>
+          <v-list-item v-for="(menuItem, i) in fileMenu" :key="`file${i}`"
+            :disabled="menuItemDisabled(menuItem)"
+            @click="onMenu(menuItem)" >
+            <v-list-item-title>{{ menuItem.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -44,13 +47,36 @@
         <v-container>
           <nuxt />
           <EditAsset v-if="curAsset" />
+          <v-dialog v-model="askUpload" persistent >
+            <v-card>
+              <v-card-title>
+                Choose assets file and upload
+              </v-card-title>
+              <v-card-text>
+                <v-file-input 
+                  append-icon="mdi-upload"
+                  prepend-icon=""
+                  placeholder="Click to choose file"
+                  loading
+                  show-size
+                  accept="application/json"
+                  outlined
+                  @change="uploadChanged()"
+                  v-model="uploadFile"
+                  >
+                </v-file-input>
+              </v-card-text>
+            </v-card>
+          </v-dialog>
         </v-container>
     </v-content>
   </v-app>
 </template>
 
 <script>
+import FileSaver from 'file-saver';
 import EditAsset from '../components/edit-asset';
+import AssetStore from '../src/asset-store';
 
 export default {
   name: 'App',
@@ -59,7 +85,9 @@ export default {
   },
   data () {
     return {
-      menu: [{
+      askUpload: false,
+      uploadFile: null,
+      viewMenu: [{
         title: 'Home',
         route: '/'
       }, {
@@ -68,6 +96,13 @@ export default {
       }, {
         title: 'Assets',
         route: '/assets'
+      }],
+      fileMenu: [{
+        title: 'Load',
+        action: this.load,
+      },{
+        title: 'Save',
+        action: this.save,
       }],
       clipped: false,
       drawer: false,
@@ -96,14 +131,64 @@ export default {
     },
   },
   mounted () {
-    this.$store.commit('assets/load');
+    var {
+      $store,
+    } = this;
+    var storage = window.localStorage;
+
+    $store.subscribe((mutation, /*state*/)=>{
+      var msStart = Date.now();
+      storage.setItem(`oya-tag.json`, $store.state.assets.assetStore);
+      var msElapsed = Date.now() - msStart;
+      console.log(`dbg subscribe mutation:${mutation.type} ${msElapsed}ms`);
+    });
+    $store.commit('assets/load');
   },
   methods: {
-    onMenu (item) {
-      this.$router.push(item.route)
+    uploadChanged() {
+      var that = this;
+      var {
+        uploadFile,
+        $store,
+      } = that;
+      if (uploadFile) {
+        let reader = new FileReader();
+        reader.onload = ()=>{
+          try {
+            var json = JSON.parse(reader.result);
+            var assetStore = new AssetStore(json);
+            $store.commit('assets/set', assetStore);
+            that.askUpload = false;
+            var kb = uploadFile/1000;
+            console.log(`uploaded ${uploadFile.name} ${kb}kB`);
+          } catch (e) {
+            alert(e.message);
+          }
+        }
+        reader.readAsText(uploadFile);
+      }
     },
-    itemDisabled (item) {
-      return this.$route.path === item.route
+    load() {
+      this.askUpload = true;
+    },
+    save() {
+      var assetStore = this.$store.state.assets.assetStore;
+      var json = JSON.stringify(assetStore, null, 2);
+      var blob = new Blob([json], { type: "text/plain;charset=utf-8" });
+      FileSaver.saveAs(blob, "oya-tag.json");
+    },
+    onMenu (menuItem) {
+      console.log(`onMenu`, menuItem);
+      if (menuItem.route) {
+        this.$router.push(menuItem.route)
+      } else if (menuItem.action) {
+        menuItem.action.call(this, menuItem);
+      } else {
+        console.error(`invalid menu item ${JSON.stringify(menuItem)}`);
+      }
+    },
+    menuItemDisabled (menuItem) {
+      return menuItem.route && this.$route.path === menuItem.route
     }
   }
 
