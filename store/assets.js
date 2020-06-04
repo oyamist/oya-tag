@@ -1,4 +1,4 @@
-const CropStore = require('../src/crop-store');
+const AssetStore = require('../src/asset-store');
 const Crop = require('../src/crop');
 const Axios = require('axios');
 
@@ -24,7 +24,7 @@ export const mutations = {
         console.log('assets.load() url:', url);
         var that = this;
         Axios.get(url).then(res => {
-            var assetStore = new CropStore(res.data, assetMap);
+            var assetStore = new AssetStore(res.data, assetMap);
             that.commit(`assets/set`, assetStore);
         }).catch(e => {
             var data = e.response && e.response.data || `Not found.`;

@@ -114,6 +114,27 @@
             return this.typeMap[type].slice() || [];
         }
 
+        timelines(type="crop", group="crop") {
+            var timelines = [];
+            var map = {};
+            var assets = this.assetsOfType(type);
+            assets.forEach(asset=>{
+                var key = asset[group];
+                var timeline = map[key];
+                if (!timeline) {
+                    let name = key;
+                    timeline = {
+                        name,
+                        items: [],
+                    }
+                    map[name] = timeline;
+                    timelines.push(timeline);
+                }
+                timeline.items.push(asset);
+            });
+            return timelines;
+        }
+
     } //// class Asset
 
     module.exports = exports.AssetStore = AssetStore;

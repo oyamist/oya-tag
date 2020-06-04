@@ -189,4 +189,27 @@
             applies: true,
         });
     });
+    it("TESTTESTtimelines() => crop timelines", ()=>{
+        var json = JSON.parse(fs.readFileSync(SAMPLE_DATA));
+        var store = new AssetStore(json);
+        var crops = store.assetsOfType("crop");
+        should(crops.length).equal(5);
+        should(crops[0]).properties({
+            guid: '42d77a7e-ee7a-4a6c-b376-771fd1ebf62a',
+            id: 'BRC-1',
+        });
+        should(crops[0]).instanceOf(Asset);
+    });
+    it("timelines() => crop timelines", ()=>{
+        var json = JSON.parse(fs.readFileSync(SAMPLE_DATA));
+        var store = new AssetStore(json);
+        var timelines = store.timelines();
+        should.deepEqual(timelines.map(t=>t.name), [
+            "Broccoli", "Tomato"]);
+        should.deepEqual(timelines[0].items.map(item=>item.id), [
+            "BRC-1", "BRC-2", "BRC-3", "BRC-4" ]);
+        timelines[0].items.forEach(item=>{
+            should(item).instanceOf(Asset);
+        });
+    });
 })

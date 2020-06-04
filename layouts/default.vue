@@ -4,7 +4,7 @@
       <div class="d-flex align-center">
         <v-img
           src="/leaf.png"
-          alt="Crop-Log logo"
+          alt="Oya-Tag logo"
           class="shrink mr-2"
           contain
           transition="scale-transition"
