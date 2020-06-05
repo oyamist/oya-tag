@@ -17,9 +17,6 @@
             this.guidAbbreviation = opts.guidAbbreviation || 6;
 
             // non-serialized properties
-            Object.defineProperty(this, "jsonMap", {
-                value: {},
-            });
             Object.defineProperty(this, "idMap", {
                 value: {},
             });
@@ -65,7 +62,7 @@
                     this.typeMap[type] = [asset];
                 }
             }
-            this.jsonMap[uk] = asset;
+            this.assetMap[uk] = asset;
             return asset;
         }
         
@@ -78,7 +75,7 @@
                 return undefined;
             }
             key = key.toUpperCase();
-            return this.jsonMap[key] || this.idMap[key];
+            return this.assetMap[key] || this.idMap[key];
         }
 
         createId(template = "A0000") {
@@ -116,10 +113,10 @@
 
         assets() {
             var {
-                jsonMap,
+                assetMap,
             } = this;
-            return Object.keys(jsonMap).reduce((a,k)=>{
-                var v = jsonMap[k];
+            return Object.keys(assetMap).reduce((a,k)=>{
+                var v = assetMap[k];
                 var guid = v.guid && v.guid.toUpperCase();
                 if (k === guid) {
                     a.push(v);
