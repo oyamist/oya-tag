@@ -69,6 +69,16 @@
             </v-card>
           </v-dialog>
         </v-container>
+        <v-footer class="caption font-weight-light"
+          absolute 
+          padless
+        >
+          <v-spacer/>
+          <a href="https://github.com/oyamist/oya-tag" target="_blank">
+            Github version {{version}}
+          </a>
+          <v-spacer/>
+        </v-footer>
     </v-content>
   </v-app>
 </template>
@@ -77,6 +87,7 @@
 import FileSaver from 'file-saver';
 import EditAsset from '../components/edit-asset';
 import AssetStore from '../src/asset-store';
+import Package from '../package';
 
 export default {
   name: 'App',
@@ -126,6 +137,9 @@ export default {
     }
   },
   computed: {
+    version() {
+      return Package.version;
+    },
     curAsset() {
       return this.$store.state.selection;
     },
@@ -204,5 +218,13 @@ export default {
   background-size:40px;
   text-align: center;
   padding-top: 15px;
+}
+.footer {
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  bottom: 0px;
+  font-size: x-small;
 }
 </style>
