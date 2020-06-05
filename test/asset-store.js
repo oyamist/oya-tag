@@ -15,17 +15,50 @@
 
     it("default ctor", ()=> {
         var as = new AssetStore();
+        should.deepEqual(as.settings, AssetStore.appliedSettings());
     });
     it("custom ctor", ()=> {
+        var SETTINGS = {
+            color: "brown",
+        };
+        var testKey = "test-value";
         var as = new AssetStore({
-            "test-key": "test-value",
+            testKey,
+            SETTINGS,
+        });
+        should.deepEqual(as.settings, 
+            AssetStore.appliedSettings(SETTINGS));
+        should(as.assetOfId("testKey")).equal("test-value");
+    });
+    it("appliedSettings() applies defaults ", ()=>{
+        var settings = AssetStore.appliedSettings();
+        should.deepEqual(settings, {
+            idTemplates: {
+                "A0000": 1,
+            },
+        });
+
+        var settings = AssetStore.appliedSettings({
+            color: "brown",
+            idTemplates: {
+                "B000": 1,
+            },
+        });
+        should.deepEqual(settings, {
+            color: "brown",
+            idTemplates: {
+                "B000": 1,
+            },
         });
     });
-    it("is serializable", ()=> {
+    it("TESTTESTis serializable", ()=> {
         var guid = "f5689832-79e2-48a5-bf5f-655cacec940f";
         var id = "a0001";
         var type = "crop";
         var name = "purchased";
+        var SETTINGS = {
+            color: "brown",
+        };
         var date = new Date().toISOString();
         var tags = {
             [name]: {
@@ -37,10 +70,12 @@
         var json = {
             "TEST-KEY": "TEST-VALUE",
             [guid]: asset,
+            SETTINGS,
         };
         var as = new AssetStore(json);
         var jsonCopy = JSON.parse(JSON.stringify(as));
         var as2 = new AssetStore(jsonCopy);
+        should(as2.settings.color).equal("brown");
         
         should.deepEqual(as, as2);
     });

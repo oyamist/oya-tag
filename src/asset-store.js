@@ -11,7 +11,7 @@
     
     class AssetStore {
         constructor(map = {}, factoryMap={}) {
-            this.jsonMap = {};
+            var jsonMap = this.jsonMap = {};
             this.idMap = {};
             this.guidAbbreviation = map.guidAbbreviation || 6;
             this.typeMap = {};
@@ -22,7 +22,20 @@
                 var v = map[k];
                 this.registerAsset(v, k);
             });
-            this.jsonMap.ID_TEMPLATES = this.jsonMap.ID_TEMPLATES || {};
+            jsonMap.ID_TEMPLATES = this.jsonMap.ID_TEMPLATES || {};
+            jsonMap.SETTINGS = AssetStore.appliedSettings(map.SETTINGS);
+        }
+
+        static appliedSettings(opts={}) {
+            return Object.assign({
+                idTemplates: {
+                    "A0000": 1,
+                }
+            }, opts);
+        }
+
+        get settings() {
+            return this.jsonMap.SETTINGS;
         }
 
         registerAsset(asset, id=asset.guid) {
@@ -65,7 +78,7 @@
 
         createId(template = "A0000") {
             template = template.toUpperCase();
-            var templates = this.jsonMap.ID_TEMPLATES;
+            var templates = this.settings.idTemplates;
             var nextId = templates[template];
             if (nextId == null) {
                 templates[template] = nextId = 1;
