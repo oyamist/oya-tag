@@ -17,17 +17,19 @@
         var as = new AssetStore();
         should.deepEqual(as.settings, AssetStore.appliedSettings());
     });
-    it("custom ctor", ()=> {
-        var SETTINGS = {
+    it("TESTTESTcustom ctor", ()=> {
+        var settings = {
             color: "brown",
         };
         var testKey = "test-value";
         var as = new AssetStore({
-            testKey,
-            SETTINGS,
+            settings,
+            assetMap: {
+                testKey,
+            },
         });
         should.deepEqual(as.settings, 
-            AssetStore.appliedSettings(SETTINGS));
+            AssetStore.appliedSettings(settings));
         should(as.assetOfId("testKey")).equal("test-value");
     });
     it("appliedSettings() applies defaults ", ()=>{
@@ -56,7 +58,7 @@
         var id = "a0001";
         var type = "crop";
         var name = "purchased";
-        var SETTINGS = {
+        var settings = {
             color: "brown",
         };
         var date = new Date().toISOString();
@@ -68,9 +70,11 @@
         }
         var asset = { guid, id, type, tags };
         var json = {
-            "TEST-KEY": "TEST-VALUE",
-            [guid]: asset,
-            SETTINGS,
+            settings,
+            assetMap: {
+                "TEST-KEY": "TEST-VALUE",
+                [guid]: asset,
+            }
         };
         var as = new AssetStore(json);
         var jsonCopy = JSON.parse(JSON.stringify(as));
@@ -79,14 +83,16 @@
         
         should.deepEqual(as, as2);
     });
-    it("assetOfId(key) => asset", ()=> {
+    it("TESTTESTassetOfId(key) => asset", ()=> {
         var testValue = "test-value";
         var guid = "f5689832-79e2-48a5-bf5f-655cacec940f";
         var id = guid.substr(0,6).toUpperCase();
         var asset = { guid, }; // Assets are objects with a guid
         var as = new AssetStore({
-            "test-key": testValue,
-            [guid] : asset,
+            assetMap: {
+                "test-key": testValue,
+                [guid] : asset,
+            },
         });
 
         // non-Assets are just themselves
@@ -107,7 +113,8 @@
         should(as.createId()).equal('A0002');
 
         // next id is serialized
-        var as2 = new AssetStore(JSON.parse(JSON.stringify(as)));
+        var json = JSON.parse(JSON.stringify(as));
+        var as2 = new AssetStore(json);
         should(as2.createId()).equal('A0003');
 
         // createId won't give existing id

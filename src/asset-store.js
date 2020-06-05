@@ -10,20 +10,29 @@
     }
     
     class AssetStore {
-        constructor(map = {}, factoryMap={}) {
-            var jsonMap = this.jsonMap = {};
-            this.idMap = {};
-            this.guidAbbreviation = map.guidAbbreviation || 6;
-            this.typeMap = {};
+        constructor(opts = {}, factoryMap={}) {
+            // serialized properties
+            var assetMap = this.assetMap = (opts.assetMap || {});
+            this.settings = AssetStore.appliedSettings(opts.settings);
+            this.guidAbbreviation = opts.guidAbbreviation || 6;
+
+            // non-serialized properties
+            Object.defineProperty(this, "jsonMap", {
+                value: {},
+            });
+            Object.defineProperty(this, "idMap", {
+                value: {},
+            });
+            Object.defineProperty(this, "typeMap", {
+                value: {},
+            });
             Object.defineProperty(this, "factoryMap", {
                 value: factoryMap,
             });
-            Object.keys(map).forEach(k=>{
-                var v = map[k];
+            Object.keys(assetMap).forEach(k=>{
+                var v = assetMap[k];
                 this.registerAsset(v, k);
             });
-            jsonMap.ID_TEMPLATES = this.jsonMap.ID_TEMPLATES || {};
-            jsonMap.SETTINGS = AssetStore.appliedSettings(map.SETTINGS);
         }
 
         static appliedSettings(opts={}) {
@@ -32,10 +41,6 @@
                     "A0000": 1,
                 }
             }, opts);
-        }
-
-        get settings() {
-            return this.jsonMap.SETTINGS;
         }
 
         registerAsset(asset, id=asset.guid) {
@@ -65,7 +70,7 @@
         }
         
         toJSON() {
-            return this.jsonMap;
+            return this;
         }
 
         assetOfId(key) {

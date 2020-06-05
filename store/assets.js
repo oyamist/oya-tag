@@ -18,13 +18,13 @@ export const mutations = {
         console.log(`state.assetStore.set() assets:`, state.list.length);
     },
     load(state, url=`/sample-data.json`) {
-        var assetMap = {
+        var factoryMap = {
             crop: Crop,
         }
         console.log('assets.load() url:', url);
         var that = this;
         Axios.get(url).then(res => {
-            var assetStore = new AssetStore(res.data, assetMap);
+            var assetStore = new AssetStore(res.data, factoryMap);
             that.commit(`assets/set`, assetStore);
         }).catch(e => {
             var data = e.response && e.response.data || `Not found.`;
