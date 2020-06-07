@@ -30,7 +30,7 @@
         should.deepEqual(asset.name, `asset_${guidPrefix}`); 
 
         should(asset.tagList.length).equal(1);
-        should(asset.ageMillis).above(-1).below(2);
+        should(asset.ageMillis).above(-1).below(5);
         should(asset.ageDays).equal(0);
     });
     it("Asset(opts) asset custom ctor", function() {

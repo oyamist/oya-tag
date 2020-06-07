@@ -1,6 +1,6 @@
 <template>
-  <v-dialog v-model="isVisible" persistent v-if="asset" >
-    <v-card>
+  <v-dialog v-model="isVisible" persistent v-if="isAssetSelected" >
+    <v-card v-if="asset">
       <v-card-text>
         <div class="field-row" >
           <div >
@@ -143,7 +143,7 @@
 <script>
   import Vue from "vue";
   import DateField from "./date-field";
-  import Asset from "../src/asset.js";
+  //import Asset from "../src/asset.js";
   import Tag from "../src/tag.js";
 
   export default {
@@ -153,6 +153,7 @@
         applies: true,
       });
       return {
+        asset: null,
         editedTag: null,
         plantItemsLoading: false,
         tagDialog: false,
@@ -247,6 +248,7 @@
       },
       closeAsset() {
         console.log(`closeAsset()`);
+        this.$store.commit('update', this.asset);
         this.$store.commit('select', null);
         this.$router.go(-1);
       },
@@ -258,7 +260,10 @@
       },
     },
     computed: {
-      asset() {
+      isAssetSelected() {
+        return !!this.$store.state.selection;
+      },
+      xasset() {
         return this.$store.state.selection;
       },
       assetStore() {
@@ -292,10 +297,11 @@
       },
     },
     mounted() {
-      console.log(`edit-asset.mounted() `, this.asset);
-      var asset = this.asset instanceof Asset ? this.asset : null;
+      var asset = this.$store.state.selection;
+      console.log(`edit-asset.mounted() `, asset);
       if (asset) {
-        this.tagList = asset.tagList.slice();
+        var tagList = this.tagList = asset.tagList.slice();
+        this.asset = Object.assign({}, asset, { tagList });
       }
     },
     components: {

@@ -254,4 +254,26 @@
             should(item).instanceOf(Asset);
         });
     });
+    it("TESTTESTremoveAsset(id) removes asset", ()=>{
+        var asEmpty = new AssetStore();
+        var asFull = new AssetStore();
+        asFull.createAsset({
+            id: "test-asset",
+        });
+        asFull.removeAsset("test-asset");
+        should.deepEqual(asFull, asEmpty);
+    });
+    it("TESTTESTupdateAsset(asset) updates asset", ()=>{
+        var as = new AssetStore();
+        var asset1 = as.createAsset({ id: "test-asset"});
+
+        // Copy asset to mutate
+        var asset2 = new Asset(asset1);
+        asset2.color = 'brown';
+
+        // Update asset-store
+        var asset3 = as.updateAsset(asset2);
+        should.deepEqual(asset3, asset2);
+        console.log(as);
+    });
 })

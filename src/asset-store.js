@@ -111,6 +111,23 @@
             return this.registerAsset(asset);
         }
 
+        removeAsset(id) {
+            var asset = this.assetOfId(id);
+            if (!asset) {
+                return undefined;
+            }
+
+            delete this.idMap[asset.id.toUpperCase()];
+            delete this.assetMap[asset.guid.toUpperCase()];
+
+            return asset;
+        }
+
+        updateAsset(asset) {
+            this.removeAsset(asset.id);
+            return this.createAsset(asset);
+        }
+
         assets() {
             var {
                 assetMap,
