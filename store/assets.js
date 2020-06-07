@@ -17,6 +17,14 @@ export const mutations = {
         state.list = state.assetStore.assets().sort(COMPARE_ASSETS);
         console.log(`state.assetStore.set() assets:`, state.list.length);
     },
+    updateAsset(state, value) {
+        var assetStore = state.assetStore;
+        if (assetStore) {
+            console.log(`$store.updateAsset`, value );
+            assetStore.updateAsset(value);
+            state.list = assetStore.assets().sort(COMPARE_ASSETS);
+        }
+    },
     load(state, url=`/sample-data.json`) {
         var factoryMap = {
             crop: Crop,

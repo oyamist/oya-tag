@@ -143,7 +143,7 @@
 <script>
   import Vue from "vue";
   import DateField from "./date-field";
-  //import Asset from "../src/asset.js";
+  import Asset from "../src/asset.js";
   import Tag from "../src/tag.js";
 
   export default {
@@ -248,7 +248,7 @@
       },
       closeAsset() {
         console.log(`closeAsset()`);
-        this.$store.commit('update', this.asset);
+        this.$store.commit('assets/updateAsset', this.asset);
         this.$store.commit('select', null);
         this.$router.go(-1);
       },
@@ -300,8 +300,8 @@
       var asset = this.$store.state.selection;
       console.log(`edit-asset.mounted() `, asset);
       if (asset) {
-        var tagList = this.tagList = asset.tagList.slice();
-        this.asset = Object.assign({}, asset, { tagList });
+        this.asset = new Asset(asset);
+        this.tagList = this.asset.tagList;
       }
     },
     components: {

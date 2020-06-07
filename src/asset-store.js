@@ -124,7 +124,7 @@
         }
 
         updateAsset(asset) {
-            this.removeAsset(asset.id);
+            this.removeAsset(asset.guid);
             return this.createAsset(asset);
         }
 

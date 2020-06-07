@@ -143,7 +143,6 @@ export default {
   }},
   methods: {
     filter(value, search, item) {
-      console.log(`dbg filter`, value, item);
       if (value == null || search == null) {
         return false;
       }

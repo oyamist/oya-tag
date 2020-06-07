@@ -17,7 +17,7 @@
         var as = new AssetStore();
         should.deepEqual(as.settings, AssetStore.appliedSettings());
     });
-    it("TESTTESTcustom ctor", ()=> {
+    it("custom ctor", ()=> {
         var settings = {
             color: "brown",
         };
@@ -53,7 +53,7 @@
             },
         });
     });
-    it("TESTTESTis serializable", ()=> {
+    it("is serializable", ()=> {
         var guid = "f5689832-79e2-48a5-bf5f-655cacec940f";
         var id = "a0001";
         var type = "crop";
@@ -83,7 +83,7 @@
         
         should.deepEqual(as, as2);
     });
-    it("TESTTESTassetOfId(key) => asset", ()=> {
+    it("assetOfId(key) => asset", ()=> {
         var testValue = "test-value";
         var guid = "f5689832-79e2-48a5-bf5f-655cacec940f";
         var id = guid.substr(0,6).toUpperCase();
@@ -107,7 +107,7 @@
         // Assets are keyed by id
         should(as.assetOfId(id)).equal(asset2);
     });
-    it("TESTTESTcreateId() => new Asset id", ()=>{
+    it("createId() => new Asset id", ()=>{
         var as = new AssetStore();
         should(as.createId()).equal('A0001');
         should(as.createId()).equal('A0002');
@@ -124,7 +124,7 @@
         should(as.createId("abc000def")).equal("ABC001DEF");
         should(as.createId("abc000def")).equal("ABC002DEF");
     });
-    it("TESTTESTcreateAsset(...) => new Asset", ()=>{
+    it("createAsset(...) => new Asset", ()=>{
         var as = new AssetStore();
         var asset = as.createAsset();
         should(asset).instanceOf(Asset);
@@ -231,7 +231,7 @@
             applies: true,
         });
     });
-    it("TESTTESTtimelines() => crop timelines", ()=>{
+    it("timelines() => crop timelines", ()=>{
         var json = JSON.parse(fs.readFileSync(SAMPLE_DATA));
         var store = new AssetStore(json);
         var crops = store.assetsOfType("crop");
@@ -254,7 +254,7 @@
             should(item).instanceOf(Asset);
         });
     });
-    it("TESTTESTremoveAsset(id) removes asset", ()=>{
+    it("removeAsset(id) removes asset", ()=>{
         var asEmpty = new AssetStore();
         var asFull = new AssetStore();
         asFull.createAsset({
@@ -270,10 +270,13 @@
         // Copy asset to mutate
         var asset2 = new Asset(asset1);
         asset2.color = 'brown';
+        asset2.id = 'test-asset-2';
 
         // Update asset-store
         var asset3 = as.updateAsset(asset2);
         should.deepEqual(asset3, asset2);
-        console.log(as);
+        should(asset3).not.equal(asset2);
+        should(as.assetOfId('test-asset-2')).equal(asset3);
+        should(as.assetOfId('test-asset')).equal(undefined);
     });
 })
