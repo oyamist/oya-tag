@@ -1,6 +1,7 @@
 (typeof describe === 'function') && describe("tag", function() {
     const winston = require('winston');
     const should = require("should");
+    const JSON5 = require('json5');
     const {
         Tag,
     } = require("../index");
@@ -51,7 +52,7 @@
         var applies = true;
         var note = "testnote";
         var st = new Tag({name, applies, note});
-        var st2 = new Tag(JSON.parse(JSON.stringify(st)));
+        var st2 = new Tag(JSON5.parse(JSON.stringify(st)));
         should.deepEqual(st, st2);
     });
 })

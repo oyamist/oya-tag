@@ -59,7 +59,7 @@
                   placeholder="Click to choose file"
                   loading
                   show-size
-                  accept="application/json"
+                  accept=".json,.json5,application/json"
                   outlined
                   @change="uploadChanged()"
                   v-model="uploadFile"
@@ -84,6 +84,8 @@
 </template>
 
 <script>
+const JSON5 = require( 'json5' );
+console.log(`dbg JSON5`, Object.keys(JSON5));
 import FileSaver from 'file-saver';
 import EditAsset from '../components/edit-asset';
 import AssetStore from '../src/asset-store';
@@ -152,7 +154,7 @@ export default {
 
     $store.subscribe((mutation, /*state*/)=>{
       var msStart = Date.now();
-      storage.setItem(`oya-tag.json`, $store.state.assets.assetStore);
+      storage.setItem(`oya-tag.json5`, $store.state.assets.assetStore);
       var msElapsed = Date.now() - msStart;
       console.log(`dbg subscribe mutation:${mutation.type} ${msElapsed}ms`);
     });
@@ -169,11 +171,11 @@ export default {
         let reader = new FileReader();
         reader.onload = ()=>{
           try {
-            var json = JSON.parse(reader.result);
+            var json = JSON5.parse(reader.result);
             var assetStore = new AssetStore(json);
             $store.commit('assets/set', assetStore);
             that.askUpload = false;
-            var kb = uploadFile/1000;
+            var kb = uploadFile.size/1000;
             console.log(`uploaded ${uploadFile.name} ${kb}kB`);
           } catch (e) {
             alert(e.message);

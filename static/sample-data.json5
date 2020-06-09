@@ -3,6 +3,12 @@
   "settings": {
     "A0000": 5
   },
+  "assetTemplates":{
+    "crop": {
+      "plant": true,
+      "variety": true,
+    }
+  },
   "assetMap": {
     "dc4fea06-d104-44b8-af75-2fc514746c0e": {
       "guid": "dc4fea06-d104-44b8-af75-2fc514746c0e",

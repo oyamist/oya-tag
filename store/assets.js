@@ -25,7 +25,7 @@ export const mutations = {
             state.list = assetStore.assets().sort(COMPARE_ASSETS);
         }
     },
-    load(state, url=`/sample-data.json`) {
+    load(state, url=`/sample-data.json5`) {
         var factoryMap = {
             crop: Crop,
         }

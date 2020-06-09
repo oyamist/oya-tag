@@ -1,6 +1,7 @@
 (typeof describe === 'function') && describe("asset-store", ()=> {
     const fs = require('fs');
     const path = require('path');
+    const JSON5 = require('json5');
     //const winston = require('winston');
     const should = require("should");
     const {
@@ -11,7 +12,7 @@
         TValue,
     } = require("../index");
     const SAMPLE_DATA = path.join(__dirname, 
-        '..', 'static', 'sample-data.json');
+        '..', 'static', 'sample-data.json5');
 
     it("default ctor", ()=> {
         var as = new AssetStore();
@@ -77,7 +78,7 @@
             }
         };
         var as = new AssetStore(json);
-        var jsonCopy = JSON.parse(JSON.stringify(as));
+        var jsonCopy = JSON5.parse(JSON.stringify(as));
         var as2 = new AssetStore(jsonCopy);
         should(as2.settings.color).equal("brown");
         
@@ -113,7 +114,7 @@
         should(as.createId()).equal('A0002');
 
         // next id is serialized
-        var json = JSON.parse(JSON.stringify(as));
+        var json = JSON5.parse(JSON.stringify(as));
         var as2 = new AssetStore(json);
         should(as2.createId()).equal('A0003');
 
@@ -138,8 +139,8 @@
         should(asset2.guid.length).equal(36);
         should(as.assets().indexOf(asset2)).equal(1);
     });
-    it("parses sample-data.json", ()=>{
-        var json = JSON.parse(fs.readFileSync(SAMPLE_DATA));
+    it("parses sample-data.json5", ()=>{
+        var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
         var as = new AssetStore(json);
         var asset = as.assetOfId('A0001');
         should(asset).properties({
@@ -155,11 +156,11 @@
             note: "https://www.uline.com/Product/Detail/S-9941BL",
         });
     });
-    it("TESTTESTparses sample-data.json with factoryMap", ()=>{
+    it("TESTTESTparses sample-data.json5 with factoryMap", ()=>{
         var factoryMap = {
             crop: Crop,
         };
-        var json = JSON.parse(fs.readFileSync(SAMPLE_DATA));
+        var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
         var as = new AssetStore(json, factoryMap);
 
         // mapped asset 
@@ -203,7 +204,7 @@
         should(crop.type).equal(cropExpected.type);
     });
     it("assetsOfType(...) => asset list", ()=>{
-        var json = JSON.parse(fs.readFileSync(SAMPLE_DATA));
+        var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
         var as = new AssetStore(json);
         var assets = as.assetsOfType('bucket');
         should.deepEqual(assets.map(a=>a.id).sort(),[
@@ -213,7 +214,7 @@
             "BRC-1", "BRC-2", "BRC-3", "BRC-4", "TOM-1", ]);
     });
     it("assetsOfType(...) => asset list", ()=>{
-        var json = JSON.parse(fs.readFileSync(SAMPLE_DATA));
+        var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
         var as = new AssetStore(json);
         var assets = as.assets();
         should(assets.length).equal(16);
@@ -232,7 +233,7 @@
         });
     });
     it("timelines() => crop timelines", ()=>{
-        var json = JSON.parse(fs.readFileSync(SAMPLE_DATA));
+        var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
         var store = new AssetStore(json);
         var crops = store.assetsOfType("crop");
         should(crops.length).equal(5);
@@ -243,7 +244,7 @@
         should(crops[0]).instanceOf(Asset);
     });
     it("TESTTESTtimelines() => crop timelines", ()=>{
-        var json = JSON.parse(fs.readFileSync(SAMPLE_DATA));
+        var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
         var store = new AssetStore(json);
         var timelines = store.timelines();
         should.deepEqual(timelines.map(t=>t.name), [

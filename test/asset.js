@@ -1,6 +1,7 @@
 (typeof describe === 'function') && describe("Asset", function() {
     const winston = require('winston');
     const should = require("should");
+    const JSON5 = require('json5');
     const {
         Asset,
         Plant,
@@ -101,12 +102,12 @@
             name: 'tomatoA',
             tags,
         });
-        var json = JSON.parse(JSON.stringify(asset));
+        var json = JSON5.parse(JSON.stringify(asset));
         var asset2 = new Asset(json);
         should.deepEqual(asset2, asset);
 
         var json = JSON.stringify(asset);
-        var asset2 = new Asset(JSON.parse(json));
+        var asset2 = new Asset(JSON5.parse(json));
         should.deepEqual(asset2, asset);
         should(asset2.name).equal('tomatoA');
     });
