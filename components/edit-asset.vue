@@ -15,7 +15,12 @@
             <v-text-field v-model="asset.type" 
               outlined
               :label="`Type`"
-              @blur="onBlurTitle()"
+              />
+          </div>
+          <div>
+            <v-text-field v-model="asset.name" 
+              outlined
+              :label="`Name`"
               />
           </div>
         </div><!--field-row-->
@@ -25,11 +30,11 @@
               v-model="asset.plant"
               label="Plant"
               outlined
-              :items="plantItems"
-              :loading="plantItemsLoading"
+              :items="typeList('plant')"
+              :loading="false"
               color="white"
               :rules="[rules.plant]"
-              item-text="plant"
+              item-text="name"
               item-value="id"
               placeholder="Start typing to Search"
             ></v-autocomplete>
@@ -37,7 +42,6 @@
           <div><v-text-field v-model="asset.variety" 
             outlined
             label="Variety"
-            @blur="onBlurTitle()"
             /></div>
         </div><!--field-row-->
         <v-data-table 
@@ -155,7 +159,6 @@
       return {
         asset: null,
         editedTag: null,
-        plantItemsLoading: false,
         tagDialog: false,
         tagModel: new Tag(tagDefault),
         tagDefault, 
@@ -257,6 +260,10 @@
         return tag && tag.note && tag.note.length > maxNote
           ? tag.note.substring(0, maxNote) + '...'
           : tag.note;
+      },
+      typeList(type) {
+        var values = this.assetStore.assetsOfType(type);
+        return values;
       },
     },
     computed: {

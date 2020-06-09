@@ -146,7 +146,7 @@
             return this.typeMap[type].slice() || [];
         }
 
-        timelines(type="crop", group="crop") {
+        timelines(type="crop", group="plant") {
             var timelines = [];
             var map = {};
             var assets = this.assetsOfType(type);

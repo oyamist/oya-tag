@@ -155,7 +155,7 @@
             note: "https://www.uline.com/Product/Detail/S-9941BL",
         });
     });
-    it("parses sample-data.json with factoryMap", ()=>{
+    it("TESTTESTparses sample-data.json with factoryMap", ()=>{
         var factoryMap = {
             crop: Crop,
         };
@@ -167,7 +167,7 @@
         should(asset).properties({
             "guid": "42d77a7e-ee7a-4a6c-b376-771fd1ebf62a",
             "id": "BRC-1",
-            "crop": "Broccoli",
+            "plant": "BROC",
             "type": "crop",
         });
         should(asset).instanceOf(Crop);
@@ -242,12 +242,12 @@
         });
         should(crops[0]).instanceOf(Asset);
     });
-    it("timelines() => crop timelines", ()=>{
+    it("TESTTESTtimelines() => crop timelines", ()=>{
         var json = JSON.parse(fs.readFileSync(SAMPLE_DATA));
         var store = new AssetStore(json);
         var timelines = store.timelines();
         should.deepEqual(timelines.map(t=>t.name), [
-            "Broccoli", "Tomato"]);
+            "BROC", "PBTD"]);
         should.deepEqual(timelines[0].items.map(item=>item.id), [
             "BRC-1", "BRC-2", "BRC-3", "BRC-4" ]);
         timelines[0].items.forEach(item=>{

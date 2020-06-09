@@ -109,7 +109,7 @@
     "f58e4260-7a62-416a-886a-182603bd7f01": {
       "guid": "f58e4260-7a62-416a-886a-182603bd7f01",
       "type": "plant",
-      "plant": "English Cucumber",
+      "name": "English Cucumber",
       "id": "ECUKE",
       "tags": {
         "created": {
@@ -122,7 +122,7 @@
     "3541b41b-5439-45b9-8e30-cc474b5cf1f1": {
       "guid": "3541b41b-5439-45b9-8e30-cc474b5cf1f1",
       "type": "plant",
-      "plant": "Pink Berkeley Tie Dye Tomato",
+      "name": "Pink Berkeley Tie Dye Tomato",
       "id": "PBTD",
       "tags": {
         "created": {
@@ -135,13 +135,13 @@
     "990d09fb-865b-41bb-bd7c-c3a41f4530dc": {
       "guid": "990d09fb-865b-41bb-bd7c-c3a41f4530dc",
       "type": "plant",
-      "plant": "Broccoli",
+      "name": "Broccoli",
       "id": "BROC"
     },
     "42d77a7e-ee7a-4a6c-b376-771fd1ebf62a" : {
       "guid": "42d77a7e-ee7a-4a6c-b376-771fd1ebf62a",
       "id": "BRC-1",
-      "crop": "Broccoli",
+      "plant": "BROC",
       "type": "crop",
       "tags": {
         "created": {
@@ -154,7 +154,7 @@
     "f98e263c-b510-41d8-a2b9-e63dbdb61387": {
       "guid": "f98e263c-b510-41d8-a2b9-e63dbdb61387",
       "id": "BRC-2",
-      "crop": "Broccoli",
+      "plant": "BROC",
       "type": "crop",
       "tags": {
         "created": {
@@ -167,7 +167,7 @@
     "44a954df-4da4-4fe2-8f1a-624d30bbdfeb": {
       "guid": "44a954df-4da4-4fe2-8f1a-624d30bbdfeb",
       "id": "BRC-3",
-      "crop": "Broccoli",
+      "plant": "BROC",
       "type": "crop",
       "tags": {
         "sow": {
@@ -180,7 +180,7 @@
     "3dbdd90f-307d-4667-9408-5cbab42027c3": {
       "guid": "3dbdd90f-307d-4667-9408-5cbab42027c3",
       "id": "BRC-4",
-      "crop": "Broccoli",
+      "plant": "BROC",
       "type": "crop",
       "tags": {
         "sow": {
@@ -193,7 +193,7 @@
     "69f90d62-0243-4bba-b3a2-0108072ff366": {
       "guid": "69f90d62-0243-4bba-b3a2-0108072ff366",
       "id": "TOM-1",
-      "crop": "Tomato",
+      "plant": "PBTD",
       "type": "crop",
       "tags": {
         "sow": {
