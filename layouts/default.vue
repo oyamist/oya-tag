@@ -47,16 +47,28 @@
         <v-container>
           <nuxt />
           <EditAsset v-if="curAsset" />
-          <v-dialog v-model="askUpload" persistent >
-            <v-card>
+          <v-dialog v-model="askUpload" max-width="40em">
+            <v-card >
               <v-card-title>
-                Choose assets file and upload
+                Load Asset File 
               </v-card-title>
               <v-card-text>
+                <p> Oya-Tag assets are stored in browser local storage.
+                Save your assets regularly for backup or for transferring
+                them to a new system.</p>
+                <v-alert type="warning" 
+                  color="yellow darken-4">
+                  Uploaded assets will replace
+                  all assets in your browser local storage.</v-alert>
+                <v-checkbox v-model="overwriteAssets"
+                  :label=
+                  "`Upload and replace ${assetCount} current assets?`"
+                ></v-checkbox>
                 <v-file-input 
                   append-icon="mdi-upload"
                   prepend-icon=""
-                  placeholder="Click to choose file"
+                  :disabled="!overwriteAssets"
+                  placeholder="Click HERE to choose JSON upload file"
                   loading
                   show-size
                   accept=".json,.json5,application/json"
@@ -85,7 +97,6 @@
 
 <script>
 const JSON5 = require( 'json5' );
-console.log(`dbg JSON5`, Object.keys(JSON5));
 import FileSaver from 'file-saver';
 import EditAsset from '../components/edit-asset';
 import AssetStore from '../src/asset-store';
@@ -98,6 +109,7 @@ export default {
   },
   data () {
     return {
+      overwriteAssets: false,
       askUpload: false,
       uploadFile: null,
       viewMenu: [{
@@ -145,6 +157,10 @@ export default {
     curAsset() {
       return this.$store.state.selection;
     },
+    assetCount() {
+      var assets = this.$store.state.assets;
+      return assets && assets.list.length || 0;
+    },
   },
   mounted () {
     var {
@@ -154,11 +170,25 @@ export default {
 
     $store.subscribe((mutation, /*state*/)=>{
       var msStart = Date.now();
-      storage.setItem(`oya-tag.json5`, $store.state.assets.assetStore);
+      var json = JSON.stringify($store.state.assets.assetStore);
+      storage.setItem(`oya-tag`, json);
       var msElapsed = Date.now() - msStart;
       console.log(`dbg subscribe mutation:${mutation.type} ${msElapsed}ms`);
     });
-    $store.commit('assets/load');
+    var localAssets = storage.getItem(`oya-tag`);
+    if (localAssets) {
+      try {
+        var jsAssets = JSON5.parse(localAssets);
+        var assetStore = new AssetStore(jsAssets);
+        $store.commit("assets/set", assetStore);
+        console.log("Loaded local assets.", assetStore);
+      } catch(e) {
+        console.error("could not load from localStorage");
+      }
+    } else {
+      console.log("No local assets. Loading sample-data...");
+      $store.commit('assets/load');
+    }
   },
   methods: {
     uploadChanged() {
@@ -175,8 +205,10 @@ export default {
             var assetStore = new AssetStore(json);
             $store.commit('assets/set', assetStore);
             that.askUpload = false;
+            that.overwriteAssets = false;
             var kb = uploadFile.size/1000;
             console.log(`uploaded ${uploadFile.name} ${kb}kB`);
+            that.uploadFile = null;
           } catch (e) {
             alert(e.message);
           }
@@ -189,9 +221,18 @@ export default {
     },
     save() {
       var assetStore = this.$store.state.assets.assetStore;
-      var json = JSON.stringify(assetStore, null, 2);
+      var indent = 2; // simplify edit and search
+      var json = JSON.stringify(assetStore, null, indent);
       var blob = new Blob([json], { type: "text/plain;charset=utf-8" });
-      FileSaver.saveAs(blob, "oya-tag.json");
+      var now = new Date();
+      var month = `0${now.getMonth()+1}`;
+      var date = `0${now.getDate()}`;
+      var dateStr = [
+        now.getFullYear(),
+        month.substring(month.length-2),
+        date.substring(date.length-2),
+      ].join('');
+      FileSaver.saveAs(blob, `oya-tag-${dateStr}.json`);
     },
     onMenu (menuItem) {
       console.log(`onMenu`, menuItem);

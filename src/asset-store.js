@@ -12,7 +12,8 @@
     class AssetStore {
         constructor(opts = {}, factoryMap={}) {
             // serialized properties
-            var assetMap = this.assetMap = (opts.assetMap || {});
+            var assetMap = (opts.assetMap || {});
+            this.assetMap = {};
             this.settings = AssetStore.appliedSettings(opts.settings);
             this.guidAbbreviation = opts.guidAbbreviation || 6;
 
@@ -143,7 +144,8 @@
         }
 
         assetsOfType(type) {
-            return this.typeMap[type].slice() || [];
+            var typeInfo = this.typeMap[type];
+            return typeInfo && typeInfo.slice() || [];
         }
 
         timelines(type="crop", group="plant") {

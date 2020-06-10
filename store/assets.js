@@ -1,4 +1,5 @@
 const AssetStore = require('../src/asset-store');
+const JSON5 = require("json5");
 const Crop = require('../src/crop');
 const Axios = require('axios');
 
@@ -15,7 +16,8 @@ export const mutations = {
     set(state, assetStore) {
         state.assetStore = assetStore;
         state.list = state.assetStore.assets().sort(COMPARE_ASSETS);
-        console.log(`state.assetStore.set() assets:`, state.list.length);
+        console.log(`$store.state.assetStore.set() assets:`, 
+            state.list.length);
     },
     updateAsset(state, value) {
         var assetStore = state.assetStore;
@@ -29,10 +31,11 @@ export const mutations = {
         var factoryMap = {
             crop: Crop,
         }
-        console.log('assets.load() url:', url);
         var that = this;
         Axios.get(url).then(res => {
-            var assetStore = new AssetStore(res.data, factoryMap);
+            var json = JSON5.parse(res.data);
+            var assetStore = new AssetStore(json, factoryMap);
+            console.log('$store.assets.load() url:', url, json,);
             that.commit(`assets/set`, assetStore);
         }).catch(e => {
             var data = e.response && e.response.data || `Not found.`;
@@ -41,7 +44,7 @@ export const mutations = {
     },
     add (state, opts) {
         var asset = state.assetStore.createAsset(opts);
-        console.log(`state.assetStore.add`, asset);
+        console.log(`$store.state.assetStore.add`, asset);
         state.list = state.assetStore.assets().sort(COMPARE_ASSETS);
     },
     remove (state, { asset }) {
