@@ -100,13 +100,19 @@
                         <v-col>
                           <date-field hint="Date" 
                               :item="tagModel" model="date"/>
+                          <v-alert v-if="!isTagDateValid" type="error">
+                            Tags with future dates must be Planned, 
+                            not Active
+                          </v-alert>
                         </v-col>
                       </v-row>
                       <v-row>
-                        <v-textarea v-model="tagModel.note"
-                          outlined clearable
-                          label="Notes"
-                        ></v-textarea>
+                        <v-col>
+                          <v-textarea v-model="tagModel.note"
+                            outlined clearable
+                            label="Notes"
+                          ></v-textarea>
+                        </v-col>
                       </v-row>
                     </v-container>
                   </v-card-text>
@@ -116,7 +122,7 @@
                     <v-btn color="green darken-2" text @click="closeTag"
                       >Cancel</v-btn>
                     <v-btn color="green darken-2" text @click="saveTag"
-                      :disabled="!tagModel.name"
+                      :disabled="!isTagValid"
                       >Save</v-btn>
                   </v-card-actions>
                 </v-card>
@@ -212,10 +218,15 @@
         this.tagDialog = true;
       },
       saveTag () {
-        console.log('Tag save')
+        console.log('saveTag')
+        var {
+          tagModel,
+        } = this;
+        var now = new Date();
         if (this.editedTag) {
-          if (this.tagModel.date > new Date() && this.tagModel.applies) {
-            let msg = `Set future tag status to 'Planned'?`;
+          var dateDiff = now - tagModel.date;
+          if (dateDiff < 0 && this.tagModel.applies) {
+            let msg = `Tag is in the future. Set status to 'Planned'?`;
             if (!confirm(msg)) {
               return;
             }
@@ -267,6 +278,14 @@
       },
     },
     computed: {
+      isTagDateValid() {
+        var tagModel = this.tagModel;
+        return !tagModel.applies || tagModel.date < new Date();
+      },
+      isTagValid() {
+        var tagModel = this.tagModel;
+        return this.isTagDateValid && tagModel.name;
+      },
       isAssetSelected() {
         return !!this.$store.state.selection;
       },
@@ -304,10 +323,10 @@
       },
     },
     mounted() {
-      var asset = this.$store.state.selection;
-      console.log(`edit-asset.mounted() `, asset);
-      if (asset) {
-        this.asset = new Asset(asset);
+      var selAsset = this.$store.state.selection;
+      console.log(`edit-asset.mounted() `, selAsset);
+      if (selAsset) {
+        this.asset = new Asset(selAsset);
         this.tagList = this.asset.tagList;
       }
     },

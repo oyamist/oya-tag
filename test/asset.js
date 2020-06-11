@@ -52,7 +52,9 @@
         should.deepEqual(asset.name, `asdf`); 
         var tag = asset.getTag('purchased');
         should.deepEqual(tag, purchased);
+        should(tag).not.equal(purchased);
         should.deepEqual(asset.tagList, [purchased]);
+        should(asset.tags).not.equal(tags);
 
         var asset2 = new Asset();
         should(asset.guid).not.equal(asset2.guid);

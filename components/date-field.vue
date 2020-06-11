@@ -18,6 +18,7 @@
       item: Object,
       model: String,
       label: String,
+      max: undefined,
     },
     data: () => ({
       showPicker: false,

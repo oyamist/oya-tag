@@ -23,13 +23,11 @@
                 this.type = "asset";
             }
             var tagList = [];
-            var tags = opts.tags || {};
-            Object.keys(tags).forEach(k=>{
-                var value = tags[k];
-                if (!(value instanceof Tag)) {
-                    value = new Tag(value);
-                    tags[k] = value;
-                }
+            var srcTags = opts.tags || {};
+            var tags = {};
+            Object.keys(srcTags).forEach(k=>{
+                var value = new Tag(srcTags[k]);
+                tags[k] = value;
                 tagList.push(value);
             });
             Object.defineProperty(this, "tagList", {
