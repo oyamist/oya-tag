@@ -27,6 +27,9 @@ export const mutations = {
             state.list = assetStore.assets().sort(COMPARE_ASSETS);
         }
     },
+    clear(state) {
+        mutations.load.apply(this, state);
+    },
     load(state, url=`/sample-data.json5`) {
         var factoryMap = {
             crop: Crop,
@@ -46,6 +49,7 @@ export const mutations = {
         var asset = state.assetStore.createAsset(opts);
         console.log(`$store.state.assetStore.add`, asset);
         state.list = state.assetStore.assets().sort(COMPARE_ASSETS);
+        opts.committed && opts.committed(asset);
     },
     remove (state, { asset }) {
         state.list.splice(state.list.indexOf(asset), 1)

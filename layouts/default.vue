@@ -123,11 +123,14 @@ export default {
         route: '/assets'
       }],
       fileMenu: [{
-        title: 'Load',
-        action: this.load,
+        title: 'Load Assets',
+        action: this.loadAssets,
       },{
-        title: 'Save',
-        action: this.save,
+        title: 'Save Assets',
+        action: this.saveAssets,
+      },{
+        title: 'Clear Assets',
+        action: this.clearAssets,
       }],
       clipped: false,
       drawer: false,
@@ -216,10 +219,10 @@ export default {
         reader.readAsText(uploadFile);
       }
     },
-    load() {
+    loadAssets() {
       this.askUpload = true;
     },
-    save() {
+    saveAssets() {
       var assetStore = this.$store.state.assets.assetStore;
       var indent = 2; // simplify edit and search
       var json = JSON.stringify(assetStore, null, indent);
@@ -233,6 +236,11 @@ export default {
         date.substring(date.length-2),
       ].join('');
       FileSaver.saveAs(blob, `oya-tag-${dateStr}.json`);
+    },
+    clearAssets() {
+      if (confirm("Clear all asset records (DANGER!)?")) {
+        this.$store.commit("assets/clear");
+      }
     },
     onMenu (menuItem) {
       console.log(`onMenu`, menuItem);

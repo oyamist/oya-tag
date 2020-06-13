@@ -96,7 +96,15 @@ export default {
       if (!type) {
         return;
       } 
-      this.$store.commit('assets/add', {type});
+      var $router = this.$router;
+      var opts = {
+        type, 
+        name: `${type}_name?`,
+        committed: asset => {
+          $router.push(`/assets#${asset.id}`);
+        },
+      };
+      this.$store.commit('assets/add', opts);
     },
     save () {
       console.log('Dialog saved')

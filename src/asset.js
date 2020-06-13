@@ -53,11 +53,11 @@
                 this.name = `${this.namePrefix(opts)}${this.id}`;
             }
             if (tagList.length === 0) {
-                var createdTag = new Tag({
-                    name: 'created',
+                var enteredTag = new Tag({
+                    name: 'entered',
                     applies: true,
                 });
-                this.addTag(createdTag);
+                this.addTag(enteredTag);
             }
         }
 
