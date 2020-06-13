@@ -18,21 +18,31 @@
       <v-data-table class="elevation-1" 
         :search="search"
         :headers="headers"
+        single-expand
+        show-expand :expanded.sync="expanded"
         :items="assets" :items-per-page.sync="assetsPerPage"
         >
+        <template v-slot:expanded-item="{ headers, item }">
+          <td :colspan="headers.length"> <div class="asset-expanded">
+            <div>
+              {{item.type}}
+              {{item.lastTag.name}}:
+              {{item.lastTag.date.toLocaleDateString()}}
+            </div>
+            <v-btn small class="mr-2" color="primary"
+              @click="$router.push(`/assets#${item.id}`)"
+              > 
+                <v-icon small>mdi-pencil</v-icon>
+            </v-btn>
+          </div></td>
+        </template>
+        <template v-slot:item.id="{ item }">
+            {{ item.id }} / {{ item.name }}
+        </template>
         <template v-slot:item.ageDays="{ item }">
           <v-chip :color="getAgeColor(item)" small dark>
-            {{ item.ageDays }}
+            {{ ageDays(item) }}
           </v-chip>
-        </template>
-        <template v-slot:item.actions="{ item }">
-          <v-icon
-            small
-            class="mr-2"
-            @click="$router.push(`/assets#${item.id}`)"
-          >
-            mdi-pencil
-          </v-icon>
         </template>
       </v-data-table>
         {{$store.state.selection}}
@@ -49,23 +59,12 @@ export default {
     return {
       search: '',
       assetsPerPage: 6,
-      headers: [{
-        text: "Age",
-        value: "ageDays",
-      },{
-        text: "ID",
-        value: "id",
-      },{
-        text: "Asset",
-        value: "type",
-      },{
-        text: "Notes",
-        value: "notes",
-      },{
-        text: "Actions",
-        value: "actions",
-        sortable: false,
-      }],
+      expanded: [],
+      headers: [
+        { text: "Age", value: "ageDays", },
+        { text: "Asset", value: "summary", },
+        { text: '', value: 'data-table-expand', },
+      ],
     }
   },
   watch: {
@@ -74,6 +73,9 @@ export default {
     },
   },
   methods: {
+    ageDays(item) {
+      return item.ageDays;
+    },
     validNotes: v=> v ? true : true,
     routeAsset() {
       var hash = this.$route.hash;
@@ -126,7 +128,7 @@ export default {
       if (age == null) {
         return '#eee';
       } else if (age < 0) {
-        return 'grey'
+        return 'indigo darken-4'
       } else {
         return started 
           ? 'green darken-4'
@@ -159,4 +161,13 @@ export default {
 }
 </script>
 <style>
+.v-data-table tbody tr.v-data-table__expanded__content {
+  background-color: #eee;
+  box-shadow: none;
+}
+.asset-expanded {
+  display:flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
 </style>

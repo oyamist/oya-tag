@@ -80,6 +80,13 @@
             return  (a.guid === b.guid) ? 0 : 1;
         }
 
+        get summary() {
+            return [
+                this.id,
+                this.name,
+            ].join(' / ');
+        }
+
         get firstTag() {
             return this.tagList.reduce((a,tag) => {
                 return a && a.date < tag.date ? a : tag;
@@ -104,6 +111,10 @@
 
         get ageDays() {
             return Math.round(this.ageMillis/MSDAY);
+        }
+
+        get startDate() {
+            return new Date(Date.now() - this.ageMillis);
         }
 
         age(msAge=MSDAY) {

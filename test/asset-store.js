@@ -194,7 +194,6 @@
         var cropOpts = {
             guid,
             id,
-            startDate,
         };
         var crop = callNew(aclass, cropOpts);
         var cropExpected = new Crop(cropOpts);
