@@ -1,6 +1,6 @@
 const AssetStore = require('../src/asset-store');
 const JSON5 = require("json5");
-const Crop = require('../src/crop');
+//const Crop = require('../src/crop');
 const Axios = require('axios');
 
 const COMPARE_ASSETS = (a,b)=>{
@@ -32,7 +32,7 @@ export const mutations = {
     },
     load(state, url=`/sample-data.json5`) {
         var factoryMap = {
-            crop: Crop,
+            //crop: Crop,
         }
         var that = this;
         Axios.get(url).then(res => {
@@ -51,7 +51,10 @@ export const mutations = {
         state.list = state.assetStore.assets().sort(COMPARE_ASSETS);
         opts.committed && opts.committed(asset);
     },
-    remove (state, { asset }) {
-        state.list.splice(state.list.indexOf(asset), 1)
+    remove (state, id) {
+        var assetStore = state.assetStore;
+        var asset = assetStore.removeAsset(id);
+        console.log(`removed asset`, asset);
+        state.list = assetStore.assets().sort(COMPARE_ASSETS);
     },
 }

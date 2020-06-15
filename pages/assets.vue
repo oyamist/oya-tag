@@ -20,7 +20,8 @@
         :headers="headers"
         single-expand
         show-expand :expanded.sync="expanded"
-        :items="assets" :items-per-page.sync="assetsPerPage"
+        :items="assets" 
+        :items-per-page.sync="assetsPerPage"
         >
         <template v-slot:expanded-item="{ headers, item }">
           <td :colspan="headers.length"> <div class="asset-expanded">
@@ -58,7 +59,7 @@ export default {
   data: () => {
     return {
       search: '',
-      assetsPerPage: 6,
+      assetsPerPage: -1,
       expanded: [],
       headers: [
         { text: "Age", value: "ageDays", },
@@ -128,7 +129,7 @@ export default {
       if (age == null) {
         return '#eee';
       } else if (age < 0) {
-        return 'indigo darken-4'
+        return 'grey lighten-2 black--text'
       } else {
         return started 
           ? 'green darken-4'

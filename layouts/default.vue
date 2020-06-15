@@ -23,7 +23,7 @@
       <v-menu bottom right>
         <template v-slot:activator="{ on }">
           <v-btn dark icon v-on="on">
-            <v-icon>mdi-dots-vertical</v-icon>
+            <v-icon>mdi-menu</v-icon>
           </v-btn>
         </template>
 

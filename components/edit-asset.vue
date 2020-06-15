@@ -49,7 +49,8 @@
           disable-pagination hide-default-header hide-default-footer
           no-data-text="Tag your asset with dated notes"
           :headers="tagHeaders"
-          :items="tagList" :items-per-page="7"
+          :items="tagList" 
+          :items-per-page="-1"
           >
           <template v-slot:item.name="{ item }">
             {{ item.applies 
@@ -83,27 +84,24 @@
                       <v-row>
                         <v-col>
                           <v-text-field v-model="tagModel.name" 
+                            outlined
                             :hint="nameHint"
                             label="Tag name"></v-text-field>
-                        </v-col>
-                        <v-col cols="12" sm="6" md="4">
-                          <v-radio-group v-model="tagModel.applies" 
-                            row>
-                            <v-radio :label="`\u2713 Actual `" 
-                              :value="true"/>
-                            <v-radio :label="`\u231B Planned`" 
-                              :value="false"/>
-                          </v-radio-group>
                         </v-col>
                       </v-row>
                       <v-row>
                         <v-col>
                           <date-field hint="Date" 
-                              :item="tagModel" model="date"/>
+                            :item="tagModel" model="date"/>
                           <v-alert v-if="!isTagDateValid" type="error">
                             Tags with future dates must be Planned, 
                             not Active
                           </v-alert>
+                        </v-col>
+                        <v-col>
+                          <v-checkbox v-model="tagModel.applies"
+                            label="Done">
+                          </v-checkbox>
                         </v-col>
                       </v-row>
                       <v-row>
@@ -118,12 +116,18 @@
                   </v-card-text>
 
                   <v-card-actions>
+                    <v-btn color="green darken-2" icon @click="closeTag"
+                      ><v-icon>
+                        {{tagChanged ? "mdi-close-circle" : "mdi-close"}}
+                      </v-icon>
+                    </v-btn>
                     <v-spacer></v-spacer>
-                    <v-btn color="green darken-2" text @click="closeTag"
-                      >Cancel</v-btn>
-                    <v-btn color="green darken-2" text @click="saveTag"
+                    <v-btn color="green darken-2" icon @click="saveTag"
                       :disabled="!isTagValid"
-                      >Save</v-btn>
+                      ><v-icon>
+                        {{tagChanged ? "mdi-check-circle" : "mdi-check"}}
+                      </v-icon>
+                    </v-btn>
                   </v-card-actions>
                 </v-card>
               </v-dialog>
@@ -140,11 +144,27 @@
         </v-data-table>
       </v-card-text>
       <v-card-actions>
+        <v-btn color="green darken-2" icon class="mb-2" 
+          @click="deleteAsset"
+          ><v-icon large>mdi-delete</v-icon>
+        </v-btn>
+        <v-spacer/>
+        <v-btn color="green darken-2" icon class="mb-2" 
+          @click="cancelAsset"
+          title="Close/Cancel"
+          ><v-icon>
+            {{assetChanged ? "mdi-close-circle" : "mdi-close"}}
+          </v-icon>
+        </v-btn>
         <v-spacer/>
         <v-btn color="green darken-2" icon class="mb-2" 
           @click="closeAsset"
-          ><v-icon>mdi-close</v-icon></v-btn>
-        <v-spacer/>
+          title="Save Asset"
+          :disabled="!assetChanged"
+          ><v-icon>
+            {{assetChanged ? "mdi-check-circle" : "mdi-check"}}
+          </v-icon>
+        </v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -152,6 +172,7 @@
 
 <script>
   import Vue from "vue";
+  import { MerkleJson } from "merkle-json";
   import DateField from "./date-field";
   import Asset from "../src/asset.js";
   import Tag from "../src/tag.js";
@@ -164,6 +185,7 @@
       });
       return {
         asset: null,
+        mj: new MerkleJson(),
         editedTag: null,
         tagDialog: false,
         tagModel: new Tag(tagDefault),
@@ -199,6 +221,19 @@
         var started = asset.started;
         if (started) {
           asset.startDate = new Date();
+        }
+      },
+      deleteAsset() {
+        var {
+          id,
+          name,
+        } = this.asset;
+        if (confirm(`Delete asset ${id}/${name} forever?`)) {
+          this.$store.commit(`assets/remove`, id);
+          this.$store.commit(`select`, null);
+          this.editedTag = null;
+          this.tagDialog = false;
+          this.$router.go(-1);
         }
       },
       deleteTag(tag) {
@@ -260,6 +295,10 @@
         var days = Math.round((new Date() - date)/msDays);
         return `${days}`;
       },
+      cancelAsset() {
+        this.$store.commit('select', null);
+        this.$router.go(-1);
+      },
       closeAsset() {
         console.log(`closeAsset()`);
         this.$store.commit('assets/updateAsset', this.asset);
@@ -278,6 +317,18 @@
       },
     },
     computed: {
+      tagChanged() {
+        var mj = this.mj;
+        var hash1 = mj.hash(this.tagModel);
+        var hash2 = mj.hash(this.editedTag);
+        return hash1 !== hash2;
+      },
+      assetChanged() {
+        var mj = this.mj;
+        var hash1 = mj.hash(this.asset);
+        var hash2 = mj.hash(this.$store.state.selection);
+        return hash1 !== hash2;
+      },
       isTagDateValid() {
         var tagModel = this.tagModel;
         return !tagModel.applies || tagModel.date < new Date();
@@ -301,11 +352,11 @@
       },
       nameHint() {
         var {
-          tagModel,
-        } = this;
-        var name = tagModel.name;
+          name,
+        } = this.tagModel;
         var asset = this.assetStore.assetOfId(name);
-        var hint = asset && asset.name || 
+        var hint = 
+          asset && `\u2192${asset.name}` || 
           name || 
           "Enter tag name or asset id";
         return hint;
@@ -372,5 +423,11 @@
 }
 .tag-name {
   display: inline-block;
+}
+.actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>
