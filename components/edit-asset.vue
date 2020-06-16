@@ -75,10 +75,6 @@
                     v-on="on"><v-icon>mdi-tag-plus</v-icon></v-btn>
                 </template>
                 <v-card>
-                  <v-card-title>
-                    <span class="headline">Edit Tag</span>
-                  </v-card-title>
-
                   <v-card-text>
                     <v-container>
                       <v-row>
@@ -116,6 +112,11 @@
                   </v-card-text>
 
                   <v-card-actions>
+                    <v-btn color="brown lighten-1" icon 
+                      @click="deleteTag()"
+                      ><v-icon>mdi-delete</v-icon>
+                    </v-btn>
+                    <v-spacer></v-spacer>
                     <v-btn color="green darken-2" icon @click="closeTag"
                       ><v-icon>
                         {{tagChanged ? "mdi-close-circle" : "mdi-close"}}
@@ -137,16 +138,13 @@
             <v-icon small class="mr-2" @click="editTag(item)"
               title="Edit Tag">
               mdi-pencil </v-icon>
-            <v-icon small @click="deleteTag(item)" 
-              title="Delete Tag">
-              mdi-delete </v-icon>
           </template>
         </v-data-table>
       </v-card-text>
       <v-card-actions>
-        <v-btn color="green darken-2" icon class="mb-2" 
+        <v-btn color="brown lighten-1" icon class="mb-2" 
           @click="deleteAsset"
-          ><v-icon large>mdi-delete</v-icon>
+          ><v-icon >mdi-delete</v-icon>
         </v-btn>
         <v-spacer/>
         <v-btn color="green darken-2" icon class="mb-2" 
@@ -238,12 +236,18 @@
       },
       deleteTag(tag) {
         var asset = this.asset;
-        var msg = `Delete "${tag.name}" tag `+
-          `from ${asset.type} ${asset.id}?`;
-        if (confirm(msg)) {
-          console.log(`deleteTag`, tag.name);
-          asset.deleteTag(tag);
-          this.tagList = asset.tagList.slice();
+        tag = tag || this.editedTag;
+        if (tag) {
+          if (this.editedTag) {
+            this.closeTag();
+          }
+          var msg = `Delete "${tag.name}" tag `+
+            `from ${asset.type} ${asset.id}?`;
+          if (confirm(msg)) {
+            console.log(`deleteTag`, tag.name);
+            asset.deleteTag(tag);
+            this.tagList = asset.tagList.slice();
+          }
         }
       },
       editTag(tag) {
