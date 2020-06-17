@@ -19,6 +19,9 @@ export const mutations = {
         console.log(`$store.state.assetStore.set() assets:`, 
             state.list.length);
     },
+    touch(/*state, value*/) {
+        console.log(`$store.assets.touch`);
+    },
     updateAsset(state, value) {
         var assetStore = state.assetStore;
         if (assetStore) {

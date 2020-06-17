@@ -112,22 +112,20 @@
                   </v-card-text>
 
                   <v-card-actions>
-                    <v-btn color="brown lighten-1" icon 
+                    <v-btn text class="mr-5"
                       @click="deleteTag()"
-                      ><v-icon>mdi-delete</v-icon>
+                      >Delete
+                    </v-btn>
+                    <v-btn text @click="closeTag"
+                      >{{tagChanged ? "Cancel" : "Close"}}
                     </v-btn>
                     <v-spacer></v-spacer>
-                    <v-btn color="green darken-2" icon @click="closeTag"
-                      ><v-icon>
-                        {{tagChanged ? "mdi-close-circle" : "mdi-close"}}
-                      </v-icon>
-                    </v-btn>
+                    &nbsp;
                     <v-spacer></v-spacer>
-                    <v-btn color="green darken-2" icon @click="saveTag"
-                      :disabled="!isTagValid"
-                      ><v-icon>
-                        {{tagChanged ? "mdi-check-circle" : "mdi-check"}}
-                      </v-icon>
+                    <v-btn color="green darken-2 white--text" raised
+                      @click="saveTag"
+                      :disabled="!isTagValid || !tagChanged"
+                      >Save
                     </v-btn>
                   </v-card-actions>
                 </v-card>
@@ -142,26 +140,25 @@
         </v-data-table>
       </v-card-text>
       <v-card-actions>
-        <v-btn color="brown lighten-1" icon class="mb-2" 
+        <v-btn text class="mb-2 mr-5" 
           @click="deleteAsset"
-          ><v-icon >mdi-delete</v-icon>
+          >Delete
         </v-btn>
-        <v-spacer/>
-        <v-btn color="green darken-2" icon class="mb-2" 
+        <v-btn text class="mb-2" 
           @click="cancelAsset"
           title="Close/Cancel"
-          ><v-icon>
-            {{assetChanged ? "mdi-close-circle" : "mdi-close"}}
-          </v-icon>
+          >
+            {{assetChanged ? "Cancel" : "Close"}}
         </v-btn>
         <v-spacer/>
-        <v-btn color="green darken-2" icon class="mb-2" 
+        &nbsp;
+        <v-spacer/>
+        <v-btn color="green darken-2 white--text" 
+          raised class="mb-2" 
           @click="closeAsset"
           title="Save Asset"
           :disabled="!assetChanged"
-          ><v-icon>
-            {{assetChanged ? "mdi-check-circle" : "mdi-check"}}
-          </v-icon>
+          >Save
         </v-btn>
       </v-card-actions>
     </v-card>
@@ -260,6 +257,7 @@
         console.log('saveTag')
         var {
           tagModel,
+          $store,
         } = this;
         var now = new Date();
         if (this.editedTag) {
@@ -278,12 +276,15 @@
           this.tagList = asset.tagList.slice();
           this.tagModel = Object.assign({}, this.tagDefault);
           this.tagModel.date = new Date();
+          this.$nextTick(()=>{
+              $store.commit('assets/touch');
+          });
         }
         this.editedTag = null;
         this.tagDialog = false;
       },
       closeTag () {
-        console.log('Tag close')
+        console.log('closeTag')
         this.$nextTick(()=>{
           this.tagModel = new Tag({
             name: "",
@@ -329,8 +330,10 @@
       },
       assetChanged() {
         var mj = this.mj;
-        var hash1 = mj.hash(this.asset);
-        var hash2 = mj.hash(this.$store.state.selection);
+        var hashTag = mj.hash(this.tagList); // Fool Vue to watch taglist
+        var hash1 = mj.hash(this.asset)+hashTag;
+        var hash2 = mj.hash(this.$store.state.selection)+hashTag;
+        console.log(`dbg assetChanged`, hash1, hash2);
         return hash1 !== hash2;
       },
       isTagDateValid() {
