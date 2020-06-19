@@ -55,4 +55,16 @@
         var st2 = new Tag(JSON5.parse(JSON.stringify(st)));
         should.deepEqual(st, st2);
     });
+    it("TESTTESTnoteUrl is provided", ()=>{
+        var name = "testname";
+        var applies = true;
+        var note = "testnote";
+        var tag = new Tag({name, applies, note});
+        should(tag.noteUrl).equal(undefined);
+
+        var url = "https://oyamist.com/";
+        var tagUrl= new Tag({name, applies, note: url});
+        should(tagUrl.noteUrl).instanceOf(URL);
+        should(tagUrl.noteUrl+'').equal(url);
+    });
 })

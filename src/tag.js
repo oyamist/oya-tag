@@ -18,6 +18,13 @@
             this.applies = opts.applies === 'true' || opts.applies === true;
             this.name = opts.name || '';
             this.note = opts.note;
+            if (this.note) {
+                try {
+                    this.noteUrl = new URL(this.note);
+                } catch (e) {
+                    // do nothing
+                }
+            }
         }
 
     } // class Tag

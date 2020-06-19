@@ -46,7 +46,11 @@
           return field.toISOString().substr(0, 10);
         },
         set: function(value) {
-          this.item[this.model] = new Date(value);
+          var tzoffset = (new Date()).getTimezoneOffset() * 60000;
+          var ms = new Date(value).getTime()+tzoffset;
+          var saveDate = new Date(ms);
+          console.log(`dbg set pickerDate`, value, saveDate);
+          this.item[this.model] = saveDate;
         },
       },
     },

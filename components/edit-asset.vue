@@ -62,7 +62,13 @@
             {{ tagDate(item) }}
           </template>
           <template v-slot:item.note="{ item }">
-            {{ noteSummary(item)}}
+            <a :href="item.noteUrl" v-if="item.noteUrl"
+              target="_blank">
+              {{ noteSummary(item)}}
+            </a>
+            <span v-if="!item.noteUrl">
+              {{noteSummary(item)}}
+            </span>
           </template>
           <template v-slot:top>
             <v-toolbar flat color="white">
@@ -298,7 +304,10 @@
         var date = tag.date;
         var msDays = 24 * 60 * 60 * 1000;
         var days = Math.round((new Date() - date)/msDays);
-        return `${days}`;
+        var dateStr = date.toLocaleDateString();
+        var reMonDay = new RegExp(`[-/.]?${date.getFullYear()}[-/.]?`);
+        var monDayStr = dateStr.replace(reMonDay,'');
+        return `${monDayStr} (${days} days)`;
       },
       cancelAsset() {
         this.$store.commit('select', null);
@@ -312,9 +321,13 @@
       },
       noteSummary(tag) {
         var maxNote = 20;
-        return tag && tag.note && tag.note.length > maxNote
-          ? tag.note.substring(0, maxNote) + '...'
-          : tag.note;
+        if (tag.noteUrl) {
+          return tag.noteUrl.hostname;
+        } else {
+          return tag && tag.note && tag.note.length > maxNote
+            ? tag.note.substring(0, maxNote) + '...'
+            : tag.note;
+        }
       },
       typeList(type) {
         var values = this.assetStore.assetsOfType(type);

@@ -21,6 +21,7 @@
         single-expand
         show-expand :expanded.sync="expanded"
         :items="assets" 
+        item-key="guid"
         :items-per-page.sync="assetsPerPage"
         >
         <template v-slot:expanded-item="{ headers, item }">
