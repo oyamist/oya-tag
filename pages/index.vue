@@ -110,7 +110,7 @@ export default {
       notes: `Load/save your assets with the Oya-Tag JSON
         open file format. You can even edit it with any JSON editor.`,
     },{
-      done: false,
+      done: true,
       text: `Privacy`,
       notes: `Your assets are stored in your browser local storage.
         You can save them as you wish.  It's your data`,
