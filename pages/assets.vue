@@ -172,4 +172,7 @@ export default {
   align-items: center; 
   justify-content: space-between;
 }
+tbody tr:hover {
+  background-color: #ffe !important;
+}
 </style>
