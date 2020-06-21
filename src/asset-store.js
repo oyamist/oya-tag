@@ -21,9 +21,6 @@
             Object.defineProperty(this, "idMap", {
                 value: {},
             });
-            Object.defineProperty(this, "typeMap", {
-                value: {},
-            });
             Object.defineProperty(this, "factoryMap", {
                 value: factoryMap,
             });
@@ -56,12 +53,6 @@
                 var guidAbbrev = uk.substring(0, this.guidAbbreviation);
                 this.idMap[guidAbbrev] = asset;
                 this.idMap[asset.id.toUpperCase()] = asset;
-                let typeList = this.typeMap[type];
-                if (typeList) {
-                    this.typeMap[type].push(asset);
-                } else {
-                    this.typeMap[type] = [asset];
-                }
             }
             this.assetMap[uk] = asset;
             return asset;
@@ -144,8 +135,8 @@
         }
 
         assetsOfType(type) {
-            var typeInfo = this.typeMap[type];
-            return typeInfo && typeInfo.slice() || [];
+            var assets = this.assets().filter(a=>a.type===type);
+            return assets || [];
         }
 
         timelines(type="crop", group="plant") {

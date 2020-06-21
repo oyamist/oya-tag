@@ -346,7 +346,6 @@
         var hashTag = mj.hash(this.tagList); // Fool Vue to watch taglist
         var hash1 = mj.hash(this.asset)+hashTag;
         var hash2 = mj.hash(this.$store.state.selection)+hashTag;
-        console.log(`dbg assetChanged`, hash1, hash2);
         return hash1 !== hash2;
       },
       isTagDateValid() {
