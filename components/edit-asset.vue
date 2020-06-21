@@ -26,18 +26,7 @@
         </div><!--field-row-->
         <div class="field-row" v-if="asset.type==='crop'" >
           <div>
-            <v-autocomplete
-              v-model="asset.plant"
-              label="Plant"
-              outlined
-              :items="typeList('plant')"
-              :loading="false"
-              color="white"
-              :rules="[rules.plant]"
-              item-text="name"
-              item-value="id"
-              placeholder="Start typing to Search"
-            ></v-autocomplete>
+            <asset-picker propName="plant" :asset="asset"/>
           </div>
           <div><v-text-field v-model="asset.variety" 
             outlined
@@ -175,6 +164,7 @@
   import Vue from "vue";
   import { MerkleJson } from "merkle-json";
   import DateField from "./date-field";
+  import AssetPicker from "./asset-picker";
   import Asset from "../src/asset.js";
   import Tag from "../src/tag.js";
 
@@ -329,10 +319,6 @@
             : tag.note;
         }
       },
-      typeList(type) {
-        var values = this.assetStore.assetsOfType(type);
-        return values;
-      },
     },
     computed: {
       tagChanged() {
@@ -358,9 +344,6 @@
       },
       isAssetSelected() {
         return !!this.$store.state.selection;
-      },
-      xasset() {
-        return this.$store.state.selection;
       },
       assetStore() {
         return this.$store.state.assets.assetStore;
@@ -401,6 +384,7 @@
       }
     },
     components: {
+      AssetPicker,
       DateField,
     }
   }
