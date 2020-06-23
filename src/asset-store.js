@@ -66,8 +66,8 @@
             if (key == null) {
                 return undefined;
             }
-            key = key.toUpperCase();
-            return this.assetMap[key] || this.idMap[key];
+            var uk = key.toUpperCase();
+            return this.assetMap[uk] || this.idMap[uk];
         }
 
         createId(template = "A0000") {

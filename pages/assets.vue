@@ -41,6 +41,15 @@
         <template v-slot:item.id="{ item }">
             {{ item.id }} / {{ item.name }}
         </template>
+        <template v-slot:item.lastTag="{ item }">
+          <a v-if="tagUrl(item.lastTag)"
+            :href="tagUrl(item.lastTag)">
+            {{tagText(item.lastTag)}}
+          </a>
+          <span v-if="!tagUrl(item.lastTag)">
+            {{tagText(item.lastTag)}}
+          </span>
+        </template>
         <template v-slot:item.ageDays="{ item }">
           <v-chip :color="getAgeColor(item)" small dark>
             {{ ageDays(item) }}
@@ -65,6 +74,7 @@ export default {
       headers: [
         { text: "Age", value: "ageDays", },
         { text: "Asset", value: "summary", },
+        { text: "LastTag", value: "lastTag", },
         { text: '', value: 'data-table-expand', },
       ],
     }
@@ -75,6 +85,22 @@ export default {
     },
   },
   methods: {
+    tagText(tag) {
+      var {
+        assetStore,
+      } = this;
+      var asset = assetStore.assetOfId(tag.name);
+      return asset
+        ? `${asset.name} @ ${tag.date.toLocaleDateString()}`
+        : `${tag.name} @ ${tag.date.toLocaleDateString()}`;
+    },
+    tagUrl(tag) {
+      var {
+        assetStore,
+      } = this;
+      var asset = assetStore.assetOfId(tag.name);
+      return asset ? `/assets#${asset.guid}` : null;
+    },
     ageDays(item) {
       return item.ageDays;
     },
@@ -83,9 +109,9 @@ export default {
       var hash = this.$route.hash;
       var id = hash && hash.substring(1);
       var store = this.$store;
-      var assetStore = store.state.assets.assetStore;
+      var assetStore = this.assetStore;
       if (assetStore) {
-          var asset = assetStore && assetStore.assetOfId(id);
+          var asset = assetStore.assetOfId(id);
           asset && store.commit('select', asset);
           console.log(`assets.routeAsset`, this.$route, id, asset);
       } else {
@@ -146,6 +172,10 @@ export default {
   computed: {
     assets() {
       return this.$store.state.assets.list;
+    },
+    assetStore() {
+      var storeState = this.$store.state;
+      return storeState.assets.assetStore;
     },
   },
   mounted() {

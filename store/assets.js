@@ -1,6 +1,5 @@
 const AssetStore = require('../src/asset-store');
 const JSON5 = require("json5");
-//const Crop = require('../src/crop');
 const Axios = require('axios');
 
 const COMPARE_ASSETS = (a,b)=>{
@@ -34,13 +33,10 @@ export const mutations = {
         mutations.load.apply(this, state);
     },
     load(state, url=`/sample-data.json5`) {
-        var factoryMap = {
-            //crop: Crop,
-        }
         var that = this;
         Axios.get(url).then(res => {
             var json = JSON5.parse(res.data);
-            var assetStore = new AssetStore(json, factoryMap);
+            var assetStore = new AssetStore(json);
             console.log('$store.assets.load() url:', url, json,);
             that.commit(`assets/set`, assetStore);
         }).catch(e => {

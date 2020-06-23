@@ -6,7 +6,6 @@
     const should = require("should");
     const {
         Asset,
-        Crop,
         AssetStore,
         Tag,
         TValue,
@@ -157,11 +156,8 @@
         });
     });
     it("TESTTESTparses sample-data.json5 with factoryMap", ()=>{
-        var factoryMap = {
-            crop: Crop,
-        };
         var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
-        var as = new AssetStore(json, factoryMap);
+        var as = new AssetStore(json);
 
         // mapped asset 
         var asset = as.assetOfId('BRC-1');
@@ -171,7 +167,6 @@
             "plant": "BROC",
             "type": "crop",
         });
-        should(asset).instanceOf(Crop);
 
         // unmapped asset
         var asset = as.assetOfId('A0001');
@@ -183,6 +178,12 @@
         should(asset).instanceOf(Asset);
     });
     it("callNew", ()=>{
+        class Crop extends Asset{
+            constructor(opts) {
+                super(opts);
+            }
+            
+        };
         var aclass = Crop;
         var guid = "152b7fe8-2849-4128-9de2-5cb5770d85ff";
         var id = "A0001";

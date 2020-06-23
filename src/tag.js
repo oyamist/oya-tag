@@ -20,7 +20,11 @@
             this.note = opts.note;
             if (this.note) {
                 try {
-                    this.noteUrl = new URL(this.note);
+                    var urlPart = this.note
+                        .split(" ")[0]
+                        .split("\t")[0]
+                        .split("\n")[0];
+                    this.noteUrl = new URL(urlPart);
                 } catch (e) {
                     // do nothing
                 }

@@ -96,7 +96,7 @@
         get lastTag() {
             return this.tagList.reduce((a,tag) => {
                 return a && a.date > tag.date ? a : tag;
-            }, null);
+            }, this.tagList[0]);
         }
 
         get started() {

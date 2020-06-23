@@ -28,10 +28,6 @@
           <div>
             <asset-picker propName="plant" :asset="asset"/>
           </div>
-          <div><v-text-field v-model="asset.variety" 
-            outlined
-            label="Variety"
-            /></div>
         </div><!--field-row-->
         <v-data-table 
           class="elevation-1"
@@ -310,7 +306,7 @@
         this.$router.go(-1);
       },
       noteSummary(tag) {
-        var maxNote = 20;
+        var maxNote = 40;
         if (tag.noteUrl) {
           return tag.noteUrl.hostname;
         } else {
