@@ -158,9 +158,20 @@
         should.deepEqual(asset.getTag("tag1"), tagList[1]);
         should.deepEqual(asset.getTag("tag2"), null);
     });
-    it("TESTTESTcustomKeys() returns none core keys", ()=>{
-        var asset = new Asset();
-        should.deepEqual(asset.customKeys(), []);
+    it("TESTTESTcustomKeys() returns non-core keys", ()=>{
+        var color = "red";
+        var size = "large";
+        var asset = new Asset({
+            color,
+            size,
+        });
+        should.deepEqual(asset.customKeys(), [
+            "color", "size",
+        ]);
+        should(asset).properties({
+            color,
+            size,
+        });
     });
     it("TESTTESTfirstTag => earliest tag", ()=>{
         var tags = {

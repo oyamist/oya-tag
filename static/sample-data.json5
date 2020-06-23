@@ -1,213 +1,94 @@
 {
-  "guidAbbreviation": 6,
-  "settings": {
-    "A0000": 5
-  },
-  "assetTemplates":{
-    "crop": {
-      "plant": true,
-      "variety": true,
-    }
-  },
   "assetMap": {
-    "dc4fea06-d104-44b8-af75-2fc514746c0e": {
-      "guid": "dc4fea06-d104-44b8-af75-2fc514746c0e",
-      "id": "A0001",
-      "type": "bucket",
-      "tags": {
-        "entered": {
-          "date": -31536000000,
-          "name": "entered",
-          "applies" : true
-        },
-        "purchased": {
-          "date":  -1209600000,
-          "name": "purchased",
-          "note": "https://www.uline.com/Product/Detail/S-9941BL",
-          "applies": true
-        }
-      }
-    },
-    "68012f6f-745d-4074-8a55-d6a89f9b2dbc": {
-      "guid": "68012f6f-745d-4074-8a55-d6a89f9b2dbc",
-      "id": "A0002",
-      "type": "bucket",
-      "tags": {
-        "entered": {
-          "date": -31536000000,
-          "name": "entered",
-          "applies" : true
-        }
-      }
-    },
-    "2a45e630-61d1-4f0b-8da2-b02d92c8f503": {
-      "guid": "2a45e630-61d1-4f0b-8da2-b02d92c8f503",
-      "id": "A0003",
-      "type": "bucket",
-      "tags": {
-        "entered": {
-          "date": -31536000000,
-          "name": "entered",
-          "applies" : true
-        }
-      }
-    },
-    "eb915bbb-2b21-4c07-8e8d-eeb7d374e3fc": {
-      "guid": "eb915bbb-2b21-4c07-8e8d-eeb7d374e3fc",
-      "id": "A0004",
-      "type": "bucket",
-      "tags": {
-        "entered": {
-          "date": -31536000000,
-          "name": "entered",
-          "applies" : true
-        }
-      }
-    },
-    "7f339b18-268e-4061-b2e6-5e9aeb412f65": {
-      "guid": "7f339b18-268e-4061-b2e6-5e9aeb412f65",
-      "id": "A0011",
-      "type": "netpot",
-      "tags": {
-        "entered": {
-          "date": -63072000000,
-          "name": "entered",
-          "applies" : true
-        }
-      }
-    },
-    "300ed5bd-a492-4566-9b9b-232b72852e60": {
-      "guid": "300ed5bd-a492-4566-9b9b-232b72852e60",
-      "id": "A0012",
-      "type": "netpot",
-      "tags": {
-        "entered": {
-          "date": -63072000000,
-          "name": "entered",
-          "applies" : true
-        }
-      }
-    },
-    "fecca693-6554-46af-9f42-c0a8f9cd897e": {
-      "guid": "fecca693-6554-46af-9f42-c0a8f9cd897e",
-      "id": "A0013",
-      "type": "netpot",
-      "tags": {
-        "entered": {
-          "date": -63072000000,
-          "name": "entered",
-          "applies" : true
-        }
-      }
-    },
-    "7e3dc379-c11b-4cdc-b2ea-b09d595eac9e": {
-      "guid": "7e3dc379-c11b-4cdc-b2ea-b09d595eac9e",
-      "id": "A0014",
-      "type": "netpot",
-      "tags": {
-        "entered": {
-          "date": -63072000000,
-          "name": "entered",
-          "applies" : true
-        }
-      }
-    },
-    "f58e4260-7a62-416a-886a-182603bd7f01": {
-      "guid": "f58e4260-7a62-416a-886a-182603bd7f01",
-      "type": "plant",
-      "name": "English Cucumber",
-      "id": "ECUKE",
-      "tags": {
-        "entered": {
-          "date": -53072000000,
-          "name": "entered",
-          "applies" : true
-        }
-      }
-    },
-    "3541b41b-5439-45b9-8e30-cc474b5cf1f1": {
-      "guid": "3541b41b-5439-45b9-8e30-cc474b5cf1f1",
-      "type": "plant",
-      "name": "Pink Berkeley Tie Dye Tomato",
-      "id": "PBTD",
-      "tags": {
-        "entered": {
-          "date": -63072000000,
-          "name": "entered",
-          "applies" : true
-        }
-      }
-    },
-    "990d09fb-865b-41bb-bd7c-c3a41f4530dc": {
+    "990D09FB-865B-41BB-BD7C-C3A41F4530DC": {
       "guid": "990d09fb-865b-41bb-bd7c-c3a41f4530dc",
       "type": "plant",
-      "name": "Broccoli",
-      "id": "BROC"
+      "tags": {
+        "entered": {
+          "date": "2020-06-13T13:51:37.962Z",
+          "applies": true,
+          "name": "entered"
+        }
+      },
+      "id": "BROC",
+      "name": "Broccoli"
     },
-    "42d77a7e-ee7a-4a6c-b376-771fd1ebf62a" : {
-      "guid": "42d77a7e-ee7a-4a6c-b376-771fd1ebf62a",
-      "id": "BRC-1",
-      "plant": "BROC",
+    "066A04E2-B6A0-4CFC-8B6A-68017E53EABE": {
+      "guid": "066a04e2-b6a0-4cfc-8b6a-68017e53eabe",
+      "type": "plant",
+      "tags": {
+        "entered": {
+          "date": "2020-06-13T16:56:55.166Z",
+          "applies": true,
+          "name": "entered"
+        }
+      },
+      "id": "BTD",
+      "name": "Pink Berkeley Tie Dye Tomato"
+    },
+    "F58E4260-7A62-416A-886A-182603BD7F01": {
+      "guid": "f58e4260-7a62-416a-886a-182603bd7f01",
+      "type": "plant",
+      "tags": {
+        "entered": {
+          "date": "2018-10-08T07:38:17.962Z",
+          "applies": true,
+          "name": "entered"
+        }
+      },
+      "id": "CUKE",
+      "name": "English Cucumber"
+    },
+    "B810793A-1B4E-4880-A494-1FBCF2257C33": {
+      "guid": "b810793a-1b4e-4880-a494-1fbcf2257c33",
+      "type": "container",
+      "tags": {
+        "entered": {
+          "date": "2020-06-07T00:00:00.000Z",
+          "applies": true,
+          "name": "created",
+          "note": "recycled figbar container"
+        }
+      },
+      "id": "A0182",
+      "name": "Tray182"
+    },
+    "61540B8A-931F-44DA-A1F8-A08D53B69572": {
+      "guid": "61540b8a-931f-44da-a1f8-a08d53b69572",
       "type": "crop",
       "tags": {
         "entered": {
-          "date": -1900800000,
-          "name": "entered",
-          "applies" : true
+          "date": "2020-06-07T07:00:00.000Z",
+          "applies": true,
+          "name": "A0182",
+          "note": "direct sown 3 pinches\n"
         }
-      }
+      },
+      "id": "A0241-20200607-3P-1",
+      "plant": "A0241",
+      "name": "CIL3P0607"
     },
-    "f98e263c-b510-41d8-a2b9-e63dbdb61387": {
-      "guid": "f98e263c-b510-41d8-a2b9-e63dbdb61387",
-      "id": "BRC-2",
-      "plant": "BROC",
-      "type": "crop",
+    "09D7C4F1-29AF-47BF-90CD-02674B46A59F": {
+      "guid": "09d7c4f1-29af-47bf-90cd-02674b46a59f",
+      "type": "plant",
       "tags": {
         "entered": {
-          "date": -432000000,
-          "name": "entered",
-          "applies" : true
+          "date": "2020-02-27T00:00:00.000Z",
+          "applies": true,
+          "name": "purchased",
+          "note": "https://sproutpeople.org/cilantro-micro-greens/\n1/4 lb",
+          "noteUrl": "https://sproutpeople.org/cilantro-micro-greens/"
         }
-      }
-    },
-    "44a954df-4da4-4fe2-8f1a-624d30bbdfeb": {
-      "guid": "44a954df-4da4-4fe2-8f1a-624d30bbdfeb",
-      "id": "BRC-3",
-      "plant": "BROC",
-      "type": "crop",
-      "tags": {
-        "sow": {
-          "date": 0,
-          "name": "sow",
-          "applies" : false
-        }
-      }
-    },
-    "3dbdd90f-307d-4667-9408-5cbab42027c3": {
-      "guid": "3dbdd90f-307d-4667-9408-5cbab42027c3",
-      "id": "BRC-4",
-      "plant": "BROC",
-      "type": "crop",
-      "tags": {
-        "sow": {
-          "date": 259200000,
-          "name": "sow",
-          "applies" : false
-        }
-      }
-    },
-    "69f90d62-0243-4bba-b3a2-0108072ff366": {
-      "guid": "69f90d62-0243-4bba-b3a2-0108072ff366",
-      "id": "TOM-1",
-      "plant": "PBTD",
-      "type": "crop",
-      "tags": {
-        "sow": {
-          "date": 86400000,
-          "name": "sow",
-          "applies" : true
-        }
-      }
+      },
+      "id": "A0241",
+      "name": "CilantroSeed0241"
     }
-  }
+  },
+  "settings": {
+    "idTemplates": {
+      "A0000": 13
+    },
+    "A0000": 5
+  },
+  "guidAbbreviation": 6
 }
