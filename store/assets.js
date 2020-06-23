@@ -35,7 +35,9 @@ export const mutations = {
     load(state, url=`/sample-data.json5`) {
         var that = this;
         Axios.get(url).then(res => {
-            var json = JSON5.parse(res.data);
+            var json = typeof res.data === 'string'
+                ? JSON5.parse(res.data)
+                : res.data;
             var assetStore = new AssetStore(json);
             console.log('$store.assets.load() url:', url, json,);
             that.commit(`assets/set`, assetStore);
