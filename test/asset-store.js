@@ -12,17 +12,20 @@
     } = require("../index");
     const SAMPLE_DATA = path.join(__dirname, 'sample-data.json5');
 
-    it("default ctor", ()=> {
+    it("TESTTESTdefault ctor", ()=> {
         var as = new AssetStore();
         should.deepEqual(as.settings, AssetStore.appliedSettings());
+        should(as.assetFilter).equal(AssetStore.assetFilter);
     });
-    it("custom ctor", ()=> {
+    it("TESTTESTcustom ctor", ()=> {
         var settings = {
             color: "brown",
         };
         var testKey = "test-value";
+        var assetFilter = ()=>true;
         var as = new AssetStore({
             settings,
+            assetFilter,
             assetMap: {
                 testKey,
             },
@@ -30,6 +33,7 @@
         should.deepEqual(as.settings, 
             AssetStore.appliedSettings(settings));
         should(as.assetOfId("testKey")).equal("test-value");
+        should(as.assetFilter).equal(assetFilter);
     });
     it("appliedSettings() applies defaults ", ()=>{
         var settings = AssetStore.appliedSettings();
@@ -154,7 +158,7 @@
             note: "https://www.uline.com/Product/Detail/S-9941BL",
         });
     });
-    it("TESTTESTparses sample-data.json5 with factoryMap", ()=>{
+    it("parses sample-data.json5 with factoryMap", ()=>{
         var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
         var as = new AssetStore(json);
 
@@ -242,7 +246,7 @@
         });
         should(crops[0]).instanceOf(Asset);
     });
-    it("TESTTESTtimelines() => crop timelines", ()=>{
+    it("timelines() => crop timelines", ()=>{
         var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
         var store = new AssetStore(json);
         var timelines = store.timelines();
@@ -263,7 +267,7 @@
         asFull.removeAsset("test-asset");
         should.deepEqual(asFull, asEmpty);
     });
-    it("TESTTESTupdateAsset(asset) updates asset", ()=>{
+    it("updateAsset(asset) updates asset", ()=>{
         var as = new AssetStore();
         var asset1 = as.createAsset({ id: "test-asset"});
 
@@ -279,4 +283,49 @@
         should(as.assetOfId('test-asset-2')).equal(asset3);
         should(as.assetOfId('test-asset')).equal(undefined);
     });
+    it("TESTTESTassetFilter(...) => filters assets", ()=>{
+        var assets = [
+            new Asset({ id: "A0001", color: "red", }), 
+            new Asset({ id: "A0002", color: "red", }), 
+            new Asset({ id: "A0003", color: "blue", }),
+            new Asset({ id: "A0011", color: "green", tags:[{
+                name: "created",
+                date: new Date(2020,1,1),
+            },{
+                name: "A0012",
+                date: new Date(2020,2,1),
+            }]}),
+            new Asset({ id: "A0012", color: "purple", }),
+        ];
+        var assetMap = {};
+        assets.forEach(a=>assetMap[a.guid] = a);
+
+        var as = new AssetStore({
+            assetMap,
+        });
+
+        // filter by asset properties
+        should.deepEqual(as.filter("A0001").map(a=>a.id),
+            [ "A0001", ]);
+        should.deepEqual(as.filter("red").map(a=>a.id),
+            [ "A0001", "A0002", ]);
+        should.deepEqual(as.filter("blue").map(a=>a.id),
+            [ "A0003", ]);
+
+        // filter by tag name
+        should.deepEqual(as.filter("A0012").map(a=>a.id),
+            [ "A0011", "A0012"]);
+
+        // filter by partial word
+        should.deepEqual(as.filter("001").map(a=>a.id),
+            [ ]);
+
+        // filter by regexp
+        should.deepEqual(as.filter(".*001").map(a=>a.id),
+            [ "A0001",  "A0011", "A0012", ]);
+        should.deepEqual(as.filter("blue|red").map(a=>a.id),
+            [ "A0001",  "A0002", "A0003", ]);
+    });
+    
+
 })

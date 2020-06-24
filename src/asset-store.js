@@ -8,6 +8,18 @@
         var factoryFunction = ctor.bind.apply(ctor, [null, ...args]);
         return new factoryFunction();
     }
+
+    function match(value='', re) {
+        var result = false;
+        if (value == null) {
+            // do nothing
+        } else if (typeof value === 'string') {
+            result =  re.test(value);
+        } else {
+            result = match(JSON.stringify(value), re);
+        }
+        return result;
+    }
     
     class AssetStore {
         constructor(opts = {}, factoryMap={}) {
@@ -18,6 +30,10 @@
             this.guidAbbreviation = opts.guidAbbreviation || 6;
 
             // non-serialized properties
+            Object.defineProperty(this, "assetFilter", {
+                value: opts.assetFilter || AssetStore.assetFilter,
+            });
+
             Object.defineProperty(this, "idMap", {
                 value: {},
             });
@@ -30,12 +46,42 @@
             });
         }
 
+        static assetFilter(value, search, asset) {
+            var re = new RegExp(`\\b(${search})`, "uig");
+            return Object.keys(asset).reduce((a,k)=>{
+                if (a) {
+                    // skip
+                } else if (k === 'tags') {
+                    var tags = asset.tags;
+                    a = Object.keys(tags).reduce((a,tk)=> {
+                        var tag = tags[tk];
+                        a = a || 
+                            match(tag.name, re) || 
+                            match(tag.note, re);
+                        return a;
+                    }, a);
+                } else {
+                    var v = asset[k];
+                    a = a || match(v, re);
+                }
+                return a;
+            }, false);
+        }
+
         static appliedSettings(opts={}) {
             return Object.assign({
                 idTemplates: {
                     "A0000": 1,
                 }
             }, opts);
+        }
+
+        filter(search) {
+            var {
+                assetFilter,
+            } = this;
+            return this.assets()
+                .filter(a=>assetFilter("NOTUSED", search, a));
         }
 
         registerAsset(asset, id=asset.guid) {

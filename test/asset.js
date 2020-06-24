@@ -196,16 +196,16 @@
         var tags = {
             "A001": {
                 name: "A001",
-                date: -1,
+                date: -10,
             },
             "A002": {
                 name: "A002",
-                date: -3,
+                date: -30,
                 applies: false,
             },
             "A003": {
                 name: "A003",
-                date: -2,
+                date: -20,
             }
         }
         var asset = new Asset({tags});
@@ -233,5 +233,4 @@
         asset.getTag("A002").applies = true;
         should(asset.started).equal(true);
     });
-
 })

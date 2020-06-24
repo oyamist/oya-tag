@@ -15,7 +15,8 @@
           @click="addAsset()"
           ><v-icon>mdi-clipboard-plus</v-icon></v-btn>
       </v-card-title>
-      <v-data-table class="elevation-1" 
+      <v-data-table v-if="assetStore"
+        class="elevation-1" 
         :search="search"
         :headers="headers"
         single-expand
@@ -23,6 +24,7 @@
         :items="assets" 
         item-key="guid"
         :items-per-page.sync="assetsPerPage"
+        :custom-filter="assetStore.assetFilter"
         >
         <template v-slot:expanded-item="{ headers, item }">
           <td :colspan="headers.length"> <div class="asset-expanded">
