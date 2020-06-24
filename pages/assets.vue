@@ -24,7 +24,7 @@
         :items="assets" 
         item-key="guid"
         :items-per-page.sync="assetsPerPage"
-        :custom-filter="assetStore.assetFilter"
+        :custom-filter="assetFilter"
         >
         <template v-slot:expanded-item="{ headers, item }">
           <td :colspan="headers.length"> <div class="asset-expanded">
@@ -170,6 +170,10 @@ export default {
       ];
       return css.join(';');
     },
+    assetFilter(value,search,item) {
+      var assetStore = this.assetStore;
+      return assetStore.assetFilter(assetStore, search, item);
+    }
   },
   computed: {
     assets() {

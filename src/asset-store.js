@@ -46,7 +46,7 @@
             });
         }
 
-        static assetFilter(value, search, asset) {
+        static assetFilter(assetStore, search, asset) {
             var re = new RegExp(`\\b(${search})`, "uig");
             return Object.keys(asset).reduce((a,k)=>{
                 if (a) {
@@ -58,6 +58,11 @@
                         a = a || 
                             match(tag.name, re) || 
                             match(tag.note, re);
+                        if (!a && assetStore) {
+                            console.trace(`dbg assetStore`, assetStore);
+                            var tagAsset = assetStore.assetOfId(tag.name);
+                            a = tagAsset && match(tagAsset.name, re);
+                        }
                         return a;
                     }, a);
                 } else {
@@ -77,11 +82,12 @@
         }
 
         filter(search) {
+            var that = this;
             var {
                 assetFilter,
-            } = this;
-            return this.assets()
-                .filter(a=>assetFilter("NOTUSED", search, a));
+            } = that;
+            return that.assets()
+                .filter(a=>assetFilter(that, search, a));
         }
 
         registerAsset(asset, id=asset.guid) {

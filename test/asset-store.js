@@ -295,7 +295,7 @@
                 name: "A0012",
                 date: new Date(2020,2,1),
             }]}),
-            new Asset({ id: "A0012", color: "purple", }),
+            new Asset({ id: "A0012", color: "purple", name:"Amy",}),
         ];
         var assetMap = {};
         assets.forEach(a=>assetMap[a.guid] = a);
@@ -305,7 +305,7 @@
         });
 
         // filter by asset properties
-        should.deepEqual(as.filter("A0001").map(a=>a.id),
+        should.deepEqual(as.filter("a0001").map(a=>a.id),
             [ "A0001", ]);
         should.deepEqual(as.filter("red").map(a=>a.id),
             [ "A0001", "A0002", ]);
@@ -325,6 +325,10 @@
             [ "A0001",  "A0011", "A0012", ]);
         should.deepEqual(as.filter("blue|red").map(a=>a.id),
             [ "A0001",  "A0002", "A0003", ]);
+
+        // filter by referenced name
+        should.deepEqual(as.filter("amy").map(a=>a.id),
+            [ "A0011", "A0012", ]);
     });
     
 
