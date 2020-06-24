@@ -10,8 +10,7 @@
         Tag,
         TValue,
     } = require("../index");
-    const SAMPLE_DATA = path.join(__dirname, 
-        '..', 'static', 'sample-data.json5');
+    const SAMPLE_DATA = path.join(__dirname, 'sample-data.json5');
 
     it("default ctor", ()=> {
         var as = new AssetStore();

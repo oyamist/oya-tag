@@ -1,0 +1,213 @@
+{
+  "guidAbbreviation": 6,
+  "settings": {
+    "A0000": 5
+  },
+  "assetTemplates":{
+    "crop": {
+      "plant": true,
+      "variety": true,
+    }
+  },
+  "assetMap": {
+    "dc4fea06-d104-44b8-af75-2fc514746c0e": {
+      "guid": "dc4fea06-d104-44b8-af75-2fc514746c0e",
+      "id": "A0001",
+      "type": "bucket",
+      "tags": {
+        "entered": {
+          "date": -31536000000,
+          "name": "entered",
+          "applies" : true
+        },
+        "purchased": {
+          "date":  -1209600000,
+          "name": "purchased",
+          "note": "https://www.uline.com/Product/Detail/S-9941BL",
+          "applies": true
+        }
+      }
+    },
+    "68012f6f-745d-4074-8a55-d6a89f9b2dbc": {
+      "guid": "68012f6f-745d-4074-8a55-d6a89f9b2dbc",
+      "id": "A0002",
+      "type": "bucket",
+      "tags": {
+        "entered": {
+          "date": -31536000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "2a45e630-61d1-4f0b-8da2-b02d92c8f503": {
+      "guid": "2a45e630-61d1-4f0b-8da2-b02d92c8f503",
+      "id": "A0003",
+      "type": "bucket",
+      "tags": {
+        "entered": {
+          "date": -31536000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "eb915bbb-2b21-4c07-8e8d-eeb7d374e3fc": {
+      "guid": "eb915bbb-2b21-4c07-8e8d-eeb7d374e3fc",
+      "id": "A0004",
+      "type": "bucket",
+      "tags": {
+        "entered": {
+          "date": -31536000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "7f339b18-268e-4061-b2e6-5e9aeb412f65": {
+      "guid": "7f339b18-268e-4061-b2e6-5e9aeb412f65",
+      "id": "A0011",
+      "type": "netpot",
+      "tags": {
+        "entered": {
+          "date": -63072000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "300ed5bd-a492-4566-9b9b-232b72852e60": {
+      "guid": "300ed5bd-a492-4566-9b9b-232b72852e60",
+      "id": "A0012",
+      "type": "netpot",
+      "tags": {
+        "entered": {
+          "date": -63072000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "fecca693-6554-46af-9f42-c0a8f9cd897e": {
+      "guid": "fecca693-6554-46af-9f42-c0a8f9cd897e",
+      "id": "A0013",
+      "type": "netpot",
+      "tags": {
+        "entered": {
+          "date": -63072000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "7e3dc379-c11b-4cdc-b2ea-b09d595eac9e": {
+      "guid": "7e3dc379-c11b-4cdc-b2ea-b09d595eac9e",
+      "id": "A0014",
+      "type": "netpot",
+      "tags": {
+        "entered": {
+          "date": -63072000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "f58e4260-7a62-416a-886a-182603bd7f01": {
+      "guid": "f58e4260-7a62-416a-886a-182603bd7f01",
+      "type": "plant",
+      "name": "English Cucumber",
+      "id": "ECUKE",
+      "tags": {
+        "entered": {
+          "date": -53072000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "3541b41b-5439-45b9-8e30-cc474b5cf1f1": {
+      "guid": "3541b41b-5439-45b9-8e30-cc474b5cf1f1",
+      "type": "plant",
+      "name": "Pink Berkeley Tie Dye Tomato",
+      "id": "PBTD",
+      "tags": {
+        "entered": {
+          "date": -63072000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "990d09fb-865b-41bb-bd7c-c3a41f4530dc": {
+      "guid": "990d09fb-865b-41bb-bd7c-c3a41f4530dc",
+      "type": "plant",
+      "name": "Broccoli",
+      "id": "BROC"
+    },
+    "42d77a7e-ee7a-4a6c-b376-771fd1ebf62a" : {
+      "guid": "42d77a7e-ee7a-4a6c-b376-771fd1ebf62a",
+      "id": "BRC-1",
+      "plant": "BROC",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": -1900800000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "f98e263c-b510-41d8-a2b9-e63dbdb61387": {
+      "guid": "f98e263c-b510-41d8-a2b9-e63dbdb61387",
+      "id": "BRC-2",
+      "plant": "BROC",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": -432000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    },
+    "44a954df-4da4-4fe2-8f1a-624d30bbdfeb": {
+      "guid": "44a954df-4da4-4fe2-8f1a-624d30bbdfeb",
+      "id": "BRC-3",
+      "plant": "BROC",
+      "type": "crop",
+      "tags": {
+        "sow": {
+          "date": 0,
+          "name": "sow",
+          "applies" : false
+        }
+      }
+    },
+    "3dbdd90f-307d-4667-9408-5cbab42027c3": {
+      "guid": "3dbdd90f-307d-4667-9408-5cbab42027c3",
+      "id": "BRC-4",
+      "plant": "BROC",
+      "type": "crop",
+      "tags": {
+        "sow": {
+          "date": 259200000,
+          "name": "sow",
+          "applies" : false
+        }
+      }
+    },
+    "69f90d62-0243-4bba-b3a2-0108072ff366": {
+      "guid": "69f90d62-0243-4bba-b3a2-0108072ff366",
+      "id": "TOM-1",
+      "plant": "PBTD",
+      "type": "crop",
+      "tags": {
+        "sow": {
+          "date": 86400000,
+          "name": "sow",
+          "applies" : true
+        }
+      }
+    }
+  }
+}
