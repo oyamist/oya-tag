@@ -53,21 +53,6 @@
       "id": "A0182",
       "name": "Tray182"
     },
-    "61540B8A-931F-44DA-A1F8-A08D53B69572": {
-      "guid": "61540b8a-931f-44da-a1f8-a08d53b69572",
-      "type": "crop",
-      "tags": {
-        "entered": {
-          "date": "2020-06-07T07:00:00.000Z",
-          "applies": true,
-          "name": "A0182",
-          "note": "direct sown 3 pinches\n"
-        }
-      },
-      "id": "A0241-20200607-3P-1",
-      "plant": "A0241",
-      "name": "CIL3P0607"
-    },
     "09D7C4F1-29AF-47BF-90CD-02674B46A59F": {
       "guid": "09d7c4f1-29af-47bf-90cd-02674b46a59f",
       "type": "plant",
@@ -82,11 +67,176 @@
       },
       "id": "A0241",
       "name": "CilantroSeed0241"
+    },
+    "61540B8A-931F-44DA-A1F8-A08D53B69572": {
+      "guid": "61540b8a-931f-44da-a1f8-a08d53b69572",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": "2020-06-07T07:00:00.000Z",
+          "applies": true,
+          "name": "A0182",
+          "note": "direct sown 3 pinches\n"
+        }
+      },
+      "id": "CIL20200607",
+      "plant": "A0241",
+      "name": "CIL0607"
+    },
+    "9800FEA1-8172-46D1-A920-95531B070AA2": {
+      "guid": "9800fea1-8172-46d1-a920-95531b070aa2",
+      "type": "tray",
+      "tags": {
+        "entered": {
+          "date": "2020-05-05T07:00:00.000Z",
+          "applies": true,
+          "name": "created"
+        }
+      },
+      "id": "A0222",
+      "name": "Tray0222"
+    },
+    "36CC5A44-3915-4639-A53E-20BDE62AAEA2": {
+      "guid": "36cc5a44-3915-4639-a53e-20bde62aaea2",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": "2020-05-05T07:00:00.000Z",
+          "applies": true,
+          "name": "A0222",
+          "note": "3 pinches"
+        }
+      },
+      "id": "CIL20200505",
+      "plant": "A0241",
+      "name": "CIL0505"
+    },
+    "CABD724D-9FF1-4146-B9A0-9B8FDCBD76DD": {
+      "guid": "cabd724d-9ff1-4146-b9a0-9b8fdcbd76dd",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": "2020-05-17T07:00:00.000Z",
+          "applies": true,
+          "name": "A0183",
+          "note": "3 pinches"
+        }
+      },
+      "id": "CIL20200517",
+      "plant": "A0241",
+      "name": "CIL0517"
+    },
+    "73B3BE90-0FA4-48CB-AC20-58656CDC05B1": {
+      "guid": "73b3be90-0fa4-48cb-ac20-58656cdc05b1",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": "2020-04-19T07:00:00.000Z",
+          "applies": true,
+          "name": "A0181",
+          "note": "3 pinches"
+        },
+        "end": {
+          "date": "2020-06-25T17:19:47.488Z",
+          "applies": true,
+          "name": "end"
+        }
+      },
+      "id": "CIL20200419",
+      "plant": "A0241",
+      "name": "CIL0419"
+    },
+    "7D12CB2F-E5D0-4951-817A-98BEADD09861": {
+      "guid": "7d12cb2f-e5d0-4951-817a-98beadd09861",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": "2020-04-13T07:00:00.000Z",
+          "applies": true,
+          "name": "A0179",
+          "note": "3 pinches"
+        },
+        "end": {
+          "date": "2020-06-25T17:20:04.989Z",
+          "applies": true,
+          "name": "end"
+        }
+      },
+      "id": "CIL20200413",
+      "plant": "A0241",
+      "name": "CIL0413"
+    },
+    "BADC9A55-1E26-4AC2-959F-B794BF589372": {
+      "guid": "badc9a55-1e26-4ac2-959f-b794bf589372",
+      "type": "tray",
+      "tags": {
+        "entered": {
+          "date": "2020-04-19T07:00:00.000Z",
+          "applies": true,
+          "name": "entered"
+        }
+      },
+      "id": "A0181",
+      "name": "Tray0181"
+    },
+    "BF887926-C935-4928-BAFB-56A4D6AE35EA": {
+      "guid": "bf887926-c935-4928-bafb-56a4d6ae35ea",
+      "type": "tray",
+      "tags": {
+        "entered": {
+          "date": "2020-05-17T07:00:00.000Z",
+          "applies": true,
+          "name": "entered"
+        }
+      },
+      "id": "A0183",
+      "name": "Tray0183"
+    },
+    "168A2D15-E7E7-4F35-832D-973E968DE07C": {
+      "guid": "168a2d15-e7e7-4f35-832d-973e968de07c",
+      "type": "tray",
+      "tags": {
+        "entered": {
+          "date": "2020-04-13T07:00:00.000Z",
+          "applies": true,
+          "name": "entered"
+        }
+      },
+      "id": "A0179",
+      "name": "Tray0179"
+    },
+    "AD97DCA4-69E2-44B2-86C6-665A20FB35AF": {
+      "guid": "ad97dca4-69e2-44b2-86c6-665a20fb35af",
+      "type": "tray",
+      "tags": {
+        "entered": {
+          "date": "2020-06-21T07:00:00.000Z",
+          "applies": true,
+          "name": "entered"
+        }
+      },
+      "id": "A0185",
+      "name": "Tray0185"
+    },
+    "E9D2F90A-A2E5-4A7C-B0A0-5ECCB5834837": {
+      "guid": "e9d2f90a-a2e5-4a7c-b0a0-5eccb5834837",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": "2020-06-21T07:00:00.000Z",
+          "applies": true,
+          "name": "A0185",
+          "note": "3 pinches"
+        }
+      },
+      "id": "CIL20200621",
+      "plant": "A0241",
+      "name": "CIL0621"
     }
   },
   "settings": {
     "idTemplates": {
-      "A0000": 13
+      "A0000": 23
     },
     "A0000": 5
   },

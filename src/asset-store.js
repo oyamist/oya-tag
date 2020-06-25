@@ -59,7 +59,6 @@
                             match(tag.name, re) || 
                             match(tag.note, re);
                         if (!a && assetStore) {
-                            console.trace(`dbg assetStore`, assetStore);
                             var tagAsset = assetStore.assetOfId(tag.name);
                             a = tagAsset && match(tagAsset.name, re);
                         }

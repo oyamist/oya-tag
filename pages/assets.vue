@@ -30,8 +30,8 @@
           <td :colspan="headers.length"> <div class="asset-expanded">
             <div>
               {{item.type}}
-              {{item.lastTag.name}}:
-              {{item.lastTag.date.toLocaleDateString()}}
+              {{item.firstTag.name}}:
+              {{item.firstTag.date.toLocaleDateString()}}
             </div>
             <v-btn small class="mr-2" color="primary"
               @click="$router.push(`/assets#${item.id}`)"
@@ -74,7 +74,7 @@ export default {
       assetsPerPage: -1,
       expanded: [],
       headers: [
-        { text: "Age", value: "ageDays", },
+        { text: "Start Days", value: "ageDays", },
         { text: "Asset", value: "summary", },
         { text: "LastTag", value: "lastTag", },
         { text: '', value: 'data-table-expand', },
