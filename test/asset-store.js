@@ -12,12 +12,12 @@
     } = require("../index");
     const SAMPLE_DATA = path.join(__dirname, 'sample-data.json5');
 
-    it("TESTTESTdefault ctor", ()=> {
+    it("default ctor", ()=> {
         var as = new AssetStore();
         should.deepEqual(as.settings, AssetStore.appliedSettings());
         should(as.assetFilter).equal(AssetStore.assetFilter);
     });
-    it("TESTTESTcustom ctor", ()=> {
+    it("custom ctor", ()=> {
         var settings = {
             color: "brown",
         };
@@ -246,18 +246,6 @@
         });
         should(crops[0]).instanceOf(Asset);
     });
-    it("timelines() => crop timelines", ()=>{
-        var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
-        var store = new AssetStore(json);
-        var timelines = store.timelines();
-        should.deepEqual(timelines.map(t=>t.name), [
-            "BROC", "PBTD"]);
-        should.deepEqual(timelines[0].items.map(item=>item.id), [
-            "BRC-1", "BRC-2", "BRC-3", "BRC-4" ]);
-        timelines[0].items.forEach(item=>{
-            should(item).instanceOf(Asset);
-        });
-    });
     it("removeAsset(id) removes asset", ()=>{
         var asEmpty = new AssetStore();
         var asFull = new AssetStore();
@@ -283,7 +271,7 @@
         should(as.assetOfId('test-asset-2')).equal(asset3);
         should(as.assetOfId('test-asset')).equal(undefined);
     });
-    it("TESTTESTassetFilter(...) => filters assets", ()=>{
+    it("assetFilter(...) => filters assets", ()=>{
         var assets = [
             new Asset({ id: "A0001", color: "red", }), 
             new Asset({ id: "A0002", color: "red", }), 
@@ -329,6 +317,34 @@
         // filter by referenced name
         should.deepEqual(as.filter("amy").map(a=>a.id),
             [ "A0011", "A0012", ]);
+    });
+    it("TESTTESTtimelines() => crop timelines", ()=>{
+        var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
+        var store = new AssetStore(json);
+        var timelines = store.timelines();
+        should.deepEqual(timelines.map(t=>t.id), [
+            "BROC", "PBTD"]);
+        should.deepEqual(timelines.map(t=>t.name), [
+            "Broccoli", 
+            "Pink Berkeley Tie Dye Tomato",
+        ]);
+
+        // Broccoli
+        should(timelines[0]).properties({
+            id: "BROC",
+            name: "Broccoli",
+        });
+        should.deepEqual(timelines[0].items.map(a=>a.id), [
+            "BRC-1", "BRC-2", "BRC-3", "BRC-4", ]);
+
+        // Tomato
+        should(timelines[1]).properties({
+            id: "PBTD",
+            name: "Pink Berkeley Tie Dye Tomato",
+        });
+        should.deepEqual(timelines[1].items.map(a=>a.id), [
+            "TOM-1",
+        ]);
     });
     
 

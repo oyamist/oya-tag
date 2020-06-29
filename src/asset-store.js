@@ -190,15 +190,16 @@
             return assets || [];
         }
 
-        timelines(type="crop", group="plant") {
+        xtimelines(type="crop", group="plant") {
             var timelines = [];
             var map = {};
             var assets = this.assetsOfType(type);
             assets.forEach(asset=>{
-                var key = asset[group];
-                var timeline = map[key];
+                var valGroup = asset[group];
+                var valRef = this.assetOfId(valGroup);
+                var name = valRef && valRef.name || valGroup;
+                var timeline = map[name];
                 if (!timeline) {
-                    let name = key;
                     timeline = {
                         name,
                         items: [],
@@ -211,7 +212,30 @@
             return timelines;
         }
 
-    } //// class Asset
+        timelines(type="crop", group="plant") {
+            var timelines = [];
+            var cropMap = {};
+            var assets = this.assetsOfType(type);
+            assets.forEach(asset=>{
+                var id = asset[group];
+                var valRef = this.assetOfId(id);
+                var name = valRef && valRef.name || id;
+                var timeline = cropMap[name];
+                if (!timeline) {
+                    timeline = {
+                        id,
+                        name,
+                        items: [],
+                    }
+                    cropMap[name] = timeline;
+                    timelines.push(timeline);
+                }
+                timeline.items.push(asset);
+            });
+            return timelines;
+        }
+
+    } // class AssetStore
 
     module.exports = exports.AssetStore = AssetStore;
 })(typeof exports === "object" ? exports : (exports = {}));

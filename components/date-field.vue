@@ -14,6 +14,7 @@
 </template>
 
 <script>
+  const Dates = require('../src/dates');
   export default {
     name: "DateField",
     props: {
@@ -45,11 +46,9 @@
           var field = this.item[this.model];
           return field.toISOString().substr(0, 10);
         },
-        set: function(value) {
-          var tzoffset = (new Date()).getTimezoneOffset() * 60000;
-          var ms = new Date(value).getTime()+tzoffset;
-          var saveDate = new Date(ms);
-          console.log(`dbg set pickerDate`, value, saveDate);
+        set: function(isoYMD) {
+          var saveDate = Dates.fromYMD(isoYMD);
+          console.log(`dbg set pickerDate`, isoYMD, saveDate);
           this.item[this.model] = saveDate;
         },
       },

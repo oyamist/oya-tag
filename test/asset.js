@@ -9,7 +9,7 @@
         Tag,
     } = require("../index");
 
-    it("TESTTESTAsset() asset default ctor", function() {
+    it("Asset() asset default ctor", function() {
         // Default ctor
         var asset = new Asset();
         should(asset.type).equal("asset"); // Default type
@@ -31,7 +31,7 @@
         should.deepEqual(asset.name, `asset_${guidPrefix}`); 
 
         should(asset.tagList.length).equal(1);
-        should(asset.ageMillis).above(-1).below(5);
+        should(asset.ageMillis).above(-1).below(10);
         should(asset.ageDays).equal(0);
     });
     it("Asset(opts) asset custom ctor", function() {
@@ -72,7 +72,7 @@
         var assetCopy = new Asset(asset);
         should.deepEqual(assetCopy, asset);
     });
-    it("TESTTESTage(...) returns age", function() {
+    it("age(...) returns age", function() {
         var MSDAY = 24*60*60*1000;
         var msAge = 2*MSDAY;
         var tags = { // age is determined by earliest tag
@@ -158,7 +158,7 @@
         should.deepEqual(asset.getTag("tag1"), tagList[1]);
         should.deepEqual(asset.getTag("tag2"), null);
     });
-    it("TESTTESTcustomKeys() returns non-core keys", ()=>{
+    it("customKeys() returns non-core keys", ()=>{
         var color = "red";
         var size = "large";
         var asset = new Asset({
@@ -173,7 +173,7 @@
             size,
         });
     });
-    it("TESTTESTfirstTag => earliest tag", ()=>{
+    it("firstTag => earliest tag", ()=>{
         var tags = {
             "A001": {
                 name: "A001",
@@ -192,7 +192,7 @@
         var asset = new Asset({tags});
         should(asset.firstTag.name).equal("A002");
     });
-    it("TESTTESTlastTag => latest tag", ()=>{
+    it("lastTag => latest tag", ()=>{
         var tags = {
             "A001": {
                 name: "A001",
@@ -211,7 +211,7 @@
         var asset = new Asset({tags});
         should(asset.lastTag.name).equal("A001");
     });
-    it("TESTTESTstarted => earliest tag applies", ()=>{
+    it("started => earliest tag applies", ()=>{
         var tags = {
             "A001": {
                 name: "A001",

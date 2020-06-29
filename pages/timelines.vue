@@ -32,7 +32,7 @@ export default {
 name: 'ViewTimeline',
 data: () => {
   return {
-    days: 50,
+    days: 120,
     g,
   }
 },
@@ -48,8 +48,11 @@ methods: {
   },
 },
 computed: {
+    assetStore() {
+        return this.$store.state.assets.assetStore;
+    },
     timelines() {
-        var assetStore = this.$store.state.assets.assetStore;
+        var assetStore = this.assetStore;
         return assetStore && assetStore.timelines() || [];
     }
 },

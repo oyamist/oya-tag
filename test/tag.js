@@ -55,7 +55,7 @@
         var st2 = new Tag(JSON5.parse(JSON.stringify(st)));
         should.deepEqual(st, st2);
     });
-    it("TESTTESTnoteUrl is provided", ()=>{
+    it("noteUrl is provided", ()=>{
         var name = "testname";
         var applies = true;
         var note = "testnote";
