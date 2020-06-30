@@ -48,7 +48,7 @@
         },
         set: function(isoYMD) {
           var saveDate = Dates.fromYMD(isoYMD);
-          console.log(`dbg set pickerDate`, isoYMD, saveDate);
+          console.log(`dbg set pickerDate`, isoYMD, saveDate.toLocaleString());
           this.item[this.model] = saveDate;
         },
       },

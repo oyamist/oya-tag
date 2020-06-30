@@ -13,15 +13,21 @@
         var date = new Date(2020,0,2);
         should(Dates.toMMDDYY(date)).equal('1/2/20');
     });
-    it("TESTTESTfromYMD(iso) => locale Date", ()=>{
+    it("TESTTESTfromYMD(iso) => locale midnight", ()=>{
         var now = new Date();
-        var iso = now.toISOString().substring(0,10);
+        var year = `0${now.getFullYear()}`;
+        year = year.substring(year.length-4);
+        var month = `0${now.getMonth()+1}`;
+        month = month.substring(month.length-2);
+        var day = `0${now.getDate()}`;
+        day = day.substring(day.length-2);
+        var iso = `${year}-${month}-${day}`;
         var localeDate = Dates.fromYMD(iso);
-        var hours = now.getHours();
-        var minutes = now.getMinutes();
-        var seconds = now.getSeconds();
-        var msTime = ((hours*60+minutes)*60+seconds)*1000;
-        //console.log(`dbg now`, iso, now, localeDate, msTime);
-        should(now-localeDate-msTime).above(-1).below(1000);
+        var tzminutes = (new Date()).getTimezoneOffset();
+        var tzms = tzminutes * 60*1000;
+        var mins = now.getHours()*60+now.getMinutes();
+        var secs = mins*60+now.getSeconds()
+        var time = secs*1000 ;
+        should(now-localeDate).above(time).below(time+1000);
     });
 })

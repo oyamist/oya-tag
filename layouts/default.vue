@@ -14,6 +14,9 @@
       </div>
 
       <v-spacer />
+      <div class="month">
+        {{ new Date().toLocaleString(undefined, {month:"short"}) }}
+      </div>
       <div class="calendar" :title="new Date().toLocaleDateString()">
         {{ new Date().getDate() }}
       </div>
@@ -260,6 +263,9 @@ export default {
 }
 </script>
 <style>
+.month {
+    margin-top: 5pt;
+}
 .calendar {
   margin-top: 5pt;
   width: 40px;

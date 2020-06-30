@@ -63,6 +63,7 @@
 </template>
 
 <script>
+import Vue from "vue";
 export default {
   name: 'ViewAssets',
 
@@ -187,7 +188,16 @@ export default {
   mounted() {
     var {
       $store,
+      $route,
     } = this;
+    var search = $route.query.search;
+    var that = this;
+    if (search) {
+      this.$nextTick(() => {
+        Vue.set(that, "search", search);
+      });
+      console.log(`dbg mounted`, search);
+    }
     $store.state.assets.assetStore && this.routeAsset(); 
     this.$store.watch(
       ()=>($store.state.assets.assetStore),

@@ -1,7 +1,13 @@
 <template>
   <div>
-    <div v-if="showTitle" class="gr-title" :style="cssTitle()">
-      {{label}}
+    <div v-if="showTitle" class="gr-timeline">
+      <div class="gr-title" :style="cssTitle()">
+        <div>
+          <a :href="`/assets?search=${id}`" :title="`${id}/${label}`">
+            {{label}}
+          </a>
+        </div>
+      </div>
     </div>
     <div v-if="showItems" 
       class="gr-timeline" :style="cssTimeline()">
@@ -12,7 +18,7 @@
         </div>
       </div>
       <div v-for="start in starts" :key="start.dateStr"
-        @click="onClickAsset(start, $event)"
+        @click="onClickStart(start, $event)"
         class="gr-item" :style="start.style">
         {{start.dateStr}}
       </div><!-- starts -->
@@ -26,6 +32,10 @@ const Dates = require('../src/dates');
 export default {
   name: "Timeline",
   props: {
+    id: {
+      type: String,
+      default: "ID",
+    },
     label: {
       type: String,
       default: "Timeline",
@@ -45,7 +55,7 @@ export default {
     },
     daysFuture: {
       type: Number,
-      default: 7,
+      default: 2*7,
     },
     showTitle: {
       type: Boolean,
@@ -59,12 +69,16 @@ export default {
   data: () => ({
   }),
   methods: {
-    onClickAsset(asset, /*event*/) {
-      this.$router.push(`/assets#${asset.id}`);
+    onClickStart(start, /*event*/) {
+      var that = this;
+      that.$router.push(`/assets?search=${this.id}`, ()=>{
+        that.$router.push(
+          `/assets?search=${this.id}#${start.assets[0].id}`);
+      });
     },
     cssTitle() {
       return [
-          `width:${this.itemW}px`,
+        `width:${this.itemW}px`,
       ].join(';');
     },
     cssStart(start) {
@@ -75,8 +89,9 @@ export default {
       }
       var days = start.ageDays+this.daysFuture;
       var css = [
-        `width:${this.itemW}px`,
+        `width:${this.itemW-6}px`,
         `top:${days*this.itemH}px`,
+        `border-radius: 0.5em`,
       ];
       var curAsset = this.$store.state.selection;
       if (curAsset === start) {
@@ -102,7 +117,7 @@ export default {
         gradArgs || 0;
         css.push(`background-repeat: repeat`);
         css.push(`background-image: linear-gradient(${gradArgs})`);
-        css.push(`background-size: 5.66px 5.66px`);
+        css.push(`background-size: 2.83px 2.83px`);
       }
       
       return css.join(';');
@@ -114,17 +129,18 @@ export default {
         `width:${this.itemW}px`,
       ];
       var sunday = d.getDay() === 0;
-      var sundayCSS = `
-      background-image: linear-gradient(45deg, #eeeeee 25%, #cccccc 25%, #cccccc 50%, #eeeeee 50%, #eeeeee 75%, #cccccc 75%, #cccccc 100%);
-      background-size: 14.14px 14.14px;
-      background-repeat: repeat-x;
-      `
+      var sundayBorder = "1em";
+      var sundayCSS = [
+        `background: #EFEBE9`,
+        `border-right: ${sundayBorder} solid #D7CCC8`,
+        `border-left: ${sundayBorder} solid #D7CCC8`,
+      ].join(';');
       if (day1 === this.daysFuture+1) { // today
-        css.push('background: #C6FF00');
+        css.push('background: #FFAB40');
       } else if (day1 > this.daysFuture) { // past
-        css.push(sunday ? sundayCSS : `background: #EFEBE9`);
+        css.push(sunday ? sundayCSS : `background: #D7CCC8`);
       } else {
-        css.push(sunday ? sundayCSS : `color: #FFFFFF`);
+        css.push(sunday ? sundayCSS : `background: #EFEBE9`);
       }
       return css.join(';');
     },

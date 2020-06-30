@@ -1,8 +1,9 @@
 <template>
     <div class="gr-board" v-if="timelines">
       <div class="gr-timelines">
-        <v-row class="gr-board-pane"><!-- title -->
+        <v-row class="gr-board-pane align-flex-end"><!-- title -->
           <timeline v-for="tl in timelines" :key="tl.name"
+              :id="tl.id"
               :label="tl.name"
               :showItems="false"
               :g="g"
@@ -13,6 +14,7 @@
         id="scroll-target-y" >
         <v-row class="gr-board-pane"><!-- items -->
           <timeline v-for="tl in timelines" :key="tl.name"
+              :id="tl.id"
               :label="tl.name"
               :items="tl.items" 
               :showTitle="false"
@@ -77,5 +79,8 @@ components: {
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
+}
+.align-flex-end {
+  align-items: flex-end;
 }
 </style>

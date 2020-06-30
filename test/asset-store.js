@@ -228,8 +228,8 @@
         var tag = assets[0].getTag('purchased');
         var dateDiff = -1209600000;
         should(tag.date - Date.now())
-            .above(dateDiff-2)
-            .below(dateDiff+2);
+            .above(dateDiff-4)
+            .below(dateDiff+4);
         should(tag).properties({
             name: "purchased",
             applies: true,

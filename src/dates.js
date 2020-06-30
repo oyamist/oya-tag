@@ -17,10 +17,14 @@
         }
 
         static fromYMD(iso) {
-            var msMinute = 60*1000;
-            var tzoffset = (new Date()).getTimezoneOffset() * msMinute;
-            var ms = new Date(iso).getTime()+tzoffset;
-            return new Date(ms);
+            var tzminutes = (new Date()).getTimezoneOffset();
+            var tzms = tzminutes * 60*1000;
+            if (iso.length === 10) {
+                iso = `${iso}T00:00:00.000Z`;
+            }
+            var ms = new Date(iso).getTime() + tzms;
+            var date = new Date(ms);
+            return date;
         }
 
     } // class Dates

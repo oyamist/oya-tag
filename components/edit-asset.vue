@@ -1,11 +1,14 @@
 <template>
-  <v-dialog v-model="isVisible" persistent v-if="isAssetSelected" >
+  <v-dialog v-model="isVisible" persistent v-if="isAssetSelected" 
+     @keydown.esc="cancelAsset"
+  >
     <v-card v-if="asset">
       <v-card-text>
         <div class="field-row" >
           <div >
             <v-text-field v-model="asset.id" 
               outlined
+              clearable
               :label="`ID`"
               :hint="asset.guid"
               @blur="onBlurTitle()"
@@ -14,12 +17,14 @@
           <div>
             <v-text-field v-model="asset.type" 
               outlined
+              clearable
               :label="`Type`"
               />
           </div>
           <div>
             <v-text-field v-model="asset.name" 
               outlined
+              clearable
               :label="`Name`"
               />
           </div>
@@ -72,6 +77,7 @@
                         <v-col>
                           <v-text-field v-model="tagModel.name" 
                             outlined
+                            clearable
                             :hint="nameHint"
                             label="Tag name"></v-text-field>
                         </v-col>

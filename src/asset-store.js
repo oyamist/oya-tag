@@ -190,28 +190,6 @@
             return assets || [];
         }
 
-        xtimelines(type="crop", group="plant") {
-            var timelines = [];
-            var map = {};
-            var assets = this.assetsOfType(type);
-            assets.forEach(asset=>{
-                var valGroup = asset[group];
-                var valRef = this.assetOfId(valGroup);
-                var name = valRef && valRef.name || valGroup;
-                var timeline = map[name];
-                if (!timeline) {
-                    timeline = {
-                        name,
-                        items: [],
-                    }
-                    map[name] = timeline;
-                    timelines.push(timeline);
-                }
-                timeline.items.push(asset);
-            });
-            return timelines;
-        }
-
         timelines(type="crop", group="plant") {
             var timelines = [];
             var cropMap = {};
