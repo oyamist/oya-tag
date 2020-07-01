@@ -2,7 +2,7 @@
   <div>
     <div v-if="showTitle" class="gr-timeline">
       <div class="gr-title" :style="cssTitle()">
-        <div>
+        <div class="timeline-title">
           <a :href="`/assets?search=${id}`" :title="`${id}/${label}`">
             {{label}}
           </a>
@@ -48,6 +48,10 @@ export default {
       type: Number,
       default: 5,
     },
+    startH: {
+      type: Number,
+      default: 23,
+    },
     items: Array,
     days: {
       type: Number,
@@ -89,9 +93,10 @@ export default {
       }
       var days = start.ageDays+this.daysFuture;
       var css = [
+        `height:${this.startH}`,
         `width:${this.itemW-6}px`,
-        `top:${days*this.itemH}px`,
-        `border-radius: 0.5em`,
+        `top:${days*this.itemH-this.startH/2+this.itemH/2}px`,
+        `border-radius: ${this.startH/2}px`,
       ];
       var curAsset = this.$store.state.selection;
       if (curAsset === start) {
@@ -228,5 +233,8 @@ export default {
   color: #fff;
   text-align: center;
   width: 100%;
+}
+.timeline-title a{
+  font-weight: 500;
 }
 </style>

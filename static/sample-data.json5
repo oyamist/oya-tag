@@ -498,19 +498,6 @@
       "id": "A0217",
       "name": "BKT0217"
     },
-    "066A04E2-B6A0-4CFC-8B6A-68017E53EABE": {
-      "guid": "066a04e2-b6a0-4cfc-8b6a-68017e53eabe",
-      "type": "plant",
-      "tags": {
-        "entered": {
-          "date": "2020-01-01T07:00:00.000Z",
-          "applies": true,
-          "name": "entered"
-        }
-      },
-      "id": "BTD",
-      "name": "Pink Berkeley Tie Dye Tomato"
-    },
     "8E7260F3-D8E4-45AB-BF51-6918B927C071": {
       "guid": "8e7260f3-d8e4-45ab-bf51-6918b927c071",
       "type": "Container",
@@ -523,11 +510,111 @@
       },
       "id": "A0203",
       "name": "POT0203"
+    },
+    "066A04E2-B6A0-4CFC-8B6A-68017E53EABE": {
+      "guid": "066a04e2-b6a0-4cfc-8b6a-68017e53eabe",
+      "type": "plant",
+      "tags": {
+        "entered": {
+          "date": "2020-01-01T07:00:00.000Z",
+          "applies": true,
+          "name": "entered"
+        }
+      },
+      "id": "BTD",
+      "name": "Tomato, Pink Berkeley Tie Dye"
+    },
+    "229AD48B-8457-4ED2-85E9-DA2C175C10F0": {
+      "guid": "229ad48b-8457-4ed2-85e9-da2c175c10f0",
+      "type": "plant",
+      "tags": {
+        "entered": {
+          "date": "2020-06-22T07:00:00.000Z",
+          "applies": true,
+          "name": "A0244",
+          "note": " https://sandiegoseedcompany.com/shop/chocolate-stripes-tomato-seed/"
+        }
+      },
+      "id": "CST",
+      "name": "Tomato, Chocolate Stripes"
+    },
+    "F84772DA-1AC1-4C35-B0C5-2C67DBAC2842": {
+      "guid": "f84772da-1ac1-4c35-b0c5-2c67dbac2842",
+      "type": "plant",
+      "tags": {
+        "entered": {
+          "date": "2020-06-22T07:00:00.000Z",
+          "applies": true,
+          "name": "A0243",
+          "note": "https://sandiegoseedcompany.com/shop/onion-tokyo/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/onion-tokyo/"
+        }
+      },
+      "id": "TWO",
+      "name": "Onion, Tokyo White"
+    },
+    "600CBF5B-90C5-4B8A-B362-743155C27764": {
+      "guid": "600cbf5b-90c5-4b8a-b362-743155c27764",
+      "type": "plant",
+      "tags": {
+        "entered": {
+          "date": "2020-06-22T07:00:00.000Z",
+          "applies": true,
+          "name": "A0245",
+          "note": "https://sandiegoseedcompany.com/shop/cool-season-crops/broccoli-green-sprouting-calabrese/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/cool-season-crops/broccoli-green-sprouting-calabrese/"
+        }
+      },
+      "id": "CBR",
+      "name": "Broccoli, Calabrese"
+    },
+    "6A478A88-48C8-432F-9BF6-F8E0E1A7BCF6": {
+      "guid": "6a478a88-48c8-432f-9bf6-f8e0e1a7bcf6",
+      "type": "plant",
+      "tags": {
+        "entered": {
+          "date": "2020-06-22T07:00:00.000Z",
+          "applies": true,
+          "name": "A0242",
+          "note": "https://sandiegoseedcompany.com/shop/tomatoes/tomato-purple-cherokee/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/tomatoes/tomato-purple-cherokee/"
+        }
+      },
+      "id": "PCT",
+      "name": "Tomato, Purple Cherokee"
+    },
+    "A2958F31-CC59-4914-BDED-08DD54828F46": {
+      "guid": "a2958f31-cc59-4914-bded-08dd54828f46",
+      "type": "Container",
+      "tags": {
+        "entered": {
+          "date": "2020-07-01T17:06:22.678Z",
+          "applies": true,
+          "name": "NETPOT"
+        }
+      },
+      "id": "A0246",
+      "name": "POT0246"
+    },
+    "78F77D72-1677-4073-8CAC-2E3AB0CD3AF6": {
+      "guid": "78f77d72-1677-4073-8cac-2e3ab0cd3af6",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": "2020-07-01T17:07:01.794Z",
+          "applies": true,
+          "name": "A0246",
+          "note": "Sow direct into three holes"
+        }
+      },
+      "id": "CST20200701-3S",
+      "plant": "CST",
+      "name": "CTS0701"
     }
   },
   "settings": {
     "idTemplates": {
-      "A0000": 42
+      "A0000": 49
     },
     "A0000": 5
   },

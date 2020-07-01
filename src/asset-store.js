@@ -210,7 +210,9 @@
                 }
                 timeline.items.push(asset);
             });
-            return timelines;
+            return timelines.sort((a,b) => {
+                return a.name.localeCompare(b.name);
+            });
         }
 
     } // class AssetStore
