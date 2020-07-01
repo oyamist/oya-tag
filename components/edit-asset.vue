@@ -43,10 +43,13 @@
           :items-per-page="-1"
           >
           <template v-slot:item.name="{ item }">
-            {{ item.applies 
-              ? `\u2713\u00a0${item.name}` 
-              : `\u231B\u00a0${item.name}` 
-            }}
+            <a :href="tagUrl(item)" v-if="tagUrl(item)"
+              target="_blank">
+              {{ tagName(item) }}
+            </a>
+            <span v-if="!tagUrl(item)"> 
+              {{ tagName(item) }}
+            </span>
           </template>
           <template v-slot:item.date="{ item }">
             {{ tagDate(item) }}
@@ -203,6 +206,23 @@
         },
     }},
     methods: {
+      tagName(tag) {
+        var {
+          assetStore,
+        } = this;
+        var asset = assetStore.assetOfId(tag.name);
+        var name = asset ? asset.name : tag.name;
+        return tag.applies 
+          ? `\u2713\u00a0${name}` 
+          : `\u231B\u00a0${name}` 
+      },
+      tagUrl(tag) {
+        var {
+          assetStore,
+        } = this;
+        var asset = assetStore.assetOfId(tag.name);
+        return asset ? `/assets#${asset.guid}` : null;
+      },
       onBlurTitle() {
         var asset = this.asset;
         if (!asset.id) {
