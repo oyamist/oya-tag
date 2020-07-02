@@ -610,11 +610,52 @@
       "id": "CST20200701-3S",
       "plant": "CST",
       "name": "CTS0701"
+    },
+    "66FAC5C8-9191-4DBF-BDA1-66D31B233F4E": {
+      "guid": "66fac5c8-9191-4dbf-bda1-66d31b233f4e",
+      "type": "Container",
+      "tags": {
+        "entered": {
+          "date": "2020-01-01T07:00:00.000Z",
+          "applies": true,
+          "name": "entered"
+        }
+      },
+      "id": "A0249",
+      "name": "Planter0249"
+    },
+    "C5D9C89E-BCB0-4462-AC95-09DCE8BBB20B": {
+      "guid": "c5d9c89e-bcb0-4462-ac95-09dce8bbb20b",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": "2020-07-01T07:00:00.000Z",
+          "applies": true,
+          "name": "A0249",
+          "note": "5 seeds direct sow 1\" hole cover 1/4\""
+        }
+      },
+      "id": "PHW20200701-5",
+      "plant": "PHW",
+      "name": "PHW0249"
+    },
+    "D82D5253-8D41-449D-AC2C-CBB7A784DDF5": {
+      "guid": "d82d5253-8d41-449d-ac2c-cbb7a784ddf5",
+      "type": "plant",
+      "tags": {
+        "entered": {
+          "date": "2020-07-01T07:00:00.000Z",
+          "applies": true,
+          "name": "A0248"
+        }
+      },
+      "id": "PHW",
+      "name": "Pepper, Hungarian Hot Wax"
     }
   },
   "settings": {
     "idTemplates": {
-      "A0000": 49
+      "A0000": 52
     },
     "A0000": 5
   },
