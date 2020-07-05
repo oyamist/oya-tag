@@ -32,10 +32,19 @@
       },
     },
     computed: {
+      field() {
+        var {
+          item,
+          model,
+        } = this;
+        var field = item && item[model];
+        return field instanceof Date
+          ? field
+          : new Date(field);
+      },
       date: {
         get: function() {
-          var field = this.item[this.model];
-          return field.toLocaleDateString();
+          return this.field.toLocaleDateString();
         },
         set: function(value) {
           this.item[this.model] = new Date(value);
@@ -43,8 +52,7 @@
       },
       pickerDate: {
         get: function() {
-          var field = this.item[this.model];
-          return field.toISOString().substr(0, 10);
+          return this.field.toISOString().substr(0, 10);
         },
         set: function(isoYMD) {
           var saveDate = Dates.fromYMD(isoYMD);

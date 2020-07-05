@@ -121,8 +121,12 @@
             return Math.round(this.ageMillis/msAge);
         }
 
+        static customKeys(asset) {
+            return Object.keys(asset).filter(k=>!CORE_KEYS[k]);
+        }
+
         customKeys() {
-            return Object.keys(this).filter(k=>!CORE_KEYS[k]);
+            return Asset.customKeys(this);
         }
 
         validateTag(tag) {

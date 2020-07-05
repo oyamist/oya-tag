@@ -3,6 +3,9 @@
      @keydown.esc="cancelAsset"
   >
     <v-card v-if="asset">
+      <v-system-bar color="green darken-2" dark>
+        Asset {{asset.guid}}
+      </v-system-bar>
       <v-card-text>
         <div class="field-row" >
           <div >
@@ -31,7 +34,8 @@
         </div><!--field-row-->
         <div class="field-row" v-if="asset.type==='crop'" >
           <div>
-            <asset-picker propName="plant" :asset="asset"/>
+            <asset-picker propName="plant" :asset="asset" label="Plant"
+            ></asset-picker>
           </div>
         </div><!--field-row-->
         <v-data-table 
@@ -369,10 +373,6 @@
       },
       assetStore() {
         return this.$store.state.assets.assetStore;
-      },
-      plantItems() {
-        var plants = this.assetStore.assetsOfType("plant");
-        return plants;
       },
       nameHint() {
         var {

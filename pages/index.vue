@@ -65,7 +65,7 @@ export default {
       done: true,
       text: `Typed assets`,
       notes: `Assets have customizable types such as: 
-        crop, container, nutrients`,
+        crop, plant, site`,
     },{
       done: true,
       text: `Instant search`,

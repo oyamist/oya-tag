@@ -1,7 +1,7 @@
 <template>
   <v-autocomplete
     v-model="asset[propName]"
-    label="Plant"
+    :label="label"
     outlined
     :items="typeList(propName)"
     :loading="false"
@@ -19,6 +19,8 @@
     props: {
       asset: Object,
       propName: String,
+      label: String,
+      rules: Array,
     },
     data: ()=>{ 
       return {};
@@ -26,15 +28,10 @@
     methods: {
       typeList(type) {
         var values = this.assetStore.assetsOfType(type);
-        return values;
+        return values.sort((a,b) => a.name.localeCompare(b.name));
       },
     },
     computed: {
-      rules() {
-        return [
-          v => !!v,
-        ];
-      },
       assetStore() {
         return this.$store.state.assets.assetStore;
       },

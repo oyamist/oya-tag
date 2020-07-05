@@ -346,6 +346,22 @@
             "TOM-1",
         ]);
     });
+    it("TESTTESTcreateName(asset) => generates name",()=>{
+        should(AssetStore.createName({
+            id: "A0123",
+            type: "bucket",
+        })).equal(`BUCKET0123`);
+        should(AssetStore.createName({
+            id: "A0123",
+            type: "site",
+            "site-type": "NETPOT",
+        })).equal(`NETPOT0123`);
+        should(AssetStore.createName({
+            id: "A0123",
+            type: "plant",
+            plant: "BTD",
+        })).equal(`BTD0123`);
+    });
     
 
 })

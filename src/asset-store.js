@@ -121,6 +121,19 @@
             return this.assetMap[uk] || this.idMap[uk];
         }
 
+        static createName(asset) {
+            var id = asset.id;
+            if (id) {
+                var suffix = asset.id.replace(/[^0-9]*/ug, "");
+                var customKeys = Asset.customKeys(asset);
+                var customVal0 = customKeys && asset[customKeys[0]];
+                var prefix = (customVal0 || asset.type).toUpperCase();
+                return `${prefix}${suffix}`;
+            } else {
+                return ``;
+            }
+        }
+
         createId(template = "A0000") {
             template = template.toUpperCase();
             var templates = this.settings.idTemplates;

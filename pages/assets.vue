@@ -1,4 +1,5 @@
 <template>
+  <div>
     <v-card v-if="assets" flat>
       <v-card-title>
         <v-text-field
@@ -59,11 +60,14 @@
         </template>
       </v-data-table>
         {{$store.state.selection}}
+      <add-asset/>
     </v-card>
+  </div>
 </template>
 
 <script>
 import Vue from "vue";
+import AddAsset from "../components/add-asset";
 export default {
   name: 'ViewAssets',
 
@@ -72,6 +76,7 @@ export default {
   data: () => {
     return {
       search: '',
+      newAsset: {},
       assetsPerPage: -1,
       expanded: [],
       headers: [
@@ -125,31 +130,7 @@ export default {
       console.log(`click`, args);
     },
     addAsset() {
-      var type = prompt("New asset type", "crop");
-      if (!type) {
-        return;
-      } 
-      var $router = this.$router;
-      var opts = {
-        type, 
-        name: `${type}_name?`,
-        committed: asset => {
-          $router.push(`/assets#${asset.id}`);
-        },
-      };
-      this.$store.commit('assets/add', opts);
-    },
-    save () {
-      console.log('Dialog saved')
-    },
-    cancel () {
-      console.log('Dialog cancelled')
-    },
-    open () {
-      console.log('Dialog opened')
-    },
-    close () {
-      console.log('Dialog closed')
+      this.$store.commit("showAddAsset", true);
     },
     getAgeColor(item) {
       var {
@@ -205,6 +186,7 @@ export default {
     );
   },
   components: {
+    AddAsset,
   },
 }
 </script>
