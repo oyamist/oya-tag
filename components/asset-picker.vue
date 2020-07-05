@@ -3,6 +3,7 @@
     v-model="asset[propName]"
     :label="label"
     outlined
+    :autofocus="autofocus"
     :items="typeList(propName)"
     :loading="false"
     color="white"
@@ -21,6 +22,7 @@
       propName: String,
       label: String,
       rules: Array,
+      autofocus: Boolean,
     },
     data: ()=>{ 
       return {};

@@ -110,21 +110,32 @@
         // Assets are keyed by id
         should(as.assetOfId(id)).equal(asset2);
     });
-    it("createId() => new Asset id", ()=>{
+    it("TESTTESTcreateId() => new Asset id", ()=>{
         var as = new AssetStore();
-        should(as.createId()).equal('A0001');
+
+        // no other asset has same id
+        var id = as.createId();
+        should(id).equal('A0001');
+        as.createAsset({id});
+
+        // The same new id is returned until it is used
+        should(as.createId()).equal('A0002');
         should(as.createId()).equal('A0002');
 
         // next id is serialized
         var json = JSON5.parse(JSON.stringify(as));
         var as2 = new AssetStore(json);
-        should(as2.createId()).equal('A0003');
+        should(as2.createId()).equal('A0002');
 
         // createId won't give existing id
-        var a4 = as.createAsset({id:"A0003"});
+        var a2 = as2.createAsset({id:"A0002"});
+        var a3 = as2.createAsset({id:"A0003"});
         should(as2.createId()).equal('A0004');
 
+        // Other templates work
         should(as.createId("abc000def")).equal("ABC001DEF");
+        should(as.createId("abc000def")).equal("ABC001DEF");
+        as.createAsset({id:"ABC001DEF"});
         should(as.createId("abc000def")).equal("ABC002DEF");
     });
     it("createAsset(...) => new Asset", ()=>{

@@ -2,7 +2,6 @@
   <div>
     <v-text-field :label="label" v-model="date"
       class="date-field"
-      hide-details="true"
       outlined
       @click:append="onClickText()"
       append-icon="mdi-calendar"/>

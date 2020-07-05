@@ -29,6 +29,12 @@ export const mutations = {
             state.list = assetStore.assets().sort(COMPARE_ASSETS);
         }
     },
+    createId(state, payload) {
+        var assetStore = state.assetStore;
+        var id = assetStore ? assetStore.createId() : '';
+        console.log(`dbg assetStore createId`, id);
+        (payload instanceof Function) && payload(id);
+    },
     clear(state) {
         mutations.load.apply(this, state);
     },

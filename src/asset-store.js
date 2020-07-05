@@ -144,15 +144,18 @@
             var prefix = template.replace(/0+.*/,'');
             var zeros = template.replace(/[^0]/g,'');
             var suffix = template.replace(/.*0/,'');
-            do {
+            for(;;) {
                 var num = zeros + nextId;
                 var id = [
                     prefix,
                     num.substring(num.length-zeros.length),
                     suffix,
                 ].join('');
+                if (!this.assetOfId(id)) {
+                    break;
+                }
                 nextId++;
-            } while (this.assetOfId(id));
+            }
             templates[template] = nextId;
             return id;
         }

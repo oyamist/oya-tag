@@ -70,21 +70,22 @@
                   label="Plant"
                   :rules="[requiredRule(`plant`)]"
                 ></asset-picker>
-                <v-text-field v-model="model.site.id"
+                <date-field
+                  label="Crop start date"
+                  :item="model.site.tags[0]"
+                  model="date"
+                ></date-field>
+                <v-text-field v-model="model.crop.tags[0].name"
                   outlined
-                  label="Site ID"
-                  placeholder="Enter new or existing site ID"
+                  label="Crop site ID"
+                  placeholder="Enter container or location ID"
                   :hint="idHint(model.site.id)"
                 ></v-text-field>
-                <asset-picker propName="site" :asset="model.crop"
-                  label="Site"
-                  :rules="[requiredRule(`site`)]"
-                ></asset-picker>
                 <v-text-field v-model="model.crop.id"
-                  autofocus
                   outlined
-                  label="ID"
+                  label="Crop ID"
                   :rules="idRules"
+                  @focus="cropId()"
                   placeholder="Enter unique crop ID"
                   hint="E.g., CIL20200423 for Cilantro planted on ${new Date(2020,3,23).toLocaleDateString()}"
                 ></v-text-field>
@@ -92,7 +93,7 @@
                   outlined
                   label="Name"
                   :rules="nameRules"
-                  placeholder="Enter plant and variety"
+                  placeholder="Enter short crop name"
                   hint='E.g., "Tomato, Berkeley Tie Dye"'
                 ></v-text-field>
               </v-card-text>
@@ -263,6 +264,24 @@ export default {
       var that = this;
       var msg = `*${field} is required`;
       return (v=>that.validate(field, v&&v.length>0 || msg));
+    },
+    cropId() {
+      var {
+        crop,
+      } = this.model;
+      if (!crop.id) {
+        var date = new Date(crop.tags[0].date);
+        var year = date.getFullYear();
+        var mm = date.toLocaleDateString(undefined, {
+          month: "2-digit",
+        });
+        var dd = date.toLocaleDateString(undefined, {
+          day: "2-digit",
+        });
+        var id = `${crop.plant}${year}${mm}${dd}`;
+        Vue.set(crop, "id", id);
+        console.log(`dbg crop id`, {id, year, mm,dd});
+      }
     },
   },
   computed: {
