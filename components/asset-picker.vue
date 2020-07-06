@@ -2,7 +2,7 @@
   <v-autocomplete
     v-model="asset[propName]"
     :label="label"
-    outlined
+    solo
     :autofocus="autofocus"
     :items="typeList(propName)"
     :loading="false"
@@ -10,7 +10,7 @@
     :rules="rules"
     item-text="name"
     item-value="id"
-    placeholder="Start typing to Search"
+    :placeholder="`Enter ${propName}`"
   ></v-autocomplete>
 </template>
 

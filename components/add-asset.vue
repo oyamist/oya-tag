@@ -25,19 +25,20 @@
                   Plant a new crop:
                 </h3>
                 <asset-picker propName="plant" :asset="model.crop"
+                  autofocus
                   label="Plant"
                   :rules="[requiredRule(`plant`)]"
                 ></asset-picker>
                 <date-field
                   label="Crop start date"
-                  :item="model.site.tags[0]"
+                  :item="model.crop.tags[0]"
                   model="date"
                 ></date-field>
-                <h3 class="mb-5" v-if="model.crop.plant">
+                <h3 class="mb-5" >
                   TIP: Label your crop using any of the following:
                 </h3>
                 <v-text-field v-model="model.crop.id" 
-                  v-if="model.crop.plant"
+                  :disabled="!model.crop.plant"
                   outlined
                   label="Crop ID"
                   :rules="idRules"
@@ -46,7 +47,7 @@
                   hint="A unique ID for all time"
                 ></v-text-field>
                 <v-text-field v-model="model.crop.tags[0].name"
-                  v-if="model.crop.plant"
+                  :disabled="!model.crop.plant"
                   outlined
                   label="Crop site ID"
                   :rules="[requiredRule('CropSiteId')]"
@@ -57,7 +58,7 @@
                   :hint="idHint(model.crop.tags[0].name)"
                 ></v-text-field>
                 <v-text-field v-model="model.crop.name"
-                  v-if="model.plant && model.crop.tags[0].name"
+                  :disabled="!model.plant || !model.crop.tags[0].name"
                   outlined
                   label="Crop Name"
                   :rules="nameRules"
@@ -65,11 +66,15 @@
                   placeholder="Enter short crop name"
                   hint="E.g., plant ID and site ID"
                 ></v-text-field>
+
+                <h3 class="mb-5" >
+                  TIP: Make a note of anything you're experimenting with
+                </h3>
                 <v-text-field v-model="model.crop.tags[0].note"
-                  v-if="model.plant && model.crop.tags[0].name"
+                  :disabled="!model.plant || !model.crop.tags[0].name"
                   outlined
                   label="Crop Notes"
-                  hint="E.g., number of seeds, etc."
+                  hint="E.g., number of seeds, temperature, etc."
                 ></v-text-field>
               </v-card-text>
             </v-card>
@@ -152,10 +157,46 @@
           <v-tab-item value="site-type">
             <v-card flat>
               <v-card-text>
-                <v-text-field v-model="model['site-type'].type"
-                  readonly outlined
-                  label="Type"
+                <h3 class="mb-5">
+                  TIP: If you have many sites of the same type 
+                  (e.g., "NETPOT"),
+                  define that type here:
+                </h3>
+                <v-text-field v-model="model['site-type'].name"
+                  outlined
+                  label="Site Type Name"
+                  :rules="nameRules"
+                  placeholder="Describe site type"
+                  hint="E.g., Net pot, 76mm"
+                  @focus="siteFocus('name')"
                 ></v-text-field>
+                <v-text-field v-model="model['site-type'].id"
+                  outlined
+                  label="Site Type ID"
+                  :rules="idRules"
+                  placeholder="Enter short ID for site type"
+                  hint="E.g.,. NETPOT"
+                ></v-text-field>
+                <h3 class="mb-5">
+                  TIP: Track your acquisitions/purchases of this site type:
+                </h3>
+                <v-text-field v-model="model['site-type'].tags[0].note"
+                  outlined
+                  label="Source"
+                  placeholder="Enter product URL or description"
+                  hint="E.g., https://www.rareseeds.com/store/vegetables/tomatoes/wild-boar-farms/pink-berkeley-tie-dye-tomato"
+                ></v-text-field>
+                <v-text-field v-model="model['site-type'].tags[0].name"
+                  outlined
+                  label="Acquisition"
+                  placeholder="Enter asset barcode id or purchase reference"
+                  hint="E.g., A0123"
+                ></v-text-field>
+                <date-field
+                  label="Acquisition date"
+                  :item="model['site-type'].tags[0]"
+                  model="date"
+                ></date-field>
               </v-card-text>
             </v-card>
           </v-tab-item>
@@ -234,6 +275,12 @@ export default {
           type: 'site-type',
           id: '',
           name: '',
+          tags: [{
+            name: 'purchased',
+            note: '',
+            date: new Date(),
+            applies: true,
+          }]
         },
       },
     }
@@ -255,11 +302,19 @@ export default {
       var activeTab = model.activeTab;
       console.log(`dbg asset`,{model, activeTab});
       var $router = this.$router;
+      var search = activeTab;
+      if (search === 'crop') {
+        search = model.crop.plant;
+      }
+      var $nextTick = this.$nextTick;
       var opts = Object.assign({}, model[activeTab], {
         committed: asset => {
-          $router.push(`/assets?search=${activeTab}`, ()=>{
+          console.log(`Created new asset, search:`, search);
+          $router.push(`/assets?search=${search}`, $nextTick(()=>{
+
+            console.log(`Created new asset`, asset);
             $router.push(`/assets#${asset.id}`);
-          });
+          }));
         },
       });
       this.$store.commit('assets/add', opts);

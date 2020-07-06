@@ -11,10 +11,10 @@
           hide-details
           ></v-text-field>
         <v-spacer/>
-        <v-btn color="green darken-2" icon class="mb-2" 
+        <v-btn color="green darken-2" icon class="pl-3 pt-4" 
           title="Add Asset"
           @click="addAsset()"
-          ><v-icon>mdi-clipboard-plus</v-icon></v-btn>
+          ><v-icon large>mdi-plus-circle</v-icon></v-btn>
       </v-card-title>
       <v-data-table v-if="assetStore"
         class="elevation-1" 

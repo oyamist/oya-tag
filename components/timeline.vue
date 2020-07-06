@@ -12,8 +12,9 @@
     <div v-if="showItems" 
       class="gr-timeline" :style="cssTimeline()">
       <div v-for="day1 in days" :key="day1" 
+        :title="dateOfDay(day1)"
         class="gr-day" :style="cssDay(day1)">
-        <div>
+        <div >
           &nbsp;
         </div>
       </div>
@@ -177,14 +178,16 @@ export default {
         var dateStr = Dates.toMMDDYY(date);
         var start = dateMap[dateStr];
         if (!start) {
-          dateMap[dateStr] = true;
           start = {
             started: asset.started,
             ageDays: asset.ageDays,
             assets: [],
             dateStr,
           };
+          dateMap[dateStr] = start;
           a.push(start);
+        } else if (!(start instanceof Object)) {
+          console.error(`Invalid start for asset`, asset);
         }
         start.started = start.started && asset.started;
         start.style = that.cssStart(start);

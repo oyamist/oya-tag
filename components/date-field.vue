@@ -2,7 +2,11 @@
   <div>
     <v-text-field :label="label" v-model="date"
       class="date-field"
+      readonly
       outlined
+      validate-on-blur
+      @keypress="onClickText()"
+      @click="onClickText()"
       @click:append="onClickText()"
       append-icon="mdi-calendar"/>
     <v-dialog v-model="showPicker">

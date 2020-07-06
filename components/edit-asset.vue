@@ -60,10 +60,12 @@
           </template>
           <template v-slot:item.note="{ item }">
             <a :href="item.noteUrl" v-if="item.noteUrl"
+              :title="item.note"
               target="_blank">
               {{ noteSummary(item)}}
             </a>
-            <span v-if="!item.noteUrl">
+            <span v-if="!item.noteUrl"
+              :title="item.note">
               {{noteSummary(item)}}
             </span>
           </template>
@@ -75,16 +77,21 @@
                 <template v-slot:activator="{ on }">
                   <v-btn color="green darken-2" icon class="mb-2" 
                     title="Add Tag"
-                    v-on="on"><v-icon>mdi-tag-plus</v-icon></v-btn>
+                    v-on="on">
+                      <v-icon large>mdi-tag-plus</v-icon>
+                  </v-btn>
                 </template>
                 <v-card>
+                  <v-system-bar>
+                    Tag
+                  </v-system-bar>
                   <v-card-text>
                     <v-container>
                       <v-row>
                         <v-col>
                           <v-text-field v-model="tagModel.name" 
                             outlined
-                            clearable
+                            autofocus
                             :hint="nameHint"
                             label="Tag name"></v-text-field>
                         </v-col>
