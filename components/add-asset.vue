@@ -5,11 +5,11 @@
     <v-card >
       <v-card-text v-if="model">
         <v-tabs v-model="model.activeTab">
+          <v-tab href="#crop" v-if="hasPlants">
+            Crop
+          </v-tab>
           <v-tab href="#plant">
             Plant
-          </v-tab>
-          <v-tab href="#crop">
-            Crop
           </v-tab>
           <v-tab href="#site">
             Site
@@ -18,6 +18,62 @@
             SiteType
           </v-tab>
 
+          <v-tab-item value="crop">
+            <v-card flat>
+              <v-card-text>
+                <h3 class="mb-5">
+                  Plant a new crop:
+                </h3>
+                <asset-picker propName="plant" :asset="model.crop"
+                  label="Plant"
+                  :rules="[requiredRule(`plant`)]"
+                ></asset-picker>
+                <date-field
+                  label="Crop start date"
+                  :item="model.site.tags[0]"
+                  model="date"
+                ></date-field>
+                <h3 class="mb-5" v-if="model.crop.plant">
+                  TIP: Label your crop using any of the following:
+                </h3>
+                <v-text-field v-model="model.crop.id" 
+                  v-if="model.crop.plant"
+                  outlined
+                  label="Crop ID"
+                  :rules="idRules"
+                  @focus="cropIdFocus()"
+                  placeholder="Enter unique crop ID"
+                  hint="A unique ID for all time"
+                ></v-text-field>
+                <v-text-field v-model="model.crop.tags[0].name"
+                  v-if="model.crop.plant"
+                  outlined
+                  label="Crop site ID"
+                  :rules="[requiredRule('CropSiteId')]"
+                  placeholder="Enter container or location ID"
+                  append-outer-icon="mdi-new-box"
+                  @click:append-outer=
+                    "createAsset(model.crop.tags[0], 'name')"
+                  :hint="idHint(model.crop.tags[0].name)"
+                ></v-text-field>
+                <v-text-field v-model="model.crop.name"
+                  v-if="model.plant && model.crop.tags[0].name"
+                  outlined
+                  label="Crop Name"
+                  :rules="nameRules"
+                  @focus="cropNameFocus()"
+                  placeholder="Enter short crop name"
+                  hint="E.g., plant ID and site ID"
+                ></v-text-field>
+                <v-text-field v-model="model.crop.tags[0].note"
+                  v-if="model.plant && model.crop.tags[0].name"
+                  outlined
+                  label="Crop Notes"
+                  hint="E.g., number of seeds, etc."
+                ></v-text-field>
+              </v-card-text>
+            </v-card>
+          </v-tab-item>
           <v-tab-item value="plant">
             <v-card flat>
               <v-card-text>
@@ -56,46 +112,6 @@
                   :item="model.plant.tags[0]"
                   model="date"
                 ></date-field>
-              </v-card-text>
-            </v-card>
-          </v-tab-item>
-          <v-tab-item value="crop">
-            <v-card flat>
-              <v-card-text>
-                <h3 class="mb-5">
-                  Plant a new crop:
-                </h3>
-                {{model.crop}}
-                <asset-picker propName="plant" :asset="model.crop"
-                  label="Plant"
-                  :rules="[requiredRule(`plant`)]"
-                ></asset-picker>
-                <date-field
-                  label="Crop start date"
-                  :item="model.site.tags[0]"
-                  model="date"
-                ></date-field>
-                <v-text-field v-model="model.crop.tags[0].name"
-                  outlined
-                  label="Crop site ID"
-                  placeholder="Enter container or location ID"
-                  :hint="idHint(model.site.id)"
-                ></v-text-field>
-                <v-text-field v-model="model.crop.id"
-                  outlined
-                  label="Crop ID"
-                  :rules="idRules"
-                  @focus="cropId()"
-                  placeholder="Enter unique crop ID"
-                  hint="E.g., CIL20200423 for Cilantro planted on ${new Date(2020,3,23).toLocaleDateString()}"
-                ></v-text-field>
-                <v-text-field v-model="model.crop.name"
-                  outlined
-                  label="Name"
-                  :rules="nameRules"
-                  placeholder="Enter short crop name"
-                  hint='E.g., "Tomato, Berkeley Tie Dye"'
-                ></v-text-field>
               </v-card-text>
             </v-card>
           </v-tab-item>
@@ -165,6 +181,7 @@ import Vue from "vue";
 import DateField from "./date-field";
 import AssetPicker from "./asset-picker";
 const AssetStore = require("../src/asset-store");
+const uuidv4 = require("uuid/v4");
 
 export default {
   name: 'AddAsset',
@@ -191,6 +208,7 @@ export default {
         },
         crop: {
           type: 'crop',
+          plant: '',
           name: '',
           id: '',
           tags: [{
@@ -221,6 +239,9 @@ export default {
     }
   },
   methods: {
+    createAsset(obj, prop) {
+      this.$store.commit("assets/createId", id=>(obj[prop]=id));
+    },
     siteFocus(field) {
         var site = this.model.site;
         if (field === 'name') {
@@ -256,35 +277,46 @@ export default {
       Vue.set(this.valid, key, value);
       return value;
     },
-    idHint(id) {
-      var asset = this.assetStore.assetOfId(id);
-      return asset ? `${asset.name}` : `New asset ${id}`
+    idHint(id, idNone="") {
+      if (id) {
+        var asset = this.assetStore.assetOfId(id);
+        return asset ? `${asset.name}` : `New asset ${id}`
+      } else {
+        return idNone;
+      }
     },
     requiredRule(field) {
       var that = this;
       var msg = `*${field} is required`;
       return (v=>that.validate(field, v&&v.length>0 || msg));
     },
-    cropId() {
+    cropNameFocus() {
       var {
         crop,
       } = this.model;
-      if (!crop.id) {
-        var date = new Date(crop.tags[0].date);
-        var year = date.getFullYear();
-        var mm = date.toLocaleDateString(undefined, {
-          month: "2-digit",
-        });
-        var dd = date.toLocaleDateString(undefined, {
-          day: "2-digit",
-        });
-        var id = `${crop.plant}${year}${mm}${dd}`;
+      var tag0 = crop.tags[0];
+      if (tag0.name && crop.plant && !crop.name) {
+        var name = `${crop.plant}${tag0.name.replace(/[^0-9]/ug,'')}`;
+        Vue.set(crop, "name", name);
+      }
+    },
+    cropIdFocus() {
+      var {
+        crop,
+      } = this.model;
+      if (crop.plant && !crop.id) {
+        crop.guid = uuidv4();
+        var id = `${crop.plant}-${crop.guid.substring(0,6)}`;
         Vue.set(crop, "id", id);
-        console.log(`dbg crop id`, {id, year, mm,dd});
       }
     },
   },
   computed: {
+    hasPlants() {
+      return this.assets.reduce((a,asset)=>{
+        return a || asset.type === 'plant'
+      }, false);
+    },
     assets() {
       return this.$store.state.assets.list;
     },
@@ -318,10 +350,14 @@ export default {
       } = this;
       var activeTab = model.activeTab;
       var validName = valid.name === true;
+      var validPlant = valid.plant === true;
       var validId = valid.id === true;
       var validSiteType = valid[`site-type`] === true;
+      var validCropSiteId = valid[`CropSiteId`] === true;
       if (activeTab === 'plant') {
         return validName && validId;
+      } else if (activeTab === 'crop') {
+        return validName && validId && validPlant && validCropSiteId;
       } else if (activeTab === 'site') {
         return validName && validId && validSiteType;
       }
@@ -332,6 +368,9 @@ export default {
     this.$store.subscribe((mutation, /*state*/)=>{
       if (mutation.type === "showAddAsset") {
         var showAddAsset = mutation.payload;
+        if (this.hasPlants) {
+          this.defaultModel.activeTab = 'crop';
+        }
         showAddAsset && this.clearModel();
         Vue.set(this, "showAddAsset", showAddAsset);
         console.log("subscribe:", mutation.type, showAddAsset);
