@@ -83,21 +83,6 @@
       "id": "A0222",
       "name": "Tray0222"
     },
-    "36CC5A44-3915-4639-A53E-20BDE62AAEA2": {
-      "guid": "36cc5a44-3915-4639-a53e-20bde62aaea2",
-      "type": "crop",
-      "tags": {
-        "entered": {
-          "date": "2020-05-05T07:00:00.000Z",
-          "applies": true,
-          "name": "A0222",
-          "note": "3 pinches"
-        }
-      },
-      "id": "CIL20200505",
-      "plant": "A0241",
-      "name": "CIL0505"
-    },
     "CABD724D-9FF1-4146-B9A0-9B8FDCBD76DD": {
       "guid": "cabd724d-9ff1-4146-b9a0-9b8fdcbd76dd",
       "type": "crop",
@@ -968,6 +953,33 @@
       "id": "BTD-521a70",
       "plant": "BTD",
       "name": "BTD0201"
+    },
+    "36CC5A44-3915-4639-A53E-20BDE62AAEA2": {
+      "guid": "36cc5a44-3915-4639-a53e-20bde62aaea2",
+      "type": "crop",
+      "tags": {
+        "entered": {
+          "date": "2020-05-05T07:00:00.000Z",
+          "applies": true,
+          "name": "A0222",
+          "note": "3 pinches"
+        },
+        "end": {
+          "date": "2020-07-07T17:48:53.228Z",
+          "applies": true,
+          "name": "end",
+          "note": "No significant recovery after full harvest"
+        },
+        "Harvest": {
+          "date": "2020-06-23T07:00:00.000Z",
+          "applies": true,
+          "name": "Harvest",
+          "note": "Full harvest after many weeks of partial harvest"
+        }
+      },
+      "id": "CIL20200505",
+      "plant": "A0241",
+      "name": "CIL0505"
     }
   },
   "settings": {

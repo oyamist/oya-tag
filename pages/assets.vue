@@ -135,9 +135,12 @@ export default {
     getAgeColor(item) {
       var {
         started,
+        lastTag,
       } = item;
       var age = item.ageDays;
-      if (age == null) {
+      if (lastTag.name === 'end') {
+        return '#888';
+      } else if (age == null) {
         return '#eee';
       } else if (age < 0) {
         return 'grey lighten-2 black--text'

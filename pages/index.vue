@@ -31,6 +31,7 @@
         :expanded.sync="expanded"
         show-expand
         item-key="text"
+        class="feature-table"
         :headers="headers"
         :items="features"
         :items-per-page="15"
@@ -42,7 +43,14 @@
         </template>
         <template v-slot:expanded-item="{ headers, item }">
           <td :colspan="headers.length-1">&nbsp;</td>
-          <td> {{ item.notes }} </td>
+          <td> 
+            {{ item.notes }} 
+            <img v-if="item.img" 
+              class="feature-image"
+              :width="item.imgW"
+              :src="`/${item.img}`" />
+          </td>
+          
         </template>
       </v-data-table>
     </v-card>
@@ -63,29 +71,43 @@ export default {
     }],
     features: [{
       done: true,
-      text: `Typed assets`,
-      notes: `Assets have customizable types such as: 
-        crop, plant, site`,
+      text: `Instant search`,
+      notes: `
+        Search results are shown as you type. 
+        Search your assets by id, guid, type description, etc.
+        `,
+      img: `eg-search.png`,
+      imgW: `500px`,
     },{
       done: true,
-      text: `Instant search`,
-      notes: `Search results are shown as you type. 
-        Search by id, guid, type description, etc.`,
+      text: `Asset creation wizard`,
+      notes: `
+        Create different types of assets with the asset creation wizard.
+        `,
+      img: `eg-add-asset.png`,
+      imgW: `400px`,
     },{
       done: true,
       text: `Autonumber assets`,
-      notes: `New assets are assigned unique ids
-        to match pre-printed barcode labels:
+      notes: `
+        Assign your own unique asset IDs 
+        or click "NEW" to automatically create a new
+        ID matching pre-printed barcode labels:
         A0001, A0002, ...`,
+      img: `eg-new-site-id.png`,
+      imgW: `400px`,
     },{
       done: true,
       text: `Track asset lifecycle`,
-      notes: `Use tags to track events over the lifetime of an asset.
+      notes: `
+        Use dated tags to track events over the lifetime of an asset.
         Record growth stages for individual plants 
         (e.g., sow, sprout, flower, harvest, etc.).
         or manage inventory assets in general
         (e.g., purchase date, plan maintenance, etc.)
         `,
+      img: `eg-edit-plant.png`,
+      imgW: `400px`,
     },{
       done: true,
       text: `Link assets effortlessly`,
@@ -155,3 +177,11 @@ export default {
   }
 }
 </script>
+<style scoped>
+.feature-table {
+  max-width: 40em;
+}
+.feature-image {
+  display: block;
+}
+</style>

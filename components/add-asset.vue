@@ -3,6 +3,9 @@
      @keydown.esc="cancelAsset"
   >
     <v-card >
+      <v-system-bar color="green darken-2" dark>
+        Add Asset
+      </v-system-bar>
       <v-card-text v-if="model">
         <v-tabs v-model="model.activeTab">
           <v-tab href="#crop" v-if="hasPlants">

@@ -104,7 +104,9 @@ export default {
         css.push(`box-shadow: 0px 1px 1px 4px #18FFFF`);
       }
       if (start.started) {
-        css.push(`background:#1b5e20`);
+        css.push(start.ended
+          ? `background:#888`
+          : `background:#1b5e20`);
       } else {
         css.push(`color:#aaaaaa`);
         css.push(`border: 1px solid #aaaaaa`);
@@ -190,6 +192,7 @@ export default {
           console.error(`Invalid start for asset`, asset);
         }
         start.started = start.started && asset.started;
+        start.ended = !!start.ended || asset.lastTag.name === 'end';
         start.style = that.cssStart(start);
         start.assets.push(asset);
         return a;
