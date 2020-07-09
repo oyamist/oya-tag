@@ -1,10 +1,12 @@
 <template>
-    <div class="gr-board" v-if="timelines">
+  <div class="gr-board hscroll-container" v-if="timelines.length">
+    <div id="h-scroll-content" style="width:540px; ">
       <div class="gr-timelines">
         <v-row class="gr-board-pane align-flex-end"><!-- title -->
           <timeline v-for="tl in timelines" :key="tl.name"
               :id="tl.id"
               :label="tl.name"
+              :itemW="itemW"
               :showItems="false"
               :g="g"
           />
@@ -18,11 +20,13 @@
               :label="tl.name"
               :items="tl.items" 
               :showTitle="false"
+              :itemW="itemW"
               :g="g"
           />
         </v-row><!-- items -->
-      </div>
-    </div><!-- gr-board -->
+      </div><!-- gr-timelines -->
+    </div><!-- hscroll-content -->
+  </div><!-- gr-board -->
 </template>
 
 <script>
@@ -35,10 +39,18 @@ name: 'ViewTimeline',
 data: () => {
   return {
     days: 120,
+    itemW: 90,
+    scroll: {
+      x: 0,
+      y: 0,
+    },
     g,
   }
 },
 methods: {
+  onScroll(evt) {
+    console.log(`dbg onScroll`, evt);
+  },
   cssScrollY() {
     var h = window.innerHeight - 100;
     var css = [
@@ -48,15 +60,24 @@ methods: {
     ];
     return css.join(';');
   },
+  cssScrollX() {
+      var timelines = this.timelines;
+      var n = timelines.length + 1;
+      var css = [
+        `width: ${n*this.itemW}px`,
+      ].join(';');
+      console.log(`dbg css`, css);
+      return css
+  },
 },
 computed: {
-    assetStore() {
-        return this.$store.state.assets.assetStore;
-    },
-    timelines() {
-        var assetStore = this.assetStore;
-        return assetStore && assetStore.timelines() || [];
-    }
+  assetStore() {
+      return this.$store.state.assets.assetStore;
+  },
+  timelines() {
+      var assetStore = this.assetStore;
+      return assetStore && assetStore.timelines() || [];
+  }
 },
 mounted() {
 },
@@ -82,5 +103,12 @@ components: {
 }
 .align-flex-end {
   align-items: flex-end;
+}
+.hscroll-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.hscroll-content {
 }
 </style>

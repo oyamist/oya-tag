@@ -1,12 +1,11 @@
 <template>
   <div>
     <div v-if="showTitle" class="gr-timeline">
-      <div class="gr-title" :style="cssTitle()">
-        <div class="timeline-title">
-          <a :href="`/assets?search=${id}`" :title="`${id}/${label}`">
-            {{label}}
-          </a>
-        </div>
+      <div class="timeline-title" :style="cssTitle()">
+        <a :href="`/assets?search=${id}`" :title="`${id}/${label}`"
+          >
+          {{label}}
+        </a>
       </div>
     </div>
     <div v-if="showItems" 
@@ -82,9 +81,12 @@ export default {
       });
     },
     cssTitle() {
-      return [
+      var css = [
+        `font-weight: 500`,
+        `white-space: normal`,
         `width:${this.itemW}px`,
       ].join(';');
+      return css;
     },
     cssStart(start) {
       if (!start) {
@@ -197,7 +199,6 @@ export default {
         start.assets.push(asset);
         return a;
       }, []);
-      console.log(`dbg starts`, starts);
       return starts;
     },
     assetStore() {
@@ -210,9 +211,6 @@ export default {
 }
 </script>
 <style>
-.gr-title {
-  text-align: center;
-}
 .gr-day{
   display: flex;
   justify-content: center;
@@ -239,8 +237,5 @@ export default {
   color: #fff;
   text-align: center;
   width: 100%;
-}
-.timeline-title a{
-  font-weight: 500;
 }
 </style>

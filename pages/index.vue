@@ -14,7 +14,8 @@
       </v-card-title>
       <v-card-text>
         Track and tag your plants, supplies and whatever with
-        a private but shareable Oya-Tag online journal:
+        a private but shareable Oya-Tag online journal. 
+        
       </v-card-text>
       <v-card-text>
         <v-text-field
@@ -42,13 +43,14 @@
             </v-simple-checkbox>
         </template>
         <template v-slot:expanded-item="{ headers, item }">
-          <td :colspan="headers.length-1">&nbsp;</td>
-          <td> 
-            {{ item.notes }} 
-            <img v-if="item.img" 
-              class="feature-image"
-              :width="item.imgW"
-              :src="`/${item.img}`" />
+          <td :colspan="headers.length" class="feature-container"> 
+            <div class="feature-content">
+              {{ item.notes }} 
+              <img v-if="item.img" 
+                class="feature-image"
+                :width="item.imgW"
+                :src="`/${item.img}`" />
+            </div><!-- feature-content -->
           </td>
           
         </template>
@@ -68,6 +70,10 @@ export default {
     },{
       text: "Feature",
       value: "text",
+    },{
+      text: '',
+      value: "data-table-expand",
+      align: 'end',
     }],
     features: [{
       done: true,
@@ -98,34 +104,23 @@ export default {
       imgW: `400px`,
     },{
       done: true,
-      text: `Track asset lifecycle`,
+      text: `Tag your assets`,
       notes: `
-        Use dated tags to track events over the lifetime of an asset.
-        Record growth stages for individual plants 
-        (e.g., sow, sprout, flower, harvest, etc.).
-        or manage inventory assets in general
-        (e.g., purchase date, plan maintenance, etc.)
+        Tag assets with one or more tags.
+        Each tag has a date, a name, and an optional note.
+        Link assets by naming a tag with another asset's ID.
         `,
       img: `eg-edit-plant.png`,
       imgW: `400px`,
     },{
       done: true,
-      text: `Link assets effortlessly`,
-      notes: `Tag an asset with related asset ids to link them.
-        For example, 
-        you can tag tomato A0001
-        with netpot A0002 
-        and bucket A0003 
-        and planter A0004`
-    },{
-      done: true,
-      text: `Tags are dated`,
-      notes: `Each tag has an editable date which
-        can be designated as "planned" or "actual"`,
-    },{
-      done: true,
-      text: `Tags have notes`,
-      notes: `Add arbitrary notes such as: "planted 3 seeds in netpot"`,
+      text: `View crop timelines`,
+      notes: `
+        Crop timelines show you what you've planted and when.
+        Use timelines to know when to sow.
+        `,
+      img: `eg-timelines.png`,
+      imgW: `400px`,
     },{
       done: true,
       text: `Open file format`,
@@ -135,32 +130,11 @@ export default {
       done: true,
       text: `Privacy`,
       notes: `Your assets are stored in your browser local storage.
-        You can save them as you wish.  It's your data`,
-    },{
-      done: true,
-      text: 'Automatic "To-Do" list',
-      notes: `Incomplete tasks are sorted by planned date
-        so that you know what to do when
-        (e.g. plant Broccoli today)`,
-    },{
-      done: false,
-      text: `Timeline suggestions`,
-      notes: `Crop timelines suggest action based
-        on recent and historical activity.
-        E.g. plant Broccoli today!
+        You can save them as you wish.  It's your data. 
+        Nobody can see it but you.
+        Save your assets for backup or for loading them onto a
+        different computer.
         `,
-    },{
-      done: false,
-      text: `Scan barcodes`,
-      notes: `Save time and effort by using a barcode reader.
-        Scan a barcode to find an asset.
-        Scan a barcode to add a new asset tag.
-        Beep beep and you're done.
-        `,
-    },{
-      done: false,
-      text: `Print asset labels`,
-      notes: `Print individual asset labels with barcodes`,
     }],
   }},
   methods: {
@@ -177,11 +151,25 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style>
 .feature-table {
   max-width: 40em;
 }
 .feature-image {
   display: block;
+  padding-bottom: 0.8em;
+}
+.v-data-table tbody tr.v-data-table__expanded__content {
+  background-color: #eee;
+  box-shadow: none;
+}
+.feature-content {
+  display: inline-block;
+  padding-left: 1em;
+}
+.feature-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: wrap;
 }
 </style>

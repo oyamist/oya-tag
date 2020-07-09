@@ -116,7 +116,7 @@ export default {
       askUpload: false,
       uploadFile: null,
       viewMenu: [{
-        title: 'Home',
+        title: 'Help',
         route: '/'
       }, {
         title: 'Timelines',
