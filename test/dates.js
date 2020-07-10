@@ -13,7 +13,7 @@
         var date = new Date(2020,0,2);
         should(Dates.toMMDDYY(date)).equal('1/2/20');
     });
-    it("TESTTESTfromYMD(iso) => locale midnight", ()=>{
+    it("TESTTESTfromYMD(iso) => locale 1AM", ()=>{
         var now = new Date();
         var year = `0${now.getFullYear()}`;
         year = year.substring(year.length-4);
@@ -25,9 +25,10 @@
         var localeDate = Dates.fromYMD(iso);
         var tzminutes = (new Date()).getTimezoneOffset();
         var tzms = tzminutes * 60*1000;
+        var dstSecs = 60*60; // Daylight savings time fudge
         var mins = now.getHours()*60+now.getMinutes();
-        var secs = mins*60+now.getSeconds()
-        var time = secs*1000 ;
-        should(now-localeDate).above(time).below(time+1000);
+        var secs = mins*60+now.getSeconds();
+        should((now-localeDate)/1000).above(secs-dstSecs);
+        should((now-localeDate)/1000).below(secs+dstSecs);
     });
 })

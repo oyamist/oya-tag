@@ -126,9 +126,10 @@
             if (id) {
                 var suffix = asset.id.replace(/[^0-9]*/ug, "");
                 var customKeys = Asset.customKeys(asset);
-                var customVal0 = customKeys && asset[customKeys[0]];
+                var key0 = customKeys[0];
+                var customVal0 = customKeys && asset[key0];
                 var prefix = (customVal0 || asset.type).toUpperCase();
-                return `${prefix}${suffix}`;
+                return `${prefix}-${suffix}`;
             } else {
                 return ``;
             }

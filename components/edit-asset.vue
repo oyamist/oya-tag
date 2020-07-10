@@ -31,10 +31,12 @@
               :label="`Name`"
               />
           </div>
-        </div><!--field-row-->
-        <div class="field-row" v-if="asset.type==='crop'" >
-          <div>
+          <div v-if="asset.type==='crop'" >
             <asset-picker propName="plant" :asset="asset" label="Plant"
+            ></asset-picker>
+          </div>
+          <div v-if="asset.type==='site'" >
+            <asset-picker propName="site-type" :asset="asset" label="Site Type"
             ></asset-picker>
           </div>
         </div><!--field-row-->

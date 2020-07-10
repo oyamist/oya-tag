@@ -361,17 +361,17 @@
         should(AssetStore.createName({
             id: "A0123",
             type: "bucket",
-        })).equal(`BUCKET0123`);
+        })).equal(`BUCKET-0123`);
         should(AssetStore.createName({
             id: "A0123",
             type: "site",
             "site-type": "NETPOT",
-        })).equal(`NETPOT0123`);
+        })).equal(`NETPOT-0123`);
         should(AssetStore.createName({
             id: "A0123",
             type: "plant",
             plant: "BTD",
-        })).equal(`BTD0123`);
+        })).equal(`BTD-0123`);
     });
     
 

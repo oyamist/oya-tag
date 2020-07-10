@@ -1,6 +1,6 @@
 <template>
   <div class="gr-board hscroll-container" v-if="timelines.length">
-    <div id="h-scroll-content" style="width:540px; ">
+    <div id="h-scroll-content" :style="cssScrollContent">
       <div class="gr-timelines">
         <v-row class="gr-board-pane align-flex-end"><!-- title -->
           <timeline v-for="tl in timelines" :key="tl.name"
@@ -60,19 +60,14 @@ methods: {
     ];
     return css.join(';');
   },
-  cssScrollX() {
-      var timelines = this.timelines;
-      var n = timelines.length + 1;
-      var css = [
-        `width: ${n*this.itemW}px`,
-      ].join(';');
-      console.log(`dbg css`, css);
-      return css
-  },
 },
 computed: {
   assetStore() {
       return this.$store.state.assets.assetStore;
+  },
+  cssScrollContent() {
+    var n = this.timelines.length;
+    return (n+1) * (this.itemW);
   },
   timelines() {
       var assetStore = this.assetStore;

@@ -4,14 +4,15 @@
       <v-card-title>
         <v-text-field
           v-model="search"
-          append-icon="mdi-magnify"
-          label="Search assets"
-          single-line
-          clearable
+          prepend-inner-icon="mdi-magnify"
+          label="Search..."
+          solo-line
+          solo
+          @keypress="onSearchKey"
           hide-details
           ></v-text-field>
         <v-spacer/>
-        <v-btn color="green darken-2" icon class="pl-3 pt-4" 
+        <v-btn color="green darken-2" icon class="pl-3 " 
           title="Add Asset"
           @click="addAsset()"
           ><v-icon large>mdi-plus-circle</v-icon></v-btn>
@@ -19,7 +20,7 @@
       <v-data-table v-if="assetStore"
         class="elevation-1" 
         :search="search"
-        :headers="headers"
+        :headers="assetHeaders"
         single-expand
         show-expand :expanded.sync="expanded"
         :items="assets" 
@@ -29,11 +30,15 @@
         >
         <template v-slot:expanded-item="{ headers, item }">
           <td :colspan="headers.length"> <div class="asset-expanded">
-            <div>
-              {{item.type}}
-              {{item.firstTag.name}}:
-              {{item.firstTag.date.toLocaleDateString()}}
-            </div>
+            <v-data-table
+                :items="item.tagList"
+                :headers="tagHeaders"
+                dense
+                disable-pagination
+                hide-default-header
+                hide-default-footer
+                >
+            </v-data-table>
             <v-btn small class="mr-2" color="primary"
               @click="$router.push(`/assets#${item.id}`)"
               > 
@@ -79,7 +84,12 @@ export default {
       newAsset: {},
       assetsPerPage: -1,
       expanded: [],
-      headers: [
+      tagHeaders: [
+        { text: "Date", value: "localeDate", }, 
+        { text: "Tag", value: "name", }, 
+        { text: "Note", value: "note", }, 
+      ],
+      assetHeaders: [
         { text: "Start Days", value: "ageDays", },
         { text: "Asset", value: "summary", },
         { text: "LastTag", value: "lastTag", },
@@ -93,6 +103,11 @@ export default {
     },
   },
   methods: {
+    onSearchKey(event) {
+      if (event.charCode === 13) { // Enter
+        event.target.select();
+      }
+    },
     tagText(tag) {
       var {
         assetStore,

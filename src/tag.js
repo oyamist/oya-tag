@@ -31,6 +31,10 @@
             }
         }
 
+        get localeDate() {
+            return this.date.toLocaleDateString();
+        }
+
     } // class Tag
 
     module.exports = exports.Tag = Tag;

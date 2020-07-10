@@ -26,21 +26,6 @@
       "id": "CUKE",
       "name": "English Cucumber"
     },
-    "6070C5F2-2F94-426E-8C32-4BC58759FCDE": {
-      "guid": "6070c5f2-2f94-426e-8c32-4bc58759fcde",
-      "type": "site-type",
-      "tags": {
-        "entered": {
-          "date": "2020-01-01T00:00:00.000Z",
-          "applies": true,
-          "name": "entered",
-          "note": "https://www.inlineplastics.com/product/ts32/",
-          "noteUrl": "https://www.inlineplastics.com/product/ts32/"
-        }
-      },
-      "id": "ts32",
-      "name": "Tray, TS32 Sprouts Food Container"
-    },
     "B810793A-1B4E-4880-A494-1FBCF2257C33": {
       "guid": "b810793a-1b4e-4880-a494-1fbcf2257c33",
       "type": "site",
@@ -980,6 +965,183 @@
       "id": "CIL20200505",
       "plant": "A0241",
       "name": "CIL0505"
+    },
+    "80B593C1-5116-4B90-BAB1-A34798EEC7F8": {
+      "guid": "80b593c1-5116-4b90-bab1-a34798eec7f8",
+      "type": "plant",
+      "tags": {
+        "0": {
+          "date": "2020-02-20T08:00:00.000Z",
+          "applies": true,
+          "name": "TAT0220",
+          "note": "https://sproutpeople.org/seeds/tatsoi-micro-greens/",
+          "noteUrl": "https://sproutpeople.org/seeds/tatsoi-micro-greens/"
+        }
+      },
+      "id": "TAT",
+      "name": "Tatsoi"
+    },
+    "59B4531E-D409-4F90-B99E-714C9C706F2C": {
+      "guid": "59b4531e-d409-4f90-b99e-714c9c706f2c",
+      "type": "crop",
+      "tags": {
+        "0": {
+          "date": "2020-04-23T08:00:00.000Z",
+          "applies": true,
+          "name": "A0185",
+          "note": "3 pinches direct"
+        },
+        "end": {
+          "date": "2020-06-19T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "Full harvest"
+        }
+      },
+      "id": "TAT-59b453",
+      "plant": "TAT",
+      "name": "TAT0185"
+    },
+    "CB5CE50F-DBDB-4234-87F9-4D5693A8ECA8": {
+      "guid": "cb5ce50f-dbdb-4234-87f9-4d5693a8eca8",
+      "type": "crop",
+      "tags": {
+        "0": {
+          "date": "2020-04-13T08:00:00.000Z",
+          "applies": true,
+          "name": "A0196",
+          "note": "3 pinches soaked 1 day"
+        },
+        "end": {
+          "date": "2020-07-08T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "Full harvest\n"
+        }
+      },
+      "id": "TAT-cb5ce5",
+      "plant": "TAT",
+      "name": "TAT0196"
+    },
+    "047406CD-9EBB-4DA3-B342-42A2B657C0A5": {
+      "guid": "047406cd-9ebb-4da3-b342-42a2b657c0a5",
+      "type": "crop",
+      "tags": {
+        "0": {
+          "date": "2020-04-03T08:00:00.000Z",
+          "applies": true,
+          "name": "A0177",
+          "note": "3 pinches direct sown"
+        }
+      },
+      "id": "TAT-047406",
+      "plant": "TAT",
+      "name": "TAT0177"
+    },
+    "7F67E034-5B7A-42E4-9073-7A70B68882A5": {
+      "guid": "7f67e034-5b7a-42e4-9073-7a70b68882a5",
+      "type": "crop",
+      "tags": {
+        "0": {
+          "date": "2020-05-29T08:00:00.000Z",
+          "applies": true,
+          "name": "A0226",
+          "note": "3 pinches direct sown"
+        }
+      },
+      "id": "TAT-7f67e0",
+      "plant": "TAT",
+      "name": "TAT0226"
+    },
+    "6070C5F2-2F94-426E-8C32-4BC58759FCDE": {
+      "guid": "6070c5f2-2f94-426e-8c32-4bc58759fcde",
+      "type": "site-type",
+      "tags": {
+        "entered": {
+          "date": "2020-01-01T00:00:00.000Z",
+          "applies": true,
+          "name": "entered",
+          "note": "https://www.inlineplastics.com/product/ts32/",
+          "noteUrl": "https://www.inlineplastics.com/product/ts32/"
+        }
+      },
+      "id": "TRAY",
+      "name": "Tray, TS32 Sprouts Food Container"
+    },
+    "7187347D-4E90-4D92-B14A-6E278E80D3DF": {
+      "guid": "7187347d-4e90-4d92-b14a-6e278e80d3df",
+      "type": "site",
+      "tags": {
+        "0": {
+          "date": "2020-04-13T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      },
+      "id": "A0196",
+      "site-type": "TRAY",
+      "name": "TS320196"
+    },
+    "DF71A2EB-D3CD-4C23-9DCD-BA0171F1D5CC": {
+      "guid": "df71a2eb-d3cd-4c23-9dcd-ba0171f1d5cc",
+      "type": "site",
+      "tags": {
+        "0": {
+          "date": "2020-05-29T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      },
+      "id": "A0226",
+      "site-type": "TRAY",
+      "name": "TRAY-0226"
+    },
+    "D2C7668D-08CC-4DE5-B0C8-335A46978C44": {
+      "guid": "d2c7668d-08cc-4de5-b0c8-335a46978c44",
+      "type": "site",
+      "tags": {
+        "0": {
+          "date": "2020-04-03T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      },
+      "id": "A0177",
+      "site-type": "TRAY",
+      "name": "TRAY-0177"
+    },
+    "324A3024-146A-47FB-A7CF-42AD32F6D30C": {
+      "guid": "324a3024-146a-47fb-a7cf-42ad32f6d30c",
+      "type": "crop",
+      "tags": {
+        "0": {
+          "date": "2020-05-11T08:00:00.000Z",
+          "applies": true,
+          "name": "A0224",
+          "note": "3 pinches direct sown"
+        }
+      },
+      "id": "TAT-324a30",
+      "plant": "TAT",
+      "name": "TAT0224"
+    },
+    "9F5E2EFD-1F02-4D11-8F8A-7D6F0DB3DBBC": {
+      "guid": "9f5e2efd-1f02-4d11-8f8a-7d6f0db3dbbc",
+      "type": "site",
+      "tags": {
+        "0": {
+          "date": "2020-05-11T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      },
+      "id": "A0224",
+      "site-type": "TRAY",
+      "name": "TRAY-0224"
     }
   },
   "settings": {

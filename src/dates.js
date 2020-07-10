@@ -1,6 +1,18 @@
 (function(exports) {
 
     class Dates {
+        static toMM(date=new Date()) {
+            return date.toLocaleDateString(undefined, {
+                month: "2-digit",
+            });
+        }
+
+        static toDD(date=new Date()) {
+            return date.toLocaleDateString(undefined, {
+                day: "2-digit",
+            });
+        }
+
         static toMMDD(date=new Date()) {
             return date.toLocaleDateString(undefined, {
                 month: "numeric",
@@ -17,7 +29,8 @@
         }
 
         static fromYMD(iso) {
-            var tzminutes = (new Date()).getTimezoneOffset();
+            var dst = 60; /* Daylight savings fudge */
+            var tzminutes = (new Date()).getTimezoneOffset() + dst;
             var tzms = tzminutes * 60*1000;
             if (iso.length === 10) {
                 iso = `${iso}T00:00:00.000Z`;

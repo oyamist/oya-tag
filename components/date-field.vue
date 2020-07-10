@@ -3,7 +3,6 @@
     <v-text-field :label="label" v-model="date"
       class="date-field"
       readonly
-      outlined
       validate-on-blur
       @keypress="onClickText()"
       @click="onClickText()"
@@ -71,5 +70,6 @@
 <style scoped>
 .date-field {
     min-width: 9em;
+    max-width: 11em;
 }
 </style>
