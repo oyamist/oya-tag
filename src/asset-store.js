@@ -51,7 +51,7 @@
             return Object.keys(asset).reduce((a,k)=>{
                 if (a) {
                     // skip
-                } else if (k === 'tags') {
+                } else if (k === 'tagList') {
                     var tags = asset.tags;
                     a = Object.keys(tags).reduce((a,tk)=> {
                         var tag = tags[tk];

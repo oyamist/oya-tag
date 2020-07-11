@@ -5,15 +5,15 @@
         Dates,
     } = require("../index");
 
-    it("TESTTESTtoMMDD(date) => locale mmdd", ()=>{
+    it("toMMDD(date) => locale mmdd", ()=>{
         var date = new Date(2020,0,2);
         should(Dates.toMMDD(date)).equal('1/2');
     });
-    it("TESTTESTtoMMDDYY(date) => locale mmddyy", ()=>{
+    it("toMMDDYY(date) => locale mmddyy", ()=>{
         var date = new Date(2020,0,2);
         should(Dates.toMMDDYY(date)).equal('1/2/20');
     });
-    it("TESTTESTfromYMD(iso) => locale 1AM", ()=>{
+    it("fromYMD(iso) => locale 1AM", ()=>{
         var now = new Date();
         var year = `0${now.getFullYear()}`;
         year = year.substring(year.length-4);

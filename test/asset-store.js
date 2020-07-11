@@ -56,7 +56,7 @@
             },
         });
     });
-    it("is serializable", ()=> {
+    it("TESTTESTis serializable", ()=> {
         var guid = "f5689832-79e2-48a5-bf5f-655cacec940f";
         var id = "a0001";
         var type = "crop";
@@ -110,7 +110,7 @@
         // Assets are keyed by id
         should(as.assetOfId(id)).equal(asset2);
     });
-    it("TESTTESTcreateId() => new Asset id", ()=>{
+    it("createId() => new Asset id", ()=>{
         var as = new AssetStore();
 
         // no other asset has same id
@@ -282,7 +282,7 @@
         should(as.assetOfId('test-asset-2')).equal(asset3);
         should(as.assetOfId('test-asset')).equal(undefined);
     });
-    it("assetFilter(...) => filters assets", ()=>{
+    it("TESTTESTassetFilter(...) => filters assets", ()=>{
         var assets = [
             new Asset({ id: "A0001", color: "red", }), 
             new Asset({ id: "A0002", color: "red", }), 
@@ -329,7 +329,7 @@
         should.deepEqual(as.filter("amy").map(a=>a.id),
             [ "A0011", "A0012", ]);
     });
-    it("TESTTESTtimelines() => crop timelines", ()=>{
+    it("timelines() => crop timelines", ()=>{
         var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
         var store = new AssetStore(json);
         var timelines = store.timelines();
@@ -357,7 +357,7 @@
             "TOM-1",
         ]);
     });
-    it("TESTTESTcreateName(asset) => generates name",()=>{
+    it("createName(asset) => generates name",()=>{
         should(AssetStore.createName({
             id: "A0123",
             type: "bucket",

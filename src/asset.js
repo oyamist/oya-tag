@@ -10,6 +10,7 @@
         name: true,
         id: true,
         type: true,
+        tagList: true,
         tags: true,
     }
     
@@ -22,20 +23,29 @@
             } else {
                 this.type = "asset";
             }
+            var optTagList = opts.tagList || [];
             var tagList = [];
-            var srcTags = opts.tags || {};
             var tags = {};
-            Object.keys(srcTags).forEach(k=>{
-                var value = new Tag(srcTags[k]);
-                tags[k] = value;
-                tagList.push(value);
-            });
+            if (optTagList.length) {
+                optTagList.forEach(t => {
+                    var tag = new Tag(t);
+                    tags[tag.name] = tag;
+                    tagList.push(tag);
+                });
+            } else {
+                var srcTags = opts.tags || {};
+                Object.keys(srcTags).forEach(k=>{
+                    var value = new Tag(srcTags[k]);
+                    tags[k] = value;
+                    tagList.push(value);
+                });
+            }
             Object.defineProperty(this, "tagList", {
+                enumerable: true,
                 writable: true,
                 value: tagList,
             });
             Object.defineProperty(this, "tags", {
-                enumerable: true,
                 value: tags,
             });
             this.id = opts.id || 

@@ -3,39 +3,39 @@
     "990D09FB-865B-41BB-BD7C-C3A41F4530DC": {
       "guid": "990d09fb-865b-41bb-bd7c-c3a41f4530dc",
       "type": "plant",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-13T13:51:37.962Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "BROC",
       "name": "Broccoli"
     },
     "F58E4260-7A62-416A-886A-182603BD7F01": {
       "guid": "f58e4260-7a62-416a-886a-182603bd7f01",
       "type": "plant",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2018-10-08T07:38:17.962Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "CUKE",
       "name": "English Cucumber"
     },
     "B810793A-1B4E-4880-A494-1FBCF2257C33": {
       "guid": "b810793a-1b4e-4880-a494-1fbcf2257c33",
       "type": "site",
-      "tags": {
-        "created": {
+      "tagList": [
+        {
           "date": "2020-06-07T00:00:00.000Z",
           "applies": true,
           "name": "created"
         }
-      },
+      ],
       "id": "A0182",
       "site-type": "ts32",
       "name": "Tray182"
@@ -43,14 +43,14 @@
     "61540B8A-931F-44DA-A1F8-A08D53B69572": {
       "guid": "61540b8a-931f-44da-a1f8-a08d53b69572",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-07T07:00:00.000Z",
           "applies": true,
           "name": "A0182",
           "note": "direct sown 3 pinches\n"
         }
-      },
+      ],
       "id": "CIL20200607",
       "plant": "A0241",
       "name": "CIL0607"
@@ -58,27 +58,27 @@
     "9800FEA1-8172-46D1-A920-95531B070AA2": {
       "guid": "9800fea1-8172-46d1-a920-95531b070aa2",
       "type": "tray",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-05-05T07:00:00.000Z",
           "applies": true,
           "name": "created"
         }
-      },
+      ],
       "id": "A0222",
       "name": "Tray0222"
     },
     "CABD724D-9FF1-4146-B9A0-9B8FDCBD76DD": {
       "guid": "cabd724d-9ff1-4146-b9a0-9b8fdcbd76dd",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-05-17T07:00:00.000Z",
           "applies": true,
           "name": "A0183",
           "note": "3 pinches"
         }
-      },
+      ],
       "id": "CIL20200517",
       "plant": "A0241",
       "name": "CIL0517"
@@ -86,19 +86,19 @@
     "73B3BE90-0FA4-48CB-AC20-58656CDC05B1": {
       "guid": "73b3be90-0fa4-48cb-ac20-58656cdc05b1",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-04-19T07:00:00.000Z",
           "applies": true,
           "name": "A0181",
           "note": "3 pinches"
         },
-        "end": {
+        {
           "date": "2020-06-25T17:19:47.488Z",
           "applies": true,
           "name": "end"
         }
-      },
+      ],
       "id": "CIL20200419",
       "plant": "A0241",
       "name": "CIL0419"
@@ -106,19 +106,19 @@
     "7D12CB2F-E5D0-4951-817A-98BEADD09861": {
       "guid": "7d12cb2f-e5d0-4951-817a-98beadd09861",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-04-13T07:00:00.000Z",
           "applies": true,
           "name": "A0179",
           "note": "3 pinches"
         },
-        "end": {
+        {
           "date": "2020-06-25T17:20:04.989Z",
           "applies": true,
           "name": "end"
         }
-      },
+      ],
       "id": "CIL20200413",
       "plant": "A0241",
       "name": "CIL0413"
@@ -126,66 +126,66 @@
     "BADC9A55-1E26-4AC2-959F-B794BF589372": {
       "guid": "badc9a55-1e26-4ac2-959f-b794bf589372",
       "type": "tray",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-04-19T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0181",
       "name": "Tray0181"
     },
     "BF887926-C935-4928-BAFB-56A4D6AE35EA": {
       "guid": "bf887926-c935-4928-bafb-56a4d6ae35ea",
       "type": "tray",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-05-17T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0183",
       "name": "Tray0183"
     },
     "168A2D15-E7E7-4F35-832D-973E968DE07C": {
       "guid": "168a2d15-e7e7-4f35-832d-973e968de07c",
       "type": "tray",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-04-13T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0179",
       "name": "Tray0179"
     },
     "AD97DCA4-69E2-44B2-86C6-665A20FB35AF": {
       "guid": "ad97dca4-69e2-44b2-86c6-665a20fb35af",
       "type": "tray",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-21T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0185",
       "name": "Tray0185"
     },
     "E9D2F90A-A2E5-4A7C-B0A0-5ECCB5834837": {
       "guid": "e9d2f90a-a2e5-4a7c-b0a0-5eccb5834837",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-21T07:00:00.000Z",
           "applies": true,
           "name": "A0185",
           "note": "3 pinches"
         }
-      },
+      ],
       "id": "CIL20200621",
       "plant": "A0241",
       "name": "CIL0621"
@@ -193,58 +193,58 @@
     "09D7C4F1-29AF-47BF-90CD-02674B46A59F": {
       "guid": "09d7c4f1-29af-47bf-90cd-02674b46a59f",
       "type": "plant",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-02-27T00:00:00.000Z",
           "applies": true,
           "name": "purchased",
           "note": "https://sproutpeople.org/cilantro-micro-greens/\n1/4 lb split seed",
           "noteUrl": "https://sproutpeople.org/cilantro-micro-greens/"
         }
-      },
+      ],
       "id": "A0241",
       "name": "Cilantro"
     },
     "75F02923-4B5A-4209-ACD5-B2F5AA6ABB3E": {
       "guid": "75f02923-4b5a-4209-acd5-b2f5aa6abb3e",
       "type": "Jar",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-02-27T07:00:00.000Z",
           "applies": true,
           "name": "purchased",
           "note": "https://sproutpeople.org/sprouting-jar-3-screen-lid-set/\nWide-mouth mason jar",
           "noteUrl": "https://sproutpeople.org/sprouting-jar-3-screen-lid-set/"
         }
-      },
+      ],
       "id": "A0187",
       "name": "ScreenJar"
     },
     "4005EA28-464E-4947-9704-36510E4C870A": {
       "guid": "4005ea28-464e-4947-9704-36510e4c870a",
       "type": "site-type",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2019-08-06T07:00:00.000Z",
           "applies": true,
           "name": "purchased",
           "note": "https://amazon.com/gp/product/B073WJFZNB",
           "noteUrl": "https://amazon.com/gp/product/B073WJFZNB"
         }
-      },
+      ],
       "id": "NETPOT",
       "name": "3\" Net Pot"
     },
     "4CCE00B7-CAD5-427A-A4F5-FECD522BDF3F": {
       "guid": "4cce00b7-cad5-427a-a4f5-fecd522bdf3f",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-29T18:18:11.081Z",
           "applies": true,
           "name": "NETPOT"
         }
-      },
+      ],
       "id": "A0236",
       "site-type": "NETPOT",
       "name": "POT0236"
@@ -252,58 +252,58 @@
     "95D4971A-8030-457A-BB31-5EF1E612A82D": {
       "guid": "95d4971a-8030-457a-bb31-5ef1e612a82d",
       "type": "site-type",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-05-26T07:00:00.000Z",
           "applies": true,
           "name": "purchased",
           "note": "https://www.uline.com/Product/Detail/S-9941BL/Pails/Plastic-Pail-2-Gallon-Black",
           "noteUrl": "https://www.uline.com/Product/Detail/S-9941BL/Pails/Plastic-Pail-2-Gallon-Black"
         }
-      },
+      ],
       "id": "BKT2G",
       "name": "2 Gallon Bucket"
     },
     "1CBEEB99-6A99-49A0-A86A-53688E95C641": {
       "guid": "1cbeeb99-6a99-49a0-a86a-53688e95c641",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-05-26T07:00:00.000Z",
           "applies": true,
           "name": "BKT2G"
         }
-      },
+      ],
       "id": "A0229",
       "name": "BKT0229"
     },
     "E55FD63E-41F1-4457-BE05-2C7CEDD0525D": {
       "guid": "e55fd63e-41f1-4457-be05-2c7cedd0525d",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-04-15T07:00:00.000Z",
           "applies": true,
           "name": "A0187",
           "note": "Fresh"
         },
-        "A0203": {
+        {
           "date": "2020-04-19T07:00:00.000Z",
           "applies": true,
           "name": "A0203",
           "note": "4/24: Added 1 germinated garbanzo bean that never sprouted"
         },
-        "A0199": {
+        {
           "date": "2020-05-03T07:00:00.000Z",
           "applies": true,
           "name": "A0199"
         },
-        "A0234": {
+        {
           "date": "2020-05-23T07:00:00.000Z",
           "applies": true,
           "name": "A0234"
         }
-      },
+      ],
       "id": "BTD20200406-6F",
       "plant": "BTD",
       "name": "BTD0406"
@@ -311,13 +311,13 @@
     "EAAF5913-DCE3-4833-9F19-687AE0939C1B": {
       "guid": "eaaf5913-dce3-4833-9f19-687ae0939c1b",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-30T04:07:25.459Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0234",
       "site-type": "BKT2G",
       "name": "BKT0234"
@@ -325,28 +325,28 @@
     "05B3D326-DA83-4090-AF10-D18EC3F87617": {
       "guid": "05b3d326-da83-4090-af10-d18ec3f87617",
       "type": "site-type",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2019-04-28T07:00:00.000Z",
           "applies": true,
           "name": "purchased",
           "note": "https://www.lowes.com/pd/Charlotte-Pipe-4-in-x-5-ft-Sch-40-Cellcore-PVC-DWV-Pipe/3133051",
           "noteUrl": "https://www.lowes.com/pd/Charlotte-Pipe-4-in-x-5-ft-Sch-40-Cellcore-PVC-DWV-Pipe/3133051"
         }
-      },
+      ],
       "id": "PIPE4",
       "name": "Pipe, 4\" Drain Pipe"
     },
     "B1508068-5DF2-44F9-B2FE-55FDB30C3FE8": {
       "guid": "b1508068-5df2-44f9-b2fe-55fdb30c3fe8",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-04-28T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0199",
       "site-type": "PIPE4",
       "name": "PIPE0199"
@@ -354,13 +354,13 @@
     "3B9C1534-FD22-4D89-AD73-3EB01662A492": {
       "guid": "3b9c1534-fd22-4d89-ad73-3eb01662a492",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-04-28T07:00:00.000Z",
           "applies": true,
           "name": "PIPE4"
         }
-      },
+      ],
       "id": "A0200",
       "site-type": "PIPE4",
       "name": "PIPE0200"
@@ -368,29 +368,29 @@
     "E2DCE816-89B6-45C9-89B9-A2317F1571D5": {
       "guid": "e2dce816-89b6-45c9-89b9-a2317f1571d5",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-04-27T07:00:00.000Z",
           "applies": true,
           "name": "A0215"
         },
-        "A0187": {
+        {
           "date": "2020-04-23T07:00:00.000Z",
           "applies": true,
           "name": "A0187",
           "note": "3 stock seeds"
         },
-        "A0220": {
+        {
           "date": "2020-05-16T07:00:00.000Z",
           "applies": true,
           "name": "A0220"
         },
-        "A0229": {
+        {
           "date": "2020-05-28T07:00:00.000Z",
           "applies": true,
           "name": "A0229"
         }
-      },
+      ],
       "id": "BTD20200423-3S",
       "plant": "BTD",
       "name": "BTD0215"
@@ -398,13 +398,13 @@
     "AF336E0B-DE43-473E-BB88-189C7CE2716A": {
       "guid": "af336e0b-de43-473e-bb88-189c7ce2716a",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-18T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0240",
       "site-type": "NETPOT",
       "name": "POT0240"
@@ -412,13 +412,13 @@
     "984EC12C-7229-416D-BD01-4F3E49DA2907": {
       "guid": "984ec12c-7229-416d-bd01-4f3e49da2907",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-04-06T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0193",
       "site-type": "NETPOT",
       "name": "POT0193"
@@ -426,18 +426,18 @@
     "D52575E1-D1ED-4611-B55C-4F373F327BC5": {
       "guid": "d52575e1-d1ed-4611-b55c-4f373f327bc5",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-04-06T07:00:00.000Z",
           "applies": true,
           "name": "A0193"
         },
-        "A0218": {
+        {
           "date": "2020-05-03T07:00:00.000Z",
           "applies": true,
           "name": "A0217"
         }
-      },
+      ],
       "id": "BTD20200406",
       "plant": "BTD",
       "name": "BTD0406"
@@ -445,13 +445,13 @@
     "BBEE9EBB-8E4C-466F-94B9-CED3A926F6D1": {
       "guid": "bbee9ebb-8e4c-466f-94b9-ced3a926f6d1",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-05-03T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0217",
       "site-type": "BKT2G",
       "name": "BKT0217"
@@ -459,13 +459,13 @@
     "8E7260F3-D8E4-45AB-BF51-6918B927C071": {
       "guid": "8e7260f3-d8e4-45ab-bf51-6918b927c071",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-05-13T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0203",
       "site-type": "NETPOT",
       "name": "POT0203"
@@ -473,85 +473,85 @@
     "066A04E2-B6A0-4CFC-8B6A-68017E53EABE": {
       "guid": "066a04e2-b6a0-4cfc-8b6a-68017e53eabe",
       "type": "plant",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-01-01T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "BTD",
       "name": "Tomato, Pink Berkeley Tie Dye"
     },
     "229AD48B-8457-4ED2-85E9-DA2C175C10F0": {
       "guid": "229ad48b-8457-4ed2-85e9-da2c175c10f0",
       "type": "plant",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-22T07:00:00.000Z",
           "applies": true,
           "name": "A0244",
           "note": " https://sandiegoseedcompany.com/shop/chocolate-stripes-tomato-seed/"
         }
-      },
+      ],
       "id": "CST",
       "name": "Tomato, Chocolate Stripes"
     },
     "F84772DA-1AC1-4C35-B0C5-2C67DBAC2842": {
       "guid": "f84772da-1ac1-4c35-b0c5-2c67dbac2842",
       "type": "plant",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-22T07:00:00.000Z",
           "applies": true,
           "name": "A0243",
           "note": "https://sandiegoseedcompany.com/shop/onion-tokyo/",
           "noteUrl": "https://sandiegoseedcompany.com/shop/onion-tokyo/"
         }
-      },
+      ],
       "id": "TWO",
       "name": "Onion, Tokyo White"
     },
     "600CBF5B-90C5-4B8A-B362-743155C27764": {
       "guid": "600cbf5b-90c5-4b8a-b362-743155c27764",
       "type": "plant",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-22T07:00:00.000Z",
           "applies": true,
           "name": "A0245",
           "note": "https://sandiegoseedcompany.com/shop/cool-season-crops/broccoli-green-sprouting-calabrese/",
           "noteUrl": "https://sandiegoseedcompany.com/shop/cool-season-crops/broccoli-green-sprouting-calabrese/"
         }
-      },
+      ],
       "id": "CBR",
       "name": "Broccoli, Calabrese"
     },
     "6A478A88-48C8-432F-9BF6-F8E0E1A7BCF6": {
       "guid": "6a478a88-48c8-432f-9bf6-f8e0e1a7bcf6",
       "type": "plant",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-22T07:00:00.000Z",
           "applies": true,
           "name": "A0242",
           "note": "https://sandiegoseedcompany.com/shop/tomatoes/tomato-purple-cherokee/",
           "noteUrl": "https://sandiegoseedcompany.com/shop/tomatoes/tomato-purple-cherokee/"
         }
-      },
+      ],
       "id": "PCT",
       "name": "Tomato, Purple Cherokee"
     },
     "A2958F31-CC59-4914-BDED-08DD54828F46": {
       "guid": "a2958f31-cc59-4914-bded-08dd54828f46",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-07-01T17:06:22.678Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0246",
       "site-type": "NETPOT",
       "name": "POT0246"
@@ -559,14 +559,14 @@
     "78F77D72-1677-4073-8CAC-2E3AB0CD3AF6": {
       "guid": "78f77d72-1677-4073-8cac-2e3ab0cd3af6",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-07-01T17:07:01.794Z",
           "applies": true,
           "name": "A0246",
           "note": "Sow direct into three holes"
         }
-      },
+      ],
       "id": "CST20200701-3S",
       "plant": "CST",
       "name": "CTS0701"
@@ -574,26 +574,26 @@
     "A369C0A0-9338-4554-83D8-C4B7DAFA7BC2": {
       "guid": "a369c0a0-9338-4554-83d8-c4b7dafa7bc2",
       "type": "site-type",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-01-01T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "POT20",
       "name": "Planter, 20\""
     },
     "66FAC5C8-9191-4DBF-BDA1-66D31B233F4E": {
       "guid": "66fac5c8-9191-4dbf-bda1-66d31b233f4e",
       "type": "site",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-01-01T07:00:00.000Z",
           "applies": true,
           "name": "entered"
         }
-      },
+      ],
       "id": "A0249",
       "site-type": "POT20",
       "name": "Planter0249"
@@ -601,14 +601,14 @@
     "C5D9C89E-BCB0-4462-AC95-09DCE8BBB20B": {
       "guid": "c5d9c89e-bcb0-4462-ac95-09dce8bbb20b",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-07-01T07:00:00.000Z",
           "applies": true,
           "name": "A0249",
           "note": "5 seeds direct sow 1\" hole cover 1/4\""
         }
-      },
+      ],
       "id": "PHW20200701-5",
       "plant": "PHW",
       "name": "PHW0249"
@@ -616,42 +616,42 @@
     "D82D5253-8D41-449D-AC2C-CBB7A784DDF5": {
       "guid": "d82d5253-8d41-449d-ac2c-cbb7a784ddf5",
       "type": "plant",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-07-01T07:00:00.000Z",
           "applies": true,
           "name": "A0248"
         }
-      },
+      ],
       "id": "PHW",
       "name": "Pepper, Hungarian Hot Wax"
     },
     "04C11935-C0EF-4D0E-B9AD-431A51596462": {
       "guid": "04c11935-c0ef-4d0e-b9ad-431a51596462",
       "type": "plant",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-20T07:00:00.000Z",
           "applies": true,
           "name": "A0184",
           "note": "https://www.ingegnoli.it/eng/pomodoro-hybrid-f1-chipano.html",
           "noteUrl": "https://www.ingegnoli.it/eng/pomodoro-hybrid-f1-chipano.html"
         }
-      },
+      ],
       "id": "CHP",
       "name": "Tomato, Chipano"
     },
     "9698761A-236C-4D67-AA4F-4B08AB380B93": {
       "guid": "9698761a-236c-4d67-aa4f-4b08ab380b93",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-05-18T07:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0228",
       "site-type": "NETPOT",
       "name": "NETPOT0228"
@@ -659,14 +659,14 @@
     "5C31855B-7CA1-42C4-BE2F-98A0A885576E": {
       "guid": "5c31855b-7ca1-42c4-be2f-98a0a885576e",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-05-18T07:00:00.000Z",
           "applies": true,
           "name": "A0228",
           "note": "4 seeds pre-soaked 3 days"
         }
-      },
+      ],
       "id": "CHP-5c3185",
       "plant": "CHP",
       "name": "CHP0228"
@@ -674,24 +674,24 @@
     "C2F071F3-3DD1-4E73-86B6-A81A3909E487": {
       "guid": "c2f071f3-3dd1-4e73-86b6-a81a3909e487",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-20T07:00:00.000Z",
           "applies": true,
           "name": "A0204",
           "note": "4 seeds direct sown"
         },
-        "A0199": {
+        {
           "date": "2020-05-08T07:00:00.000Z",
           "applies": true,
           "name": "A0199"
         },
-        "A0235": {
+        {
           "date": "2020-05-27T07:00:00.000Z",
           "applies": true,
           "name": "A0235"
         }
-      },
+      ],
       "id": "CHP-c2f071",
       "plant": "CHP",
       "name": "CHP0204"
@@ -699,14 +699,14 @@
     "7F7CE8C9-7DB9-4A8E-AE1A-0207B70A798F": {
       "guid": "7f7ce8c9-7db9-4a8e-ae1a-0207b70a798f",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-05-27T07:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0235",
       "site-type": "BKT2G",
       "name": "BKT2G0235"
@@ -714,14 +714,14 @@
     "F368F1C4-1DD4-435A-B880-7B3BBFB8D2D8": {
       "guid": "f368f1c4-1dd4-435a-b880-7b3bbfb8d2d8",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2019-04-03T07:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0251",
       "site-type": "TUPSQ2",
       "name": "TUPSQ20251"
@@ -729,20 +729,20 @@
     "57423F54-1C6E-4415-967E-0D32BCF5145C": {
       "guid": "57423f54-1c6e-4415-967e-0d32bcf5145c",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-06-18T07:00:00.000Z",
           "applies": true,
           "name": "A0240",
           "note": "9 seeds from fresh tomato"
         },
-        "A0251": {
+        {
           "date": "2020-07-06T18:19:34.976Z",
           "applies": true,
           "name": "A0251",
           "note": "Only 1 sprouted"
         }
-      },
+      ],
       "id": "BTD20200618-9F",
       "plant": "BTD",
       "name": "BTD0618"
@@ -750,25 +750,25 @@
     "EB5DF87A-C66D-4C4A-9E9D-6F5D93C98EEC": {
       "guid": "eb5df87a-c66d-4c4a-9e9d-6f5d93c98eec",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-05-28T07:00:00.000Z",
           "applies": true,
           "name": "A0187",
           "note": "3 dried seeds\n"
         },
-        "A0236": {
+        {
           "date": "2020-05-31T07:00:00.000Z",
           "applies": true,
           "name": "A0236"
         },
-        "A0200": {
+        {
           "date": "2020-06-25T07:00:00.000Z",
           "applies": true,
           "name": "A0200",
           "note": "Too tall\n"
         }
-      },
+      ],
       "id": "BTD20200528-3D",
       "plant": "BTD",
       "name": "BTD0236"
@@ -776,39 +776,39 @@
     "CEA3FE46-F9E4-41D8-B777-0AA5CB4CAD21": {
       "guid": "cea3fe46-f9e4-41d8-b777-0aa5cb4cad21",
       "type": "site-type",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2019-04-03T07:00:00.000Z",
           "applies": true,
           "name": "purchased",
           "note": "https://www.tupperware.com/modular-mates-square-2/\nWide/short containers for carefree mid-stage growth",
           "noteUrl": "https://www.tupperware.com/modular-mates-square-2/"
         }
-      },
+      ],
       "id": "TUPSQ2",
       "name": "Tupperware, Square 2 Modular Mate"
     },
     "868B4331-13E0-40E9-BD4B-6C79D8C6DDA8": {
       "guid": "868b4331-13e0-40e9-bd4b-6c79d8c6dda8",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-03-29T07:00:00.000Z",
           "applies": true,
           "name": "A0163",
           "note": "3 seeds pre-soaked 9 days"
         },
-        "A0199": {
+        {
           "date": "2020-04-15T07:00:00.000Z",
           "applies": true,
           "name": "A0199"
         },
-        "A0218": {
+        {
           "date": "2020-05-01T07:00:00.000Z",
           "applies": true,
           "name": "A0218"
         }
-      },
+      ],
       "id": "CHP-868b43",
       "plant": "CHP",
       "name": "CHP0163"
@@ -816,14 +816,14 @@
     "F4560C3D-5A9F-4E64-AA5A-B22211D62A75": {
       "guid": "f4560c3d-5a9f-4e64-aa5a-b22211d62a75",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-15T07:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0218",
       "site-type": "BKT2G",
       "name": "BKT2G0218"
@@ -831,14 +831,14 @@
     "488DA628-CF12-4BFA-9619-4F50F64ECAA4": {
       "guid": "488da628-cf12-4bfa-9619-4f50f64ecaa4",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-01T07:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0210",
       "site-type": "NETPOT",
       "name": "NETPOT0210"
@@ -846,14 +846,14 @@
     "8201C789-FC80-4875-9A3A-50F4B99E435D": {
       "guid": "8201c789-fc80-4875-9a3a-50f4b99e435d",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-19T07:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0202",
       "site-type": "BKT2G",
       "name": "BKT2G0202"
@@ -861,25 +861,25 @@
     "07DE4528-2CA5-436C-915A-DC00851977F3": {
       "guid": "07de4528-2ca5-436c-915a-dc00851977f3",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-03-17T07:00:00.000Z",
           "applies": true,
           "name": "A0210",
           "note": "Started well in hemp, which is tough to cut."
         },
-        "A0199": {
+        {
           "date": "2020-04-08T07:00:00.000Z",
           "applies": true,
           "name": "A0199"
         },
-        "A0202": {
+        {
           "date": "2020-04-19T07:00:00.000Z",
           "applies": true,
           "name": "A0202",
           "note": "Garbanzo bean did not sprout, but volunteer cherry tomato did\n"
         }
-      },
+      ],
       "id": "BTD-07de45",
       "plant": "BTD",
       "name": "BTD0210"
@@ -887,14 +887,14 @@
     "097F6CE3-53CB-4D56-99BB-3F2950AC2A24": {
       "guid": "097f6ce3-53cb-4d56-99bb-3f2950ac2a24",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-03-12T07:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0201",
       "site-type": "NETPOT",
       "name": "NETPOT0209"
@@ -902,14 +902,14 @@
     "79659A7F-75B2-43CC-92B6-4EC4CAD3720D": {
       "guid": "79659a7f-75b2-43cc-92b6-4ec4cad3720d",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-19T07:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0209",
       "site-type": "BKT2G",
       "name": "BKT2G0209"
@@ -917,24 +917,24 @@
     "521A705C-A89D-4560-8D18-29625C957B34": {
       "guid": "521a705c-a89d-4560-8d18-29625c957b34",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-03-12T07:00:00.000Z",
           "applies": true,
           "name": "A0201",
           "note": "8 fresh seeds"
         },
-        "A0199": {
+        {
           "date": "2020-04-11T07:00:00.000Z",
           "applies": true,
           "name": "A0199"
         },
-        "A0209": {
+        {
           "date": "2020-04-19T07:00:00.000Z",
           "applies": true,
           "name": "A0209"
         }
-      },
+      ],
       "id": "BTD-521a70",
       "plant": "BTD",
       "name": "BTD0201"
@@ -942,26 +942,26 @@
     "36CC5A44-3915-4639-A53E-20BDE62AAEA2": {
       "guid": "36cc5a44-3915-4639-a53e-20bde62aaea2",
       "type": "crop",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-05-05T07:00:00.000Z",
           "applies": true,
           "name": "A0222",
           "note": "3 pinches"
         },
-        "end": {
+        {
           "date": "2020-07-07T17:48:53.228Z",
           "applies": true,
           "name": "end",
           "note": "No significant recovery after full harvest"
         },
-        "Harvest": {
+        {
           "date": "2020-06-23T07:00:00.000Z",
           "applies": true,
           "name": "Harvest",
           "note": "Full harvest after many weeks of partial harvest"
         }
-      },
+      ],
       "id": "CIL20200505",
       "plant": "A0241",
       "name": "CIL0505"
@@ -969,35 +969,35 @@
     "80B593C1-5116-4B90-BAB1-A34798EEC7F8": {
       "guid": "80b593c1-5116-4b90-bab1-a34798eec7f8",
       "type": "plant",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-02-20T08:00:00.000Z",
           "applies": true,
           "name": "TAT0220",
           "note": "https://sproutpeople.org/seeds/tatsoi-micro-greens/",
           "noteUrl": "https://sproutpeople.org/seeds/tatsoi-micro-greens/"
         }
-      },
+      ],
       "id": "TAT",
       "name": "Tatsoi"
     },
     "59B4531E-D409-4F90-B99E-714C9C706F2C": {
       "guid": "59b4531e-d409-4f90-b99e-714c9c706f2c",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-23T08:00:00.000Z",
           "applies": true,
           "name": "A0185",
           "note": "3 pinches direct"
         },
-        "end": {
+        {
           "date": "2020-06-19T08:00:00.000Z",
           "applies": true,
           "name": "end",
           "note": "Full harvest"
         }
-      },
+      ],
       "id": "TAT-59b453",
       "plant": "TAT",
       "name": "TAT0185"
@@ -1005,20 +1005,20 @@
     "CB5CE50F-DBDB-4234-87F9-4D5693A8ECA8": {
       "guid": "cb5ce50f-dbdb-4234-87f9-4d5693a8eca8",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-13T08:00:00.000Z",
           "applies": true,
           "name": "A0196",
           "note": "3 pinches soaked 1 day"
         },
-        "end": {
+        {
           "date": "2020-07-08T08:00:00.000Z",
           "applies": true,
           "name": "end",
           "note": "Full harvest\n"
         }
-      },
+      ],
       "id": "TAT-cb5ce5",
       "plant": "TAT",
       "name": "TAT0196"
@@ -1026,14 +1026,14 @@
     "047406CD-9EBB-4DA3-B342-42A2B657C0A5": {
       "guid": "047406cd-9ebb-4da3-b342-42a2b657c0a5",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-03T08:00:00.000Z",
           "applies": true,
           "name": "A0177",
           "note": "3 pinches direct sown"
         }
-      },
+      ],
       "id": "TAT-047406",
       "plant": "TAT",
       "name": "TAT0177"
@@ -1041,14 +1041,14 @@
     "7F67E034-5B7A-42E4-9073-7A70B68882A5": {
       "guid": "7f67e034-5b7a-42e4-9073-7a70b68882a5",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-05-29T08:00:00.000Z",
           "applies": true,
           "name": "A0226",
           "note": "3 pinches direct sown"
         }
-      },
+      ],
       "id": "TAT-7f67e0",
       "plant": "TAT",
       "name": "TAT0226"
@@ -1056,29 +1056,29 @@
     "6070C5F2-2F94-426E-8C32-4BC58759FCDE": {
       "guid": "6070c5f2-2f94-426e-8c32-4bc58759fcde",
       "type": "site-type",
-      "tags": {
-        "entered": {
+      "tagList": [
+        {
           "date": "2020-01-01T00:00:00.000Z",
           "applies": true,
           "name": "entered",
           "note": "https://www.inlineplastics.com/product/ts32/",
           "noteUrl": "https://www.inlineplastics.com/product/ts32/"
         }
-      },
+      ],
       "id": "TRAY",
       "name": "Tray, TS32 Sprouts Food Container"
     },
     "DF71A2EB-D3CD-4C23-9DCD-BA0171F1D5CC": {
       "guid": "df71a2eb-d3cd-4c23-9dcd-ba0171f1d5cc",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-05-29T08:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0226",
       "site-type": "TRAY",
       "name": "TRAY-0226"
@@ -1086,14 +1086,14 @@
     "D2C7668D-08CC-4DE5-B0C8-335A46978C44": {
       "guid": "d2c7668d-08cc-4de5-b0c8-335a46978c44",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-03T08:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0177",
       "site-type": "TRAY",
       "name": "TRAY-0177"
@@ -1101,14 +1101,14 @@
     "324A3024-146A-47FB-A7CF-42AD32F6D30C": {
       "guid": "324a3024-146a-47fb-a7cf-42ad32f6d30c",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-05-11T08:00:00.000Z",
           "applies": true,
           "name": "A0224",
           "note": "3 pinches direct sown"
         }
-      },
+      ],
       "id": "TAT-324a30",
       "plant": "TAT",
       "name": "TAT0224"
@@ -1116,14 +1116,14 @@
     "9F5E2EFD-1F02-4D11-8F8A-7D6F0DB3DBBC": {
       "guid": "9f5e2efd-1f02-4d11-8f8a-7d6f0db3dbbc",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-05-11T08:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0224",
       "site-type": "TRAY",
       "name": "TRAY-0224"
@@ -1131,14 +1131,14 @@
     "0E9FE4C7-DB30-4B7D-8997-82C6E93A7E86": {
       "guid": "0e9fe4c7-db30-4b7d-8997-82c6e93a7e86",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-07-10T18:39:47.178Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0253",
       "site-type": "BKT2G",
       "name": "BKT2G-0253"
@@ -1146,20 +1146,20 @@
     "7187347D-4E90-4D92-B14A-6E278E80D3DF": {
       "guid": "7187347d-4e90-4d92-b14a-6e278e80d3df",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-04-13T08:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         },
-        "end": {
+        {
           "date": "2020-07-09T08:00:00.000Z",
           "applies": true,
           "name": "end",
           "note": "Full harvest\n"
         }
-      },
+      ],
       "id": "A0196",
       "site-type": "TRAY",
       "name": "TS320196"
@@ -1167,14 +1167,14 @@
     "5F9ACBB5-EB69-4C92-B8D5-7D1387755E24": {
       "guid": "5f9acbb5-eb69-4c92-b8d5-7d1387755e24",
       "type": "crop",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-07-05T08:00:00.000Z",
           "applies": true,
           "name": "A0250",
           "note": "3 pinches direct sown"
         }
-      },
+      ],
       "id": "TAT-5f9acb",
       "plant": "TAT",
       "name": "TAT0250"
@@ -1182,14 +1182,14 @@
     "D1D37BC6-AB0F-445D-8BB5-3E0E4DC016B6": {
       "guid": "d1d37bc6-ab0f-445d-8bb5-3e0e4dc016b6",
       "type": "site",
-      "tags": {
-        "0": {
+      "tagList": [
+        {
           "date": "2020-07-05T08:00:00.000Z",
           "applies": true,
           "name": "started",
           "note": ""
         }
-      },
+      ],
       "id": "A0250",
       "site-type": "TRAY",
       "name": "TRAY-0250"

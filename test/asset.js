@@ -9,7 +9,7 @@
         Tag,
     } = require("../index");
 
-    it("Asset() asset default ctor", function() {
+    it("TESTTESTAsset() asset default ctor", function() {
         // Default ctor
         var asset = new Asset();
         should(asset.type).equal("asset"); // Default type
@@ -23,7 +23,7 @@
             "guid",
             "id",
             "name",
-            "tags",
+            "tagList",
             "type",
         ].sort());
 
@@ -89,7 +89,7 @@
         should(asset.ageMillis).above(msAge-1).below(msAge+10);
         should(asset.ageDays).equal(2);
     });
-    it("Asset is serializable", function() {
+    it("TESTTESTAsset is serializable", function() {
         var purchased = new Tag({
             name: "purchased", 
             applies: true,
@@ -97,6 +97,9 @@
         var tags = {
             purchased,
         };
+        var tagList = [
+            purchased,
+        ];
 
         var asset = new Asset({
             type: "plant",
@@ -106,6 +109,7 @@
         });
         var json = JSON5.parse(JSON.stringify(asset));
         var asset2 = new Asset(json);
+        console.log(`dbg json`, json);
         should.deepEqual(asset2, asset);
 
         var json = JSON.stringify(asset);
@@ -232,5 +236,47 @@
         should(asset.started).equal(false);
         asset.getTag("A002").applies = true;
         should(asset.started).equal(true);
+    });
+    it("TESTTESTAsset(opts) asset custom ctor tag list", function() {
+        var purchased = new Tag({
+            name: "purchased", 
+            applies: true,
+        });
+        var tagList = [
+            purchased,
+        ];
+        var tags = {
+            purchased,
+        };
+
+        var asset = new Asset({
+            id: 'A0001',
+            tagList,
+        });
+        should.deepEqual(asset.name, `asset_A0001`); 
+        asset.name = 'asdf';
+        should.deepEqual(asset.name, `asdf`); 
+        var tag = asset.getTag('purchased');
+        should.deepEqual(tag, purchased);
+        should(tag).not.equal(purchased);
+        should.deepEqual(asset.tagList, [purchased]);
+        should.deepEqual(asset.tags, tags);
+        should(asset.tags).not.equal(tags);
+
+        var asset2 = new Asset();
+        should(asset.guid).not.equal(asset2.guid);
+
+        // ctor options can set asset properties
+        asset = new Asset({
+            name: 'TomatoA',
+            id: 'A0001', // if provided, id overrides guid prefix
+            tags,
+        });
+        should.deepEqual(asset.name, `TomatoA`);
+        should.deepEqual(asset.id, `A0001`); // current id
+
+        // copy constructor
+        var assetCopy = new Asset(asset);
+        should.deepEqual(assetCopy, asset);
     });
 })
