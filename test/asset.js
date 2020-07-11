@@ -109,7 +109,6 @@
         });
         var json = JSON5.parse(JSON.stringify(asset));
         var asset2 = new Asset(json);
-        console.log(`dbg json`, json);
         should.deepEqual(asset2, asset);
 
         var json = JSON.stringify(asset);
@@ -278,5 +277,23 @@
         // copy constructor
         var assetCopy = new Asset(asset);
         should.deepEqual(assetCopy, asset);
+    });
+    it("TESTTESTtags are sorted", ()=>{
+        var dates = [
+            new Date(2020, 1, 2),
+            new Date(2020, 1, 3),
+            new Date(2020, 1, 4),
+        ];
+        var tagList = [
+            new Tag({ name: 't1', date: dates[1]}),
+            new Tag({ name: 't2', date: dates[0]}),
+            new Tag({ name: 't3', date: dates[2]}),
+        ];
+
+        var asset = new Asset({
+            tagList,
+        });
+
+        should.deepEqual(asset.tagList.map(t=>t.date), dates);
     });
 })

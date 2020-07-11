@@ -52,9 +52,7 @@
                 if (a) {
                     // skip
                 } else if (k === 'tagList') {
-                    var tags = asset.tags;
-                    a = Object.keys(tags).reduce((a,tk)=> {
-                        var tag = tags[tk];
+                    a = asset.tagList.reduce((a, tag) => {
                         a = a || 
                             match(tag.name, re) || 
                             match(tag.note, re);

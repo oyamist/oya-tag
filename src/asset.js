@@ -32,6 +32,7 @@
                     tags[tag.name] = tag;
                     tagList.push(tag);
                 });
+                tagList.sort(Asset.compareTag);
             } else {
                 var srcTags = opts.tags || {};
                 Object.keys(srcTags).forEach(k=>{
@@ -155,7 +156,7 @@
         }
 
         getTag(name) {
-            var tag = this.tags[name];
+            var tag = this.tagList.filter(t => t.name === name)[0];
             return tag instanceof Tag ? tag : null;
         }
 

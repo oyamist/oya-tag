@@ -40,7 +40,7 @@
             ></asset-picker>
             <date-field
               label="Crop start date"
-              :item="model.crop.tags[0]"
+              :item="model.crop.tagList[0]"
               model="date"
             ></date-field>
             <h4 class="mb-5" >
@@ -54,18 +54,18 @@
               placeholder="Enter unique crop ID"
               hint="A unique ID for all time"
             ></v-text-field>
-            <v-text-field v-model="model.crop.tags[0].name"
+            <v-text-field v-model="model.crop.tagList[0].name"
               :disabled="!model.crop.plant"
               label="Crop site ID"
               :rules="[requiredRule('CropSiteId')]"
               placeholder="Enter container or location ID"
               append-outer-icon="mdi-new-box"
               @click:append-outer=
-                "createAsset(model.crop.tags[0], 'name')"
-              :hint="idHint(model.crop.tags[0].name)"
+                "createAsset(model.crop.tagList[0], 'name')"
+              :hint="idHint(model.crop.tagList[0].name)"
             ></v-text-field>
             <v-text-field v-model="model.crop.name"
-              :disabled="!model.plant || !model.crop.tags[0].name"
+              :disabled="!model.plant || !model.crop.tagList[0].name"
               label="Crop Name"
               :rules="nameRules"
               @focus="cropNameFocus()"
@@ -76,8 +76,8 @@
             <h4 class="mb-5" >
               TIP: Note anything memorable
             </h4>
-            <v-text-field v-model="model.crop.tags[0].note"
-              :disabled="!model.plant || !model.crop.tags[0].name"
+            <v-text-field v-model="model.crop.tagList[0].note"
+              :disabled="!model.plant || !model.crop.tagList[0].name"
               label="Crop Notes"
               hint="E.g., number of seeds, temperature, etc."
             ></v-text-field>
@@ -103,17 +103,17 @@
               placeholder="Enter nickname or short identifier"
               hint="E.g., BTD for Berkeley Tie Dye"
             ></v-text-field>
-            <v-text-field v-model="model.plant.tags[0].note"
+            <v-text-field v-model="model.plant.tagList[0].note"
               label="Source"
               placeholder="Enter product URL or description"
               hint="E.g., https://www.rareseeds.com/store/vegetables/tomatoes/wild-boar-farms/pink-berkeley-tie-dye-tomato"
             ></v-text-field>
             <date-field
               label="Batch date"
-              :item="model.plant.tags[0]"
+              :item="model.plant.tagList[0]"
               model="date"
             ></date-field>
-            <v-text-field v-model="model.plant.tags[0].name"
+            <v-text-field v-model="model.plant.tagList[0].name"
               label="Batch ID"
               @focus="batchIdFocus()"
               hint="Purchase reference"
@@ -150,7 +150,7 @@
             ></v-text-field>
             <date-field
               label="Site start date"
-              :item="model.site.tags[0]"
+              :item="model.site.tagList[0]"
               model="date"
             ></date-field>
           </v-card-text>
@@ -180,19 +180,19 @@
             <h3 class="mb-5">
               TIP: Track your acquisitions/purchases of this site type:
             </h3>
-            <v-text-field v-model="model['site-type'].tags[0].note"
+            <v-text-field v-model="model['site-type'].tagList[0].note"
               label="Source"
               placeholder="Enter product URL or description"
               hint="E.g., https://www.rareseeds.com/store/vegetables/tomatoes/wild-boar-farms/pink-berkeley-tie-dye-tomato"
             ></v-text-field>
-            <v-text-field v-model="model['site-type'].tags[0].name"
+            <v-text-field v-model="model['site-type'].tagList[0].name"
               label="Acquisition"
               placeholder="Enter asset barcode id or purchase reference"
               hint="E.g., A0123"
             ></v-text-field>
             <date-field
               label="Acquisition date"
-              :item="model['site-type'].tags[0]"
+              :item="model['site-type'].tagList[0]"
               model="date"
             ></date-field>
           </v-card-text>
@@ -239,7 +239,7 @@ export default {
           type: 'plant',
           name: '',
           id: '',
-          tags: [{
+          tagList: [{
             name: '',
             note: '',
             date: new Date(),
@@ -251,7 +251,7 @@ export default {
           plant: '',
           name: '',
           id: '',
-          tags: [{
+          tagList: [{
             name: '',
             note: '',
             date: new Date(),
@@ -263,7 +263,7 @@ export default {
           "site-type": '',
           name: '',
           id: '',
-          tags: [{
+          tagList: [{
             name: 'started',
             note: '',
             date: new Date(),
@@ -274,7 +274,7 @@ export default {
           type: 'site-type',
           id: '',
           name: '',
-          tags: [{
+          tagList: [{
             name: 'purchased',
             note: '',
             date: new Date(),
@@ -348,7 +348,7 @@ export default {
       var {
         crop,
       } = this.model;
-      var tag0 = crop.tags[0];
+      var tag0 = crop.tagList[0];
       if (tag0.name && crop.plant && !crop.name) {
         var name = `${crop.plant}${tag0.name.replace(/[^0-9]/ug,'')}`;
         Vue.set(crop, "name", name);
@@ -368,7 +368,7 @@ export default {
       var {
         plant,
       } = this.model;
-      var tag0 = plant.tags[0];
+      var tag0 = plant.tagList[0];
 
       if (!tag0.name) {
         var id = plant.id;
