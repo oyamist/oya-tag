@@ -47,53 +47,53 @@
     </v-app-bar>
 
     <v-content>
-        <v-container>
-          <nuxt />
-          <EditAsset v-if="curAsset" />
-          <v-dialog v-model="askUpload" max-width="40em">
-            <v-card >
-              <v-card-title>
-                Load Asset File 
-              </v-card-title>
-              <v-card-text>
-                <p> Oya-Tag assets are stored in browser local storage.
-                Save your assets regularly for backup or for transferring
-                them to a new system.</p>
-                <v-alert type="warning" 
-                  color="yellow darken-4">
-                  Uploaded assets will replace
-                  all assets in your browser local storage.</v-alert>
-                <v-checkbox v-model="overwriteAssets"
-                  :label=
-                  "`Upload and replace ${assetCount} current assets?`"
-                ></v-checkbox>
-                <v-file-input 
-                  append-icon="mdi-upload"
-                  prepend-icon=""
-                  :disabled="!overwriteAssets"
-                  placeholder="Click HERE to choose JSON upload file"
-                  loading
-                  show-size
-                  accept=".json,.json5,application/json"
-                  outlined
-                  @change="uploadChanged()"
-                  v-model="uploadFile"
-                  >
-                </v-file-input>
-              </v-card-text>
-            </v-card>
-          </v-dialog>
-        </v-container>
-        <v-footer class="caption font-weight-light"
-          absolute 
-          padless
-        >
-          <v-spacer/>
-          <a href="https://github.com/oyamist/oya-tag" target="_blank">
-            Github version {{version}}
-          </a>
-          <v-spacer/>
-        </v-footer>
+      <v-container>
+        <nuxt />
+        <EditAsset v-if="curAsset" />
+        <v-dialog v-model="askUpload" max-width="40em">
+          <v-card >
+            <v-card-title>
+              Load Asset File 
+            </v-card-title>
+            <v-card-text>
+              <p> Oya-Tag assets are stored in browser local storage.
+              Save your assets regularly for backup or for transferring
+              them to a new system.</p>
+              <v-alert type="warning" 
+                color="yellow darken-4">
+                Uploaded assets will replace
+                all assets in your browser local storage.</v-alert>
+              <v-checkbox v-model="overwriteAssets"
+                :label=
+                "`Upload and replace ${assetCount} current assets?`"
+              ></v-checkbox>
+              <v-file-input 
+                append-icon="mdi-upload"
+                prepend-icon=""
+                :disabled="!overwriteAssets"
+                placeholder="Click HERE to choose JSON upload file"
+                loading
+                show-size
+                accept=".json,.json5,application/json"
+                outlined
+                @change="uploadChanged()"
+                v-model="uploadFile"
+                >
+              </v-file-input>
+            </v-card-text>
+          </v-card>
+        </v-dialog>
+      </v-container>
+      <v-footer class="caption font-weight-light"
+        absolute 
+        padless
+      >
+        <v-spacer/>
+        <a href="https://github.com/oyamist/oya-tag" target="_blank">
+          Github version {{version}}
+        </a>
+        <v-spacer/>
+      </v-footer>
     </v-content>
   </v-app>
 </template>

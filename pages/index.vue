@@ -55,6 +55,16 @@
           
         </template>
       </v-data-table>
+      <v-card-text>
+        <v-row>
+          <v-spacer/>
+          <v-btn color="green darken-2" dark
+            @click="$router.push('/assets')"
+            >
+            Got it!
+          </v-btn>
+        </v-row>
+      </v-card-text>
     </v-card>
   </v-layout>
 </template>
