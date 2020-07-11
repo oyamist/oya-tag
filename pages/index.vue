@@ -123,18 +123,16 @@ export default {
       imgW: `400px`,
     },{
       done: true,
-      text: `Open file format`,
-      notes: `Load/save your assets with the Oya-Tag JSON
-        open file format. You can even edit it with any JSON editor.`,
-    },{
-      done: true,
-      text: `Privacy`,
-      notes: `Your assets are stored in your browser local storage.
-        You can save them as you wish.  It's your data. 
-        Nobody can see it but you.
-        Save your assets for backup or for loading them onto a
-        different computer.
+      text: `Load/save your data for sharing or backup`,
+      notes: `Your assets are not stored in the cloud.
+        Your assets are stored privately
+        in your own computer's browser local storage.
+        It's your data and nobody can see it but you.
+        Save your assets for backup or sharing.
+        Oya-Tag uses a human readable JSON open file format. 
         `,
+      img: `eg-menu.png`,
+      imgW: "200px",
     }],
   }},
   methods: {

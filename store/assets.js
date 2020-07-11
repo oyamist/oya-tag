@@ -35,9 +35,6 @@ export const mutations = {
         console.log(`dbg assetStore createId`, id);
         (payload instanceof Function) && payload(id);
     },
-    clear(state) {
-        mutations.load.apply(this, state);
-    },
     load(state, url=`/sample-data.json5`) {
         var that = this;
         Axios.get(url).then(res => {

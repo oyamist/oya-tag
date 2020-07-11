@@ -23,7 +23,7 @@
       <v-spacer />
 
       {{ $route.path }}
-      <v-menu bottom right>
+      <v-menu bottom right nudge-bottom="40">
         <template v-slot:activator="{ on }">
           <v-btn dark icon v-on="on">
             <v-icon>mdi-menu</v-icon>
@@ -126,6 +126,9 @@ export default {
         route: '/assets'
       }],
       fileMenu: [{
+        title: 'Load Sample Data',
+        action: this.loadSample,
+      },{
         title: 'Load Assets',
         action: this.loadAssets,
       },{
@@ -240,9 +243,14 @@ export default {
       ].join('');
       FileSaver.saveAs(blob, `oya-tag-${dateStr}.json`);
     },
+    loadSample() {
+      var msg = "Replace all asset records with sample data (DANGER!)?";
+      confirm(msg) && this.$store
+        .commit("assets/load", "/sample-data.json5");
+    },
     clearAssets() {
       if (confirm("Clear all asset records (DANGER!)?")) {
-        this.$store.commit("assets/clear");
+        this.$store.commit("assets/load", "/clear-data.json5");
       }
     },
     onMenu (menuItem) {
