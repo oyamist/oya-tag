@@ -10,6 +10,7 @@
           solo
           clearable
           @keypress="onSearchKey"
+          @input="onSearchInput"
           hide-details
           ></v-text-field>
         <v-spacer/>
@@ -107,6 +108,14 @@ export default {
     },
   },
   methods: {
+    onSearchInput(input) {
+      this.$router.replace({
+        path: "assets",
+        query: {
+          search: input,
+        },
+      });
+    },
     onSearchKey(event) {
       if (event.charCode === 13) { // Enter
         event.target.select();

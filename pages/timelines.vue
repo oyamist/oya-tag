@@ -67,7 +67,10 @@ computed: {
   },
   cssScrollContent() {
     var n = this.timelines.length;
-    return (n+1) * (this.itemW);
+    var width =  (n+1) * (this.itemW);
+    return [
+      `width:${width}px`,
+    ].join(';');
   },
   timelines() {
       var assetStore = this.assetStore;
