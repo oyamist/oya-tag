@@ -370,15 +370,15 @@
       "type": "crop",
       "tagList": [
         {
-          "date": "2020-04-27T07:00:00.000Z",
-          "applies": true,
-          "name": "A0215"
-        },
-        {
           "date": "2020-04-23T07:00:00.000Z",
           "applies": true,
           "name": "A0187",
           "note": "3 stock seeds"
+        },
+        {
+          "date": "2020-04-27T07:00:00.000Z",
+          "applies": true,
+          "name": "A0215"
         },
         {
           "date": "2020-05-16T07:00:00.000Z",
@@ -950,16 +950,16 @@
           "note": "3 pinches"
         },
         {
-          "date": "2020-07-07T17:48:53.228Z",
-          "applies": true,
-          "name": "end",
-          "note": "No significant recovery after full harvest"
-        },
-        {
           "date": "2020-06-23T07:00:00.000Z",
           "applies": true,
           "name": "Harvest",
           "note": "Full harvest after many weeks of partial harvest"
+        },
+        {
+          "date": "2020-07-07T17:48:53.228Z",
+          "applies": true,
+          "name": "end",
+          "note": "No significant recovery after full harvest"
         }
       ],
       "id": "CIL20200505",
@@ -1193,6 +1193,205 @@
       "id": "A0250",
       "site-type": "TRAY",
       "name": "TRAY-0250"
+    },
+    "A20FC9B0-17EF-4D87-8B70-8C0E5DF1DE0E": {
+      "guid": "a20fc9b0-17ef-4d87-8b70-8c0e5df1de0e",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-06-22T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0244",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0244"
+    },
+    "87B90FEE-6D37-415E-AC97-1FA60E261861": {
+      "guid": "87b90fee-6d37-415e-ac97-1fa60e261861",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-05-26T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0233",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0233"
+    },
+    "82F427F3-6E3E-4AD8-BAD0-0D4D2AE30402": {
+      "guid": "82f427f3-6e3e-4ad8-bad0-0d4d2ae30402",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-05-26T08:00:00.000Z",
+          "applies": true,
+          "name": "A0233",
+          "note": "3 seeds direct sown"
+        },
+        {
+          "date": "2020-06-15T08:00:00.000Z",
+          "applies": true,
+          "name": "A0200"
+        }
+      ],
+      "id": "CUKE-82f427",
+      "plant": "CUKE",
+      "name": "CUKE0233"
+    },
+    "8A3B3EC8-80F1-431D-8C7D-611D4BF7FF9D": {
+      "guid": "8a3b3ec8-80f1-431d-8c7d-611d4bf7ff9d",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-05-03T08:00:00.000Z",
+          "applies": true,
+          "name": "A0219",
+          "note": "3 seeds direct sown"
+        },
+        {
+          "date": "2020-06-03T08:00:00.000Z",
+          "applies": true,
+          "name": "A0200"
+        },
+        {
+          "date": "2020-06-13T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "heat death after 1w in side yard bucket  "
+        }
+      ],
+      "id": "CUKE-8a3b3e",
+      "plant": "CUKE",
+      "name": "CUKE0219"
+    },
+    "194EF27B-5B99-45E6-A8C6-CCB0A2F7E084": {
+      "guid": "194ef27b-5b99-45e6-a8c6-ccb0a2f7e084",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-03-31T08:00:00.000Z",
+          "applies": true,
+          "name": "A0166",
+          "note": ""
+        },
+        {
+          "date": "2020-04-10T08:00:00.000Z",
+          "applies": true,
+          "name": "A0199"
+        },
+        {
+          "date": "2020-05-15T08:00:00.000Z",
+          "applies": true,
+          "name": "A0229"
+        },
+        {
+          "date": "2020-05-24T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "Heat death side yard transfer"
+        }
+      ],
+      "id": "CUKE-194ef2",
+      "plant": "CUKE",
+      "name": "CUKE0166"
+    },
+    "50B0699D-0F4A-4ABA-A52F-8FD411895D99": {
+      "guid": "50b0699d-0f4a-4aba-a52f-8fd411895d99",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-05-04T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0220",
+      "site-type": "BKT2G",
+      "name": "BKT2G-0220"
+    },
+    "5CACC524-7B33-4459-ADC3-1A07A491E6C7": {
+      "guid": "5cacc524-7b33-4459-adc3-1a07a491e6c7",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-09T08:00:00.000Z",
+          "applies": true,
+          "name": "A0197",
+          "note": "sow: 2 direct; sprout: 2 full harvest",
+          "noteUrl": "sow:"
+        },
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "A0199"
+        },
+        {
+          "date": "2020-05-04T08:00:00.000Z",
+          "applies": true,
+          "name": "A0220",
+          "note": "Patio stairs. Very productive"
+        }
+      ],
+      "id": "CUKE-5cacc5",
+      "plant": "CUKE",
+      "name": "CUKE0197"
+    },
+    "165A49DD-9BF8-47B9-AC74-7FBEF46519E7": {
+      "guid": "165a49dd-9bf8-47b9-ac74-7fbef46519e7",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-15T08:00:00.000Z",
+          "applies": true,
+          "name": "A0198",
+          "note": "sow:2",
+          "noteUrl": "sow:2"
+        },
+        {
+          "date": "2020-05-20T08:00:00.000Z",
+          "applies": true,
+          "name": "A0231",
+          "note": ""
+        },
+        {
+          "date": "2020-05-27T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "Heat death side yard"
+        }
+      ],
+      "id": "CUKE-165a49",
+      "plant": "CUKE",
+      "name": "CUKE0198"
+    },
+    "80EADAF5-E08C-422F-B3C7-92ECC8AF9E03": {
+      "guid": "80eadaf5-e08c-422f-b3c7-92ecc8af9e03",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-06-21T08:00:00.000Z",
+          "applies": true,
+          "name": "A0190",
+          "note": "sow:2",
+          "noteUrl": "sow:2"
+        },
+        {
+          "date": "2020-07-04T08:00:00.000Z",
+          "applies": true,
+          "name": "A0231",
+          "note": "Grow tent 4x4 to establish roots (vs. pipe)."
+        }
+      ],
+      "id": "CUKE-80eada",
+      "plant": "CUKE",
+      "name": "CUKE0190"
     }
   },
   "settings": {
