@@ -8,6 +8,7 @@
           label="Search..."
           solo-line
           solo
+          clearable
           @keypress="onSearchKey"
           hide-details
           ></v-text-field>
