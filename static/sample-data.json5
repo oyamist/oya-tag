@@ -1068,21 +1068,6 @@
       "id": "TRAY",
       "name": "Tray, TS32 Sprouts Food Container"
     },
-    "7187347D-4E90-4D92-B14A-6E278E80D3DF": {
-      "guid": "7187347d-4e90-4d92-b14a-6e278e80d3df",
-      "type": "site",
-      "tags": {
-        "0": {
-          "date": "2020-04-13T08:00:00.000Z",
-          "applies": true,
-          "name": "started",
-          "note": ""
-        }
-      },
-      "id": "A0196",
-      "site-type": "TRAY",
-      "name": "TS320196"
-    },
     "DF71A2EB-D3CD-4C23-9DCD-BA0171F1D5CC": {
       "guid": "df71a2eb-d3cd-4c23-9dcd-ba0171f1d5cc",
       "type": "site",
@@ -1142,6 +1127,72 @@
       "id": "A0224",
       "site-type": "TRAY",
       "name": "TRAY-0224"
+    },
+    "0E9FE4C7-DB30-4B7D-8997-82C6E93A7E86": {
+      "guid": "0e9fe4c7-db30-4b7d-8997-82c6e93a7e86",
+      "type": "site",
+      "tags": {
+        "0": {
+          "date": "2020-07-10T18:39:47.178Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      },
+      "id": "A0253",
+      "site-type": "BKT2G",
+      "name": "BKT2G-0253"
+    },
+    "7187347D-4E90-4D92-B14A-6E278E80D3DF": {
+      "guid": "7187347d-4e90-4d92-b14a-6e278e80d3df",
+      "type": "site",
+      "tags": {
+        "0": {
+          "date": "2020-04-13T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        },
+        "end": {
+          "date": "2020-07-09T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "Full harvest\n"
+        }
+      },
+      "id": "A0196",
+      "site-type": "TRAY",
+      "name": "TS320196"
+    },
+    "5F9ACBB5-EB69-4C92-B8D5-7D1387755E24": {
+      "guid": "5f9acbb5-eb69-4c92-b8d5-7d1387755e24",
+      "type": "crop",
+      "tags": {
+        "0": {
+          "date": "2020-07-05T08:00:00.000Z",
+          "applies": true,
+          "name": "A0250",
+          "note": "3 pinches direct sown"
+        }
+      },
+      "id": "TAT-5f9acb",
+      "plant": "TAT",
+      "name": "TAT0250"
+    },
+    "D1D37BC6-AB0F-445D-8BB5-3E0E4DC016B6": {
+      "guid": "d1d37bc6-ab0f-445d-8bb5-3e0e4dc016b6",
+      "type": "site",
+      "tags": {
+        "0": {
+          "date": "2020-07-05T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      },
+      "id": "A0250",
+      "site-type": "TRAY",
+      "name": "TRAY-0250"
     }
   },
   "settings": {

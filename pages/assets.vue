@@ -30,15 +30,18 @@
         >
         <template v-slot:expanded-item="{ headers, item }">
           <td :colspan="headers.length"> <div class="asset-expanded">
-            <v-data-table
-                :items="item.tagList"
-                :headers="tagHeaders"
-                dense
-                disable-pagination
-                hide-default-header
-                hide-default-footer
-                >
-            </v-data-table>
+            <table class="tag-table">
+              <caption class="tag-caption">
+                {{item.type.toUpperCase()}}: {{item.guid}}
+              </caption>
+              <tr v-for="(tag,i) in item.tagList" :key="i" >
+                <td style="width: 6em">
+                  {{tag.date.toLocaleDateString()}}
+                </td>
+                <td style="width: 6em">{{tag.name}}</td>
+                <td>{{tag.note}}</td>
+              </tr>
+            </table>
             <v-btn small class="mr-2" color="primary"
               @click="$router.push(`/assets#${item.id}`)"
               > 
@@ -215,10 +218,24 @@ export default {
 }
 .asset-expanded {
   display:flex; 
+  flex-flow: column nowrap;
   align-items: center; 
-  justify-content: space-between;
+  xjustify-content: space-between;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 tbody tr:hover {
   background-color: #ffe !important;
+}
+.tag-caption {
+  border-bottom: 1pt solid #ffffff;
+  text-align: left;
+}
+.tag-table {
+  border-left: 1pt solid #ffffff;
+  margin-bottom: 0.5em;
+}
+.tag-table td {
+  height: 1.2em;
 }
 </style>
