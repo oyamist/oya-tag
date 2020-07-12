@@ -36,7 +36,8 @@
             ></asset-picker>
           </div>
           <div v-if="asset.type==='site'" >
-            <asset-picker propName="site-type" :asset="asset" label="Site Type"
+            <asset-picker propName="site-type" 
+              :asset="asset" label="Site Type"
             ></asset-picker>
           </div>
         </div><!--field-row-->

@@ -497,21 +497,6 @@
       "id": "CST",
       "name": "Tomato, Chocolate Stripes"
     },
-    "F84772DA-1AC1-4C35-B0C5-2C67DBAC2842": {
-      "guid": "f84772da-1ac1-4c35-b0c5-2c67dbac2842",
-      "type": "plant",
-      "tagList": [
-        {
-          "date": "2020-06-22T07:00:00.000Z",
-          "applies": true,
-          "name": "A0243",
-          "note": "https://sandiegoseedcompany.com/shop/onion-tokyo/",
-          "noteUrl": "https://sandiegoseedcompany.com/shop/onion-tokyo/"
-        }
-      ],
-      "id": "TWO",
-      "name": "Onion, Tokyo White"
-    },
     "600CBF5B-90C5-4B8A-B362-743155C27764": {
       "guid": "600cbf5b-90c5-4b8a-b362-743155c27764",
       "type": "plant",
@@ -1392,6 +1377,114 @@
       "id": "CUKE-80eada",
       "plant": "CUKE",
       "name": "CUKE0190"
+    },
+    "614C27DF-9A23-4089-B160-2D9DC80DB3BE": {
+      "guid": "614c27df-9a23-4089-b160-2d9dc80db3be",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2019-10-25T08:00:00.000Z",
+          "applies": true,
+          "name": "RAD1025",
+          "note": "https://sproutpeople.org/radish-sprouts/",
+          "noteUrl": "https://sproutpeople.org/radish-sprouts/"
+        }
+      ],
+      "id": "RAD",
+      "name": "Radish"
+    },
+    "63B3E23E-4107-45D3-AD88-C0945C896F90": {
+      "guid": "63b3e23e-4107-45d3-ad88-c0945c896f90",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-07T08:00:00.000Z",
+          "applies": true,
+          "name": "A0222",
+          "note": "sow:3 pinches",
+          "noteUrl": "sow:3"
+        }
+      ],
+      "id": "RAD-63b3e2",
+      "plant": "RAD",
+      "name": "RAD0222"
+    },
+    "BA8D0FEF-9841-416A-BB27-6B687D2D21EB": {
+      "guid": "ba8d0fef-9841-416a-bb27-6b687d2d21eb",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-11T17:23:17.719Z",
+          "applies": true,
+          "name": "A0247",
+          "note": "sow:3 direct 5mm holes",
+          "noteUrl": "sow:3"
+        }
+      ],
+      "id": "TWO-ba8d0f",
+      "plant": "TWO",
+      "name": "TWO0247"
+    },
+    "DF8BD774-0CE5-409D-B23A-AD297DD036AD": {
+      "guid": "df8bd774-0ce5-409d-b23a-ad297dd036ad",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-11T17:23:17.719Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0247",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0247"
+    },
+    "F84772DA-1AC1-4C35-B0C5-2C67DBAC2842": {
+      "guid": "f84772da-1ac1-4c35-b0c5-2c67dbac2842",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-06-22T07:00:00.000Z",
+          "applies": true,
+          "name": "A0243",
+          "note": "https://sandiegoseedcompany.com/shop/onion-tokyo/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/onion-tokyo/"
+        }
+      ],
+      "id": "TWO",
+      "name": "Onion, Tokyo White"
+    },
+    "966AD257-A469-4933-AA06-E137D5826FF9": {
+      "guid": "966ad257-a469-4933-aa06-e137d5826ff9",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-12T00:54:55.902Z",
+          "applies": true,
+          "name": "A0197",
+          "note": "sow:3 holes",
+          "noteUrl": "sow:3"
+        }
+      ],
+      "id": "CHP-966ad2",
+      "plant": "CHP",
+      "name": "CHP0197"
+    },
+    "80D4FBCA-E0F1-4B77-BC1D-E739E39184BD": {
+      "guid": "80d4fbca-e0f1-4b77-bc1d-e739e39184bd",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-12T00:54:55.902Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0197",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0197"
     }
   },
   "settings": {

@@ -9,6 +9,7 @@
           solo-line
           solo
           clearable
+          class="search-field"
           @keypress="onSearchKey"
           @input="onSearchInput"
           hide-details
@@ -37,10 +38,10 @@
                 {{item.type.toUpperCase()}}: {{item.guid}}
               </caption>
               <tr v-for="(tag,i) in item.tagList" :key="i" >
-                <td style="width: 6em">
+                <td style="max-width: 6em">
                   {{tag.date.toLocaleDateString()}}
                 </td>
-                <td style="width: 6em">{{tag.name}}</td>
+                <td style="max-width: 6em">{{tag.name}}</td>
                 <td>{{tag.note}}</td>
               </tr>
             </table>
@@ -247,5 +248,8 @@ tbody tr:hover {
 }
 .tag-table td {
   height: 1.2em;
+}
+.search-field {
+  max-width: 280px;
 }
 </style>

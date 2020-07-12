@@ -67,7 +67,7 @@ computed: {
   },
   cssScrollContent() {
     var n = this.timelines.length;
-    var width =  (n+1) * (this.itemW);
+    var width = (n+1) * (this.itemW+10);
     return [
       `width:${width}px`,
     ].join(';');
