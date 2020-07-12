@@ -18,17 +18,19 @@
             this.applies = opts.applies === 'true' || opts.applies === true;
             this.name = opts.name || '';
             this.note = opts.note;
+            var noteUrl;
             if (this.note) {
                 try {
                     var urlPart = this.note
                         .split(" ")[0]
                         .split("\t")[0]
                         .split("\n")[0];
-                    this.noteUrl = new URL(urlPart);
+                    noteUrl = new URL(urlPart);
                 } catch (e) {
                     // do nothing
                 }
             }
+            noteUrl && noteUrl.host && (this.noteUrl = noteUrl);
         }
 
         get localeDate() {

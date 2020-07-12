@@ -1,6 +1,7 @@
 <template>
   <v-dialog v-model="showAddAsset" persistent 
-     @keydown.esc="cancelAsset"
+   max-width="40em"
+   @keydown.esc="cancelAsset"
   >
     <v-system-bar color="green darken-2" dark>
       Add Asset
@@ -31,7 +32,7 @@
         <v-card flat>
           <v-card-text>
             <h3 class="mb-5">
-              Add new crop for plant.
+              Plant a new crop:
             </h3>
             <asset-picker :asset="model.crop" propName="plant" 
               autofocus

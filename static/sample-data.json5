@@ -1,18 +1,5 @@
 {
   "assetMap": {
-    "990D09FB-865B-41BB-BD7C-C3A41F4530DC": {
-      "guid": "990d09fb-865b-41bb-bd7c-c3a41f4530dc",
-      "type": "plant",
-      "tagList": [
-        {
-          "date": "2020-06-13T13:51:37.962Z",
-          "applies": true,
-          "name": "entered"
-        }
-      ],
-      "id": "BROC",
-      "name": "Broccoli"
-    },
     "F58E4260-7A62-416A-886A-182603BD7F01": {
       "guid": "f58e4260-7a62-416a-886a-182603bd7f01",
       "type": "plant",
@@ -497,21 +484,6 @@
       "id": "CST",
       "name": "Tomato, Chocolate Stripes"
     },
-    "600CBF5B-90C5-4B8A-B362-743155C27764": {
-      "guid": "600cbf5b-90c5-4b8a-b362-743155c27764",
-      "type": "plant",
-      "tagList": [
-        {
-          "date": "2020-06-22T07:00:00.000Z",
-          "applies": true,
-          "name": "A0245",
-          "note": "https://sandiegoseedcompany.com/shop/cool-season-crops/broccoli-green-sprouting-calabrese/",
-          "noteUrl": "https://sandiegoseedcompany.com/shop/cool-season-crops/broccoli-green-sprouting-calabrese/"
-        }
-      ],
-      "id": "CBR",
-      "name": "Broccoli, Calabrese"
-    },
     "6A478A88-48C8-432F-9BF6-F8E0E1A7BCF6": {
       "guid": "6a478a88-48c8-432f-9bf6-f8e0e1a7bcf6",
       "type": "plant",
@@ -731,32 +703,6 @@
       "id": "BTD20200618-9F",
       "plant": "BTD",
       "name": "BTD0618"
-    },
-    "EB5DF87A-C66D-4C4A-9E9D-6F5D93C98EEC": {
-      "guid": "eb5df87a-c66d-4c4a-9e9d-6f5d93c98eec",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-05-28T07:00:00.000Z",
-          "applies": true,
-          "name": "A0187",
-          "note": "3 dried seeds\n"
-        },
-        {
-          "date": "2020-05-31T07:00:00.000Z",
-          "applies": true,
-          "name": "A0236"
-        },
-        {
-          "date": "2020-06-25T07:00:00.000Z",
-          "applies": true,
-          "name": "A0200",
-          "note": "Too tall\n"
-        }
-      ],
-      "id": "BTD20200528-3D",
-      "plant": "BTD",
-      "name": "BTD0236"
     },
     "CEA3FE46-F9E4-41D8-B777-0AA5CB4CAD21": {
       "guid": "cea3fe46-f9e4-41d8-b777-0aa5cb4cad21",
@@ -1309,8 +1255,7 @@
           "date": "2020-04-09T08:00:00.000Z",
           "applies": true,
           "name": "A0197",
-          "note": "sow: 2 direct; sprout: 2 full harvest",
-          "noteUrl": "sow:"
+          "note": "sow: 2 direct; sprout: 2 full harvest"
         },
         {
           "date": "2020-04-25T08:00:00.000Z",
@@ -1336,8 +1281,7 @@
           "date": "2020-04-15T08:00:00.000Z",
           "applies": true,
           "name": "A0198",
-          "note": "sow:2",
-          "noteUrl": "sow:2"
+          "note": "sow:2"
         },
         {
           "date": "2020-05-20T08:00:00.000Z",
@@ -1364,8 +1308,7 @@
           "date": "2020-06-21T08:00:00.000Z",
           "applies": true,
           "name": "A0190",
-          "note": "sow:2",
-          "noteUrl": "sow:2"
+          "note": "sow:2"
         },
         {
           "date": "2020-07-04T08:00:00.000Z",
@@ -1401,8 +1344,7 @@
           "date": "2020-07-07T08:00:00.000Z",
           "applies": true,
           "name": "A0222",
-          "note": "sow:3 pinches",
-          "noteUrl": "sow:3"
+          "note": "sow:3 pinches"
         }
       ],
       "id": "RAD-63b3e2",
@@ -1417,8 +1359,7 @@
           "date": "2020-07-11T17:23:17.719Z",
           "applies": true,
           "name": "A0247",
-          "note": "sow:3 direct 5mm holes",
-          "noteUrl": "sow:3"
+          "note": "sow:3 direct 5mm holes"
         }
       ],
       "id": "TWO-ba8d0f",
@@ -1463,8 +1404,7 @@
           "date": "2020-07-12T00:54:55.902Z",
           "applies": true,
           "name": "A0197",
-          "note": "sow:3 holes",
-          "noteUrl": "sow:3"
+          "note": "sow:3 holes"
         }
       ],
       "id": "CHP-966ad2",
@@ -1485,6 +1425,195 @@
       "id": "A0197",
       "site-type": "NETPOT",
       "name": "NETPOT-0197"
+    },
+    "EB5DF87A-C66D-4C4A-9E9D-6F5D93C98EEC": {
+      "guid": "eb5df87a-c66d-4c4a-9e9d-6f5d93c98eec",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-05-28T07:00:00.000Z",
+          "applies": true,
+          "name": "A0187",
+          "note": "sow:3; sprout: 2\n"
+        },
+        {
+          "date": "2020-05-31T07:00:00.000Z",
+          "applies": true,
+          "name": "A0236"
+        },
+        {
+          "date": "2020-06-25T07:00:00.000Z",
+          "applies": true,
+          "name": "A0200",
+          "note": "Too tall\n"
+        },
+        {
+          "date": "2020-07-12T01:31:48.769Z",
+          "applies": true,
+          "name": "A0253",
+          "note": "Grow tent; flowering"
+        }
+      ],
+      "id": "BTD20200528-3D",
+      "plant": "BTD",
+      "name": "BTD0236"
+    },
+    "600CBF5B-90C5-4B8A-B362-743155C27764": {
+      "guid": "600cbf5b-90c5-4b8a-b362-743155c27764",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-06-22T07:00:00.000Z",
+          "applies": true,
+          "name": "A0245",
+          "note": "https://sandiegoseedcompany.com/shop/cool-season-crops/broccoli-green-sprouting-calabrese/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/cool-season-crops/broccoli-green-sprouting-calabrese/"
+        }
+      ],
+      "id": "BRCC",
+      "name": "Broccoli, Calabrese"
+    },
+    "FA32D9B0-3B77-413F-9307-1354D7575262": {
+      "guid": "fa32d9b0-3b77-413f-9307-1354d7575262",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-12T04:43:30.629Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0227",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0227"
+    },
+    "583DF18D-FC0E-4441-89D0-58B1B30140BD": {
+      "guid": "583df18d-fc0e-4441-89d0-58b1b30140bd",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-12T08:00:00.000Z",
+          "applies": false,
+          "name": "A0227",
+          "note": ""
+        }
+      ],
+      "id": "BRCC-583df1",
+      "plant": "BRCC",
+      "name": "BRCC0227"
+    },
+    "DFBC48D8-6CC9-425E-B230-30234FC3B5D9": {
+      "guid": "dfbc48d8-6cc9-425e-b230-30234fc3b5d9",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-03-27T08:00:00.000Z",
+          "applies": true,
+          "name": "WML0327",
+          "note": "https://www.rareseeds.com/store/vegetables/bulk-vegetables/watermelon/blacktail-mountain-watermelon",
+          "noteUrl": "https://www.rareseeds.com/store/vegetables/bulk-vegetables/watermelon/blacktail-mountain-watermelon"
+        }
+      ],
+      "id": "WML",
+      "name": "Watermelon, Blacktail Mountain"
+    },
+    "AD164AD2-69C3-4917-B5AD-BF28A1E7F3EC": {
+      "guid": "ad164ad2-69c3-4917-b5ad-bf28a1e7f3ec",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-23T08:00:00.000Z",
+          "applies": true,
+          "name": "A0205",
+          "note": "sow:4"
+        },
+        {
+          "date": "2020-05-04T08:00:00.000Z",
+          "applies": true,
+          "name": "A0200"
+        }
+      ],
+      "id": "WML-ad164a",
+      "plant": "WML",
+      "name": "WML0205"
+    },
+    "B2C09074-4228-4866-9EE6-8D9E37D89FBA": {
+      "guid": "b2c09074-4228-4866-9ee6-8d9e37d89fba",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-05-05T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0205",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0205"
+    },
+    "64420E36-631E-4C6B-A0F0-23AC3A21E990": {
+      "guid": "64420e36-631e-4c6b-a0f0-23ac3a21e990",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-07T08:00:00.000Z",
+          "applies": true,
+          "name": "A0194",
+          "note": "sow:3; presoak:4 days"
+        },
+        {
+          "date": "2020-04-19T08:00:00.000Z",
+          "applies": true,
+          "name": "A0199"
+        },
+        {
+          "date": "2020-06-07T08:00:00.000Z",
+          "applies": true,
+          "name": "A0254",
+          "note": "Side yard; Hot ok; "
+        },
+        {
+          "date": "2020-07-10T08:00:00.000Z",
+          "applies": true,
+          "name": "Harvest",
+          "note": "Taste: A"
+        }
+      ],
+      "id": "WML-64420e",
+      "plant": "WML",
+      "name": "WML0194"
+    },
+    "25C4704D-09FA-40E0-A470-68577176A460": {
+      "guid": "25c4704d-09fa-40e0-a470-68577176a460",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-06-07T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0254",
+      "site-type": "BKT2G",
+      "name": "BKT2G-0254"
+    },
+    "B7BDF963-5386-4CCE-B66F-C86A1FA7AC00": {
+      "guid": "b7bdf963-5386-4cce-b66f-c86a1fa7ac00",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-05-11T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0194",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0194"
     }
   },
   "settings": {

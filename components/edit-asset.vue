@@ -1,5 +1,6 @@
 <template>
   <v-dialog v-model="isVisible" persistent v-if="isAssetSelected" 
+     max-width="40em"
      @keydown.esc="cancelAsset"
   >
     <v-card v-if="asset">
@@ -50,27 +51,13 @@
           :items-per-page="-1"
           >
           <template v-slot:item.name="{ item }">
-            <a :href="tagUrl(item)" v-if="tagUrl(item)"
-              target="_blank">
-              {{ tagName(item) }}
-            </a>
-            <span v-if="!tagUrl(item)"> 
-              {{ tagName(item) }}
-            </span>
+            <tag-name :tag="item"/>
           </template>
           <template v-slot:item.date="{ item }">
             {{ tagDate(item) }}
           </template>
           <template v-slot:item.note="{ item }">
-            <a :href="item.noteUrl" v-if="item.noteUrl"
-              :title="item.note"
-              target="_blank">
-              {{ noteSummary(item)}}
-            </a>
-            <span v-if="!item.noteUrl"
-              :title="item.note">
-              {{noteSummary(item)}}
-            </span>
+            <tag-note :tag="item"/>
           </template>
           <template v-slot:top>
             <v-toolbar flat color="white">
@@ -184,6 +171,8 @@
   import { MerkleJson } from "merkle-json";
   import DateField from "./date-field";
   import AssetPicker from "./asset-picker";
+  import TagName from "./tag-name";
+  import TagNote from "./tag-note";
   import Asset from "../src/asset.js";
   import Tag from "../src/tag.js";
 
@@ -345,16 +334,6 @@
         this.$store.commit('select', null);
         this.$router.go(-1);
       },
-      noteSummary(tag) {
-        var maxNote = 40;
-        if (tag.noteUrl) {
-          return tag.noteUrl.hostname;
-        } else {
-          return tag && tag.note && tag.note.length > maxNote
-            ? tag.note.substring(0, maxNote) + '...'
-            : tag.note;
-        }
-      },
     },
     computed: {
       tagChanged() {
@@ -418,6 +397,8 @@
     components: {
       AssetPicker,
       DateField,
+      TagName,
+      TagNote,
     }
   }
 </script>

@@ -39,10 +39,14 @@
               </caption>
               <tr v-for="(tag,i) in item.tagList" :key="i" >
                 <td style="max-width: 6em">
-                  {{tag.date.toLocaleDateString()}}
+                  <tag-date :tag="tag"/>
                 </td>
-                <td style="max-width: 6em">{{tag.name}}</td>
-                <td>{{tag.note}}</td>
+                <td style="max-width: 6em">
+                  <tag-name :tag="tag"/>
+                </td>
+                <td>
+                  <tag-note :tag="tag"/>
+                </td>
               </tr>
             </table>
             <v-btn small class="mr-2" color="primary"
@@ -78,6 +82,9 @@
 
 <script>
 import Vue from "vue";
+import TagDate from "../components/tag-date";
+import TagName from "../components/tag-name";
+import TagNote from "../components/tag-note";
 import AddAsset from "../components/add-asset";
 export default {
   name: 'ViewAssets',
@@ -219,6 +226,9 @@ export default {
   },
   components: {
     AddAsset,
+    TagDate,
+    TagName,
+    TagNote,
   },
 }
 </script>
@@ -245,9 +255,12 @@ tbody tr:hover {
 .tag-table {
   border-left: 1pt solid #ffffff;
   margin-bottom: 0.5em;
+  max-width: 40em;
 }
 .tag-table td {
   height: 1.2em;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 .search-field {
   max-width: 280px;
