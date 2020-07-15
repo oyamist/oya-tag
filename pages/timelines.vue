@@ -39,7 +39,7 @@ name: 'ViewTimeline',
 data: () => {
   return {
     days: 120,
-    itemW: 90,
+    itemW: 70,
     scroll: {
       x: 0,
       y: 0,

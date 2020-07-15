@@ -21,12 +21,19 @@
         {{ new Date().getDate() }}
       </div>
       <v-spacer />
+      <v-btn icon :color="pagesColor('/assets')"
+        @click="$router.push('/assets')"
+        title="Asset view"
+      ><v-icon>mdi-view-list</v-icon></v-btn>
+      <v-btn icon :color="pagesColor('/timelines')"
+        @click="$router.push('/timelines')"
+        title="Timeline view"
+      ><v-icon>mdi-panorama</v-icon></v-btn>
 
-      {{ $route.path }}
       <v-menu bottom right nudge-bottom="40">
         <template v-slot:activator="{ on }">
           <v-btn dark icon v-on="on">
-            <v-icon>mdi-menu</v-icon>
+            <v-icon>mdi-dots-vertical</v-icon>
           </v-btn>
         </template>
 
@@ -118,12 +125,6 @@ export default {
       viewMenu: [{
         title: 'Help',
         route: '/'
-      }, {
-        title: 'Timelines',
-        route: '/timelines'
-      }, {
-        title: 'Assets',
-        route: '/assets'
       }],
       fileMenu: [{
         title: 'Load Sample Data',
@@ -262,6 +263,11 @@ export default {
       } else {
         console.error(`invalid menu item ${JSON.stringify(menuItem)}`);
       }
+    },
+    pagesColor(route) {
+      return route && this.$route.path === route
+        ? "green "
+        : "";
     },
     menuItemDisabled (menuItem) {
       return menuItem.route && this.$route.path === menuItem.route

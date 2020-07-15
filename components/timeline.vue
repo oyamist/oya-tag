@@ -42,7 +42,7 @@ export default {
     },
     itemW: {
       type: Number,
-      default: 90,
+      default: 70,
     },
     itemH: {
       type: Number,
@@ -179,7 +179,7 @@ export default {
       var that = this;
       var starts = items.reduce((a,asset) => {
         var date = asset.firstTag.date;
-        var dateStr = Dates.toMMDDYY(date);
+        var dateStr = Dates.toMD(date);
         var start = dateMap[dateStr];
         if (!start) {
           start = {
@@ -237,5 +237,8 @@ export default {
   color: #fff;
   text-align: center;
   width: 100%;
+}
+.timeline-title {
+  font-size: smaller;
 }
 </style>

@@ -13,11 +13,26 @@
             });
         }
 
-        static toMMDD(date=new Date()) {
+        static toMD(date=new Date()) {
+            if (typeof date === 'string') {
+                date = new Date(date);
+            }
             return date.toLocaleDateString(undefined, {
                 month: "numeric",
                 day: "numeric",
             });
+        }
+        static toMMDD(date=new Date()) {
+            if (typeof date === 'string') {
+                date = new Date(date);
+            }
+            var mm = date.toLocaleDateString(undefined, {
+                month: "2-digit",
+            });
+            var dd = date.toLocaleDateString(undefined, {
+                day: "2-digit",
+            });
+            return `${mm}${dd}`;
         }
 
         static toMMDDYY(date=new Date()) {

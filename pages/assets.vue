@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card v-if="assets" flat>
+    <v-card v-if="assets" flat class="asset-table">
       <v-card-title>
         <v-text-field
           v-model="search"
@@ -21,7 +21,7 @@
           ><v-icon large>mdi-plus-circle</v-icon></v-btn>
       </v-card-title>
       <v-data-table v-if="assetStore"
-        class="elevation-1" 
+        class="elevation-1 " 
         :search="search"
         :headers="assetHeaders"
         single-expand
@@ -264,5 +264,8 @@ tbody tr:hover {
 }
 .search-field {
   max-width: 280px;
+}
+.asset-table {
+  max-width: 50em;
 }
 </style>

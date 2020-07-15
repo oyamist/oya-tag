@@ -351,7 +351,8 @@ export default {
       } = this.model;
       var tag0 = crop.tagList[0];
       if (tag0.name && crop.plant && !crop.name) {
-        var name = `${crop.plant}${tag0.name.replace(/[^0-9]/ug,'')}`;
+        var mmdd = Dates.toMMDD(tag0.date);
+        var name = `${crop.plant}-${mmdd}`;
         Vue.set(crop, "name", name);
       }
     },
