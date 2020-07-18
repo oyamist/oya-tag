@@ -1,31 +1,31 @@
 (function(exports) {
+    function argDate(date=new Date()) {
+        return typeof date === 'string'
+            ? new Date(date)
+            : date;
+    }
 
     class Dates {
-        static toMM(date=new Date()) {
-            return date.toLocaleDateString(undefined, {
+        static toMM(date) {
+            return argDate(date).toLocaleDateString(undefined, {
                 month: "2-digit",
             });
         }
 
-        static toDD(date=new Date()) {
-            return date.toLocaleDateString(undefined, {
+        static toDD(date) {
+            return argDate(date).toLocaleDateString(undefined, {
                 day: "2-digit",
             });
         }
 
-        static toMD(date=new Date()) {
-            if (typeof date === 'string') {
-                date = new Date(date);
-            }
-            return date.toLocaleDateString(undefined, {
+        static toMD(date) {
+            return argDate(date).toLocaleDateString(undefined, {
                 month: "numeric",
                 day: "numeric",
             });
         }
-        static toMMDD(date=new Date()) {
-            if (typeof date === 'string') {
-                date = new Date(date);
-            }
+        static toMMDD(date) {
+            date = argDate(date);
             var mm = date.toLocaleDateString(undefined, {
                 month: "2-digit",
             });
@@ -35,8 +35,8 @@
             return `${mm}${dd}`;
         }
 
-        static toMMDDYY(date=new Date()) {
-            return date.toLocaleDateString(undefined, {
+        static toMMDDYY(date) {
+            return argDate(date).toLocaleDateString(undefined, {
                 year: "2-digit",
                 month: "numeric",
                 day: "numeric",

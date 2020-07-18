@@ -513,21 +513,6 @@
       "site-type": "NETPOT",
       "name": "POT0246"
     },
-    "78F77D72-1677-4073-8CAC-2E3AB0CD3AF6": {
-      "guid": "78f77d72-1677-4073-8cac-2e3ab0cd3af6",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-01T17:07:01.794Z",
-          "applies": true,
-          "name": "A0246",
-          "note": "Sow direct into three holes"
-        }
-      ],
-      "id": "CST20200701-3S",
-      "plant": "CST",
-      "name": "CTS0701"
-    },
     "A369C0A0-9338-4554-83D8-C4B7DAFA7BC2": {
       "guid": "a369c0a0-9338-4554-83d8-c4b7dafa7bc2",
       "type": "site-type",
@@ -1351,21 +1336,6 @@
       "plant": "RAD",
       "name": "RAD0222"
     },
-    "BA8D0FEF-9841-416A-BB27-6B687D2D21EB": {
-      "guid": "ba8d0fef-9841-416a-bb27-6b687d2d21eb",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-11T17:23:17.719Z",
-          "applies": true,
-          "name": "A0247",
-          "note": "sow:3 direct 5mm holes"
-        }
-      ],
-      "id": "TWO-ba8d0f",
-      "plant": "TWO",
-      "name": "TWO0247"
-    },
     "DF8BD774-0CE5-409D-B23A-AD297DD036AD": {
       "guid": "df8bd774-0ce5-409d-b23a-ad297dd036ad",
       "type": "site",
@@ -1395,21 +1365,6 @@
       ],
       "id": "TWO",
       "name": "Onion, Tokyo White"
-    },
-    "966AD257-A469-4933-AA06-E137D5826FF9": {
-      "guid": "966ad257-a469-4933-aa06-e137d5826ff9",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-12T00:54:55.902Z",
-          "applies": true,
-          "name": "A0197",
-          "note": "sow:3 holes"
-        }
-      ],
-      "id": "CHP-966ad2",
-      "plant": "CHP",
-      "name": "CHP0197"
     },
     "80D4FBCA-E0F1-4B77-BC1D-E739E39184BD": {
       "guid": "80d4fbca-e0f1-4b77-bc1d-e739e39184bd",
@@ -1487,21 +1442,6 @@
       "id": "A0227",
       "site-type": "NETPOT",
       "name": "NETPOT-0227"
-    },
-    "583DF18D-FC0E-4441-89D0-58B1B30140BD": {
-      "guid": "583df18d-fc0e-4441-89d0-58b1b30140bd",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-12T08:00:00.000Z",
-          "applies": false,
-          "name": "A0227",
-          "note": ""
-        }
-      ],
-      "id": "BRCC-583df1",
-      "plant": "BRCC",
-      "name": "BRCC0227"
     },
     "DFBC48D8-6CC9-425E-B230-30234FC3B5D9": {
       "guid": "dfbc48d8-6cc9-425e-b230-30234fc3b5d9",
@@ -1614,6 +1554,306 @@
       "id": "A0194",
       "site-type": "NETPOT",
       "name": "NETPOT-0194"
+    },
+    "583DF18D-FC0E-4441-89D0-58B1B30140BD": {
+      "guid": "583df18d-fc0e-4441-89d0-58b1b30140bd",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-12T08:00:00.000Z",
+          "applies": true,
+          "name": "A0227",
+          "note": ""
+        }
+      ],
+      "id": "BRCC-583df1",
+      "plant": "BRCC",
+      "name": "BRCC0227"
+    },
+    "635EA9D5-F146-43E9-A2E1-F6E0CB358880": {
+      "guid": "635ea9d5-f146-43e9-a2e1-f6e0cb358880",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-12T20:09:42.400Z",
+          "applies": true,
+          "name": "A0181",
+          "note": "4 pinches"
+        }
+      ],
+      "id": "A0241-635ea9",
+      "plant": "A0241",
+      "name": "A02410181"
+    },
+    "BA8D0FEF-9841-416A-BB27-6B687D2D21EB": {
+      "guid": "ba8d0fef-9841-416a-bb27-6b687d2d21eb",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-11T17:23:17.719Z",
+          "applies": true,
+          "name": "A0247",
+          "note": "sow:3 direct 5mm holes"
+        }
+      ],
+      "id": "TWO-ba8d0f",
+      "plant": "TWO",
+      "name": "TWO-0711"
+    },
+    "3646A80D-BF1F-47DD-846A-2995601582A7": {
+      "guid": "3646a80d-bf1f-47dd-846a-2995601582a7",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-01-01T08:00:00.000Z",
+          "applies": true,
+          "name": "A0192",
+          "note": "https://www.rareseeds.com/store/vegetables/greens-oriental/purple-lady-bok-choy\n(purchase date unknown)",
+          "noteUrl": "https://www.rareseeds.com/store/vegetables/greens-oriental/purple-lady-bok-choy"
+        }
+      ],
+      "id": "BCP",
+      "name": "BokChoy, Purple Lady"
+    },
+    "3316F9CB-F094-4CDA-B192-BFF92A84D021": {
+      "guid": "3316f9cb-f094-4cda-b192-bff92a84d021",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-05-18T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0223",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0223"
+    },
+    "92145392-3162-4D1C-A77C-24B065359E58": {
+      "guid": "92145392-3162-4d1c-a77c-24b065359e58",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-08T08:00:00.000Z",
+          "applies": true,
+          "name": "A0195",
+          "note": "sow 10, soaked 1 day"
+        }
+      ],
+      "id": "BCP-921453",
+      "plant": "BCP",
+      "name": "BCP-0408"
+    },
+    "D07F11D8-C0C3-4319-99DB-8EE2472A3AB5": {
+      "guid": "d07f11d8-c0c3-4319-99db-8ee2472a3ab5",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-04-08T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0195",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0195"
+    },
+    "6227260A-7A1A-4C57-ADA7-5F6BD3A846A9": {
+      "guid": "6227260a-7a1a-4c57-ada7-5f6bd3a846a9",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-05-08T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0212",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0212"
+    },
+    "7BC6D979-0569-4274-8A13-6A6387B15264": {
+      "guid": "7bc6d979-0569-4274-8a13-6a6387b15264",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "A0212",
+          "note": "sow 10"
+        },
+        {
+          "date": "2020-05-08T08:00:00.000Z",
+          "applies": true,
+          "name": "A0199"
+        }
+      ],
+      "id": "BCP-7bc6d9",
+      "plant": "BCP",
+      "name": "BCP-0425"
+    },
+    "02EB1405-37F0-4302-ACD7-2FC438F6D5BF": {
+      "guid": "02eb1405-37f0-4302-acd7-2fc438f6d5bf",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-05-18T08:00:00.000Z",
+          "applies": true,
+          "name": "A0223",
+          "note": "sow 1 pinch"
+        },
+        {
+          "date": "2020-05-31T08:00:00.000Z",
+          "applies": true,
+          "name": "A0200"
+        }
+      ],
+      "id": "BCP-02eb14",
+      "plant": "BCP",
+      "name": "BCP-0518"
+    },
+    "8C7ADCF8-F354-486E-9F66-99D854CD2A73": {
+      "guid": "8c7adcf8-f354-486e-9f66-99d854cd2a73",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-15T16:40:20.784Z",
+          "applies": true,
+          "name": "A0194",
+          "note": "sow 3"
+        }
+      ],
+      "id": "BCP-8c7adc",
+      "plant": "BCP",
+      "name": "BCP-0715"
+    },
+    "966AD257-A469-4933-AA06-E137D5826FF9": {
+      "guid": "966ad257-a469-4933-aa06-e137d5826ff9",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-12T00:54:55.902Z",
+          "applies": true,
+          "name": "A0198",
+          "note": "sow:3 holes"
+        }
+      ],
+      "id": "CHP-966ad2",
+      "plant": "CHP",
+      "name": "CHP-0711"
+    },
+    "10ABA7E2-86D6-4361-AB59-62233B6618F8": {
+      "guid": "10aba7e2-86d6-4361-ab59-62233b6618f8",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-05-05T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0198",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0198"
+    },
+    "412DE0AC-73E2-41AB-A8DA-D5D6CCDD10E0": {
+      "guid": "412de0ac-73e2-41ab-a8da-d5d6ccdd10e0",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-17T18:17:56.654Z",
+          "applies": true,
+          "name": "A0255",
+          "note": "sow 4"
+        }
+      ],
+      "id": "PCT-412de0",
+      "plant": "PCT",
+      "name": "PCT-0717"
+    },
+    "7FB600B0-EBF6-454B-B64D-890427F5710C": {
+      "guid": "7fb600b0-ebf6-454b-b64d-890427f5710c",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-17T18:17:56.654Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0255",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0255"
+    },
+    "DDCA152A-F598-47F4-9B82-37837F4F1F18": {
+      "guid": "ddca152a-f598-47f4-9b82-37837f4f1f18",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-07-18T02:18:51.580Z",
+          "applies": true,
+          "name": "STM0717",
+          "note": "Unknown variety in strawberry flat"
+        }
+      ],
+      "id": "STM",
+      "name": "Strawberry, Farmer's Market"
+    },
+    "9BCBC433-D009-4B4A-A0C8-BA00FFA52824": {
+      "guid": "9bcbc433-d009-4b4a-a0c8-ba00ffa52824",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-18T02:18:51.580Z",
+          "applies": true,
+          "name": "A0257",
+          "note": "1 strawberry, dried, soaked, split and dusted with compost"
+        }
+      ],
+      "id": "STM-9bcbc4",
+      "plant": "STM",
+      "name": "STM-0717"
+    },
+    "C4FE7B39-BC51-49E6-80C1-CB2FA74FC405": {
+      "guid": "c4fe7b39-bc51-49e6-80c1-cb2fa74fc405",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-18T02:18:51.580Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0257",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0257"
+    },
+    "78F77D72-1677-4073-8CAC-2E3AB0CD3AF6": {
+      "guid": "78f77d72-1677-4073-8cac-2e3ab0cd3af6",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-01T17:07:01.794Z",
+          "applies": true,
+          "name": "A0246",
+          "note": "Sow direct into three holes"
+        },
+        {
+          "date": "2020-07-18T14:29:19.082Z",
+          "applies": true,
+          "name": "A0251",
+          "note": "sprout:3 + 1v=>RB-DE1"
+        }
+      ],
+      "id": "CST20200701-3S",
+      "plant": "CST",
+      "name": "CTS0701"
     }
   },
   "settings": {

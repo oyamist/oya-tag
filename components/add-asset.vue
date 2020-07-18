@@ -104,11 +104,12 @@
               placeholder="Enter nickname or short identifier"
               hint="E.g., BTD for Berkeley Tie Dye"
             ></v-text-field>
-            <v-text-field v-model="model.plant.tagList[0].note"
+            <v-textarea v-model="model.plant.tagList[0].note"
               label="Source"
               placeholder="Enter product URL or description"
               hint="E.g., https://www.rareseeds.com/store/vegetables/tomatoes/wild-boar-farms/pink-berkeley-tie-dye-tomato"
-            ></v-text-field>
+              rows="2"
+            ></v-textarea>
             <date-field
               label="Batch date"
               :item="model.plant.tagList[0]"

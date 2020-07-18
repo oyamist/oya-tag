@@ -7,7 +7,7 @@
 
     it("toMMDD(date) => locale mmdd", ()=>{
         var date = new Date(2020,0,2);
-        should(Dates.toMMDD(date)).equal('1/2');
+        should(Dates.toMMDD(date)).equal('0102');
     });
     it("toMMDDYY(date) => locale mmddyy", ()=>{
         var date = new Date(2020,0,2);

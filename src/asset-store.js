@@ -46,8 +46,34 @@
             });
         }
 
+        static sanitizePattern(pattern) {
+            if (!pattern) {
+                throw new Error("SuttaStore.search() pattern is required");
+            }
+            const MAX_PATTERN = 1024;
+            var excess = pattern.length - MAX_PATTERN;
+            if (excess > 0) {
+                throw new Error(
+                    `Search text too long by ${excess} characters.`);
+            }
+            // replace parentheses (code injection on grep argument)
+            pattern = pattern.replace(/[(){}[\]]/g,'.'); 
+            // replace quotes (code injection on grep argument)
+            pattern = pattern.replace(/["']/g,'.'); 
+            // eliminate tabs, newlines and carriage returns
+            pattern = pattern.replace(/\s/g,' '); 
+            // remove control characters
+            /* eslint-disable no-control-regex */
+            pattern = pattern.replace(/[\u0000-\u001f\u007f]+/g,''); 
+            /* eslint-enable no-control-regex */
+            // must be valid
+
+            return pattern;
+        }
+
         static assetFilter(assetStore, search, asset) {
-            var re = new RegExp(`\\b(${search})`, "uig");
+            var pattern = AssetStore.sanitizePattern(search);
+            var re = new RegExp(`\\b(${pattern})`, "uig");
             return Object.keys(asset).reduce((a,k)=>{
                 if (a) {
                     // skip
