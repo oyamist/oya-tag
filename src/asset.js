@@ -121,7 +121,7 @@
         }
 
         get ageDays() {
-            return Math.round(this.ageMillis/MSDAY);
+            return Math.trunc(this.ageMillis/MSDAY);
         }
 
         get startDate() {
