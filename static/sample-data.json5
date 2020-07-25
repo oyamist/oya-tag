@@ -730,31 +730,6 @@
       "site-type": "BKT2G",
       "name": "BKT2G0209"
     },
-    "521A705C-A89D-4560-8D18-29625C957B34": {
-      "guid": "521a705c-a89d-4560-8d18-29625c957b34",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-03-12T07:00:00.000Z",
-          "applies": true,
-          "name": "A0201",
-          "note": "8 fresh seeds"
-        },
-        {
-          "date": "2020-04-11T07:00:00.000Z",
-          "applies": true,
-          "name": "A0199"
-        },
-        {
-          "date": "2020-04-19T07:00:00.000Z",
-          "applies": true,
-          "name": "A0209"
-        }
-      ],
-      "id": "BTD-521a70",
-      "plant": "BTD",
-      "name": "BTD0201"
-    },
     "80B593C1-5116-4B90-BAB1-A34798EEC7F8": {
       "guid": "80b593c1-5116-4b90-bab1-a34798eec7f8",
       "type": "plant",
@@ -811,21 +786,6 @@
       "id": "TAT-cb5ce5",
       "plant": "TAT",
       "name": "TAT0196"
-    },
-    "047406CD-9EBB-4DA3-B342-42A2B657C0A5": {
-      "guid": "047406cd-9ebb-4da3-b342-42a2b657c0a5",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-04-03T08:00:00.000Z",
-          "applies": true,
-          "name": "A0177",
-          "note": "3 pinches direct sown"
-        }
-      ],
-      "id": "TAT-047406",
-      "plant": "TAT",
-      "name": "TAT0177"
     },
     "7F67E034-5B7A-42E4-9073-7A70B68882A5": {
       "guid": "7f67e034-5b7a-42e4-9073-7a70b68882a5",
@@ -2078,6 +2038,215 @@
       "id": "CIL-635ea9",
       "plant": "CIL",
       "name": "CIL-0712"
+    },
+    "521A705C-A89D-4560-8D18-29625C957B34": {
+      "guid": "521a705c-a89d-4560-8d18-29625c957b34",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-03-12T07:00:00.000Z",
+          "applies": true,
+          "name": "A0201",
+          "note": "8 fresh seeds"
+        },
+        {
+          "date": "2020-04-11T07:00:00.000Z",
+          "applies": true,
+          "name": "A0199"
+        },
+        {
+          "date": "2020-04-19T07:00:00.000Z",
+          "applies": true,
+          "name": "A0209"
+        },
+        {
+          "date": "2020-07-23T01:26:46.685Z",
+          "applies": true,
+          "name": "end",
+          "note": "root degraded. stem rotted."
+        }
+      ],
+      "id": "BTD-521a70",
+      "plant": "BTD",
+      "name": "BTD0201"
+    },
+    "E165DD77-E5BB-47F9-A779-928F330B3EE1": {
+      "guid": "e165dd77-e5bb-47f9-a779-928f330b3ee1",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2020-07-23T17:20:13.588Z",
+          "applies": true,
+          "name": "takeout",
+          "note": "https://www.amazon.com/Maple-Trade-TD-16-Ounce-Containers/dp/B07HNHW9BM",
+          "noteUrl": "https://www.amazon.com/Maple-Trade-TD-16-Ounce-Containers/dp/B07HNHW9BM"
+        }
+      ],
+      "id": "C16",
+      "name": "C16 SoupCup, Maple Trade TD 16oz clear deli container with lid"
+    },
+    "53A2A713-8E5E-4E6C-932F-786CBA464823": {
+      "guid": "53a2a713-8e5e-4e6c-932f-786cba464823",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-23T17:20:13.588Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0267",
+      "site-type": "C16",
+      "name": "C16-0267"
+    },
+    "13D4927A-A852-4425-B3C7-F51295354412": {
+      "guid": "13d4927a-a852-4425-b3c7-f51295354412",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-03-27T08:00:00.000Z",
+          "applies": true,
+          "name": "PLM0320",
+          "note": "https://www.amazon.com/Earthcare-Seeds-Little-Marvel-sativum/dp/B07KB8TMQD",
+          "noteUrl": "https://www.amazon.com/Earthcare-Seeds-Little-Marvel-sativum/dp/B07KB8TMQD"
+        }
+      ],
+      "id": "PLM",
+      "name": "Peas, Little Marvel"
+    },
+    "BB03326B-6CC3-4D2C-BAD3-17B42B28DCBF": {
+      "guid": "bb03326b-6cc3-4d2c-bad3-17b42b28dcbf",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0213",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0213"
+    },
+    "CB8C127F-C623-4985-AC71-860F24FC026D": {
+      "guid": "cb8c127f-c623-4985-ac71-860f24fc026d",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-04-03T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0190",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0190"
+    },
+    "B7639137-A81C-4836-9679-38F20CED0BFA": {
+      "guid": "b7639137-a81c-4836-9679-38f20ced0bfa",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-03T08:00:00.000Z",
+          "applies": true,
+          "name": "A0190",
+          "note": "soak 4 days"
+        },
+        {
+          "date": "2020-04-12T08:00:00.000Z",
+          "applies": true,
+          "name": "A0199"
+        },
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "A0214"
+        },
+        {
+          "date": "2020-05-01T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "sideyard heat shock, brought wilted plant inside, never recovered\n"
+        }
+      ],
+      "id": "PLM-b76391",
+      "plant": "PLM",
+      "name": "PLM-0403"
+    },
+    "4D7DE663-BD17-440B-9D61-BEE0AFF70557": {
+      "guid": "4d7de663-bd17-440b-9d61-bee0aff70557",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0214",
+      "site-type": "BKT2G",
+      "name": "BKT2G-0214"
+    },
+    "221ABCBA-156F-4F71-BC30-4D3BC79539DA": {
+      "guid": "221abcba-156f-4f71-bc30-4d3bc79539da",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "A0213",
+          "note": "sow 4"
+        },
+        {
+          "date": "2020-05-05T08:00:00.000Z",
+          "applies": true,
+          "name": "A0200",
+          "note": "Pods good taste. Heat death 5/15. New growth 7/22"
+        }
+      ],
+      "id": "PLM-221abc",
+      "plant": "PLM",
+      "name": "PLM-0425"
+    },
+    "385C4D8E-4583-4336-BDB2-B4727E8B6414": {
+      "guid": "385c4d8e-4583-4336-bdb2-b4727e8b6414",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-23T17:20:13.588Z",
+          "applies": true,
+          "name": "PLM-221abc",
+          "note": "sow ~15 for pea shoots"
+        }
+      ],
+      "id": "PLM-385c4d",
+      "plant": "PLM",
+      "name": "PLM-0723"
+    },
+    "047406CD-9EBB-4DA3-B342-42A2B657C0A5": {
+      "guid": "047406cd-9ebb-4da3-b342-42a2b657c0a5",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-03T08:00:00.000Z",
+          "applies": true,
+          "name": "A0177",
+          "note": "3 pinches direct sown"
+        },
+        {
+          "date": "2020-07-25T01:03:49.632Z",
+          "applies": true,
+          "name": "end",
+          "note": "full harvest"
+        }
+      ],
+      "id": "TAT-047406",
+      "plant": "TAT",
+      "name": "TAT0177"
     }
   },
   "settings": {

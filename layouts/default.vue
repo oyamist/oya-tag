@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <script src="/aws-sdk-2.715.0.min.js"></script>
     <v-app-bar dark fixed app>
       <div class="d-flex align-center">
         <v-img
@@ -13,6 +14,7 @@
         Oya-Tag
       </div>
 
+      <s3></s3>
       <v-spacer />
       <div class="month">
         {{ new Date().toLocaleString(undefined, {month:"short"}) }}
@@ -109,13 +111,15 @@
 const JSON5 = require( 'json5' );
 import FileSaver from 'file-saver';
 import EditAsset from '../components/edit-asset';
+import S3 from '../components/s3';
 import AssetStore from '../src/asset-store';
 import Package from '../package';
 
 export default {
   name: 'App',
   components: {
-    EditAsset
+    EditAsset,
+    S3,
   },
   data () {
     return {
