@@ -11,15 +11,47 @@ export const state = () => ({
     assetStore: null,
 })
 
+function saveLocal(state, onSave) {
+    var storage = window.localStorage;
+    var assetStore = state.assetStore;
+    if (assetStore) {
+        var json = JSON.stringify(assetStore);
+        storage.setItem(`oya-tag`, json);
+        console.log(`saveLocal() ${json.length}B`);
+        typeof onSave === 'function' && onSave(json);
+    }
+
+    return assetStore;
+}
+
 export const mutations = {
     set(state, assetStore) {
         state.assetStore = assetStore;
         state.list = state.assetStore.assets().sort(COMPARE_ASSETS);
+        saveLocal(state);
         console.log(`$store.state.assetStore.set() assets:`, 
             state.list.length);
     },
     touch(/*state, value*/) {
         console.log(`$store.assets.touch`);
+    },
+    save(state, onSave) {
+        var assetStore = state.assetStore;
+        if (assetStore) {
+            assetStore.saved = new Date();
+            var indent = 2; // simplify edit and search
+            var json = JSON.stringify(assetStore, null, indent);
+            console.log(`assets/save ${json.length}B`);
+            typeof onSave === 'function' && onSave(json);
+        }
+    },
+    saveSettings(state, settings) {
+        var assetStore = state.assetStore;
+        if (assetStore) {
+            Object.assign(assetStore.settings, settings);
+            saveLocal(state);
+            console.log(`assets/saveSettings`);
+        }
     },
     updateAsset(state, value) {
         var assetStore = state.assetStore;
@@ -27,6 +59,7 @@ export const mutations = {
             console.log(`$store.updateAsset`, value );
             assetStore.updateAsset(value);
             state.list = assetStore.assets().sort(COMPARE_ASSETS);
+            saveLocal(state);
         }
     },
     createId(state, payload) {
@@ -53,12 +86,14 @@ export const mutations = {
         var asset = state.assetStore.createAsset(opts);
         console.log(`$store.state.assetStore.add`, asset);
         state.list = state.assetStore.assets().sort(COMPARE_ASSETS);
+        saveLocal(state);
         opts.committed && opts.committed(asset);
     },
     remove (state, id) {
         var assetStore = state.assetStore;
         var asset = assetStore.removeAsset(id);
         console.log(`removed asset`, asset);
+        saveLocal(state);
         state.list = assetStore.assets().sort(COMPARE_ASSETS);
     },
 }

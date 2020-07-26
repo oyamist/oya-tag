@@ -103,12 +103,36 @@
         </a>
         <v-spacer/>
       </v-footer>
+        <v-dialog v-model="editingSettings" max-width="40em">
+          <v-card >
+            <v-system-bar color="green darken-4" dark>
+              Edit Settings
+            </v-system-bar>
+            <v-card-text class="mt-4">
+              <v-text-field v-model="settings.farm" 
+                outlined
+                clearable
+                label="Farm Name"
+                />
+            </v-card-text>
+            <v-card-actions>
+              <v-btn text @click="cancelSettings()"
+                >Cancel</v-btn>
+              <v-spacer/>
+              <v-btn color="green darken-2 white--text" raised
+                @click="saveSettings"
+                >Save
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
     </v-content>
   </v-app>
 </template>
 
 <script>
 const JSON5 = require( 'json5' );
+import Vue from "vue";
 import FileSaver from 'file-saver';
 import EditAsset from '../components/edit-asset';
 import S3 from '../components/s3';
@@ -124,11 +148,16 @@ export default {
   data () {
     return {
       overwriteAssets: false,
+      editingSettings: false,
+      settings: {},
       askUpload: false,
       uploadFile: null,
       viewMenu: [{
         title: 'Help',
         route: '/'
+      },{
+        title: "Edit Settings",
+        action: this.editSettings,
       }],
       fileMenu: [{
         title: 'Load Sample Data',
@@ -175,6 +204,10 @@ export default {
       var assets = this.$store.state.assets;
       return assets && assets.list.length || 0;
     },
+    assetStore() {
+      var storeState = this.$store.state;
+      return storeState.assets.assetStore;
+    },
   },
   mounted () {
     var {
@@ -184,10 +217,11 @@ export default {
 
     $store.subscribe((mutation, /*state*/)=>{
       var msStart = Date.now();
-      var json = JSON.stringify($store.state.assets.assetStore);
-      storage.setItem(`oya-tag`, json);
       var msElapsed = Date.now() - msStart;
-      console.log(`dbg subscribe mutation:${mutation.type} ${msElapsed}ms`);
+      console.log([
+          `subscribe mutation:${mutation.type}`,
+          `${msElapsed}ms`,
+      ].join(' '));
     });
     var localAssets = storage.getItem(`oya-tag`);
     if (localAssets) {
@@ -197,7 +231,7 @@ export default {
         $store.commit("assets/set", assetStore);
         console.log("Loaded local assets.", assetStore);
       } catch(e) {
-        console.error("could not load from localStorage");
+        console.error("could not load from localStorage", e.message);
       }
     } else {
       console.log("No local assets. Loading sample-data...");
@@ -205,6 +239,24 @@ export default {
     }
   },
   methods: {
+    editSettings() {
+      var assetStore = this.assetStore;
+      if (assetStore) {
+        this.editingSettings = true;
+        var settings = Object.assign({
+          saved: undefined,
+          farm: "My Farm",
+        }, assetStore.settings);
+        Vue.set(this, "settings", settings);
+      }
+    },
+    cancelSettings() {
+        this.editingSettings = false;
+    },
+    saveSettings() {
+        this.editingSettings = false;
+        this.$store.commit("assets/saveSettings", this.settings);
+    },
     uploadChanged() {
       var that = this;
       var {
@@ -234,19 +286,18 @@ export default {
       this.askUpload = true;
     },
     saveAssets() {
-      var assetStore = this.$store.state.assets.assetStore;
-      var indent = 2; // simplify edit and search
-      var json = JSON.stringify(assetStore, null, indent);
-      var blob = new Blob([json], { type: "text/plain;charset=utf-8" });
-      var now = new Date();
-      var month = `0${now.getMonth()+1}`;
-      var date = `0${now.getDate()}`;
-      var dateStr = [
-        now.getFullYear(),
-        month.substring(month.length-2),
-        date.substring(date.length-2),
-      ].join('');
-      FileSaver.saveAs(blob, `oya-tag-${dateStr}.json`);
+      this.$store.commit("assets/save", json=>{
+        var blob = new Blob([json], { type: "text/plain;charset=utf-8" });
+        var now = new Date();
+        var month = `0${now.getMonth()+1}`;
+        var date = `0${now.getDate()}`;
+        var dateStr = [
+          now.getFullYear(),
+          month.substring(month.length-2),
+          date.substring(date.length-2),
+        ].join('');
+        FileSaver.saveAs(blob, `oya-tag-${dateStr}.json`);
+      });
     },
     loadSample() {
       var msg = "Replace all asset records with sample data (DANGER!)?";

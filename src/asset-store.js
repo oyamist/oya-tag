@@ -1,5 +1,6 @@
 (function(exports) {
     const Asset = require('./asset');
+    const MerkleJson = require('merkle-json').MerkleJson;
     const mixedCase = {
         nextId: true,
     };
@@ -23,11 +24,14 @@
     
     class AssetStore {
         constructor(opts = {}, factoryMap={}) {
+            var mj = new MerkleJson();
+
             // serialized properties
             var assetMap = (opts.assetMap || {});
             this.assetMap = {};
             this.settings = AssetStore.appliedSettings(opts.settings);
             this.guidAbbreviation = opts.guidAbbreviation || 6;
+            this[mj.hashTag] = opts[mj.hashTag];
 
             // non-serialized properties
             Object.defineProperty(this, "assetFilter", {
@@ -39,6 +43,9 @@
             });
             Object.defineProperty(this, "factoryMap", {
                 value: factoryMap,
+            });
+            Object.defineProperty(this, "mj", {
+                value: mj,
             });
             Object.keys(assetMap).forEach(k=>{
                 var v = assetMap[k];
@@ -134,6 +141,8 @@
         }
         
         toJSON() {
+            var { mj, } = this;
+            this[mj.hashTag] = mj.hash(this, false);
             return this;
         }
 

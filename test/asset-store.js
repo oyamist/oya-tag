@@ -2,6 +2,7 @@
     const fs = require('fs');
     const path = require('path');
     const JSON5 = require('json5');
+    const {MerkleJson} = require('merkle-json');
     //const winston = require('winston');
     const should = require("should");
     const {
@@ -80,11 +81,13 @@
             }
         };
         var as = new AssetStore(json);
+        var signature = new MerkleJson().hash(as);
         var jsonCopy = JSON5.parse(JSON.stringify(as));
         var as2 = new AssetStore(jsonCopy);
         should(as2.settings.color).equal("brown");
         
-        should.deepEqual(as, as2);
+        should(as2.merkleHash).equal(signature);
+        should.deepEqual(as2, as.toJSON());
     });
     it("assetOfId(key) => asset", ()=> {
         var testValue = "test-value";
