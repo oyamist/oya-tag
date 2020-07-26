@@ -2253,7 +2253,10 @@
     "idTemplates": {
       "A0000": 60
     },
-    "A0000": 5
+    "A0000": 5,
+    "farm": "Oyamist Farm"
   },
-  "guidAbbreviation": 6
+  "guidAbbreviation": 6,
+  "merkleHash": "5bce8b568ddeafac48ac8476a7454ca2",
+  "saved": "2020-07-26T20:49:40.926Z"
 }
