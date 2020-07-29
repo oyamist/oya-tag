@@ -164,37 +164,6 @@
       "id": "A0229",
       "name": "BKT0229"
     },
-    "E55FD63E-41F1-4457-BE05-2C7CEDD0525D": {
-      "guid": "e55fd63e-41f1-4457-be05-2c7cedd0525d",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-04-15T07:00:00.000Z",
-          "applies": true,
-          "name": "A0187",
-          "note": "Fresh"
-        },
-        {
-          "date": "2020-04-19T07:00:00.000Z",
-          "applies": true,
-          "name": "A0203",
-          "note": "4/24: Added 1 germinated garbanzo bean that never sprouted"
-        },
-        {
-          "date": "2020-05-03T07:00:00.000Z",
-          "applies": true,
-          "name": "A0199"
-        },
-        {
-          "date": "2020-05-23T07:00:00.000Z",
-          "applies": true,
-          "name": "A0234"
-        }
-      ],
-      "id": "BTD20200406-6F",
-      "plant": "BTD",
-      "name": "BTD0406"
-    },
     "EAAF5913-DCE3-4833-9F19-687AE0939C1B": {
       "guid": "eaaf5913-dce3-4833-9f19-687ae0939c1b",
       "type": "site",
@@ -1637,27 +1606,6 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0257"
     },
-    "78F77D72-1677-4073-8CAC-2E3AB0CD3AF6": {
-      "guid": "78f77d72-1677-4073-8cac-2e3ab0cd3af6",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-01T17:07:01.794Z",
-          "applies": true,
-          "name": "A0246",
-          "note": "Sow direct into three holes"
-        },
-        {
-          "date": "2020-07-18T14:29:19.082Z",
-          "applies": true,
-          "name": "A0251",
-          "note": "sprout:3 + 1v=>RB-DE1"
-        }
-      ],
-      "id": "CST20200701-3S",
-      "plant": "CST",
-      "name": "CTS0701"
-    },
     "412DE0AC-73E2-41AB-A8DA-D5D6CCDD10E0": {
       "guid": "412de0ac-73e2-41ab-a8da-d5d6ccdd10e0",
       "type": "crop",
@@ -1716,21 +1664,6 @@
       "id": "A0261",
       "site-type": "DRV",
       "name": "DRV-0261"
-    },
-    "57AF0DCC-BB1B-4724-AC76-0EB7D5A89A63": {
-      "guid": "57af0dcc-bb1b-4724-ac76-0eb7d5a89a63",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-20T08:00:00.000Z",
-          "applies": true,
-          "name": "A0261",
-          "note": "sow:8 bucket ring, 32oz drip"
-        }
-      ],
-      "id": "BRCC-57af0d",
-      "plant": "BRCC",
-      "name": "BRCC-0719"
     },
     "EB1DBC89-520C-43CD-954D-DFF335BC0276": {
       "guid": "eb1dbc89-520c-43cd-954d-dff335bc0276",
@@ -2247,6 +2180,151 @@
       "id": "TAT-047406",
       "plant": "TAT",
       "name": "TAT0177"
+    },
+    "17BA536C-495A-480C-BA19-3E98E4ADC97D": {
+      "guid": "17ba536c-495a-480c-ba19-3e98e4adc97d",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2020-07-28T17:29:32.864Z",
+          "applies": true,
+          "name": "existing",
+          "note": "https://www.homedepot.com/p/Charlotte-Pipe-2-in-PVC-Sch-40-S-x-S-Coupling-PVC021001600HD/203811391",
+          "noteUrl": "https://www.homedepot.com/p/Charlotte-Pipe-2-in-PVC-Sch-40-S-x-S-Coupling-PVC021001600HD/203811391"
+        }
+      ],
+      "id": "PVC2",
+      "name": "PVC 2\" Coupling"
+    },
+    "E4683454-7481-4348-92AC-E05A45011405": {
+      "guid": "e4683454-7481-4348-92ac-e05a45011405",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-28T17:29:32.864Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0268",
+      "site-type": "PVC2",
+      "name": "PVC2-0268"
+    },
+    "D62183B9-BF9C-4334-A4C7-A1CD1444CF78": {
+      "guid": "d62183b9-bf9c-4334-a4c7-a1cd1444cf78",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-28T17:29:32.864Z",
+          "applies": true,
+          "name": "A0268",
+          "note": "sow 3"
+        }
+      ],
+      "id": "BRCC-d62183",
+      "plant": "BRCC",
+      "name": "BRCC-0728"
+    },
+    "57AF0DCC-BB1B-4724-AC76-0EB7D5A89A63": {
+      "guid": "57af0dcc-bb1b-4724-ac76-0eb7d5a89a63",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-20T08:00:00.000Z",
+          "applies": true,
+          "name": "A0261",
+          "note": "sow:8 bucket ring, 32oz drip"
+        },
+        {
+          "date": "2020-07-28T17:34:47.200Z",
+          "applies": true,
+          "name": "end",
+          "note": "3 sprouts all eaten by pillbugs\n"
+        }
+      ],
+      "id": "BRCC-57af0d",
+      "plant": "BRCC",
+      "name": "BRCC-0719"
+    },
+    "E55FD63E-41F1-4457-BE05-2C7CEDD0525D": {
+      "guid": "e55fd63e-41f1-4457-be05-2c7cedd0525d",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-15T07:00:00.000Z",
+          "applies": true,
+          "name": "A0187",
+          "note": "Fresh"
+        },
+        {
+          "date": "2020-04-19T07:00:00.000Z",
+          "applies": true,
+          "name": "A0203",
+          "note": "4/24: Added 1 germinated garbanzo bean that never sprouted"
+        },
+        {
+          "date": "2020-05-03T07:00:00.000Z",
+          "applies": true,
+          "name": "A0199"
+        },
+        {
+          "date": "2020-05-23T07:00:00.000Z",
+          "applies": true,
+          "name": "A0234"
+        },
+        {
+          "date": "2020-07-29T02:46:14.321Z",
+          "applies": true,
+          "name": "end",
+          "note": "killed by volunteer at root stem junction"
+        }
+      ],
+      "id": "BTD20200406-6F",
+      "plant": "BTD",
+      "name": "BTD0406"
+    },
+    "3953DA70-1BBE-4F27-BC4F-600742E14230": {
+      "guid": "3953da70-1bbe-4f27-bc4f-600742e14230",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-28T17:34:23.090Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0269",
+      "site-type": "BKT2G",
+      "name": "BKT2G-0269"
+    },
+    "78F77D72-1677-4073-8CAC-2E3AB0CD3AF6": {
+      "guid": "78f77d72-1677-4073-8cac-2e3ab0cd3af6",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-01T17:07:01.794Z",
+          "applies": true,
+          "name": "A0246",
+          "note": "sow:3"
+        },
+        {
+          "date": "2020-07-18T14:29:19.082Z",
+          "applies": true,
+          "name": "A0251",
+          "note": "sprout:3, volunteer:\"1=>RB-DE1\""
+        },
+        {
+          "date": "2020-07-29T03:32:10.589Z",
+          "applies": true,
+          "name": "A0269",
+          "note": "sprout:3, height:12, cumin:10"
+        }
+      ],
+      "id": "CST20200701-3S",
+      "plant": "CST",
+      "name": "CTS0701"
     }
   },
   "settings": {
@@ -2257,6 +2335,6 @@
     "farm": "Oyamist Farm"
   },
   "guidAbbreviation": 6,
-  "merkleHash": "5bce8b568ddeafac48ac8476a7454ca2",
-  "saved": "2020-07-26T20:49:40.926Z"
+  "merkleHash": "28bf5abd5658067a9bb998d823690d26",
+  "saved": "2020-07-29T03:43:05.751Z"
 }
