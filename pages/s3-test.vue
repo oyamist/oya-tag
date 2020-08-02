@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!--script src="/aws-sdk-2.715.0.min.js"></script-->
+    <!--script src="/lib/aws-sdk-2.715.0.min.js"></script-->
     AWS[{{!!AWS}}]<div v-if="AWS">ok</div>
     <input type="file" id="file-chooser" />
     <button id="upload-button" style="display:none">Upload to S3</button>

@@ -1,6 +1,6 @@
 <template>
   <div class="s3 ml-1 pb-3">
-    <script src="/aws-sdk-2.715.0.min.js"></script>
+    <script src="/lib/aws-sdk-2.715.0.min.js"></script>
     <v-icon v-if="AWS" small color="light-green darken-2" 
         title="AWS S3 backup enabled"
         >mdi-cloud-check</v-icon>

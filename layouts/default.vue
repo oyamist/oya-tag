@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <script src="/aws-sdk-2.715.0.min.js"></script>
+    <script src="/lib/aws-sdk-2.715.0.min.js"></script>
     <v-app-bar dark fixed app>
       <div class="d-flex align-center">
         <v-img

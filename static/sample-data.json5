@@ -424,19 +424,6 @@
       "plant": "PHW",
       "name": "PHW0249"
     },
-    "D82D5253-8D41-449D-AC2C-CBB7A784DDF5": {
-      "guid": "d82d5253-8d41-449d-ac2c-cbb7a784ddf5",
-      "type": "plant",
-      "tagList": [
-        {
-          "date": "2020-07-01T07:00:00.000Z",
-          "applies": true,
-          "name": "A0248"
-        }
-      ],
-      "id": "PHW",
-      "name": "Pepper, Hungarian Hot Wax"
-    },
     "04C11935-C0EF-4D0E-B9AD-431A51596462": {
       "guid": "04c11935-c0ef-4d0e-b9ad-431a51596462",
       "type": "plant",
@@ -1357,21 +1344,6 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0194"
     },
-    "583DF18D-FC0E-4441-89D0-58B1B30140BD": {
-      "guid": "583df18d-fc0e-4441-89d0-58b1b30140bd",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-12T08:00:00.000Z",
-          "applies": true,
-          "name": "A0227",
-          "note": ""
-        }
-      ],
-      "id": "BRCC-583df1",
-      "plant": "BRCC",
-      "name": "BRCC0227"
-    },
     "BA8D0FEF-9841-416A-BB27-6B687D2D21EB": {
       "guid": "ba8d0fef-9841-416a-bb27-6b687d2d21eb",
       "type": "crop",
@@ -1605,21 +1577,6 @@
       "id": "A0257",
       "site-type": "NETPOT",
       "name": "NETPOT-0257"
-    },
-    "412DE0AC-73E2-41AB-A8DA-D5D6CCDD10E0": {
-      "guid": "412de0ac-73e2-41ab-a8da-d5d6ccdd10e0",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-17T18:17:56.654Z",
-          "applies": true,
-          "name": "A0255",
-          "note": "sow 4; 7/19 pinch of cumin seeds"
-        }
-      ],
-      "id": "PCT-412de0",
-      "plant": "PCT",
-      "name": "PCT-0717"
     },
     "C54EEE58-BB00-40D4-BA5E-99EB337F071A": {
       "guid": "c54eee58-bb00-40d4-ba5e-99eb337f071a",
@@ -1859,21 +1816,6 @@
       "id": "CIL20200607",
       "plant": "CIL",
       "name": "CIL0607"
-    },
-    "CABD724D-9FF1-4146-B9A0-9B8FDCBD76DD": {
-      "guid": "cabd724d-9ff1-4146-b9a0-9b8fdcbd76dd",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-05-17T07:00:00.000Z",
-          "applies": true,
-          "name": "A0183",
-          "note": "3 pinches"
-        }
-      ],
-      "id": "CIL20200517",
-      "plant": "CIL",
-      "name": "CIL0517"
     },
     "36CC5A44-3915-4639-A53E-20BDE62AAEA2": {
       "guid": "36cc5a44-3915-4639-a53e-20bde62aaea2",
@@ -2299,6 +2241,42 @@
       "site-type": "BKT2G",
       "name": "BKT2G-0269"
     },
+    "583DF18D-FC0E-4441-89D0-58B1B30140BD": {
+      "guid": "583df18d-fc0e-4441-89d0-58b1b30140bd",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-12T08:00:00.000Z",
+          "applies": true,
+          "name": "A0227",
+          "note": ""
+        },
+        {
+          "date": "2020-07-29T16:04:49.134Z",
+          "applies": true,
+          "name": "A0251",
+          "note": "sprout: 3, height: 9"
+        }
+      ],
+      "id": "BRCC-583df1",
+      "plant": "BRCC",
+      "name": "BRCC0227"
+    },
+    "412DE0AC-73E2-41AB-A8DA-D5D6CCDD10E0": {
+      "guid": "412de0ac-73e2-41ab-a8da-d5d6ccdd10e0",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-17T18:17:56.654Z",
+          "applies": true,
+          "name": "A0255",
+          "note": "sow: 4, add:7/19 pinch of cumin seeds"
+        }
+      ],
+      "id": "PCT-412de0",
+      "plant": "PCT",
+      "name": "PCT-0717"
+    },
     "78F77D72-1677-4073-8CAC-2E3AB0CD3AF6": {
       "guid": "78f77d72-1677-4073-8cac-2e3ab0cd3af6",
       "type": "crop",
@@ -2313,18 +2291,87 @@
           "date": "2020-07-18T14:29:19.082Z",
           "applies": true,
           "name": "A0251",
-          "note": "sprout:3, volunteer:\"1=>RB-DE1\""
+          "note": "sprout:3, volunteer:1=>RB-DE1"
         },
         {
           "date": "2020-07-29T03:32:10.589Z",
           "applies": true,
           "name": "A0269",
-          "note": "sprout:3, height:12, cumin:10"
+          "note": "sprout:3, height:31, cumin:10"
         }
       ],
       "id": "CST20200701-3S",
       "plant": "CST",
       "name": "CTS0701"
+    },
+    "CABD724D-9FF1-4146-B9A0-9B8FDCBD76DD": {
+      "guid": "cabd724d-9ff1-4146-b9a0-9b8fdcbd76dd",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-05-17T07:00:00.000Z",
+          "applies": true,
+          "name": "A0183",
+          "note": "3 pinches"
+        },
+        {
+          "date": "2020-07-31T19:51:39.829Z",
+          "applies": true,
+          "name": "end",
+          "note": "status: no growth several weeks after full harvest"
+        }
+      ],
+      "id": "CIL20200517",
+      "plant": "CIL",
+      "name": "CIL0517"
+    },
+    "2FDBDA7A-36E8-408B-84B1-91BE36D983FB": {
+      "guid": "2fdbda7a-36e8-408b-84b1-91be36d983fb",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-07-31T19:50:30.051Z",
+          "applies": true,
+          "name": "CPS0731",
+          "note": "Origin unknown, growing in raised bed"
+        }
+      ],
+      "id": "CPS",
+      "name": "Pepper, Serrano"
+    },
+    "7E1AD988-521B-46D8-8A0A-15E32DCF3569": {
+      "guid": "7e1ad988-521b-46d8-8a0a-15e32dcf3569",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-31T19:50:30.051Z",
+          "applies": true,
+          "name": "A0265",
+          "note": "seeds: 2; color: red"
+        }
+      ],
+      "id": "CPS-7e1ad9",
+      "plant": "CPS",
+      "name": "CPS-0731"
+    },
+    "D82D5253-8D41-449D-AC2C-CBB7A784DDF5": {
+      "guid": "d82d5253-8d41-449d-ac2c-cbb7a784ddf5",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-07-01T07:00:00.000Z",
+          "applies": true,
+          "name": "A0248"
+        },
+        {
+          "date": "2020-07-31T20:07:31.970Z",
+          "applies": true,
+          "name": "end",
+          "note": "sprout: 0"
+        }
+      ],
+      "id": "PHW",
+      "name": "Pepper, Hungarian Hot Wax"
     }
   },
   "settings": {
@@ -2335,6 +2382,6 @@
     "farm": "Oyamist Farm"
   },
   "guidAbbreviation": 6,
-  "merkleHash": "28bf5abd5658067a9bb998d823690d26",
-  "saved": "2020-07-29T03:43:05.751Z"
+  "merkleHash": "df3aaa082e69f18749ab3c44accbdf44",
+  "saved": "2020-08-02T00:50:30.101Z"
 }
