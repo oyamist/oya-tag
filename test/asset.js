@@ -9,7 +9,7 @@
         Tag,
     } = require("../index");
 
-    it("TESTTESTAsset() asset default ctor", function() {
+    it("Asset() asset default ctor", function() {
         // Default ctor
         var asset = new Asset();
         should(asset.type).equal("asset"); // Default type
@@ -89,7 +89,7 @@
         should(asset.ageMillis).above(msAge-1).below(msAge+10);
         should(asset.ageDays).equal(2);
     });
-    it("TESTTESTAsset is serializable", function() {
+    it("Asset is serializable", function() {
         var purchased = new Tag({
             name: "purchased", 
             applies: true,
@@ -236,7 +236,7 @@
         asset.getTag("A002").applies = true;
         should(asset.started).equal(true);
     });
-    it("TESTTESTAsset(opts) asset custom ctor tag list", function() {
+    it("Asset(opts) asset custom ctor tag list", function() {
         var purchased = new Tag({
             name: "purchased", 
             applies: true,
@@ -278,7 +278,7 @@
         var assetCopy = new Asset(asset);
         should.deepEqual(assetCopy, asset);
     });
-    it("TESTTESTtags are sorted", ()=>{
+    it("tags are sorted", ()=>{
         var dates = [
             new Date(2020, 1, 2),
             new Date(2020, 1, 3),

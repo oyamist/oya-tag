@@ -409,21 +409,6 @@
       "site-type": "POT20",
       "name": "Planter0249"
     },
-    "C5D9C89E-BCB0-4462-AC95-09DCE8BBB20B": {
-      "guid": "c5d9c89e-bcb0-4462-ac95-09dce8bbb20b",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-01T07:00:00.000Z",
-          "applies": true,
-          "name": "A0249",
-          "note": "5 seeds direct sow 1\" hole cover 1/4\""
-        }
-      ],
-      "id": "PHW20200701-5",
-      "plant": "PHW",
-      "name": "PHW0249"
-    },
     "04C11935-C0EF-4D0E-B9AD-431A51596462": {
       "guid": "04c11935-c0ef-4d0e-b9ad-431a51596462",
       "type": "plant",
@@ -685,21 +670,6 @@
       "id": "A0209",
       "site-type": "BKT2G",
       "name": "BKT2G0209"
-    },
-    "80B593C1-5116-4B90-BAB1-A34798EEC7F8": {
-      "guid": "80b593c1-5116-4b90-bab1-a34798eec7f8",
-      "type": "plant",
-      "tagList": [
-        {
-          "date": "2020-02-20T08:00:00.000Z",
-          "applies": true,
-          "name": "TAT0220",
-          "note": "https://sproutpeople.org/seeds/tatsoi-micro-greens/",
-          "noteUrl": "https://sproutpeople.org/seeds/tatsoi-micro-greens/"
-        }
-      ],
-      "id": "TAT",
-      "name": "Tatsoi"
     },
     "59B4531E-D409-4F90-B99E-714C9C706F2C": {
       "guid": "59b4531e-d409-4f90-b99e-714c9c706f2c",
@@ -1094,36 +1064,6 @@
       "id": "CUKE-80eada",
       "plant": "CUKE",
       "name": "CUKE0190"
-    },
-    "614C27DF-9A23-4089-B160-2D9DC80DB3BE": {
-      "guid": "614c27df-9a23-4089-b160-2d9dc80db3be",
-      "type": "plant",
-      "tagList": [
-        {
-          "date": "2019-10-25T08:00:00.000Z",
-          "applies": true,
-          "name": "RAD1025",
-          "note": "https://sproutpeople.org/radish-sprouts/",
-          "noteUrl": "https://sproutpeople.org/radish-sprouts/"
-        }
-      ],
-      "id": "RAD",
-      "name": "Radish"
-    },
-    "63B3E23E-4107-45D3-AD88-C0945C896F90": {
-      "guid": "63b3e23e-4107-45d3-ad88-c0945c896f90",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-07T08:00:00.000Z",
-          "applies": true,
-          "name": "A0222",
-          "note": "sow:3 pinches"
-        }
-      ],
-      "id": "RAD-63b3e2",
-      "plant": "RAD",
-      "name": "RAD0222"
     },
     "DF8BD774-0CE5-409D-B23A-AD297DD036AD": {
       "guid": "df8bd774-0ce5-409d-b23a-ad297dd036ad",
@@ -1864,21 +1804,6 @@
       "plant": "CIL",
       "name": "CIL0413"
     },
-    "09D7C4F1-29AF-47BF-90CD-02674B46A59F": {
-      "guid": "09d7c4f1-29af-47bf-90cd-02674b46a59f",
-      "type": "plant",
-      "tagList": [
-        {
-          "date": "2020-02-27T00:00:00.000Z",
-          "applies": true,
-          "name": "A0241",
-          "note": "https://sproutpeople.org/cilantro-micro-greens/\n1/4 lb split seed",
-          "noteUrl": "https://sproutpeople.org/cilantro-micro-greens/"
-        }
-      ],
-      "id": "CIL",
-      "name": "Cilantro"
-    },
     "73B3BE90-0FA4-48CB-AC20-58656CDC05B1": {
       "guid": "73b3be90-0fa4-48cb-ac20-58656cdc05b1",
       "type": "crop",
@@ -2262,21 +2187,6 @@
       "plant": "BRCC",
       "name": "BRCC0227"
     },
-    "412DE0AC-73E2-41AB-A8DA-D5D6CCDD10E0": {
-      "guid": "412de0ac-73e2-41ab-a8da-d5d6ccdd10e0",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-17T18:17:56.654Z",
-          "applies": true,
-          "name": "A0255",
-          "note": "sow: 4, add:7/19 pinch of cumin seeds"
-        }
-      ],
-      "id": "PCT-412de0",
-      "plant": "PCT",
-      "name": "PCT-0717"
-    },
     "78F77D72-1677-4073-8CAC-2E3AB0CD3AF6": {
       "guid": "78f77d72-1677-4073-8cac-2e3ab0cd3af6",
       "type": "crop",
@@ -2372,6 +2282,309 @@
       ],
       "id": "PHW",
       "name": "Pepper, Hungarian Hot Wax"
+    },
+    "1363F0DE-9ADA-4E78-BAD0-E0D8998F1FF0": {
+      "guid": "1363f0de-9ada-4e78-bad0-e0d8998f1ff0",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-02T16:54:59.657Z",
+          "applies": true,
+          "name": "A0271",
+          "note": ""
+        }
+      ],
+      "id": "TAT-1363f0",
+      "plant": "TAT",
+      "name": "TAT-0802"
+    },
+    "C0F1FF42-9F0E-4BD8-B43A-97B76FE5C4DC": {
+      "guid": "c0f1ff42-9f0e-4bd8-b43a-97b76fe5c4dc",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-02T16:54:59.657Z",
+          "applies": true,
+          "name": "started",
+          "note": "height: 5"
+        }
+      ],
+      "id": "A0271",
+      "site-type": "TRAY",
+      "name": "TRAY-0271"
+    },
+    "C90A27ED-2848-44C2-A705-A20E35A1D343": {
+      "guid": "c90a27ed-2848-44c2-a705-a20e35a1d343",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-02T17:28:59.747Z",
+          "applies": true,
+          "name": "A0264",
+          "note": "seed: 3"
+        }
+      ],
+      "id": "BTD-c90a27",
+      "plant": "BTD",
+      "name": "BTD-0802"
+    },
+    "B95548AC-706E-4B69-9EB4-0610E8F45E88": {
+      "guid": "b95548ac-706e-4b69-9eb4-0610e8f45e88",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-02T17:28:59.747Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0264",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0264"
+    },
+    "B3BA7210-A51A-4A4E-B2C7-9B8CE6CDA486": {
+      "guid": "b3ba7210-a51a-4a4e-b2c7-9b8ce6cda486",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-04T00:52:12.156Z",
+          "applies": true,
+          "name": "A0272",
+          "note": "https://sandiegoseedcompany.com/shop/tomato-tasmanian-chocolate/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/tomato-tasmanian-chocolate/"
+        }
+      ],
+      "id": "TTC",
+      "name": "Tomato, Tasmanian Chocolate"
+    },
+    "7A33F0D2-2815-4FFC-A92C-293D19D98E30": {
+      "guid": "7a33f0d2-2815-4ffc-a92c-293d19d98e30",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-04T00:52:12.156Z",
+          "applies": true,
+          "name": "A0275",
+          "note": "https://sandiegoseedcompany.com/shop/sale/tomato-black-krim/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/sale/tomato-black-krim/"
+        }
+      ],
+      "id": "TBK",
+      "name": "Tomato, Black Krim"
+    },
+    "7E491508-1C5C-4E0B-9244-541BBE3E77D6": {
+      "guid": "7e491508-1c5c-4e0b-9244-541bbe3e77d6",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-04T00:52:12.156Z",
+          "applies": true,
+          "name": "A0274",
+          "note": "https://sandiegoseedcompany.com/shop/tiny-tim-tomato-seeds/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/tiny-tim-tomato-seeds/"
+        }
+      ],
+      "id": "TTT",
+      "name": "Tomato, Tiny Tim"
+    },
+    "F4FA4A94-6458-430C-8E0F-0666FB3EC2E8": {
+      "guid": "f4fa4a94-6458-430c-8e0f-0666fb3ec2e8",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-04T00:52:12.156Z",
+          "applies": true,
+          "name": "A0273",
+          "note": "https://sandiegoseedcompany.com/four-oclock/",
+          "noteUrl": "https://sandiegoseedcompany.com/four-oclock/"
+        }
+      ],
+      "id": "FFO",
+      "name": "Flower, Four O'Clock Color Blast"
+    },
+    "FF7945B5-0179-4AF4-B7A6-37947E202FFF": {
+      "guid": "ff7945b5-0179-4af4-b7a6-37947e202fff",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-04T13:07:42.576Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0276",
+      "site-type": "TUPSQ2",
+      "name": "TUPSQ2-0276"
+    },
+    "412DE0AC-73E2-41AB-A8DA-D5D6CCDD10E0": {
+      "guid": "412de0ac-73e2-41ab-a8da-d5d6ccdd10e0",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-17T18:17:56.654Z",
+          "applies": true,
+          "name": "A0255",
+          "note": "sow: 4, add:7/19 pinch of cumin seeds"
+        },
+        {
+          "date": "2020-08-04T16:09:17.232Z",
+          "applies": true,
+          "name": "A0276",
+          "note": "sprout: 3, cumin: 4"
+        }
+      ],
+      "id": "PCT-412de0",
+      "plant": "PCT",
+      "name": "PCT-0717"
+    },
+    "D1259E8A-2B77-49FF-99A3-205C7529307F": {
+      "guid": "d1259e8a-2b77-49ff-99a3-205c7529307f",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-04T21:53:06.235Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0277",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0277"
+    },
+    "2F592D81-8C1E-4558-A3BC-DF028BC9E86A": {
+      "guid": "2f592d81-8c1e-4558-a3bc-df028bc9e86a",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-05T02:10:28.067Z",
+          "applies": true,
+          "name": "A0277",
+          "note": "seeds:2"
+        }
+      ],
+      "id": "CUKE-2f592d",
+      "plant": "CUKE",
+      "name": "CUKE-0804"
+    },
+    "B58679FA-ECCF-4926-A124-E2386F2FFD53": {
+      "guid": "b58679fa-eccf-4926-a124-e2386f2ffd53",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-05T02:12:05.233Z",
+          "applies": true,
+          "name": "A0261",
+          "note": "pinch:2"
+        }
+      ],
+      "id": "BRCC-b58679",
+      "plant": "BRCC",
+      "name": "BRCC-0804"
+    },
+    "63B3E23E-4107-45D3-AD88-C0945C896F90": {
+      "guid": "63b3e23e-4107-45d3-ad88-c0945c896f90",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-07T08:00:00.000Z",
+          "applies": true,
+          "name": "A0222",
+          "note": "sow:3 pinches"
+        },
+        {
+          "date": "2020-08-06T02:22:43.429Z",
+          "applies": true,
+          "name": "end",
+          "note": "harvest: all; try: harvest all earlier"
+        }
+      ],
+      "id": "RAD-63b3e2",
+      "plant": "RAD",
+      "name": "RAD0222"
+    },
+    "09D7C4F1-29AF-47BF-90CD-02674B46A59F": {
+      "guid": "09d7c4f1-29af-47bf-90cd-02674b46a59f",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-02-27T00:00:00.000Z",
+          "applies": true,
+          "name": "A0241",
+          "note": "https://sproutpeople.org/cilantro-micro-greens/\n1/4 lb split seed",
+          "noteUrl": "https://sproutpeople.org/cilantro-micro-greens/"
+        }
+      ],
+      "id": "CIL",
+      "name": "Herbs, Cilantro"
+    },
+    "614C27DF-9A23-4089-B160-2D9DC80DB3BE": {
+      "guid": "614c27df-9a23-4089-b160-2d9dc80db3be",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2019-10-25T08:00:00.000Z",
+          "applies": true,
+          "name": "RAD1025",
+          "note": "https://sproutpeople.org/radish-sprouts/",
+          "noteUrl": "https://sproutpeople.org/radish-sprouts/"
+        }
+      ],
+      "id": "RAD",
+      "name": "Herbs, Radish"
+    },
+    "80B593C1-5116-4B90-BAB1-A34798EEC7F8": {
+      "guid": "80b593c1-5116-4b90-bab1-a34798eec7f8",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-02-20T08:00:00.000Z",
+          "applies": true,
+          "name": "TAT0220",
+          "note": "https://sproutpeople.org/seeds/tatsoi-micro-greens/",
+          "noteUrl": "https://sproutpeople.org/seeds/tatsoi-micro-greens/"
+        }
+      ],
+      "id": "TAT",
+      "name": "Herbs, Tatsoi"
+    },
+    "D4CEADAF-67C1-4764-A16E-C6D88BAB7A3C": {
+      "guid": "d4ceadaf-67c1-4764-a16e-c6d88bab7a3c",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-07T18:26:33.963Z",
+          "applies": true,
+          "name": "a0277",
+          "note": "pinches: 5"
+        }
+      ],
+      "id": "RAD-d4cead",
+      "plant": "RAD",
+      "name": "RAD-0807"
+    },
+    "C5D9C89E-BCB0-4462-AC95-09DCE8BBB20B": {
+      "guid": "c5d9c89e-bcb0-4462-ac95-09dce8bbb20b",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-01T07:00:00.000Z",
+          "applies": true,
+          "name": "A0249",
+          "note": "5 seeds direct sow 1\" hole cover 1/4\""
+        },
+        {
+          "date": "2020-08-07T18:27:54.363Z",
+          "applies": true,
+          "name": "end",
+          "note": "status: never sprouted"
+        }
+      ],
+      "id": "PHW20200701-5",
+      "plant": "PHW",
+      "name": "PHW0249"
     }
   },
   "settings": {
@@ -2382,6 +2595,6 @@
     "farm": "Oyamist Farm"
   },
   "guidAbbreviation": 6,
-  "merkleHash": "df3aaa082e69f18749ab3c44accbdf44",
-  "saved": "2020-08-02T00:50:30.101Z"
+  "merkleHash": "7354a5d8e87636c26262ff8b0d0fc5e4",
+  "saved": "2020-08-07T19:09:16.454Z"
 }

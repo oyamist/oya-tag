@@ -57,7 +57,7 @@
             },
         });
     });
-    it("TESTTESTis serializable", ()=> {
+    it("is serializable", ()=> {
         var guid = "f5689832-79e2-48a5-bf5f-655cacec940f";
         var id = "a0001";
         var type = "crop";
@@ -285,7 +285,7 @@
         should(as.assetOfId('test-asset-2')).equal(asset3);
         should(as.assetOfId('test-asset')).equal(undefined);
     });
-    it("TESTTESTassetFilter(...) => filters assets", ()=>{
+    it("assetFilter(...) => filters assets", ()=>{
         var assets = [
             new Asset({ id: "A0001", color: "red", }), 
             new Asset({ id: "A0002", color: "red", }), 
@@ -323,7 +323,7 @@
             [ ]);
 
         // filter by regexp
-        should.deepEqual(as.filter(".*001").map(a=>a.id),
+        should.deepEqual(as.filter("a.*01").map(a=>a.id),
             [ "A0001",  "A0011", "A0012", ]);
         should.deepEqual(as.filter("blue|red").map(a=>a.id),
             [ "A0001",  "A0002", "A0003", ]);
