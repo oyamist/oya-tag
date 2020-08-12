@@ -1414,21 +1414,6 @@
       "plant": "BCP",
       "name": "BCP-0518"
     },
-    "8C7ADCF8-F354-486E-9F66-99D854CD2A73": {
-      "guid": "8c7adcf8-f354-486e-9f66-99d854cd2a73",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-15T16:40:20.784Z",
-          "applies": true,
-          "name": "A0194",
-          "note": "sow 3"
-        }
-      ],
-      "id": "BCP-8c7adc",
-      "plant": "BCP",
-      "name": "BCP-0715"
-    },
     "966AD257-A469-4933-AA06-E137D5826FF9": {
       "guid": "966ad257-a469-4933-aa06-e137d5826ff9",
       "type": "crop",
@@ -1991,27 +1976,6 @@
       "site-type": "BKT2G",
       "name": "BKT2G-0214"
     },
-    "221ABCBA-156F-4F71-BC30-4D3BC79539DA": {
-      "guid": "221abcba-156f-4f71-bc30-4d3bc79539da",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-04-25T08:00:00.000Z",
-          "applies": true,
-          "name": "A0213",
-          "note": "sow 4"
-        },
-        {
-          "date": "2020-05-05T08:00:00.000Z",
-          "applies": true,
-          "name": "A0200",
-          "note": "Pods good taste. Heat death 5/15. New growth 7/22"
-        }
-      ],
-      "id": "PLM-221abc",
-      "plant": "PLM",
-      "name": "PLM-0425"
-    },
     "385C4D8E-4583-4336-BDB2-B4727E8B6414": {
       "guid": "385c4d8e-4583-4336-bdb2-b4727e8b6414",
       "type": "crop",
@@ -2550,21 +2514,6 @@
       "id": "TAT",
       "name": "Herbs, Tatsoi"
     },
-    "D4CEADAF-67C1-4764-A16E-C6D88BAB7A3C": {
-      "guid": "d4ceadaf-67c1-4764-a16e-c6d88bab7a3c",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-08-07T18:26:33.963Z",
-          "applies": true,
-          "name": "a0277",
-          "note": "pinches: 5"
-        }
-      ],
-      "id": "RAD-d4cead",
-      "plant": "RAD",
-      "name": "RAD-0807"
-    },
     "C5D9C89E-BCB0-4462-AC95-09DCE8BBB20B": {
       "guid": "c5d9c89e-bcb0-4462-ac95-09dce8bbb20b",
       "type": "crop",
@@ -2585,6 +2534,69 @@
       "id": "PHW20200701-5",
       "plant": "PHW",
       "name": "PHW0249"
+    },
+    "221ABCBA-156F-4F71-BC30-4D3BC79539DA": {
+      "guid": "221abcba-156f-4f71-bc30-4d3bc79539da",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "A0213",
+          "note": "sow 4"
+        },
+        {
+          "date": "2020-05-05T08:00:00.000Z",
+          "applies": true,
+          "name": "A0200",
+          "note": "Pods good taste. Heat death 5/15. New growth 7/22"
+        },
+        {
+          "date": "2020-06-30T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "after a brief gasp at rebirth, gave up the ghost in the heat of summer"
+        }
+      ],
+      "id": "PLM-221abc",
+      "plant": "PLM",
+      "name": "PLM-0425"
+    },
+    "8C7ADCF8-F354-486E-9F66-99D854CD2A73": {
+      "guid": "8c7adcf8-f354-486e-9f66-99d854cd2a73",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-15T16:40:20.784Z",
+          "applies": true,
+          "name": "A0219",
+          "note": "sow 3"
+        },
+        {
+          "date": "2020-08-12T15:16:22.337Z",
+          "applies": true,
+          "name": "A0200",
+          "note": "height: 10"
+        }
+      ],
+      "id": "BCP-8c7adc",
+      "plant": "BCP",
+      "name": "BCP-0715"
+    },
+    "D4CEADAF-67C1-4764-A16E-C6D88BAB7A3C": {
+      "guid": "d4ceadaf-67c1-4764-a16e-c6d88bab7a3c",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-07T18:26:33.963Z",
+          "applies": true,
+          "name": "a0177",
+          "note": "pinches: 5"
+        }
+      ],
+      "id": "RAD-d4cead",
+      "plant": "RAD",
+      "name": "RAD-0807"
     }
   },
   "settings": {
@@ -2595,6 +2607,6 @@
     "farm": "Oyamist Farm"
   },
   "guidAbbreviation": 6,
-  "merkleHash": "7354a5d8e87636c26262ff8b0d0fc5e4",
-  "saved": "2020-08-07T19:09:16.454Z"
+  "merkleHash": "f6ad15c5927e96753b5b862dcdea3db9",
+  "saved": "2020-08-12T18:18:07.754Z"
 }
