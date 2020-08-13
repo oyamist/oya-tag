@@ -1414,21 +1414,6 @@
       "plant": "BCP",
       "name": "BCP-0518"
     },
-    "966AD257-A469-4933-AA06-E137D5826FF9": {
-      "guid": "966ad257-a469-4933-aa06-e137d5826ff9",
-      "type": "crop",
-      "tagList": [
-        {
-          "date": "2020-07-12T00:54:55.902Z",
-          "applies": true,
-          "name": "A0198",
-          "note": "sow:3 holes"
-        }
-      ],
-      "id": "CHP-966ad2",
-      "plant": "CHP",
-      "name": "CHP-0711"
-    },
     "10ABA7E2-86D6-4361-AB59-62233B6618F8": {
       "guid": "10aba7e2-86d6-4361-ab59-62233b6618f8",
       "type": "site",
@@ -2597,6 +2582,93 @@
       "id": "RAD-d4cead",
       "plant": "RAD",
       "name": "RAD-0807"
+    },
+    "BEB6A712-2C30-4B0B-A394-F4E7C05FCE35": {
+      "guid": "beb6a712-2c30-4b0b-a394-f4e7c05fce35",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-13T00:36:05.068Z",
+          "applies": true,
+          "name": "CML0812",
+          "note": "https://www.westcoastseeds.com/products/cucamelon",
+          "noteUrl": "https://www.westcoastseeds.com/products/cucamelon"
+        }
+      ],
+      "id": "CML",
+      "name": "Cucumber, Cucamelon"
+    },
+    "54E92D92-F2C6-42A3-BAAC-B0818D7B705C": {
+      "guid": "54e92d92-f2c6-42a3-baac-b0818d7b705c",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-13T00:36:05.068Z",
+          "applies": true,
+          "name": "A0278",
+          "note": "seed: 3"
+        }
+      ],
+      "id": "CML-54e92d",
+      "plant": "CML",
+      "name": "CML-0812"
+    },
+    "172C577E-4B59-4989-8342-E692F535F60D": {
+      "guid": "172c577e-4b59-4989-8342-e692f535f60d",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-13T00:36:05.068Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0278",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0278"
+    },
+    "216B7B72-BFB5-4EDD-8D9D-9D6F7ECD6E5F": {
+      "guid": "216b7b72-bfb5-4edd-8d9d-9d6f7ecd6e5f",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-29T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0280",
+      "site-type": "TUPSQ2",
+      "name": "TUPSQ2-0280"
+    },
+    "966AD257-A469-4933-AA06-E137D5826FF9": {
+      "guid": "966ad257-a469-4933-aa06-e137d5826ff9",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-12T00:54:55.902Z",
+          "applies": true,
+          "name": "A0198",
+          "note": "sow:3 holes"
+        },
+        {
+          "date": "2020-07-29T08:00:00.000Z",
+          "applies": true,
+          "name": "A0280",
+          "note": "sprout: 3"
+        },
+        {
+          "date": "2020-08-13T00:41:15.269Z",
+          "applies": true,
+          "name": "A0209",
+          "note": "height: 48; roots: D; stems: D"
+        }
+      ],
+      "id": "CHP-966ad2",
+      "plant": "CHP",
+      "name": "CHP-0711"
     }
   },
   "settings": {
@@ -2607,6 +2679,6 @@
     "farm": "Oyamist Farm"
   },
   "guidAbbreviation": 6,
-  "merkleHash": "f6ad15c5927e96753b5b862dcdea3db9",
-  "saved": "2020-08-12T18:18:07.754Z"
+  "merkleHash": "ce4672f98ffe91d099b3e491e570f086",
+  "saved": "2020-08-13T00:56:03.982Z"
 }
