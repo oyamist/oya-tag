@@ -91,11 +91,11 @@ export default {
     }
   },
   server: {
-    port: 443,
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'local/server.key')),
-      cert: fs.readFileSync(path.resolve(__dirname, 'local/server.crt'))
-    }
+    //port: 443,
+    //https: {
+      //key: fs.readFileSync(path.resolve(__dirname, 'local/server.key')),
+      //cert: fs.readFileSync(path.resolve(__dirname, 'local/server.crt'))
+    //}
   },
   pwa: {
     workbox: {

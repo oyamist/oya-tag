@@ -26,8 +26,8 @@ export default {
       search: '',
       parms: {
         client_id: "e09323f45953b1bad4d5",
-        //redirect_uri: "https://localhost/okitty",
-        redirect_uri: "https://gifted-visvesvaraya-bb90f2.netlify.app/okitty",
+        redirect_uri: "http://localhost/okitty",
+        //redirect_uri: "https://gifted-visvesvaraya-bb90f2.netlify.app/okitty",
         state: Math.random(),
         login: "oyamist",
       },
