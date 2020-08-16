@@ -1,6 +1,6 @@
 {
   "name": "oya-tag",
-  "version": "0.1.50",
+  "version": "0.1.51",
   "description": "Tag that asset!",
   "author": "Karl Lew",
   "private": true,
@@ -19,6 +19,7 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "@octokit/auth-token": "^2.4.2",
     "@octokit/rest": "^18.0.3",
+    "express": "^4.17.1",
     "file-saver": "^2.0.2",
     "js-base64": "^3.4.1",
     "json5": "^2.1.3",
