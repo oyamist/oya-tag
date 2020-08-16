@@ -103,53 +103,30 @@
         </a>
         <v-spacer/>
       </v-footer>
-        <v-dialog v-model="editingSettings" max-width="40em">
-          <v-card >
-            <v-system-bar color="green darken-4" dark>
-              Edit Settings
-            </v-system-bar>
-            <v-card-text class="mt-4">
-              <v-text-field v-model="settings.farm" 
-                outlined
-                clearable
-                label="Farm Name"
-                />
-            </v-card-text>
-            <v-card-actions>
-              <v-btn text @click="cancelSettings()"
-                >Cancel</v-btn>
-              <v-spacer/>
-              <v-btn color="green darken-2 white--text" raised
-                @click="saveSettings"
-                >Save
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
+      <settings v-if="!!assetStore"/>
     </v-content>
   </v-app>
 </template>
 
 <script>
 const JSON5 = require( 'json5' );
-import Vue from "vue";
 import FileSaver from 'file-saver';
 import EditAsset from '../components/edit-asset';
 import S3 from '../components/s3';
 import AssetStore from '../src/asset-store';
 import Package from '../package';
+import Settings from '../components/settings';
 
 export default {
   name: 'App',
   components: {
     EditAsset,
     S3,
+    Settings,
   },
   data () {
     return {
       overwriteAssets: false,
-      editingSettings: false,
-      settings: {},
       askUpload: false,
       uploadFile: null,
       viewMenu: [{
@@ -240,22 +217,7 @@ export default {
   },
   methods: {
     editSettings() {
-      var assetStore = this.assetStore;
-      if (assetStore) {
-        this.editingSettings = true;
-        var settings = Object.assign({
-          saved: undefined,
-          farm: "My Farm",
-        }, assetStore.settings);
-        Vue.set(this, "settings", settings);
-      }
-    },
-    cancelSettings() {
-        this.editingSettings = false;
-    },
-    saveSettings() {
-        this.editingSettings = false;
-        this.$store.commit("assets/saveSettings", this.settings);
+      this.$store.commit("showSettings", true);
     },
     uploadChanged() {
       var that = this;

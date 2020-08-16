@@ -9,7 +9,7 @@
     it("default ctor", ()=>{
         var st = new Tag();
         var now = new Date();
-        should(st.date-now).above(-1).below(1);
+        should(st.date-now).above(-2).below(1);
         should(st.applies).equal(false);
         should(st.name).equal("");
         should(st.note).equal(undefined);

@@ -2,6 +2,7 @@ export const state = () => {
     return {
         selection: null,
         showAddAsset: false,
+        showSettings: false,
     }
 }
 
@@ -12,5 +13,8 @@ export const mutations = {
     },
     showAddAsset(state, value) {
         state.showAddAsset = value;
+    },
+    showSettings(state, value) {
+        state.showSettings = value;
     },
 }
