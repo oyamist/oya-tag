@@ -200,6 +200,51 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0198"
     },
+    "11C6C35D-B9A4-4C4F-950A-9DE69293CE6C": {
+      "guid": "11c6c35d-b9a4-4c4f-950a-9de69293ce6c",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-21T02:58:28.799Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0259",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0259"
+    },
+    "1363F0DE-9ADA-4E78-BAD0-E0D8998F1FF0": {
+      "guid": "1363f0de-9ada-4e78-bad0-e0d8998f1ff0",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-02T16:54:59.657Z",
+          "applies": true,
+          "name": "A0271",
+          "note": ""
+        }
+      ],
+      "id": "TAT-1363f0",
+      "plant": "TAT",
+      "name": "TAT-0802"
+    },
+    "13D4927A-A852-4425-B3C7-F51295354412": {
+      "guid": "13d4927a-a852-4425-b3c7-f51295354412",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-03-27T08:00:00.000Z",
+          "applies": true,
+          "name": "PLM0320",
+          "note": "https://www.amazon.com/Earthcare-Seeds-Little-Marvel-sativum/dp/B07KB8TMQD",
+          "noteUrl": "https://www.amazon.com/Earthcare-Seeds-Little-Marvel-sativum/dp/B07KB8TMQD"
+        }
+      ],
+      "id": "PLM",
+      "name": "Peas, Little Marvel"
+    },
     "165A49DD-9BF8-47B9-AC74-7FBEF46519E7": {
       "guid": "165a49dd-9bf8-47b9-ac74-7fbef46519e7",
       "type": "crop",
@@ -239,6 +284,36 @@
       ],
       "id": "A0179",
       "name": "Tray0179"
+    },
+    "172C577E-4B59-4989-8342-E692F535F60D": {
+      "guid": "172c577e-4b59-4989-8342-e692f535f60d",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-13T00:36:05.068Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0278",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0278"
+    },
+    "17BA536C-495A-480C-BA19-3E98E4ADC97D": {
+      "guid": "17ba536c-495a-480c-ba19-3e98e4adc97d",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2020-07-28T17:29:32.864Z",
+          "applies": true,
+          "name": "existing",
+          "note": "https://www.homedepot.com/p/Charlotte-Pipe-2-in-PVC-Sch-40-S-x-S-Coupling-PVC021001600HD/203811391",
+          "noteUrl": "https://www.homedepot.com/p/Charlotte-Pipe-2-in-PVC-Sch-40-S-x-S-Coupling-PVC021001600HD/203811391"
+        }
+      ],
+      "id": "PVC2",
+      "name": "PVC 2\" Coupling"
     },
     "194EF27B-5B99-45E6-A8C6-CCB0A2F7E084": {
       "guid": "194ef27b-5b99-45e6-a8c6-ccb0a2f7e084",
@@ -284,6 +359,62 @@
       "id": "A0229",
       "name": "BKT0229"
     },
+    "216B7B72-BFB5-4EDD-8D9D-9D6F7ECD6E5F": {
+      "guid": "216b7b72-bfb5-4edd-8d9d-9d6f7ecd6e5f",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-29T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0280",
+      "site-type": "TUPSQ2",
+      "name": "TUPSQ2-0280"
+    },
+    "221ABCBA-156F-4F71-BC30-4D3BC79539DA": {
+      "guid": "221abcba-156f-4f71-bc30-4d3bc79539da",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "A0213",
+          "note": "sow 4"
+        },
+        {
+          "date": "2020-05-05T08:00:00.000Z",
+          "applies": true,
+          "name": "A0200",
+          "note": "Pods good taste. Heat death 5/15. New growth 7/22"
+        },
+        {
+          "date": "2020-06-30T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "after a brief gasp at rebirth, gave up the ghost in the heat of summer"
+        }
+      ],
+      "id": "PLM-221abc",
+      "plant": "PLM",
+      "name": "PLM-0425"
+    },
+    "22315101-5E35-4E49-8C43-DE76CE0EDB5E": {
+      "guid": "22315101-5e35-4e49-8c43-de76ce0edb5e",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2020-07-19T17:46:45.712Z",
+          "applies": true,
+          "name": "started",
+          "note": "Driveway sideyard"
+        }
+      ],
+      "id": "DRV",
+      "name": "Driveway"
+    },
     "229AD48B-8457-4ED2-85E9-DA2C175C10F0": {
       "guid": "229ad48b-8457-4ed2-85e9-da2c175c10f0",
       "type": "plant",
@@ -312,6 +443,35 @@
       "id": "A0254",
       "site-type": "BKT2G",
       "name": "BKT2G-0254"
+    },
+    "2F592D81-8C1E-4558-A3BC-DF028BC9E86A": {
+      "guid": "2f592d81-8c1e-4558-a3bc-df028bc9e86a",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-05T02:10:28.067Z",
+          "applies": true,
+          "name": "A0277",
+          "note": "seeds:2"
+        }
+      ],
+      "id": "CUKE-2f592d",
+      "plant": "CUKE",
+      "name": "CUKE-0804"
+    },
+    "2FDBDA7A-36E8-408B-84B1-91BE36D983FB": {
+      "guid": "2fdbda7a-36e8-408b-84b1-91be36d983fb",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-07-31T19:50:30.051Z",
+          "applies": true,
+          "name": "CPS0731",
+          "note": "Origin unknown, growing in raised bed"
+        }
+      ],
+      "id": "CPS",
+      "name": "Pepper, Serrano"
     },
     "324A3024-146A-47FB-A7CF-42AD32F6D30C": {
       "guid": "324a3024-146a-47fb-a7cf-42ad32f6d30c",
@@ -384,6 +544,36 @@
       "id": "CIL20200505",
       "plant": "A0241",
       "name": "CIL0505"
+    },
+    "385C4D8E-4583-4336-BDB2-B4727E8B6414": {
+      "guid": "385c4d8e-4583-4336-bdb2-b4727e8b6414",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-23T17:20:13.588Z",
+          "applies": true,
+          "name": "PLM-221abc",
+          "note": "sow ~15 for pea shoots"
+        }
+      ],
+      "id": "PLM-385c4d",
+      "plant": "PLM",
+      "name": "PLM-0723"
+    },
+    "3953DA70-1BBE-4F27-BC4F-600742E14230": {
+      "guid": "3953da70-1bbe-4f27-bc4f-600742e14230",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-28T17:34:23.090Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0269",
+      "site-type": "BKT2G",
+      "name": "BKT2G-0269"
     },
     "3B9C1534-FD22-4D89-AD73-3EB01662A492": {
       "guid": "3b9c1534-fd22-4d89-ad73-3eb01662a492",
@@ -469,6 +659,36 @@
       "site-type": "NETPOT",
       "name": "POT0236"
     },
+    "4D7DE663-BD17-440B-9D61-BEE0AFF70557": {
+      "guid": "4d7de663-bd17-440b-9d61-bee0aff70557",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0214",
+      "site-type": "BKT2G",
+      "name": "BKT2G-0214"
+    },
+    "50632594-534A-4588-A1F0-54995BF02E5A": {
+      "guid": "50632594-534a-4588-a1f0-54995bf02e5a",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-21T02:58:28.799Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0262",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0262"
+    },
     "50B0699D-0F4A-4ABA-A52F-8FD411895D99": {
       "guid": "50b0699d-0f4a-4aba-a52f-8fd411895d99",
       "type": "site",
@@ -509,6 +729,51 @@
       "plant": "BTD",
       "name": "BTD0201"
     },
+    "53A2A713-8E5E-4E6C-932F-786CBA464823": {
+      "guid": "53a2a713-8e5e-4e6c-932f-786cba464823",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-23T17:20:13.588Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0267",
+      "site-type": "C16",
+      "name": "C16-0267"
+    },
+    "54C304BF-ACD2-4FB3-82C0-6AF0FDC30B30": {
+      "guid": "54c304bf-acd2-4fb3-82c0-6af0fdc30b30",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-07-20T08:00:00.000Z",
+          "applies": true,
+          "name": "CRY0720",
+          "note": "https://www.etsy.com/shop/jac29000\n10 seeds $23.99",
+          "noteUrl": "https://www.etsy.com/shop/jac29000"
+        }
+      ],
+      "id": "CRY",
+      "name": "Curry, Murraya Koenigii"
+    },
+    "54E92D92-F2C6-42A3-BAAC-B0818D7B705C": {
+      "guid": "54e92d92-f2c6-42a3-baac-b0818d7b705c",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-13T00:36:05.068Z",
+          "applies": true,
+          "name": "A0278",
+          "note": "seed: 3"
+        }
+      ],
+      "id": "CML-54e92d",
+      "plant": "CML",
+      "name": "CML-0812"
+    },
     "57423F54-1C6E-4415-967E-0D32BCF5145C": {
       "guid": "57423f54-1c6e-4415-967e-0d32bcf5145c",
       "type": "crop",
@@ -529,6 +794,27 @@
       "id": "BTD20200618-9F",
       "plant": "BTD",
       "name": "BTD0618"
+    },
+    "57AF0DCC-BB1B-4724-AC76-0EB7D5A89A63": {
+      "guid": "57af0dcc-bb1b-4724-ac76-0eb7d5a89a63",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-20T08:00:00.000Z",
+          "applies": true,
+          "name": "A0261",
+          "note": "sow:8 bucket ring, 32oz drip"
+        },
+        {
+          "date": "2020-07-28T17:34:47.200Z",
+          "applies": true,
+          "name": "end",
+          "note": "3 sprouts all eaten by pillbugs\n"
+        }
+      ],
+      "id": "BRCC-57af0d",
+      "plant": "BRCC",
+      "name": "BRCC-0719"
     },
     "583DF18D-FC0E-4441-89D0-58B1B30140BD": {
       "guid": "583df18d-fc0e-4441-89d0-58b1b30140bd",
@@ -895,6 +1181,21 @@
       "site-type": "BKT2G",
       "name": "BKT2G0209"
     },
+    "7A33F0D2-2815-4FFC-A92C-293D19D98E30": {
+      "guid": "7a33f0d2-2815-4ffc-a92c-293d19d98e30",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-04T00:52:12.156Z",
+          "applies": true,
+          "name": "A0275",
+          "note": "https://sandiegoseedcompany.com/shop/sale/tomato-black-krim/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/sale/tomato-black-krim/"
+        }
+      ],
+      "id": "TBK",
+      "name": "Tomato, Black Krim"
+    },
     "7BC6D979-0569-4274-8A13-6A6387B15264": {
       "guid": "7bc6d979-0569-4274-8a13-6a6387b15264",
       "type": "crop",
@@ -934,6 +1235,51 @@
       "id": "CIL20200413",
       "plant": "A0241",
       "name": "CIL0413"
+    },
+    "7E1AD988-521B-46D8-8A0A-15E32DCF3569": {
+      "guid": "7e1ad988-521b-46d8-8a0a-15e32dcf3569",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-31T19:50:30.051Z",
+          "applies": true,
+          "name": "A0265",
+          "note": "seeds: 2; color: red"
+        }
+      ],
+      "id": "CPS-7e1ad9",
+      "plant": "CPS",
+      "name": "CPS-0731"
+    },
+    "7E407FA5-E7D8-47F6-9AB2-89B1D0D32DE4": {
+      "guid": "7e407fa5-e7d8-47f6-9ab2-89b1d0d32de4",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-21T03:58:30.338Z",
+          "applies": true,
+          "name": "A0263",
+          "note": "sow 4"
+        }
+      ],
+      "id": "CRY-7e407f",
+      "plant": "CRY",
+      "name": "CRY-0720"
+    },
+    "7E491508-1C5C-4E0B-9244-541BBE3E77D6": {
+      "guid": "7e491508-1c5c-4e0b-9244-541bbe3e77d6",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-04T00:52:12.156Z",
+          "applies": true,
+          "name": "A0274",
+          "note": "https://sandiegoseedcompany.com/shop/tiny-tim-tomato-seeds/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/tiny-tim-tomato-seeds/"
+        }
+      ],
+      "id": "TTT",
+      "name": "Tomato, Tiny Tim"
     },
     "7F67E034-5B7A-42E4-9073-7A70B68882A5": {
       "guid": "7f67e034-5b7a-42e4-9073-7a70b68882a5",
@@ -1432,6 +1778,97 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0205"
     },
+    "B3BA7210-A51A-4A4E-B2C7-9B8CE6CDA486": {
+      "guid": "b3ba7210-a51a-4a4e-b2c7-9b8ce6cda486",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-04T00:52:12.156Z",
+          "applies": true,
+          "name": "A0272",
+          "note": "https://sandiegoseedcompany.com/shop/tomato-tasmanian-chocolate/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/tomato-tasmanian-chocolate/"
+        }
+      ],
+      "id": "TTC",
+      "name": "Tomato, Tasmanian Chocolate"
+    },
+    "B4240BE7-3FC4-4205-BB7B-71B88B878E11": {
+      "guid": "b4240be7-3fc4-4205-bb7b-71b88b878e11",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-21T02:58:28.799Z",
+          "applies": true,
+          "name": "A0262",
+          "note": "sow 2"
+        }
+      ],
+      "id": "CRY-b4240b",
+      "plant": "CRY",
+      "name": "CRY-0720"
+    },
+    "B58679FA-ECCF-4926-A124-E2386F2FFD53": {
+      "guid": "b58679fa-eccf-4926-a124-e2386f2ffd53",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-05T02:12:05.233Z",
+          "applies": true,
+          "name": "A0261",
+          "note": "pinch:2"
+        }
+      ],
+      "id": "BRCC-b58679",
+      "plant": "BRCC",
+      "name": "BRCC-0804"
+    },
+    "B597BD8A-A9F9-4E11-8424-5012B3879546": {
+      "guid": "b597bd8a-a9f9-4e11-8424-5012b3879546",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-21T16:43:08.589Z",
+          "applies": true,
+          "name": "A0224",
+          "note": "sow 4 pinches, drench with tap water, cover"
+        }
+      ],
+      "id": "CIL-b597bd",
+      "plant": "CIL",
+      "name": "CIL-0721"
+    },
+    "B7639137-A81C-4836-9679-38F20CED0BFA": {
+      "guid": "b7639137-a81c-4836-9679-38f20ced0bfa",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-04-03T08:00:00.000Z",
+          "applies": true,
+          "name": "A0190",
+          "note": "soak 4 days"
+        },
+        {
+          "date": "2020-04-12T08:00:00.000Z",
+          "applies": true,
+          "name": "A0199"
+        },
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "A0214"
+        },
+        {
+          "date": "2020-05-01T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "sideyard heat shock, brought wilted plant inside, never recovered\n"
+        }
+      ],
+      "id": "PLM-b76391",
+      "plant": "PLM",
+      "name": "PLM-0403"
+    },
     "B7BDF963-5386-4CCE-B66F-C86A1FA7AC00": {
       "guid": "b7bdf963-5386-4cce-b66f-c86a1fa7ac00",
       "type": "site",
@@ -1461,6 +1898,21 @@
       "site-type": "ts32",
       "name": "Tray182"
     },
+    "B95548AC-706E-4B69-9EB4-0610E8F45E88": {
+      "guid": "b95548ac-706e-4b69-9eb4-0610e8f45e88",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-02T17:28:59.747Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0264",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0264"
+    },
     "BA8D0FEF-9841-416A-BB27-6B687D2D21EB": {
       "guid": "ba8d0fef-9841-416a-bb27-6b687d2d21eb",
       "type": "crop",
@@ -1489,6 +1941,21 @@
       "id": "A0181",
       "name": "Tray0181"
     },
+    "BB03326B-6CC3-4D2C-BAD3-17B42B28DCBF": {
+      "guid": "bb03326b-6cc3-4d2c-bad3-17b42b28dcbf",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-04-25T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0213",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0213"
+    },
     "BBEE9EBB-8E4C-466F-94B9-CED3A926F6D1": {
       "guid": "bbee9ebb-8e4c-466f-94b9-ced3a926f6d1",
       "type": "site",
@@ -1503,6 +1970,21 @@
       "site-type": "BKT2G",
       "name": "BKT0217"
     },
+    "BEB6A712-2C30-4B0B-A394-F4E7C05FCE35": {
+      "guid": "beb6a712-2c30-4b0b-a394-f4e7c05fce35",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-13T00:36:05.068Z",
+          "applies": true,
+          "name": "CML0812",
+          "note": "https://www.westcoastseeds.com/products/cucamelon",
+          "noteUrl": "https://www.westcoastseeds.com/products/cucamelon"
+        }
+      ],
+      "id": "CML",
+      "name": "Cucumber, Cucamelon"
+    },
     "BF887926-C935-4928-BAFB-56A4D6AE35EA": {
       "guid": "bf887926-c935-4928-bafb-56a4d6ae35ea",
       "type": "tray",
@@ -1515,6 +1997,21 @@
       ],
       "id": "A0183",
       "name": "Tray0183"
+    },
+    "C0F1FF42-9F0E-4BD8-B43A-97B76FE5C4DC": {
+      "guid": "c0f1ff42-9f0e-4bd8-b43a-97b76fe5c4dc",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-02T16:54:59.657Z",
+          "applies": true,
+          "name": "started",
+          "note": "height: 5"
+        }
+      ],
+      "id": "A0271",
+      "site-type": "TRAY",
+      "name": "TRAY-0271"
     },
     "C2F071F3-3DD1-4E73-86B6-A81A3909E487": {
       "guid": "c2f071f3-3dd1-4e73-86b6-a81a3909e487",
@@ -1556,6 +2053,21 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0257"
     },
+    "C54EEE58-BB00-40D4-BA5E-99EB337F071A": {
+      "guid": "c54eee58-bb00-40d4-ba5e-99eb337f071a",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-19T17:46:45.712Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0258",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0258"
+    },
     "C5D9C89E-BCB0-4462-AC95-09DCE8BBB20B": {
       "guid": "c5d9c89e-bcb0-4462-ac95-09dce8bbb20b",
       "type": "crop",
@@ -1571,6 +2083,21 @@
       "plant": "PHW",
       "name": "PHW0249"
     },
+    "C90A27ED-2848-44C2-A705-A20E35A1D343": {
+      "guid": "c90a27ed-2848-44c2-a705-a20e35a1d343",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-02T17:28:59.747Z",
+          "applies": true,
+          "name": "A0264",
+          "note": "seed: 3"
+        }
+      ],
+      "id": "BTD-c90a27",
+      "plant": "BTD",
+      "name": "BTD-0802"
+    },
     "CABD724D-9FF1-4146-B9A0-9B8FDCBD76DD": {
       "guid": "cabd724d-9ff1-4146-b9a0-9b8fdcbd76dd",
       "type": "crop",
@@ -1585,6 +2112,21 @@
       "id": "CIL20200517",
       "plant": "A0241",
       "name": "CIL0517"
+    },
+    "CAFC29FB-4777-46D3-ADB9-6611E24E6FCE": {
+      "guid": "cafc29fb-4777-46d3-adb9-6611e24e6fce",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-21T03:58:30.338Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0263",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0263"
     },
     "CB5CE50F-DBDB-4234-87F9-4D5693A8ECA8": {
       "guid": "cb5ce50f-dbdb-4234-87f9-4d5693a8eca8",
@@ -1607,6 +2149,21 @@
       "plant": "TAT",
       "name": "TAT0196"
     },
+    "CB8C127F-C623-4985-AC71-860F24FC026D": {
+      "guid": "cb8c127f-c623-4985-ac71-860f24fc026d",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-04-03T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0190",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0190"
+    },
     "CEA3FE46-F9E4-41D8-B777-0AA5CB4CAD21": {
       "guid": "cea3fe46-f9e4-41d8-b777-0aa5cb4cad21",
       "type": "site-type",
@@ -1622,6 +2179,21 @@
       "id": "TUPSQ2",
       "name": "Tupperware, Square 2 Modular Mate"
     },
+    "CEABB33B-7921-48C0-BB48-022B4020C856": {
+      "guid": "ceabb33b-7921-48c0-bb48-022b4020c856",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-21T02:58:28.799Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0260",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0260"
+    },
     "D07F11D8-C0C3-4319-99DB-8EE2472A3AB5": {
       "guid": "d07f11d8-c0c3-4319-99db-8ee2472a3ab5",
       "type": "site",
@@ -1636,6 +2208,21 @@
       "id": "A0195",
       "site-type": "NETPOT",
       "name": "NETPOT-0195"
+    },
+    "D1259E8A-2B77-49FF-99A3-205C7529307F": {
+      "guid": "d1259e8a-2b77-49ff-99a3-205c7529307f",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-04T21:53:06.235Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0277",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0277"
     },
     "D1D37BC6-AB0F-445D-8BB5-3E0E4DC016B6": {
       "guid": "d1d37bc6-ab0f-445d-8bb5-3e0e4dc016b6",
@@ -1667,6 +2254,36 @@
       "site-type": "TRAY",
       "name": "TRAY-0177"
     },
+    "D3D6A039-9050-4943-8513-862208C4AE2B": {
+      "guid": "d3d6a039-9050-4943-8513-862208c4ae2b",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-21T02:58:28.799Z",
+          "applies": true,
+          "name": "A0260",
+          "note": "sow 2"
+        }
+      ],
+      "id": "CRY-d3d6a0",
+      "plant": "CRY",
+      "name": "CRY-0720"
+    },
+    "D4CEADAF-67C1-4764-A16E-C6D88BAB7A3C": {
+      "guid": "d4ceadaf-67c1-4764-a16e-c6d88bab7a3c",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-07T18:26:33.963Z",
+          "applies": true,
+          "name": "a0177",
+          "note": "pinches: 5"
+        }
+      ],
+      "id": "RAD-d4cead",
+      "plant": "RAD",
+      "name": "RAD-0807"
+    },
     "D52575E1-D1ED-4611-B55C-4F373F327BC5": {
       "guid": "d52575e1-d1ed-4611-b55c-4f373f327bc5",
       "type": "crop",
@@ -1686,6 +2303,21 @@
       "plant": "BTD",
       "name": "BTD0406"
     },
+    "D62183B9-BF9C-4334-A4C7-A1CD1444CF78": {
+      "guid": "d62183b9-bf9c-4334-a4c7-a1cd1444cf78",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-28T17:29:32.864Z",
+          "applies": true,
+          "name": "A0268",
+          "note": "sow 3"
+        }
+      ],
+      "id": "BRCC-d62183",
+      "plant": "BRCC",
+      "name": "BRCC-0728"
+    },
     "D82D5253-8D41-449D-AC2C-CBB7A784DDF5": {
       "guid": "d82d5253-8d41-449d-ac2c-cbb7a784ddf5",
       "type": "plant",
@@ -1698,6 +2330,21 @@
       ],
       "id": "PHW",
       "name": "Pepper, Hungarian Hot Wax"
+    },
+    "DC890ACD-505E-483A-8C9C-C713757470D2": {
+      "guid": "dc890acd-505e-483a-8c9c-c713757470d2",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-21T02:58:28.799Z",
+          "applies": true,
+          "name": "A0258",
+          "note": "sow 2"
+        }
+      ],
+      "id": "CRY-dc890a",
+      "plant": "CRY",
+      "name": "CRY-0720"
     },
     "DDCA152A-F598-47F4-9B82-37837F4F1F18": {
       "guid": "ddca152a-f598-47f4-9b82-37837f4f1f18",
@@ -1712,6 +2359,21 @@
       ],
       "id": "STM",
       "name": "Strawberry, Farmer's Market"
+    },
+    "DE2A71A5-9067-41C0-A3C1-6471053B02AB": {
+      "guid": "de2a71a5-9067-41c0-a3c1-6471053b02ab",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-19T17:46:45.712Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0261",
+      "site-type": "DRV",
+      "name": "DRV-0261"
     },
     "DF71A2EB-D3CD-4C23-9DCD-BA0171F1D5CC": {
       "guid": "df71a2eb-d3cd-4c23-9dcd-ba0171f1d5cc",
@@ -1764,6 +2426,21 @@
       "id": "WML",
       "name": "Watermelon, Blacktail Mountain"
     },
+    "E165DD77-E5BB-47F9-A779-928F330B3EE1": {
+      "guid": "e165dd77-e5bb-47f9-a779-928f330b3ee1",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2020-07-23T17:20:13.588Z",
+          "applies": true,
+          "name": "takeout",
+          "note": "https://www.amazon.com/Maple-Trade-TD-16-Ounce-Containers/dp/B07HNHW9BM",
+          "noteUrl": "https://www.amazon.com/Maple-Trade-TD-16-Ounce-Containers/dp/B07HNHW9BM"
+        }
+      ],
+      "id": "C16",
+      "name": "C16 SoupCup, Maple Trade TD 16oz clear deli container with lid"
+    },
     "E2DCE816-89B6-45C9-89B9-A2317F1571D5": {
       "guid": "e2dce816-89b6-45c9-89b9-a2317f1571d5",
       "type": "crop",
@@ -1793,6 +2470,21 @@
       "id": "BTD20200423-3S",
       "plant": "BTD",
       "name": "BTD0215"
+    },
+    "E4683454-7481-4348-92AC-E05A45011405": {
+      "guid": "e4683454-7481-4348-92ac-e05a45011405",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-28T17:29:32.864Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0268",
+      "site-type": "PVC2",
+      "name": "PVC2-0268"
     },
     "E55FD63E-41F1-4457-BE05-2C7CEDD0525D": {
       "guid": "e55fd63e-41f1-4457-be05-2c7cedd0525d",
@@ -1853,6 +2545,21 @@
       "id": "A0234",
       "site-type": "BKT2G",
       "name": "BKT0234"
+    },
+    "EB1DBC89-520C-43CD-954D-DFF335BC0276": {
+      "guid": "eb1dbc89-520c-43cd-954d-dff335bc0276",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-07-21T02:58:28.799Z",
+          "applies": true,
+          "name": "A0259",
+          "note": "sow 2"
+        }
+      ],
+      "id": "CRY-eb1dbc",
+      "plant": "CRY",
+      "name": "CRY-0720"
     },
     "EB5DF87A-C66D-4C4A-9E9D-6F5D93C98EEC": {
       "guid": "eb5df87a-c66d-4c4a-9e9d-6f5d93c98eec",
@@ -1931,6 +2638,21 @@
       "site-type": "BKT2G",
       "name": "BKT2G0218"
     },
+    "F4FA4A94-6458-430C-8E0F-0666FB3EC2E8": {
+      "guid": "f4fa4a94-6458-430c-8e0f-0666fb3ec2e8",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-04T00:52:12.156Z",
+          "applies": true,
+          "name": "A0273",
+          "note": "https://sandiegoseedcompany.com/four-oclock/",
+          "noteUrl": "https://sandiegoseedcompany.com/four-oclock/"
+        }
+      ],
+      "id": "FFO",
+      "name": "Flower, Four O'Clock Color Blast"
+    },
     "F58E4260-7A62-416A-886A-182603BD7F01": {
       "guid": "f58e4260-7a62-416a-886a-182603bd7f01",
       "type": "plant",
@@ -1973,6 +2695,21 @@
       "id": "A0227",
       "site-type": "NETPOT",
       "name": "NETPOT-0227"
+    },
+    "FF7945B5-0179-4AF4-B7A6-37947E202FFF": {
+      "guid": "ff7945b5-0179-4af4-b7a6-37947e202fff",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-04T13:07:42.576Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0276",
+      "site-type": "TUPSQ2",
+      "name": "TUPSQ2-0276"
     }
   },
   "settings": {
@@ -1984,6 +2721,5 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "52df5614e2d8c64adab69da0977206be",
-  "saved": "2020-08-18T00:40:16.570Z"
+  "merkleHash": "bd6d9bbfe26c1e1dc52b0d2b20f7977d"
 }
