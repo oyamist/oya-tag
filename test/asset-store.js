@@ -12,6 +12,30 @@
         TValue,
     } = require("../index");
     const SAMPLE_DATA = path.join(__dirname, 'sample-data.json5');
+    const bucketA0002 = {
+      "guid": "68012F6F-745D-4074-8A55-D6A89F9B2DBC",
+      "id": "A0002",
+      "type": "bucket",
+      "tags": {
+        "entered": {
+          "date": -31536000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    };
+    const bucketA0003 = {
+      "guid": "2A45E630-61D1-4F0B-8DA2-B02D92C8F503",
+      "id": "A0003",
+      "type": "bucket",
+      "tags": {
+        "entered": {
+          "date": -31536000000,
+          "name": "entered",
+          "applies" : true
+        }
+      }
+    };
 
     it("default ctor", ()=> {
         var as = new AssetStore();
@@ -57,7 +81,7 @@
             },
         });
     });
-    it("is serializable", ()=> {
+    it("TESTTESTis serializable", ()=> {
         var guid = "f5689832-79e2-48a5-bf5f-655cacec940f";
         var id = "a0001";
         var type = "crop";
@@ -87,7 +111,7 @@
         should(as2.settings.color).equal("brown");
         
         should(as2.merkleHash).equal(signature);
-        should.deepEqual(as2, as.toJSON());
+        should.deepEqual(as2.toJSON(), as.toJSON());
     });
     it("assetOfId(key) => asset", ()=> {
         var testValue = "test-value";
@@ -154,6 +178,16 @@
         should(asset2.id).equal("A0002");
         should(asset2.guid.length).equal(36);
         should(as.assets().indexOf(asset2)).equal(1);
+    });
+    it("TESTTESTserializes assets in guid order", ()=>{
+        var rawAssets = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
+        var as = new AssetStore(rawAssets);
+        var json = as.toJSON();
+        var guids = Object.keys(json.assetMap);
+        var ignoreCase = { ignorePunctuation: true };
+        var guidsSorted = guids.slice()
+            .sort((a,b) => a.localeCompare(b, 'en', ignoreCase));
+        should.deepEqual(guids, guidsSorted);
     });
     it("parses sample-data.json5", ()=>{
         var json = JSON5.parse(fs.readFileSync(SAMPLE_DATA));
@@ -375,6 +409,82 @@
             type: "plant",
             plant: "BTD",
         })).equal(`BTD-0123`);
+    });
+    it("TESTTESTimportAssets(src) adds assets not in dst",()=>{
+        var srcAssets = new AssetStore(); 
+        var dstAssets = new AssetStore();
+        var srcMap = srcAssets.assetMap;
+        var dstMap = dstAssets.assetMap;
+        var bucketA0002_edited = Object.assign({}, bucketA0002, {
+            name: `bucket_A0002-edited`,
+        });
+
+        dstAssets.registerAsset(bucketA0002);
+
+        srcAssets.registerAsset(bucketA0002_edited);
+        should(dstMap[bucketA0002.guid].name)
+            .equal('bucket_A0002');
+        should(srcMap[bucketA0002.guid].name)
+            .equal('bucket_A0002-edited');
+        srcAssets.registerAsset(bucketA0003);
+        should.deepEqual(Object.keys(dstMap), [
+            bucketA0002.guid,
+        ]);
+
+        // importAssets adds new assets
+        dstAssets.importAssets(srcAssets);
+        should.deepEqual(Object.keys(dstMap), [
+            bucketA0002.guid,
+            bucketA0003.guid,
+        ]);
+        should.deepEqual(Object.keys(srcMap), [
+            bucketA0002.guid,
+            bucketA0003.guid,
+        ]);
+
+        // importAssets does NOT change common assets
+        should(dstMap[bucketA0002.guid].name)
+            .equal('bucket_A0002');
+        should(srcMap[bucketA0002.guid].name)
+            .equal('bucket_A0002-edited');
+    });
+    it("TESTTESTimportAssets(src) overwrites common assets",()=>{
+        var srcAssets = new AssetStore(); 
+        var dstAssets = new AssetStore({
+            importUpdate: true, // overwrite on import
+        }); 
+        var srcMap = srcAssets.assetMap;
+        var dstMap = dstAssets.assetMap;
+        var bucketA0002_edited = Object.assign({}, bucketA0002, {
+            name: `bucket_A0002-edited`,
+        });
+
+        dstAssets.registerAsset(bucketA0002);
+
+        srcAssets.registerAsset(bucketA0002_edited);
+        should(srcMap[bucketA0002.guid].name)
+            .equal('bucket_A0002-edited');
+        srcAssets.registerAsset(bucketA0003);
+        should.deepEqual(Object.keys(dstMap), [
+            bucketA0002.guid,
+        ]);
+
+        // importAssets adds new assets
+        dstAssets.importAssets(srcAssets);
+        should.deepEqual(Object.keys(dstMap), [
+            bucketA0002.guid,
+            bucketA0003.guid,
+        ]);
+        should.deepEqual(Object.keys(srcMap), [
+            bucketA0002.guid,
+            bucketA0003.guid,
+        ]);
+
+        // importAssets updates common assets
+        should(dstMap[bucketA0002.guid].name)
+            .equal('bucket_A0002-edited');
+        should(srcMap[bucketA0002.guid].name)
+            .equal('bucket_A0002-edited');
     });
     
 

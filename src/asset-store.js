@@ -30,6 +30,7 @@
             var assetMap = (opts.assetMap || {});
             this.assetMap = {};
             this.settings = AssetStore.appliedSettings(opts.settings);
+            this.importUpdate = !!opts.importUpdate;
             this.guidAbbreviation = opts.guidAbbreviation || 6;
             this[mj.hashTag] = opts[mj.hashTag];
 
@@ -141,9 +142,17 @@
         }
         
         toJSON() {
-            var { mj, } = this;
-            this[mj.hashTag] = mj.hash(this, false);
-            return this;
+            var { mj, assetMap, } = this;
+            var ignoreCase = { ignorePunctuation: true };
+            var guids = Object.keys(assetMap)
+                .sort((a,b) => a.localeCompare(b, 'en', ignoreCase));
+            var json = Object.assign({}, this);
+            json.assetMap = guids.reduce((a,g) => {
+                a[g] = assetMap[g];
+                return a;
+            }, {});
+            this[mj.hashTag] = json[mj.hashTag] = mj.hash(json, false);
+            return json;
         }
 
         assetOfId(key) {
@@ -262,6 +271,31 @@
             });
             return timelines.sort((a,b) => {
                 return a.name.localeCompare(b.name);
+            });
+        }
+
+        importAssets(src) {
+            var dst = this;
+            var keys = src && Object.keys(src.assetMap);
+            if (!keys || !keys.length) {
+                throw new Error("expected { assetMap }")
+            }
+            keys.forEach(k=>{
+                var srcAsset = src.assetMap[k];
+                var dstAsset = dst.assetMap[k];
+                if (srcAsset) {
+                    if (dst.importUpdate) {
+                        if (dstAsset) {
+                            Object.assign(dstAsset, srcAsset);
+                        } else {
+                            dst.registerAsset(srcAsset);
+                        }
+                    } else {
+                        if (!dstAsset) {
+                            dst.registerAsset(srcAsset);
+                        }
+                    }
+                }
             });
         }
 
