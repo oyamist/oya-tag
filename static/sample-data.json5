@@ -153,7 +153,7 @@
         }
       ],
       "id": "CIL",
-      "name": "Cilantro"
+      "name": "Herb, Cilantro"
     },
     "0D1AEF5E-F256-4EAF-BD48-B12EF278B21D": {
       "guid": "0d1aef5e-f256-4eaf-bd48-b12ef278b21d",
@@ -169,6 +169,21 @@
       "id": "BMG-0d1aef",
       "plant": "BMG",
       "name": "BMG-0816"
+    },
+    "0DF81926-EF25-4C7A-B943-9C86D4F0C5D8": {
+      "guid": "0df81926-ef25-4c7a-b943-9c86d4f0c5d8",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-18T03:40:51.409Z",
+          "applies": true,
+          "name": "IMO0817",
+          "note": "https://en.wikipedia.org/wiki/Korean_natural_farming",
+          "noteUrl": "https://en.wikipedia.org/wiki/Korean_natural_farming"
+        }
+      ],
+      "id": "IMO",
+      "name": "KNF, IMO"
     },
     "0E9FE4C7-DB30-4B7D-8997-82C6E93A7E86": {
       "guid": "0e9fe4c7-db30-4b7d-8997-82c6e93a7e86",
@@ -443,6 +458,21 @@
       "id": "A0254",
       "site-type": "BKT2G",
       "name": "BKT2G-0254"
+    },
+    "2CD65827-4974-4CBB-96BC-1C5F3D792DA6": {
+      "guid": "2cd65827-4974-4cbb-96bc-1c5f3d792da6",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-18T03:49:43.679Z",
+          "applies": true,
+          "name": "IMO1",
+          "note": "Dry cook 15m in covered saucepan, cooled, put into black plastic dish covered with steel sieve"
+        }
+      ],
+      "id": "IMO-2cd658",
+      "plant": "IMO",
+      "name": "IMO-0817"
     },
     "2F592D81-8C1E-4558-A3BC-DF028BC9E86A": {
       "guid": "2f592d81-8c1e-4558-a3bc-df028bc9e86a",
@@ -951,7 +981,7 @@
         }
       ],
       "id": "RAD",
-      "name": "Radish"
+      "name": "Herb, Radish"
     },
     "61540B8A-931F-44DA-A1F8-A08D53B69572": {
       "guid": "61540b8a-931f-44da-a1f8-a08d53b69572",
@@ -1345,7 +1375,7 @@
         }
       ],
       "id": "TAT",
-      "name": "Tatsoi"
+      "name": "Herb, Tatsoi"
     },
     "80D4FBCA-E0F1-4B77-BC1D-E739E39184BD": {
       "guid": "80d4fbca-e0f1-4b77-bc1d-e739e39184bd",
@@ -1747,7 +1777,7 @@
         }
       ],
       "id": "BMG",
-      "name": "Broccoli, Microgreen "
+      "name": "Herb, Broccoli Microgreens"
     },
     "B1508068-5DF2-44F9-B2FE-55FDB30C3FE8": {
       "guid": "b1508068-5df2-44f9-b2fe-55fdb30c3fe8",
@@ -2721,6 +2751,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "02499cbcc0807870fda95c1c13f4eaee",
-  "saved": "2020-08-18T03:34:55.654Z"
+  "merkleHash": "b4f3378c41a519dccd76d3a19ed32048",
+  "saved": "2020-08-18T03:53:26.527Z"
 }
