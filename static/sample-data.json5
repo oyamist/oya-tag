@@ -152,7 +152,7 @@
           "noteUrl": "https://sproutpeople.org/cilantro-micro-greens/"
         }
       ],
-      "id": "A0241",
+      "id": "CIL",
       "name": "Cilantro"
     },
     "0D1AEF5E-F256-4EAF-BD48-B12EF278B21D": {
@@ -542,7 +542,7 @@
         }
       ],
       "id": "CIL20200505",
-      "plant": "A0241",
+      "plant": "CIL",
       "name": "CIL0505"
     },
     "385C4D8E-4583-4336-BDB2-B4727E8B6414": {
@@ -965,7 +965,7 @@
         }
       ],
       "id": "CIL20200607",
-      "plant": "A0241",
+      "plant": "CIL",
       "name": "CIL0607"
     },
     "6227260A-7A1A-4C57-ADA7-5F6BD3A846A9": {
@@ -994,9 +994,9 @@
           "note": "4 pinches"
         }
       ],
-      "id": "A0241-635ea9",
-      "plant": "A0241",
-      "name": "A02410181"
+      "id": "CIL-635ea9",
+      "plant": "CIL",
+      "name": "CIL0181"
     },
     "63B3E23E-4107-45D3-AD88-C0945C896F90": {
       "guid": "63b3e23e-4107-45d3-ad88-c0945c896f90",
@@ -1127,7 +1127,7 @@
         }
       ],
       "id": "CIL20200419",
-      "plant": "A0241",
+      "plant": "CIL",
       "name": "CIL0419"
     },
     "75F02923-4B5A-4209-ACD5-B2F5AA6ABB3E": {
@@ -1233,7 +1233,7 @@
         }
       ],
       "id": "CIL20200413",
-      "plant": "A0241",
+      "plant": "CIL",
       "name": "CIL0413"
     },
     "7E1AD988-521B-46D8-8A0A-15E32DCF3569": {
@@ -2110,7 +2110,7 @@
         }
       ],
       "id": "CIL20200517",
-      "plant": "A0241",
+      "plant": "CIL",
       "name": "CIL0517"
     },
     "CAFC29FB-4777-46D3-ADB9-6611E24E6FCE": {
@@ -2529,7 +2529,7 @@
         }
       ],
       "id": "CIL20200621",
-      "plant": "A0241",
+      "plant": "CIL",
       "name": "CIL0621"
     },
     "EAAF5913-DCE3-4833-9F19-687AE0939C1B": {
@@ -2721,5 +2721,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "bd6d9bbfe26c1e1dc52b0d2b20f7977d"
+  "merkleHash": "02499cbcc0807870fda95c1c13f4eaee",
+  "saved": "2020-08-18T03:34:55.654Z"
 }
