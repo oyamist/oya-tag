@@ -660,6 +660,21 @@
       "plant": "PCT",
       "name": "PCT-0717"
     },
+    "41B671C9-0D01-467C-A1B9-2ED4C2CB3275": {
+      "guid": "41b671c9-0d01-467c-a1b9-2ed4c2cb3275",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-18T18:27:16.623Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0283",
+      "site-type": "F16",
+      "name": "F16-0283"
+    },
     "488DA628-CF12-4BFA-9619-4F50F64ECAA4": {
       "guid": "488da628-cf12-4bfa-9619-4f50f64ecaa4",
       "type": "site",
@@ -932,6 +947,12 @@
           "applies": true,
           "name": "A0250",
           "note": "3 pinches direct sown"
+        },
+        {
+          "date": "2020-08-22T17:18:40.140Z",
+          "applies": true,
+          "name": "end",
+          "note": "full harvest"
         }
       ],
       "id": "TAT-5f9acb",
@@ -1074,6 +1095,21 @@
       "id": "WML-64420e",
       "plant": "WML",
       "name": "WML0194"
+    },
+    "653709E1-F7E7-44D5-9FB6-6DA71F666994": {
+      "guid": "653709e1-f7e7-44d5-9fb6-6da71f666994",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-18T18:21:13.289Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0282",
+      "site-type": "F16",
+      "name": "F16-0282"
     },
     "663E162F-DC76-41FD-8E9E-29C3BF6A1F2C": {
       "guid": "663e162f-dc76-41fd-8e9e-29c3bf6a1f2c",
@@ -1488,6 +1524,26 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0233"
     },
+    "898E2920-76AD-41E5-B413-3F2E076FE231": {
+      "guid": "898e2920-76ad-41e5-b413-3f2e076fe231",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-17T08:00:00.000Z",
+          "applies": true,
+          "name": "LAB-f158be"
+        },
+        {
+          "date": "2020-08-20T08:00:00.000Z",
+          "applies": true,
+          "name": "A0283",
+          "note": "2% milk 16:2"
+        }
+      ],
+      "id": "LAB-898e29",
+      "plant": "LAB",
+      "name": "LAB-0818"
+    },
     "8A3B3EC8-80F1-431D-8C7D-611D4BF7FF9D": {
       "guid": "8a3b3ec8-80f1-431d-8c7d-611d4bf7ff9d",
       "type": "crop",
@@ -1701,6 +1757,21 @@
       ],
       "id": "POT20",
       "name": "Planter, 20\""
+    },
+    "A5008B1E-CA2F-435D-870C-9893DB5BC30F": {
+      "guid": "a5008b1e-ca2f-435d-870c-9893db5bc30f",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-04T08:00:00.000Z",
+          "applies": true,
+          "name": "MPS0818",
+          "note": "https://www.westcoastseeds.com/products/microgreen-pea-shoot-seeds\n\nMG592A",
+          "noteUrl": "https://www.westcoastseeds.com/products/microgreen-pea-shoot-seeds"
+        }
+      ],
+      "id": "MPS",
+      "name": "Herbs, Microgreen Pea Shoots"
     },
     "AC5C509D-2EC7-4280-8D2F-1F3E31C44E62": {
       "guid": "ac5c509d-2ec7-4280-8d2f-1f3e31c44e62",
@@ -2623,6 +2694,36 @@
       "plant": "BTD",
       "name": "BTD0236"
     },
+    "F0359D6F-1838-4268-8773-F1E0094457F1": {
+      "guid": "f0359d6f-1838-4268-8773-f1e0094457f1",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2020-08-17T08:00:00.000Z",
+          "applies": true,
+          "name": "purchased",
+          "note": "https://smile.amazon.com/gp/product/B075LRMRDQ",
+          "noteUrl": "https://smile.amazon.com/gp/product/B075LRMRDQ"
+        }
+      ],
+      "id": "F16",
+      "name": "Fermenter, 16oz"
+    },
+    "F072F31F-1F77-4226-A827-B47DF0BC2E17": {
+      "guid": "f072f31f-1f77-4226-a827-b47df0bc2e17",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-22T17:18:15.513Z",
+          "applies": true,
+          "name": "A0250",
+          "note": "cover with transparent water-filled tray"
+        }
+      ],
+      "id": "TAT-f072f3",
+      "plant": "TAT",
+      "name": "TAT-0822"
+    },
     "F158BEE4-4230-487B-99CC-42F298E6C823": {
       "guid": "f158bee4-4230-487b-99cc-42f298e6c823",
       "type": "crop",
@@ -2632,6 +2733,18 @@
           "applies": true,
           "name": "A0181",
           "note": "400g white rice"
+        },
+        {
+          "date": "2020-08-17T08:00:00.000Z",
+          "applies": true,
+          "name": "IMO",
+          "note": "strained for IMO"
+        },
+        {
+          "date": "2020-08-18T18:23:39.834Z",
+          "applies": true,
+          "name": "A0282",
+          "note": "2% milk@16:2\n"
         }
       ],
       "id": "LAB-f158be",
@@ -2751,6 +2864,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "b4f3378c41a519dccd76d3a19ed32048",
-  "saved": "2020-08-18T03:53:26.527Z"
+  "merkleHash": "d04cce946d6bd1ebc462292e1c10c5c2",
+  "saved": "2020-08-22T17:27:47.206Z"
 }
