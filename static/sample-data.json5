@@ -97,7 +97,7 @@
       ],
       "id": "A0281",
       "site-type": "BKT2G",
-      "name": "NETPOT-0281"
+      "name": "BKT2G-0281"
     },
     "07DE4528-2CA5-436C-915A-DC00851977F3": {
       "guid": "07de4528-2ca5-436c-915a-dc00851977f3",
@@ -870,11 +870,37 @@
           "applies": true,
           "name": "A0227",
           "note": ""
+        },
+        {
+          "date": "2020-08-05T08:00:00.000Z",
+          "applies": true,
+          "name": "A0251"
+        },
+        {
+          "date": "2020-08-26T21:40:30.528Z",
+          "applies": true,
+          "name": "A0285",
+          "note": "height: 27"
         }
       ],
       "id": "BRCC-583df1",
       "plant": "BRCC",
       "name": "BRCC0227"
+    },
+    "5909F52B-049A-46D1-A813-4C567B428053": {
+      "guid": "5909f52b-049a-46d1-a813-4c567b428053",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-26T21:31:56.189Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0285",
+      "site-type": "BKT2G",
+      "name": "BKT2G-0285"
     },
     "59B4531E-D409-4F90-B99E-714C9C706F2C": {
       "guid": "59b4531e-d409-4f90-b99e-714c9c706f2c",
@@ -2864,6 +2890,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "d04cce946d6bd1ebc462292e1c10c5c2",
-  "saved": "2020-08-22T17:27:47.206Z"
+  "merkleHash": "fc9e398a73069424f283774669cc2fbf",
+  "saved": "2020-08-26T21:50:41.103Z"
 }
