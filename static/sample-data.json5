@@ -260,6 +260,21 @@
       "id": "PLM",
       "name": "Peas, Little Marvel"
     },
+    "15B4F06A-AAFF-46DD-B4AD-41579007A77C": {
+      "guid": "15b4f06a-aaff-46dd-b4ad-41579007a77c",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-28T01:47:11.852Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0287",
+      "site-type": "F128",
+      "name": "F128-0287"
+    },
     "165A49DD-9BF8-47B9-AC74-7FBEF46519E7": {
       "guid": "165a49dd-9bf8-47b9-ac74-7fbef46519e7",
       "type": "crop",
@@ -360,6 +375,20 @@
       "id": "CUKE-194ef2",
       "plant": "CUKE",
       "name": "CUKE0166"
+    },
+    "19F22BC0-4CBB-441E-BEA6-AFC7BBB6A17B": {
+      "guid": "19f22bc0-4cbb-441e-bea6-afc7bbb6a17b",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2020-08-28T01:47:11.852Z",
+          "applies": true,
+          "name": "purchased",
+          "note": "amazon.com/gp/product/B0778SW4MC"
+        }
+      ],
+      "id": "F128",
+      "name": "Fermenter, 128 oz (1 gallon)"
     },
     "1CBEEB99-6A99-49A0-A86A-53688E95C641": {
       "guid": "1cbeeb99-6a99-49a0-a86a-53688e95c641",
@@ -1166,6 +1195,21 @@
       "site-type": "POT20",
       "name": "Planter0249"
     },
+    "67BBB05C-C416-4D11-9615-B613BD8498CD": {
+      "guid": "67bbb05c-c416-4d11-9615-b613bd8498cd",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-23T08:00:00.000Z",
+          "applies": true,
+          "name": "A0284",
+          "note": "Wick"
+        }
+      ],
+      "id": "RAD-67bbb0",
+      "plant": "RAD",
+      "name": "RAD-0823"
+    },
     "6A478A88-48C8-432F-9BF6-F8E0E1A7BCF6": {
       "guid": "6a478a88-48c8-432f-9bf6-f8e0e1a7bcf6",
       "type": "plant",
@@ -1180,6 +1224,20 @@
       ],
       "id": "PCT",
       "name": "Tomato, Purple Cherokee"
+    },
+    "6DA00CBB-C130-4CB1-9679-AE5737ADD150": {
+      "guid": "6da00cbb-c130-4cb1-9679-ae5737add150",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2020-08-26T21:48:48.020Z",
+          "applies": true,
+          "name": "purchased",
+          "note": "Black tray from mushrooms"
+        }
+      ],
+      "id": "TrayB",
+      "name": "Tray, Black Mushroom"
     },
     "7187347D-4E90-4D92-B14A-6E278E80D3DF": {
       "guid": "7187347d-4e90-4d92-b14a-6e278e80d3df",
@@ -1640,6 +1698,21 @@
       "plant": "BCP",
       "name": "BCP-0408"
     },
+    "94F8D0FB-2356-407B-8F6B-61E82B62B4F5": {
+      "guid": "94f8d0fb-2356-407b-8f6b-61e82b62b4f5",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-26T21:48:48.020Z",
+          "applies": true,
+          "name": "A0213",
+          "note": "seed:3"
+        }
+      ],
+      "id": "TBK-94f8d0",
+      "plant": "TBK",
+      "name": "TBK-0826"
+    },
     "95D4971A-8030-457A-BB31-5EF1E612A82D": {
       "guid": "95d4971a-8030-457a-bb31-5ef1e612a82d",
       "type": "site-type",
@@ -1798,6 +1871,21 @@
       ],
       "id": "MPS",
       "name": "Herbs, Microgreen Pea Shoots"
+    },
+    "A66FD291-AB90-4118-B1D3-E536F85638E1": {
+      "guid": "a66fd291-ab90-4118-b1d3-e536f85638e1",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-26T21:48:48.020Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0284",
+      "site-type": "TrayB",
+      "name": "TRAYB-0284"
     },
     "AC5C509D-2EC7-4280-8D2F-1F3E31C44E62": {
       "guid": "ac5c509d-2ec7-4280-8d2f-1f3e31c44e62",
@@ -2164,6 +2252,21 @@
       "id": "CHP-c2f071",
       "plant": "CHP",
       "name": "CHP0204"
+    },
+    "C48D2049-A9A5-47F9-9BBC-EB4D41CE98E7": {
+      "guid": "c48d2049-a9a5-47f9-9bbc-eb4d41ce98e7",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-08-28T01:47:11.852Z",
+          "applies": true,
+          "name": "FPJ0827",
+          "note": "https://sproutingfam.com/gardening/fermented-plant-juice/",
+          "noteUrl": "https://sproutingfam.com/gardening/fermented-plant-juice/"
+        }
+      ],
+      "id": "FPJ",
+      "name": "KNF, Fermented Plant Juice"
     },
     "C4FE7B39-BC51-49E6-80C1-CB2FA74FC405": {
       "guid": "c4fe7b39-bc51-49e6-80c1-cb2fa74fc405",
@@ -2568,6 +2671,21 @@
       "id": "C16",
       "name": "C16 SoupCup, Maple Trade TD 16oz clear deli container with lid"
     },
+    "E2594C50-2DF2-4CCE-B37B-00A5F71D6A14": {
+      "guid": "e2594c50-2df2-4cce-b37b-00a5f71d6a14",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-08-28T01:47:11.852Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0286",
+      "site-type": "F128",
+      "name": "F128-0286"
+    },
     "E2DCE816-89B6-45C9-89B9-A2317F1571D5": {
       "guid": "e2dce816-89b6-45c9-89b9-a2317f1571d5",
       "type": "crop",
@@ -2890,6 +3008,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "fc9e398a73069424f283774669cc2fbf",
-  "saved": "2020-08-26T21:50:41.103Z"
+  "merkleHash": "f5f1213137e040420a3454d5d0f1e2ae",
+  "saved": "2020-08-28T02:21:25.179Z"
 }
