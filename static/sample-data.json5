@@ -260,6 +260,21 @@
       "id": "PLM",
       "name": "Peas, Little Marvel"
     },
+    "13FC1B88-F98B-4374-8552-9DE961B4EE6C": {
+      "guid": "13fc1b88-f98b-4374-8552-9de961b4ee6c",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-08-30T20:36:17.194Z",
+          "applies": true,
+          "name": "A0258",
+          "note": "cutting from grow pipe, soaked in GH for ~10 days till root buds appeared; LAB Compost"
+        }
+      ],
+      "id": "PMT-13fc1b",
+      "plant": "PMT",
+      "name": "PMT-0830"
+    },
     "15B4F06A-AAFF-46DD-B4AD-41579007A77C": {
       "guid": "15b4f06a-aaff-46dd-b4ad-41579007a77c",
       "type": "site",
@@ -2576,6 +2591,12 @@
           "applies": true,
           "name": "A0258",
           "note": "sow 2"
+        },
+        {
+          "date": "2020-08-30T20:41:35.930Z",
+          "applies": true,
+          "name": "end",
+          "note": "never sprouted\n"
         }
       ],
       "id": "CRY-dc890a",
@@ -2844,6 +2865,21 @@
       "plant": "BTD",
       "name": "BTD0236"
     },
+    "EE88E815-537E-4E2F-8A94-A05502187E3E": {
+      "guid": "ee88e815-537e-4e2f-8a94-a05502187e3e",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-04-23T08:00:00.000Z",
+          "applies": true,
+          "name": "PMT0423",
+          "note": "https://www.ebay.com/itm/233557875812",
+          "noteUrl": "https://www.ebay.com/itm/233557875812"
+        }
+      ],
+      "id": "PMT",
+      "name": "Peppermint"
+    },
     "F0359D6F-1838-4268-8773-F1E0094457F1": {
       "guid": "f0359d6f-1838-4268-8773-f1e0094457f1",
       "type": "site-type",
@@ -3014,6 +3050,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "60bdba2b3ebf0a9f22b2c148068335ca",
-  "saved": "2020-08-30T00:42:26.951Z"
+  "merkleHash": "599bcb5faadbafc30fb1bd792ba113d2",
+  "saved": "2020-08-30T20:47:05.122Z"
 }
