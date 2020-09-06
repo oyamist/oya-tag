@@ -200,6 +200,21 @@
       "site-type": "BKT2G",
       "name": "BKT2G-0253"
     },
+    "105C0C72-E68B-49DF-8823-763375B23BF6": {
+      "guid": "105c0c72-e68b-49df-8823-763375b23bf6",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-03-01T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "RBH01",
+      "site-type": "RB",
+      "name": "Hydro Bed 1"
+    },
     "10ABA7E2-86D6-4361-AB59-62233B6618F8": {
       "guid": "10aba7e2-86d6-4361-ab59-62233b6618f8",
       "type": "site",
@@ -229,6 +244,21 @@
       "id": "A0259",
       "site-type": "NETPOT",
       "name": "NETPOT-0259"
+    },
+    "12627743-914C-4EBE-AF41-E651B145979C": {
+      "guid": "12627743-914c-4ebe-af41-e651b145979c",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-04T08:00:00.000Z",
+          "applies": true,
+          "name": "A0282",
+          "note": "2% millk"
+        }
+      ],
+      "id": "LAB-126277",
+      "plant": "LAB",
+      "name": "LAB-0903"
     },
     "1363F0DE-9ADA-4E78-BAD0-E0D8998F1FF0": {
       "guid": "1363f0de-9ada-4e78-bad0-e0d8998f1ff0",
@@ -417,6 +447,21 @@
       ],
       "id": "A0229",
       "name": "BKT0229"
+    },
+    "2157BE20-D625-478B-87E1-8162B69C41F1": {
+      "guid": "2157be20-d625-478b-87e1-8162b69c41f1",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-05T15:52:49.041Z",
+          "applies": true,
+          "name": "A0284",
+          "note": "Lid sprinkle, water weight, LAB compost"
+        }
+      ],
+      "id": "CIL-2157be",
+      "plant": "CIL",
+      "name": "CIL-0905"
     },
     "216B7B72-BFB5-4EDD-8D9D-9D6F7ECD6E5F": {
       "guid": "216b7b72-bfb5-4edd-8d9d-9d6f7ecd6e5f",
@@ -1089,6 +1134,12 @@
           "applies": true,
           "name": "A0182",
           "note": "direct sown 3 pinches\n"
+        },
+        {
+          "date": "2020-09-06T14:12:31.143Z",
+          "applies": true,
+          "name": "end",
+          "note": "scraggly\n"
         }
       ],
       "id": "CIL20200607",
@@ -1225,6 +1276,12 @@
           "applies": true,
           "name": "A0284",
           "note": "Wick"
+        },
+        {
+          "date": "2020-09-03T19:41:14.380Z",
+          "applies": true,
+          "name": "end",
+          "note": "harvest: 3/3\n"
         }
       ],
       "id": "RAD-67bbb0",
@@ -1908,6 +1965,21 @@
       "site-type": "TrayB",
       "name": "TRAYB-0284"
     },
+    "A9B58DE3-8003-45DB-B864-4DA164113E02": {
+      "guid": "a9b58de3-8003-45db-b864-4da164113e02",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-07-01T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "RBH02",
+      "site-type": "RB",
+      "name": "Hydro Bed 2"
+    },
     "AC5C509D-2EC7-4280-8D2F-1F3E31C44E62": {
       "guid": "ac5c509d-2ec7-4280-8d2f-1f3e31c44e62",
       "type": "plant",
@@ -2206,6 +2278,35 @@
       "site-type": "BKT2G",
       "name": "BKT0217"
     },
+    "BC3812AF-42A3-46D6-9280-DB5C7F4E5024": {
+      "guid": "bc3812af-42a3-46d6-9280-db5c7f4e5024",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-06-01T08:00:00.000Z",
+          "applies": true,
+          "name": "CMP0601",
+          "note": "https://www.rareseeds.com/store/vegetables/new-items-2019/manpukuji-carrot",
+          "noteUrl": "https://www.rareseeds.com/store/vegetables/new-items-2019/manpukuji-carrot"
+        }
+      ],
+      "id": "CMP",
+      "name": "Carrot, Manpukuji"
+    },
+    "BCFA9621-A03A-4453-A111-54D71394F7BC": {
+      "guid": "bcfa9621-a03a-4453-a111-54d71394f7bc",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2020-09-03T17:11:19.496Z",
+          "applies": true,
+          "name": "purchased",
+          "note": ""
+        }
+      ],
+      "id": "RB",
+      "name": "Raised Bed"
+    },
     "BEB6A712-2C30-4B0B-A394-F4E7C05FCE35": {
       "guid": "beb6a712-2c30-4b0b-a394-f4e7c05fce35",
       "type": "plant",
@@ -2343,6 +2444,12 @@
           "applies": true,
           "name": "A0264",
           "note": "seed: 3"
+        },
+        {
+          "date": "2020-09-02T08:00:00.000Z",
+          "applies": true,
+          "name": "A0230",
+          "note": "height: 24"
         }
       ],
       "id": "BTD-c90a27",
@@ -2358,6 +2465,12 @@
           "applies": true,
           "name": "A0183",
           "note": "3 pinches"
+        },
+        {
+          "date": "2020-08-15T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "scraggly"
         }
       ],
       "id": "CIL20200517",
@@ -2444,6 +2557,21 @@
       "id": "A0260",
       "site-type": "NETPOT",
       "name": "NETPOT-0260"
+    },
+    "D03F819C-4339-42C6-9623-4CCAA42A8B3E": {
+      "guid": "d03f819c-4339-42c6-9623-4ccaa42a8b3e",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-03T17:11:19.496Z",
+          "applies": true,
+          "name": "RB01",
+          "note": "10 holes @ 1pinch; sifted compost cover with cardboard"
+        }
+      ],
+      "id": "CMP-d03f81",
+      "plant": "CMP",
+      "name": "CMP-0903"
     },
     "D07F11D8-C0C3-4319-99DB-8EE2472A3AB5": {
       "guid": "d07f11d8-c0c3-4319-99db-8ee2472a3ab5",
@@ -2931,6 +3059,12 @@
           "applies": true,
           "name": "A0282",
           "note": "2% milk@16:2\n"
+        },
+        {
+          "date": "2020-09-04T14:18:33.799Z",
+          "applies": true,
+          "name": "end",
+          "note": "stored"
         }
       ],
       "id": "LAB-f158be",
@@ -3039,6 +3173,21 @@
       "id": "A0276",
       "site-type": "TUPSQ2",
       "name": "TUPSQ2-0276"
+    },
+    "FF8DF015-7CD4-40E0-A65E-54893FB26059": {
+      "guid": "ff8df015-7cd4-40e0-a65e-54893fb26059",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-09-03T17:11:19.496Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "RB01",
+      "site-type": "RB",
+      "name": "Redwood Bed 10x6x1"
     }
   },
   "settings": {
@@ -3050,6 +3199,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "599bcb5faadbafc30fb1bd792ba113d2",
-  "saved": "2020-08-30T20:47:05.122Z"
+  "merkleHash": "88e947e61bc0b9d5415430dda7a4d56b",
+  "saved": "2020-09-06T14:19:13.299Z"
 }
