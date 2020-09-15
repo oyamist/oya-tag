@@ -908,6 +908,12 @@
           "applies": true,
           "name": "A0278",
           "note": "seed: 3"
+        },
+        {
+          "date": "2020-09-14T16:25:57.011Z",
+          "applies": true,
+          "name": "A0276",
+          "note": "height: 15\n"
         }
       ],
       "id": "CML-54e92d",
@@ -1032,6 +1038,21 @@
       "id": "CHP-5c3185",
       "plant": "CHP",
       "name": "CHP0228"
+    },
+    "5C40DCD1-EEE7-4FC4-909A-A4D51E19BC2F": {
+      "guid": "5c40dcd1-eee7-4fc4-909a-a4d51e19bc2f",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-14T15:47:45.211Z",
+          "applies": true,
+          "name": "RB",
+          "note": "container: 1/2 toilet paper roll"
+        }
+      ],
+      "id": "BSP-5c40dc",
+      "plant": "BSP",
+      "name": "BSP-0914"
     },
     "5CACC524-7B33-4459-ADC3-1A07A491E6C7": {
       "guid": "5cacc524-7b33-4459-adc3-1a07a491e6c7",
@@ -1473,6 +1494,12 @@
           "applies": true,
           "name": "A0265",
           "note": "seeds: 2; color: red"
+        },
+        {
+          "date": "2020-09-12T19:14:14.129Z",
+          "applies": true,
+          "name": "A0214",
+          "note": "height: 18"
         }
       ],
       "id": "CPS-7e1ad9",
@@ -1863,6 +1890,27 @@
       "site-type": "NETPOT",
       "name": "POT0193"
     },
+    "9AD8F449-4FD3-444C-B615-2C5F021CA75F": {
+      "guid": "9ad8f449-4fd3-444c-b615-2c5f021ca75f",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-12T08:00:00.000Z",
+          "applies": true,
+          "name": "A0175",
+          "note": "mesh: 30"
+        },
+        {
+          "date": "2020-09-15T23:03:32.810Z",
+          "applies": true,
+          "name": "end",
+          "note": "ants went through mesh\n"
+        }
+      ],
+      "id": "IMO-9ad8f4",
+      "plant": "IMO",
+      "name": "IMO-0912"
+    },
     "9BCBC433-D009-4B4A-A0C8-BA00FFA52824": {
       "guid": "9bcbc433-d009-4b4a-a0c8-ba00ffa52824",
       "type": "crop",
@@ -1949,6 +1997,21 @@
       ],
       "id": "MPS",
       "name": "Herbs, Microgreen Pea Shoots"
+    },
+    "A6683FFA-919C-4B4B-A92E-EF4BB96EAE6F": {
+      "guid": "a6683ffa-919c-4b4b-a92e-ef4bb96eae6f",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-05-30T08:00:00.000Z",
+          "applies": true,
+          "name": "BSP0530",
+          "note": "https://www.rareseeds.com/store/vegetables/bulk-vegetables/brussels-sprouts/long-island-improved-brussels-sprouts",
+          "noteUrl": "https://www.rareseeds.com/store/vegetables/bulk-vegetables/brussels-sprouts/long-island-improved-brussels-sprouts"
+        }
+      ],
+      "id": "BSP",
+      "name": "Brussel Sprouts"
     },
     "A66FD291-AB90-4118-B1D3-E536F85638E1": {
       "guid": "a66fd291-ab90-4118-b1d3-e536f85638e1",
@@ -2567,6 +2630,12 @@
           "applies": true,
           "name": "RB01",
           "note": "10 holes @ 1pinch; sifted compost cover with cardboard"
+        },
+        {
+          "date": "2020-09-10T23:43:21.205Z",
+          "applies": true,
+          "name": "Tube",
+          "note": "~8 seeds in plastic tube. no sprouts from first batch"
         }
       ],
       "id": "CMP-d03f81",
@@ -2647,6 +2716,21 @@
       "id": "CRY-d3d6a0",
       "plant": "CRY",
       "name": "CRY-0720"
+    },
+    "D49BCA12-9F41-4049-87EF-62C8E2219C99": {
+      "guid": "d49bca12-9f41-4049-87ef-62c8e2219c99",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-13T08:00:00.000Z",
+          "applies": true,
+          "name": "A0204",
+          "note": "seeds: 3"
+        }
+      ],
+      "id": "CUKE-d49bca",
+      "plant": "CUKE",
+      "name": "CUKE-0913"
     },
     "D4CEADAF-67C1-4764-A16E-C6D88BAB7A3C": {
       "guid": "d4ceadaf-67c1-4764-a16e-c6d88bab7a3c",
@@ -3071,6 +3155,21 @@
       "plant": "LAB",
       "name": "LAB-0816"
     },
+    "F201054F-141A-4C54-9B35-06A471F33196": {
+      "guid": "f201054f-141a-4c54-9b35-06a471f33196",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-14T15:47:45.211Z",
+          "applies": true,
+          "name": "A0270",
+          "note": "{wick: true, weight: true}"
+        }
+      ],
+      "id": "RAD-f20105",
+      "plant": "RAD",
+      "name": "RAD-0914"
+    },
     "F368F1C4-1DD4-435A-B880-7B3BBFB8D2D8": {
       "guid": "f368f1c4-1dd4-435a-b880-7b3bbfb8d2d8",
       "type": "site",
@@ -3199,6 +3298,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "88e947e61bc0b9d5415430dda7a4d56b",
-  "saved": "2020-09-06T14:19:13.299Z"
+  "merkleHash": "c12b7094d54a4ec1310a9d12577a1c28",
+  "saved": "2020-09-15T23:07:33.487Z"
 }
