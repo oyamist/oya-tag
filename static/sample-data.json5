@@ -56,6 +56,21 @@
       "id": "CHP",
       "name": "Tomato, Chipano"
     },
+    "052DC4DE-0507-40AF-9F62-45BB54238A74": {
+      "guid": "052dc4de-0507-40af-9f62-45bb54238a74",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-19T16:14:13.234Z",
+          "applies": true,
+          "name": "A0289",
+          "note": "wick"
+        }
+      ],
+      "id": "TAT-052dc4",
+      "plant": "TAT",
+      "name": "TAT-0919"
+    },
     "05B3D326-DA83-4090-AF10-D18EC3F87617": {
       "guid": "05b3d326-da83-4090-af10-d18ec3f87617",
       "type": "site-type",
@@ -164,6 +179,12 @@
           "applies": true,
           "name": "A0177",
           "note": ""
+        },
+        {
+          "date": "2020-09-14T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "full harvest but meagre"
         }
       ],
       "id": "BMG-0d1aef",
@@ -184,6 +205,21 @@
       ],
       "id": "IMO",
       "name": "KNF, IMO"
+    },
+    "0DFF6086-1F9E-4525-B64D-C95EA9E52767": {
+      "guid": "0dff6086-1f9e-4525-b64d-c95ea9e52767",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-09-16T23:02:58.642Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0288",
+      "site-type": "C2Q",
+      "name": "C2Q-0288"
     },
     "0E9FE4C7-DB30-4B7D-8997-82C6E93A7E86": {
       "guid": "0e9fe4c7-db30-4b7d-8997-82c6e93a7e86",
@@ -447,6 +483,21 @@
       ],
       "id": "A0229",
       "name": "BKT0229"
+    },
+    "207AE49A-F038-4CBB-BF5B-5530329E80C2": {
+      "guid": "207ae49a-f038-4cbb-bf5b-5530329e80c2",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-09-19T16:14:13.234Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0289",
+      "site-type": "TrayB",
+      "name": "TRAYB-0289"
     },
     "2157BE20-D625-478B-87E1-8162B69C41F1": {
       "guid": "2157be20-d625-478b-87e1-8162b69c41f1",
@@ -770,6 +821,20 @@
       "site-type": "F16",
       "name": "F16-0283"
     },
+    "443379BF-C64B-48A6-B13E-0DFE5F3D97E6": {
+      "guid": "443379bf-c64b-48a6-b13e-0dfe5f3d97e6",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-09-19T16:21:44.859Z",
+          "applies": true,
+          "name": "OGM0919",
+          "note": "Green onions from supermarket"
+        }
+      ],
+      "id": "OGM",
+      "name": "Onion, Green Market"
+    },
     "488DA628-CF12-4BFA-9619-4F50F64ECAA4": {
       "guid": "488da628-cf12-4bfa-9619-4f50f64ecaa4",
       "type": "site",
@@ -813,6 +878,21 @@
       "id": "A0214",
       "site-type": "BKT2G",
       "name": "BKT2G-0214"
+    },
+    "4EA8D019-0536-4CB0-A295-0E878D33F9FE": {
+      "guid": "4ea8d019-0536-4cb0-a295-0e878d33f9fe",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-19T16:21:44.859Z",
+          "applies": true,
+          "name": "A0290",
+          "note": "wick"
+        }
+      ],
+      "id": "CIL-4ea8d0",
+      "plant": "CIL",
+      "name": "CIL-0919"
     },
     "50632594-534A-4588-A1F0-54995BF02E5A": {
       "guid": "50632594-534a-4588-a1f0-54995bf02e5a",
@@ -883,6 +963,36 @@
       "id": "A0267",
       "site-type": "C16",
       "name": "C16-0267"
+    },
+    "54225F13-D10A-446C-A5F8-6F012F9E64F4": {
+      "guid": "54225f13-d10a-446c-a5f8-6f012f9e64f4",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-30T08:00:00.000Z",
+          "applies": true,
+          "name": "A0293",
+          "note": "sow:3"
+        }
+      ],
+      "id": "PLM-54225f",
+      "plant": "PLM",
+      "name": "PLM-0922"
+    },
+    "544E3159-71A9-44A2-86E9-60A1AF334E98": {
+      "guid": "544e3159-71a9-44a2-86e9-60a1af334e98",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2017-08-19T08:00:00.000Z",
+          "applies": true,
+          "name": "purchased",
+          "note": "https://amazon.com/gp/product/B002PMV7AI",
+          "noteUrl": "https://amazon.com/gp/product/B002PMV7AI"
+        }
+      ],
+      "id": "C2Q",
+      "name": "Cambro, 2QT Storage Container"
     },
     "54C304BF-ACD2-4FB3-82C0-6AF0FDC30B30": {
       "guid": "54c304bf-acd2-4fb3-82c0-6af0fdc30b30",
@@ -1812,6 +1922,12 @@
           "applies": true,
           "name": "A0213",
           "note": "seed:3"
+        },
+        {
+          "date": "2020-09-17T15:24:20.073Z",
+          "applies": true,
+          "name": "a0288",
+          "note": "height: 18\n"
         }
       ],
       "id": "TBK-94f8d0",
@@ -1911,6 +2027,21 @@
       "plant": "IMO",
       "name": "IMO-0912"
     },
+    "9B74C83C-9EDA-441D-8284-AE996AB8407A": {
+      "guid": "9b74c83c-9eda-441d-8284-ae996ab8407a",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-09-22T16:30:24.616Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0291",
+      "site-type": "DRV",
+      "name": "DRV-0291"
+    },
     "9BCBC433-D009-4B4A-A0C8-BA00FFA52824": {
       "guid": "9bcbc433-d009-4b4a-a0c8-ba00ffa52824",
       "type": "crop",
@@ -1956,6 +2087,21 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0244"
     },
+    "A254B2FE-8CF7-4A03-9AEC-9F334B06FE7E": {
+      "guid": "a254b2fe-8cf7-4a03-9aec-9f334b06fe7e",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-16T22:40:24.959Z",
+          "applies": true,
+          "name": "A0189",
+          "note": "{seeds:5, media: lab compost, nute: tap}"
+        }
+      ],
+      "id": "CST-a254b2",
+      "plant": "TTC",
+      "name": "CST-0916"
+    },
     "A2958F31-CC59-4914-BDED-08DD54828F46": {
       "guid": "a2958f31-cc59-4914-bded-08dd54828f46",
       "type": "site",
@@ -1982,6 +2128,21 @@
       ],
       "id": "POT20",
       "name": "Planter, 20\""
+    },
+    "A3ECBE5B-5DB3-44DC-8559-36DC3E0ABF9F": {
+      "guid": "a3ecbe5b-5db3-44dc-8559-36dc3e0abf9f",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-19T16:21:44.859Z",
+          "applies": true,
+          "name": "RB",
+          "note": "qty: 5"
+        }
+      ],
+      "id": "OGM-a3ecbe",
+      "plant": "OGM",
+      "name": "OGM-0919"
     },
     "A5008B1E-CA2F-435D-870C-9893DB5BC30F": {
       "guid": "a5008b1e-ca2f-435d-870c-9893db5bc30f",
@@ -2086,6 +2247,12 @@
           "date": "2020-06-21T07:00:00.000Z",
           "applies": true,
           "name": "entered"
+        },
+        {
+          "date": "2020-09-19T16:02:38.567Z",
+          "applies": true,
+          "name": "end",
+          "note": "<50mm too short"
         }
       ],
       "id": "A0185",
@@ -2775,6 +2942,12 @@
           "applies": true,
           "name": "A0268",
           "note": "sow 3"
+        },
+        {
+          "date": "2020-09-16T23:03:20.502Z",
+          "applies": true,
+          "name": "end",
+          "note": "fail: anaerobic\n"
         }
       ],
       "id": "BRCC-d62183",
@@ -2843,6 +3016,21 @@
       "id": "A0261",
       "site-type": "DRV",
       "name": "DRV-0261"
+    },
+    "DE5F1736-5F32-4BB1-9497-DFDD3AA6FBF2": {
+      "guid": "de5f1736-5f32-4bb1-9497-dfdd3aa6fbf2",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-22T16:30:24.616Z",
+          "applies": true,
+          "name": "A0291",
+          "note": "{tp-tube:10,direct-sow:10,cover:1qt}"
+        }
+      ],
+      "id": "BSP-de5f17",
+      "plant": "BSP",
+      "name": "BSP-0922"
     },
     "DF71A2EB-D3CD-4C23-9DCD-BA0171F1D5CC": {
       "guid": "df71a2eb-d3cd-4c23-9dcd-ba0171f1d5cc",
@@ -3010,11 +3198,32 @@
           "applies": true,
           "name": "A0185",
           "note": "3 pinches"
+        },
+        {
+          "date": "2020-09-19T16:03:14.467Z",
+          "applies": true,
+          "name": "end",
+          "note": "bolted"
         }
       ],
       "id": "CIL20200621",
       "plant": "CIL",
       "name": "CIL0621"
+    },
+    "EA0F892D-AFF5-4D2D-B2BB-27C6EC1D663D": {
+      "guid": "ea0f892d-aff5-4d2d-b2bb-27c6ec1d663d",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-09-22T16:30:24.616Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0293",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0293"
     },
     "EAAF5913-DCE3-4833-9F19-687AE0939C1B": {
       "guid": "eaaf5913-dce3-4833-9f19-687ae0939c1b",
@@ -3258,6 +3467,21 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0227"
     },
+    "FBFC6F35-CEA8-4E25-BE2A-A5E3AE75A5F7": {
+      "guid": "fbfc6f35-cea8-4e25-be2a-a5e3ae75a5f7",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-09-18T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0290",
+      "site-type": "TrayB",
+      "name": "TRAYB-0290"
+    },
     "FF7945B5-0179-4AF4-B7A6-37947E202FFF": {
       "guid": "ff7945b5-0179-4af4-b7a6-37947e202fff",
       "type": "site",
@@ -3298,6 +3522,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "c12b7094d54a4ec1310a9d12577a1c28",
-  "saved": "2020-09-15T23:07:33.487Z"
+  "merkleHash": "30230a122d4010102e2b787acfb5c52e",
+  "saved": "2020-09-30T17:49:28.044Z"
 }
