@@ -266,6 +266,21 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0198"
     },
+    "118905DD-2F57-4D42-8754-FF8A22C020D5": {
+      "guid": "118905dd-2f57-4d42-8754-ff8a22c020d5",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-07T22:07:50.232Z",
+          "applies": true,
+          "name": "A0296",
+          "note": "sow: 3, wick: 1, prusa"
+        }
+      ],
+      "id": "CST-118905",
+      "plant": "CST",
+      "name": "CST-1007"
+    },
     "11C6C35D-B9A4-4C4F-950A-9DE69293CE6C": {
       "guid": "11c6c35d-b9a4-4c4f-950a-9de69293ce6c",
       "type": "site",
@@ -305,6 +320,12 @@
           "applies": true,
           "name": "A0271",
           "note": ""
+        },
+        {
+          "date": "2020-10-01T18:29:43.521Z",
+          "applies": true,
+          "name": "end",
+          "note": "soggy dry"
         }
       ],
       "id": "TAT-1363f0",
@@ -642,12 +663,12 @@
         {
           "date": "2020-07-31T19:50:30.051Z",
           "applies": true,
-          "name": "CPS0731",
+          "name": "CPJ0731",
           "note": "Origin unknown, growing in raised bed"
         }
       ],
-      "id": "CPS",
-      "name": "Pepper, Serrano"
+      "id": "CPJ",
+      "name": "Pepper, Jalapeño"
     },
     "324A3024-146A-47FB-A7CF-42AD32F6D30C": {
       "guid": "324a3024-146a-47fb-a7cf-42ad32f6d30c",
@@ -658,6 +679,12 @@
           "applies": true,
           "name": "A0224",
           "note": "3 pinches direct sown"
+        },
+        {
+          "date": "2020-10-01T18:30:31.299Z",
+          "applies": true,
+          "name": "end",
+          "note": "unknown"
         }
       ],
       "id": "TAT-324a30",
@@ -678,6 +705,21 @@
       "id": "A0223",
       "site-type": "NETPOT",
       "name": "NETPOT-0223"
+    },
+    "3645C160-0F0F-428D-A46C-E4F9AD784994": {
+      "guid": "3645c160-0f0f-428d-a46c-e4f9ad784994",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-07T22:07:50.232Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0295",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0295"
     },
     "3646A80D-BF1F-47DD-846A-2995601582A7": {
       "guid": "3646a80d-bf1f-47dd-846a-2995601582a7",
@@ -1164,6 +1206,21 @@
       "plant": "BSP",
       "name": "BSP-0914"
     },
+    "5C9B9AFE-944E-4941-827B-C1FC89099173": {
+      "guid": "5c9b9afe-944e-4941-827b-c1fc89099173",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-09-30T17:48:48.728Z",
+          "applies": true,
+          "name": "A0294",
+          "note": "wick, lab, fpj"
+        }
+      ],
+      "id": "CIL-5c9b9a",
+      "plant": "CIL",
+      "name": "CIL-0930"
+    },
     "5CACC524-7B33-4459-ADC3-1A07A491E6C7": {
       "guid": "5cacc524-7b33-4459-adc3-1a07a491e6c7",
       "type": "crop",
@@ -1348,6 +1405,12 @@
           "applies": true,
           "name": "Harvest",
           "note": "Taste: A"
+        },
+        {
+          "date": "2020-09-16T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "dried out"
         }
       ],
       "id": "WML-64420e",
@@ -1612,9 +1675,9 @@
           "note": "height: 18"
         }
       ],
-      "id": "CPS-7e1ad9",
-      "plant": "CPS",
-      "name": "CPS-0731"
+      "id": "CPJ-7e1ad9",
+      "plant": "CPJ",
+      "name": "CPJ-0731"
     },
     "7E407FA5-E7D8-47F6-9AB2-89B1D0D32DE4": {
       "guid": "7e407fa5-e7d8-47f6-9ab2-89b1d0d32de4",
@@ -1928,6 +1991,12 @@
           "applies": true,
           "name": "a0288",
           "note": "height: 18\n"
+        },
+        {
+          "date": "2020-10-07T21:03:09.753Z",
+          "applies": true,
+          "name": "A0254",
+          "note": "height: 45"
         }
       ],
       "id": "TBK-94f8d0",
@@ -2272,6 +2341,21 @@
       "site-type": "NETPOT",
       "name": "POT0240"
     },
+    "AFADE9C9-A059-4F15-9E0C-7CE2AF876373": {
+      "guid": "afade9c9-a059-4f15-9e0c-7ce2af876373",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-07T22:07:50.232Z",
+          "applies": true,
+          "name": "A0295",
+          "note": "sow:3, wick: 1, prusa"
+        }
+      ],
+      "id": "CUKE-afade9",
+      "plant": "CUKE",
+      "name": "CUKE-1007"
+    },
     "B104C67E-5CC8-4B1B-B93D-DA6D524A36C4": {
       "guid": "b104c67e-5cc8-4b1b-b93d-da6d524a36c4",
       "type": "plant",
@@ -2370,6 +2454,12 @@
           "applies": true,
           "name": "A0224",
           "note": "sow 4 pinches, drench with tap water, cover"
+        },
+        {
+          "date": "2020-09-16T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "lost vitality presumably waterlogged"
         }
       ],
       "id": "CIL-b597bd",
@@ -2893,6 +2983,12 @@
           "applies": true,
           "name": "A0204",
           "note": "seeds: 3"
+        },
+        {
+          "date": "2020-10-04T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "wilted with white spots possibly fungus presumably because soil too wet and anaerobic\n\n"
         }
       ],
       "id": "CUKE-d49bca",
@@ -3301,6 +3397,21 @@
       "id": "PMT",
       "name": "Peppermint"
     },
+    "EEE602FF-158C-4BEA-A650-C0816B125D8A": {
+      "guid": "eee602ff-158c-4bea-a650-c0816b125d8a",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-09-30T17:48:48.728Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0294",
+      "site-type": "TrayB",
+      "name": "TRAYB-0294"
+    },
     "F0359D6F-1838-4268-8773-F1E0094457F1": {
       "guid": "f0359d6f-1838-4268-8773-f1e0094457f1",
       "type": "site-type",
@@ -3325,6 +3436,12 @@
           "applies": true,
           "name": "A0250",
           "note": "cover with transparent water-filled tray"
+        },
+        {
+          "date": "2020-10-01T18:19:02.607Z",
+          "applies": true,
+          "name": "end",
+          "note": "waterlogged\n"
         }
       ],
       "id": "TAT-f072f3",
@@ -3424,6 +3541,21 @@
       "id": "FFO",
       "name": "Flower, Four O'Clock Color Blast"
     },
+    "F58D4C11-2A98-4068-85CE-08F2615EFB28": {
+      "guid": "f58d4c11-2a98-4068-85ce-08f2615efb28",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-07T22:07:50.232Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0296",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0296"
+    },
     "F58E4260-7A62-416A-886A-182603BD7F01": {
       "guid": "f58e4260-7a62-416a-886a-182603bd7f01",
       "type": "plant",
@@ -3522,6 +3654,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "30230a122d4010102e2b787acfb5c52e",
-  "saved": "2020-09-30T17:49:28.044Z"
+  "merkleHash": "3a158d8b36fd18c9b8618709aa452df0",
+  "saved": "2020-10-07T23:17:59.249Z"
 }
