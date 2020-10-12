@@ -274,7 +274,7 @@
           "date": "2020-10-07T22:07:50.232Z",
           "applies": true,
           "name": "A0296",
-          "note": "sow: 3, wick: 1, prusa"
+          "note": "sow: 3, wick: 1"
         }
       ],
       "id": "CST-118905",
@@ -356,6 +356,12 @@
           "applies": true,
           "name": "A0258",
           "note": "cutting from grow pipe, soaked in GH for ~10 days till root buds appeared; LAB Compost"
+        },
+        {
+          "date": "2020-10-11T00:16:31.890Z",
+          "applies": true,
+          "name": "A301",
+          "note": "height: 24"
         }
       ],
       "id": "PMT-13fc1b",
@@ -663,12 +669,12 @@
         {
           "date": "2020-07-31T19:50:30.051Z",
           "applies": true,
-          "name": "CPJ0731",
+          "name": "CPS0731",
           "note": "Origin unknown, growing in raised bed"
         }
       ],
-      "id": "CPJ",
-      "name": "Pepper, Jalapeño"
+      "id": "CPS",
+      "name": "Pepper, Serrano"
     },
     "324A3024-146A-47FB-A7CF-42AD32F6D30C": {
       "guid": "324a3024-146a-47fb-a7cf-42ad32f6d30c",
@@ -690,6 +696,20 @@
       "id": "TAT-324a30",
       "plant": "TAT",
       "name": "TAT0224"
+    },
+    "32A4155E-661A-443A-A4A5-F8B0AC68F058": {
+      "guid": "32a4155e-661a-443a-a4a5-f8b0ac68f058",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2019-07-02T08:00:00.000Z",
+          "applies": true,
+          "name": "purchased",
+          "note": ""
+        }
+      ],
+      "id": "P98",
+      "name": "Pot, 9\" diameter x 8\" height"
     },
     "3316F9CB-F094-4CDA-B192-BFF92A84D021": {
       "guid": "3316f9cb-f094-4cda-b192-bff92a84d021",
@@ -714,7 +734,7 @@
           "date": "2020-10-07T22:07:50.232Z",
           "applies": true,
           "name": "started",
-          "note": ""
+          "note": "prusa"
         }
       ],
       "id": "A0295",
@@ -892,6 +912,21 @@
       "site-type": "NETPOT",
       "name": "NETPOT0210"
     },
+    "498375B2-3ED8-4734-ACB2-0C6B26080A28": {
+      "guid": "498375b2-3ed8-4734-acb2-0c6b26080a28",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-10T18:32:49.064Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0300",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0300"
+    },
     "4CCE00B7-CAD5-427A-A4F5-FECD522BDF3F": {
       "guid": "4cce00b7-cad5-427a-a4f5-fecd522bdf3f",
       "type": "site",
@@ -991,6 +1026,21 @@
       "plant": "BTD",
       "name": "BTD0201"
     },
+    "53050A1E-B44E-4B39-ADAE-417405BD19F5": {
+      "guid": "53050a1e-b44e-4b39-adae-417405bd19f5",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-10T01:11:21.581Z",
+          "applies": true,
+          "name": "A0299",
+          "note": "sow:3, wick: 1"
+        }
+      ],
+      "id": "BCP-53050a",
+      "plant": "BCP",
+      "name": "BCP-1009"
+    },
     "53A2A713-8E5E-4E6C-932F-786CBA464823": {
       "guid": "53a2a713-8e5e-4e6c-932f-786cba464823",
       "type": "site",
@@ -1071,6 +1121,21 @@
       "id": "CML-54e92d",
       "plant": "CML",
       "name": "CML-0812"
+    },
+    "57179890-0B7A-40DF-859A-F80388E93B81": {
+      "guid": "57179890-0b7a-40df-859a-f80388e93b81",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-10T18:32:49.064Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0301",
+      "site-type": "C2Q",
+      "name": "C2Q-0301"
     },
     "57423F54-1C6E-4415-967E-0D32BCF5145C": {
       "guid": "57423f54-1c6e-4415-967e-0d32bcf5145c",
@@ -1358,6 +1423,12 @@
           "applies": true,
           "name": "A0181",
           "note": "4 pinches"
+        },
+        {
+          "date": "2020-10-08T21:39:42.448Z",
+          "applies": true,
+          "name": "end",
+          "note": "dry white spots"
         }
       ],
       "id": "CIL-635ea9",
@@ -1416,6 +1487,21 @@
       "id": "WML-64420e",
       "plant": "WML",
       "name": "WML0194"
+    },
+    "64F8F224-7D8C-4885-96CB-14C6F2EE2009": {
+      "guid": "64f8f224-7d8c-4885-96cb-14c6f2ee2009",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-12T01:01:03.580Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0303",
+      "site-type": "TrayB",
+      "name": "TRAYB-0303"
     },
     "653709E1-F7E7-44D5-9FB6-6DA71F666994": {
       "guid": "653709e1-f7e7-44d5-9fb6-6da71f666994",
@@ -1567,6 +1653,21 @@
       "id": "A0187",
       "name": "ScreenJar"
     },
+    "78113024-CD14-420E-BB66-10070EFA08F2": {
+      "guid": "78113024-cd14-420e-bb66-10070efa08f2",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-09T20:47:53.501Z",
+          "applies": true,
+          "name": "started",
+          "note": "prusa"
+        }
+      ],
+      "id": "A0299",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0299"
+    },
     "78F77D72-1677-4073-8CAC-2E3AB0CD3AF6": {
       "guid": "78f77d72-1677-4073-8cac-2e3ab0cd3af6",
       "type": "crop",
@@ -1617,6 +1718,33 @@
       ],
       "id": "TBK",
       "name": "Tomato, Black Krim"
+    },
+    "7AE6E0AA-0142-44BD-8FDF-67604323CC64": {
+      "guid": "7ae6e0aa-0142-44bd-8fdf-67604323cc64",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2019-07-02T08:00:00.000Z",
+          "applies": true,
+          "name": "A0302",
+          "note": "live plant from etsy"
+        },
+        {
+          "date": "2020-08-15T08:00:00.000Z",
+          "applies": true,
+          "name": "wilted",
+          "note": "high heat and possible overwatering"
+        },
+        {
+          "date": "2020-10-01T08:00:00.000Z",
+          "applies": true,
+          "name": "sprout",
+          "note": "2 new shoots"
+        }
+      ],
+      "id": "CRY-7ae6e0",
+      "plant": "CRY",
+      "name": "CRY-0702"
     },
     "7BC6D979-0569-4274-8A13-6A6387B15264": {
       "guid": "7bc6d979-0569-4274-8a13-6a6387b15264",
@@ -1675,9 +1803,9 @@
           "note": "height: 18"
         }
       ],
-      "id": "CPJ-7e1ad9",
-      "plant": "CPJ",
-      "name": "CPJ-0731"
+      "id": "CPS-7e1ad9",
+      "plant": "CPS",
+      "name": "CPS-0731"
     },
     "7E407FA5-E7D8-47F6-9AB2-89B1D0D32DE4": {
       "guid": "7e407fa5-e7d8-47f6-9ab2-89b1d0d32de4",
@@ -1688,6 +1816,12 @@
           "applies": true,
           "name": "A0263",
           "note": "sow 4"
+        },
+        {
+          "date": "2020-10-08T14:03:25.046Z",
+          "applies": true,
+          "name": "A0297",
+          "note": "height: 14\n"
         }
       ],
       "id": "CRY-7e407f",
@@ -1846,6 +1980,21 @@
       "plant": "CUKE",
       "name": "CUKE0233"
     },
+    "8653275A-5413-4EDE-A819-220EEC91149D": {
+      "guid": "8653275a-5413-4ede-a819-220eec91149d",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-08T14:05:07.206Z",
+          "applies": true,
+          "name": "started",
+          "note": "prusa"
+        }
+      ],
+      "id": "A0298",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0298"
+    },
     "868B4331-13E0-40E9-BD4B-6C79D8C6DDA8": {
       "guid": "868b4331-13e0-40e9-bd4b-6c79d8c6dda8",
       "type": "crop",
@@ -1947,6 +2096,21 @@
       "plant": "BCP",
       "name": "BCP-0715"
     },
+    "8D52A0BB-CE82-4852-842F-0483FDD903F6": {
+      "guid": "8d52a0bb-ce82-4852-842f-0483fdd903f6",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-08T21:42:00.874Z",
+          "applies": true,
+          "name": "A0298",
+          "note": "sow:3, depth: 20mm"
+        }
+      ],
+      "id": "CKP-8d52a0",
+      "plant": "CKP",
+      "name": "CKP-1008"
+    },
     "8E7260F3-D8E4-45AB-BF51-6918B927C071": {
       "guid": "8e7260f3-d8e4-45ab-bf51-6918b927c071",
       "type": "site",
@@ -1975,6 +2139,21 @@
       "id": "BCP-921453",
       "plant": "BCP",
       "name": "BCP-0408"
+    },
+    "93E9A6CB-B3A5-410A-BB22-050E037C25D8": {
+      "guid": "93e9a6cb-b3a5-410a-bb22-050e037c25d8",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-12T01:03:32.680Z",
+          "applies": true,
+          "name": "A0291",
+          "note": "tp: 3"
+        }
+      ],
+      "id": "BSP-93e9a6",
+      "plant": "BSP",
+      "name": "BSP-1011"
     },
     "94F8D0FB-2356-407B-8F6B-61E82B62B4F5": {
       "guid": "94f8d0fb-2356-407b-8f6b-61e82b62b4f5",
@@ -2165,6 +2344,12 @@
           "applies": true,
           "name": "A0189",
           "note": "{seeds:5, media: lab compost, nute: tap}"
+        },
+        {
+          "date": "2020-10-10T18:33:27.182Z",
+          "applies": true,
+          "name": "A0276",
+          "note": "height: 11, sprout: 3"
         }
       ],
       "id": "CST-a254b2",
@@ -2349,7 +2534,7 @@
           "date": "2020-10-07T22:07:50.232Z",
           "applies": true,
           "name": "A0295",
-          "note": "sow:3, wick: 1, prusa"
+          "note": "sow:3, wick: 1"
         }
       ],
       "id": "CUKE-afade9",
@@ -2429,6 +2614,21 @@
       "id": "CRY-b4240b",
       "plant": "CRY",
       "name": "CRY-0720"
+    },
+    "B551E3A2-BF53-4B97-B0A3-25B675592E63": {
+      "guid": "b551e3a2-bf53-4b97-b0a3-25b675592e63",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-07T23:25:06.404Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0297",
+      "site-type": "C2Q",
+      "name": "C2Q-0297"
     },
     "B58679FA-ECCF-4926-A124-E2386F2FFD53": {
       "guid": "b58679fa-eccf-4926-a124-e2386f2ffd53",
@@ -2564,6 +2764,12 @@
           "date": "2020-04-19T07:00:00.000Z",
           "applies": true,
           "name": "entered"
+        },
+        {
+          "date": "2020-10-08T21:40:16.941Z",
+          "applies": true,
+          "name": "end",
+          "note": "height: <50mm"
         }
       ],
       "id": "A0181",
@@ -2806,6 +3012,11 @@
           "applies": true,
           "name": "started",
           "note": ""
+        },
+        {
+          "date": "2020-10-08T16:06:04.895Z",
+          "applies": true,
+          "name": "prusa"
         }
       ],
       "id": "A0263",
@@ -2877,6 +3088,21 @@
       "id": "A0260",
       "site-type": "NETPOT",
       "name": "NETPOT-0260"
+    },
+    "D01EA73C-4748-420C-87ED-1B6A6CA4C544": {
+      "guid": "d01ea73c-4748-420c-87ed-1b6a6ca4c544",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-12T01:01:03.580Z",
+          "applies": true,
+          "name": "A0303",
+          "note": ""
+        }
+      ],
+      "id": "RAD-d01ea7",
+      "plant": "RAD",
+      "name": "RAD-1011"
     },
     "D03F819C-4339-42C6-9623-4CCAA42A8B3E": {
       "guid": "d03f819c-4339-42c6-9623-4ccaa42a8b3e",
@@ -3122,6 +3348,12 @@
           "applies": true,
           "name": "A0291",
           "note": "{tp-tube:10,direct-sow:10,cover:1qt}"
+        },
+        {
+          "date": "2020-10-12T01:03:32.687Z",
+          "applies": true,
+          "name": "end",
+          "note": "eaten"
         }
       ],
       "id": "BSP-de5f17",
@@ -3193,6 +3425,20 @@
       ],
       "id": "C16",
       "name": "C16 SoupCup, Maple Trade TD 16oz clear deli container with lid"
+    },
+    "E1E35351-0EBD-4659-BA02-7A86F8CD989B": {
+      "guid": "e1e35351-0ebd-4659-ba02-7a86f8cd989b",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-10-08T21:42:00.874Z",
+          "applies": true,
+          "name": "CKP1008",
+          "note": "Indian grocery"
+        }
+      ],
+      "id": "CKP",
+      "name": "Legume, Chickpea (Garbanzo)"
     },
     "E2594C50-2DF2-4CCE-B37B-00A5F71D6A14": {
       "guid": "e2594c50-2df2-4cce-b37b-00a5f71d6a14",
@@ -3549,7 +3795,7 @@
           "date": "2020-10-07T22:07:50.232Z",
           "applies": true,
           "name": "started",
-          "note": ""
+          "note": "prusa"
         }
       ],
       "id": "A0296",
@@ -3654,6 +3900,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "3a158d8b36fd18c9b8618709aa452df0",
-  "saved": "2020-10-07T23:17:59.249Z"
+  "merkleHash": "f63dc0bdec5076d94a6024bd34baa556",
+  "saved": "2020-10-12T01:08:08.250Z"
 }
