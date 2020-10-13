@@ -381,7 +381,7 @@
       ],
       "id": "A0287",
       "site-type": "F128",
-      "name": "F128-0287"
+      "name": "FJ128-0287"
     },
     "165A49DD-9BF8-47B9-AC74-7FBEF46519E7": {
       "guid": "165a49dd-9bf8-47b9-ac74-7fbef46519e7",
@@ -495,8 +495,8 @@
           "note": "amazon.com/gp/product/B0778SW4MC"
         }
       ],
-      "id": "F128",
-      "name": "Fermenter, 128 oz (1 gallon)"
+      "id": "FJ128",
+      "name": "Fermenter, 128 oz (1 gallon) jar"
     },
     "1CBEEB99-6A99-49A0-A86A-53688E95C641": {
       "guid": "1cbeeb99-6a99-49a0-a86a-53688e95c641",
@@ -3125,6 +3125,21 @@
       "plant": "CMP",
       "name": "CMP-0903"
     },
+    "D07A3CF6-31D4-4576-9C87-4F029D9524F4": {
+      "guid": "d07a3cf6-31d4-4576-9c87-4f029d9524f4",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-13T19:14:33.897Z",
+          "applies": true,
+          "name": "A0286",
+          "note": "aloe cuttings and IMO from front tree"
+        }
+      ],
+      "id": "FPJ-d07a3c",
+      "plant": "FPJ",
+      "name": "FPJ-1013"
+    },
     "D07F11D8-C0C3-4319-99DB-8EE2472A3AB5": {
       "guid": "d07f11d8-c0c3-4319-99db-8ee2472a3ab5",
       "type": "site",
@@ -3453,7 +3468,7 @@
       ],
       "id": "A0286",
       "site-type": "F128",
-      "name": "F128-0286"
+      "name": "FJ128-0286"
     },
     "E2DCE816-89B6-45C9-89B9-A2317F1571D5": {
       "guid": "e2dce816-89b6-45c9-89b9-a2317f1571d5",
@@ -3900,6 +3915,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "f63dc0bdec5076d94a6024bd34baa556",
-  "saved": "2020-10-12T01:08:08.250Z"
+  "merkleHash": "70be69157c7d4fb066e5982b59a3e4de",
+  "saved": "2020-10-13T19:25:46.890Z"
 }
