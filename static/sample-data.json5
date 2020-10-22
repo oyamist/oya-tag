@@ -191,6 +191,21 @@
       "plant": "BMG",
       "name": "BMG-0816"
     },
+    "0DB02921-7F62-4435-8C8C-075D86431F33": {
+      "guid": "0db02921-7f62-4435-8c8c-075d86431f33",
+      "type": "site-type",
+      "tagList": [
+        {
+          "date": "2018-07-13T08:00:00.000Z",
+          "applies": true,
+          "name": "purchased",
+          "note": "https://amazon.com/gp/product/B071KTNCSC",
+          "noteUrl": "https://amazon.com/gp/product/B071KTNCSC"
+        }
+      ],
+      "id": "MJR",
+      "name": "Mason Jar, 16oz wide-mouth"
+    },
     "0DF81926-EF25-4C7A-B943-9C86D4F0C5D8": {
       "guid": "0df81926-ef25-4c7a-b943-9c86d4f0c5d8",
       "type": "plant",
@@ -368,6 +383,21 @@
       "plant": "PMT",
       "name": "PMT-0830"
     },
+    "1582E677-4452-4CD1-8CCD-AF1FCEF00413": {
+      "guid": "1582e677-4452-4cd1-8ccd-af1fcef00413",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-22T01:40:26.908Z",
+          "applies": true,
+          "name": "A0306",
+          "note": "sow: 3, water: 4, cover: 2"
+        }
+      ],
+      "id": "PCT-1582e6",
+      "plant": "PCT",
+      "name": "PCT-1021"
+    },
     "15B4F06A-AAFF-46DD-B4AD-41579007A77C": {
       "guid": "15b4f06a-aaff-46dd-b4ad-41579007a77c",
       "type": "site",
@@ -409,19 +439,6 @@
       "id": "CUKE-165a49",
       "plant": "CUKE",
       "name": "CUKE0198"
-    },
-    "168A2D15-E7E7-4F35-832D-973E968DE07C": {
-      "guid": "168a2d15-e7e7-4f35-832d-973e968de07c",
-      "type": "tray",
-      "tagList": [
-        {
-          "date": "2020-04-13T07:00:00.000Z",
-          "applies": true,
-          "name": "entered"
-        }
-      ],
-      "id": "A0179",
-      "name": "Tray0179"
     },
     "172C577E-4B59-4989-8342-E692F535F60D": {
       "guid": "172c577e-4b59-4989-8342-e692f535f60d",
@@ -535,6 +552,12 @@
           "applies": true,
           "name": "A0284",
           "note": "Lid sprinkle, water weight, LAB compost"
+        },
+        {
+          "date": "2020-10-12T08:00:00.000Z",
+          "applies": true,
+          "name": "end",
+          "note": "weak germination/sprouts"
         }
       ],
       "id": "CIL-2157be",
@@ -1026,6 +1049,21 @@
       "plant": "BTD",
       "name": "BTD0201"
     },
+    "52610BBE-7289-4293-89A2-894645FA58EB": {
+      "guid": "52610bbe-7289-4293-89a2-894645fa58eb",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-22T01:40:26.908Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0306",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0306"
+    },
     "53050A1E-B44E-4B39-ADAE-417405BD19F5": {
       "guid": "53050a1e-b44e-4b39-adae-417405bd19f5",
       "type": "crop",
@@ -1199,6 +1237,12 @@
           "applies": true,
           "name": "A0285",
           "note": "height: 27"
+        },
+        {
+          "date": "2020-10-08T08:00:00.000Z",
+          "applies": true,
+          "name": "harvest",
+          "note": "loose floret head"
         }
       ],
       "id": "BRCC-583df1",
@@ -1618,6 +1662,21 @@
       "site-type": "TRAY",
       "name": "TS320196"
     },
+    "718EFAF2-E47C-4F6F-85C2-975816BDEDC6": {
+      "guid": "718efaf2-e47c-4f6f-85c2-975816bdedc6",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-05-13T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0231",
+      "site-type": "BKT2G",
+      "name": "BKT2G-0231"
+    },
     "73B3BE90-0FA4-48CB-AC20-58656CDC05B1": {
       "guid": "73b3be90-0fa4-48cb-ac20-58656cdc05b1",
       "type": "crop",
@@ -1667,6 +1726,21 @@
       "id": "A0299",
       "site-type": "NETPOT",
       "name": "NETPOT-0299"
+    },
+    "78860B8F-B2F8-460F-9CD9-C1D770FDBBEE": {
+      "guid": "78860b8f-b2f8-460f-9cd9-c1d770fdbbee",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-19T19:37:15.056Z",
+          "applies": true,
+          "name": "A0305",
+          "note": "W2W mix seeds with top 10mm of soil"
+        }
+      ],
+      "id": "CIL-78860b",
+      "plant": "CIL",
+      "name": "CIL-1019"
     },
     "78F77D72-1677-4073-8CAC-2E3AB0CD3AF6": {
       "guid": "78f77d72-1677-4073-8cac-2e3ab0cd3af6",
@@ -1939,6 +2013,11 @@
           "applies": true,
           "name": "A0231",
           "note": "Grow tent 4x4 to establish roots (vs. pipe)."
+        },
+        {
+          "date": "2020-10-01T08:00:00.000Z",
+          "applies": true,
+          "name": "end"
         }
       ],
       "id": "CUKE-80eada",
@@ -2110,6 +2189,21 @@
       "id": "CKP-8d52a0",
       "plant": "CKP",
       "name": "CKP-1008"
+    },
+    "8E22B533-9375-46CD-8836-A95C74B28AC9": {
+      "guid": "8e22b533-9375-46cd-8836-a95c74b28ac9",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-10T08:00:00.000Z",
+          "applies": true,
+          "name": "A0300",
+          "note": "covered tatsoi with soil, but sprouts pushed it up as a slab"
+        }
+      ],
+      "id": "TAT-8e22b5",
+      "plant": "TAT",
+      "name": "TAT-1010"
     },
     "8E7260F3-D8E4-45AB-BF51-6918B927C071": {
       "guid": "8e7260f3-d8e4-45ab-bf51-6918b927c071",
@@ -2350,6 +2444,12 @@
           "applies": true,
           "name": "A0276",
           "note": "height: 11, sprout: 3"
+        },
+        {
+          "date": "2020-10-22T16:43:29.070Z",
+          "applies": true,
+          "name": "A0231",
+          "note": "height: 23"
         }
       ],
       "id": "CST-a254b2",
@@ -2540,6 +2640,21 @@
       "id": "CUKE-afade9",
       "plant": "CUKE",
       "name": "CUKE-1007"
+    },
+    "AFBD3241-306F-45E0-8F13-939F308581CD": {
+      "guid": "afbd3241-306f-45e0-8f13-939f308581cd",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-19T19:37:15.056Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0305",
+      "site-type": "TrayB",
+      "name": "TRAYB-0305"
     },
     "B104C67E-5CC8-4B1B-B93D-DA6D524A36C4": {
       "guid": "b104c67e-5cc8-4b1b-b93d-da6d524a36c4",
@@ -2876,6 +2991,21 @@
       "site-type": "TRAY",
       "name": "TRAY-0271"
     },
+    "C22C7259-5F8A-4699-A9DE-E9E4F46789C0": {
+      "guid": "c22c7259-5f8a-4699-a9de-e9e4f46789c0",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-22T01:29:33.324Z",
+          "applies": true,
+          "name": "A0179",
+          "note": "brown rice cooking water"
+        }
+      ],
+      "id": "LAB-c22c72",
+      "plant": "LAB",
+      "name": "LAB-1021"
+    },
     "C2F071F3-3DD1-4E73-86B6-A81A3909E487": {
       "guid": "c2f071f3-3dd1-4e73-86b6-a81a3909e487",
       "type": "crop",
@@ -2914,7 +3044,7 @@
         }
       ],
       "id": "FPJ",
-      "name": "KNF, Fermented Plant Juice"
+      "name": "KNF, FPJ"
     },
     "C4FE7B39-BC51-49E6-80C1-CB2FA74FC405": {
       "guid": "c4fe7b39-bc51-49e6-80c1-cb2fa74fc405",
@@ -3169,6 +3299,21 @@
       "id": "A0277",
       "site-type": "NETPOT",
       "name": "NETPOT-0277"
+    },
+    "D156C354-6FF3-460A-B940-13E2DF58CB81": {
+      "guid": "d156c354-6ff3-460a-b940-13e2df58cb81",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-22T01:29:33.324Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0179",
+      "site-type": "MJR",
+      "name": "MJR-0179"
     },
     "D1D37BC6-AB0F-445D-8BB5-3E0E4DC016B6": {
       "guid": "d1d37bc6-ab0f-445d-8bb5-3e0e4dc016b6",
@@ -3915,6 +4060,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "70be69157c7d4fb066e5982b59a3e4de",
-  "saved": "2020-10-13T19:25:46.890Z"
+  "merkleHash": "8dd483d8c689529b692565eb1fee6c67",
+  "saved": "2020-10-22T16:50:53.310Z"
 }
