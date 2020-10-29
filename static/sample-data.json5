@@ -2039,6 +2039,21 @@
       "site-type": "BKT2G",
       "name": "BKT2G0202"
     },
+    "8252B379-91AA-48CC-B982-9A78A9E2A3CF": {
+      "guid": "8252b379-91aa-48cc-b982-9a78a9e2a3cf",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-25T16:37:46.767Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0310",
+      "site-type": "TUPSQ2",
+      "name": "TUPSQ2-0310"
+    },
     "82F427F3-6E3E-4AD8-BAD0-0D4D2AE30402": {
       "guid": "82f427f3-6e3e-4ad8-bad0-0d4d2ae30402",
       "type": "crop",
@@ -2184,6 +2199,12 @@
           "applies": true,
           "name": "A0298",
           "note": "sow:3, depth: 20mm"
+        },
+        {
+          "date": "2020-10-29T01:45:42.761Z",
+          "applies": true,
+          "name": "end",
+          "note": "never germinated. rotted in soggy soil."
         }
       ],
       "id": "CKP-8d52a0",
@@ -2199,6 +2220,12 @@
           "applies": true,
           "name": "A0300",
           "note": "covered tatsoi with soil, but sprouts pushed it up as a slab"
+        },
+        {
+          "date": "2020-10-25T16:37:46.780Z",
+          "applies": true,
+          "name": "A0310",
+          "note": "height: 10\n"
         }
       ],
       "id": "TAT-8e22b5",
@@ -2558,6 +2585,21 @@
       "site-type": "RB",
       "name": "Hydro Bed 2"
     },
+    "AAD8BF32-B1E0-4D9E-AAEF-50B0AA1AB8B6": {
+      "guid": "aad8bf32-b1e0-4d9e-aaef-50b0aa1ab8b6",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-29T01:42:18.024Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0309",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0309"
+    },
     "AC5C509D-2EC7-4280-8D2F-1F3E31C44E62": {
       "guid": "ac5c509d-2ec7-4280-8d2f-1f3e31c44e62",
       "type": "plant",
@@ -2625,6 +2667,21 @@
       "id": "A0240",
       "site-type": "NETPOT",
       "name": "POT0240"
+    },
+    "AF66185F-98BD-4D6A-B5E1-D3EC3BDE1832": {
+      "guid": "af66185f-98bd-4d6a-b5e1-d3ec3bde1832",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-10-24T08:00:00.000Z",
+          "applies": true,
+          "name": "SSA1024",
+          "note": "https://www.talbottnurseryandpoultry.com/SWEET-SWEET-ANN-STRAWBERRY-EVERBEARING-LCN-Fraga-p/021-24-2-strawsweetann.htm",
+          "noteUrl": "https://www.talbottnurseryandpoultry.com/SWEET-SWEET-ANN-STRAWBERRY-EVERBEARING-LCN-Fraga-p/021-24-2-strawsweetann.htm"
+        }
+      ],
+      "id": "SSA",
+      "name": "Strawberry, Sweet Sweet Ann"
     },
     "AFADE9C9-A059-4F15-9E0C-7CE2AF876373": {
       "guid": "afade9c9-a059-4f15-9e0c-7ce2af876373",
@@ -2865,6 +2922,12 @@
           "applies": true,
           "name": "A0247",
           "note": "sow:3 direct 5mm holes"
+        },
+        {
+          "date": "2020-10-25T15:16:04.452Z",
+          "applies": true,
+          "name": "rb",
+          "note": "height: 50\n"
         }
       ],
       "id": "TWO-ba8d0f",
@@ -3188,6 +3251,21 @@
       "id": "A0190",
       "site-type": "NETPOT",
       "name": "NETPOT-0190"
+    },
+    "CDEB64CC-B55F-4C88-87CB-E59DACD435E2": {
+      "guid": "cdeb64cc-b55f-4c88-87cb-e59dacd435e2",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-29T01:42:18.024Z",
+          "applies": true,
+          "name": "A0309",
+          "note": "shipped bare root, soaked 24hrs in nutrients before potting. 6\" roots retained"
+        }
+      ],
+      "id": "SSA-cdeb64",
+      "plant": "SSA",
+      "name": "SSA-1028"
     },
     "CEA3FE46-F9E4-41D8-B777-0AA5CB4CAD21": {
       "guid": "cea3fe46-f9e4-41d8-b777-0aa5cb4cad21",
@@ -4005,6 +4083,21 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0227"
     },
+    "FBDB8725-C78A-40AE-9931-A6204394A57B": {
+      "guid": "fbdb8725-c78a-40ae-9931-a6204394a57b",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-29T01:37:38.611Z",
+          "applies": true,
+          "name": "purchased",
+          "note": "plants: 10"
+        }
+      ],
+      "id": "SSA-fbdb87",
+      "plant": "SSA",
+      "name": "SSA-1028"
+    },
     "FBFC6F35-CEA8-4E25-BE2A-A5E3AE75A5F7": {
       "guid": "fbfc6f35-cea8-4e25-be2a-a5e3ae75a5f7",
       "type": "site",
@@ -4060,6 +4153,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "8dd483d8c689529b692565eb1fee6c67",
-  "saved": "2020-10-22T16:50:53.310Z"
+  "merkleHash": "a23202f5f77a312d66646f91e7bde339",
+  "saved": "2020-10-29T03:36:36.274Z"
 }
