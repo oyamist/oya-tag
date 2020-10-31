@@ -191,6 +191,21 @@
       "plant": "BMG",
       "name": "BMG-0816"
     },
+    "0D98A853-6A38-4B74-90D8-1EB56D3A528A": {
+      "guid": "0d98a853-6a38-4b74-90d8-1eb56d3a528a",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-24T08:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0308",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0308"
+    },
     "0DB02921-7F62-4435-8C8C-075D86431F33": {
       "guid": "0db02921-7f62-4435-8c8c-075d86431f33",
       "type": "site-type",
@@ -1953,6 +1968,21 @@
       "site-type": "BKT2G",
       "name": "BKT2G0235"
     },
+    "7F881EDF-92E4-4836-A944-33FC31ECF4C7": {
+      "guid": "7f881edf-92e4-4836-a944-33fc31ecf4c7",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-10-31T01:09:22.266Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0311",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0311"
+    },
     "7FB600B0-EBF6-454B-B64D-890427F5710C": {
       "guid": "7fb600b0-ebf6-454b-b64d-890427f5710c",
       "type": "site",
@@ -2675,8 +2705,8 @@
         {
           "date": "2020-10-24T08:00:00.000Z",
           "applies": true,
-          "name": "SSA1024",
-          "note": "https://www.talbottnurseryandpoultry.com/SWEET-SWEET-ANN-STRAWBERRY-EVERBEARING-LCN-Fraga-p/021-24-2-strawsweetann.htm",
+          "name": "purchased:10",
+          "note": "https://www.talbottnurseryandpoultry.com/SWEET-SWEET-ANN-STRAWBERRY-EVERBEARING-LCN-Fraga-p/021-24-2-strawsweetann.htm\nsoaked in nutrients for recovery",
           "noteUrl": "https://www.talbottnurseryandpoultry.com/SWEET-SWEET-ANN-STRAWBERRY-EVERBEARING-LCN-Fraga-p/021-24-2-strawsweetann.htm"
         }
       ],
@@ -3257,7 +3287,7 @@
       "type": "crop",
       "tagList": [
         {
-          "date": "2020-10-29T01:42:18.024Z",
+          "date": "2020-10-29T08:00:00.000Z",
           "applies": true,
           "name": "A0309",
           "note": "shipped bare root, soaked 24hrs in nutrients before potting. 6\" roots retained"
@@ -3265,7 +3295,7 @@
       ],
       "id": "SSA-cdeb64",
       "plant": "SSA",
-      "name": "SSA-1028"
+      "name": "SSA-1029"
     },
     "CEA3FE46-F9E4-41D8-B777-0AA5CB4CAD21": {
       "guid": "cea3fe46-f9e4-41d8-b777-0aa5cb4cad21",
@@ -3437,6 +3467,21 @@
       "id": "CRY-d3d6a0",
       "plant": "CRY",
       "name": "CRY-0720"
+    },
+    "D3D6D95D-C685-4C24-952C-9A8AF6700F76": {
+      "guid": "d3d6d95d-c685-4c24-952c-9a8af6700f76",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-10-31T01:09:22.266Z",
+          "applies": true,
+          "name": "A0311",
+          "note": "trimmed 22cm roots to net pot depth. "
+        }
+      ],
+      "id": "SSA-d3d6d9",
+      "plant": "SSA",
+      "name": "SSA-1030"
     },
     "D49BCA12-9F41-4049-87EF-62C8E2219C99": {
       "guid": "d49bca12-9f41-4049-87ef-62c8e2219c99",
@@ -4090,8 +4135,8 @@
         {
           "date": "2020-10-29T01:37:38.611Z",
           "applies": true,
-          "name": "purchased",
-          "note": "plants: 10"
+          "name": "A0308",
+          "note": ""
         }
       ],
       "id": "SSA-fbdb87",
@@ -4153,6 +4198,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "a23202f5f77a312d66646f91e7bde339",
-  "saved": "2020-10-29T03:36:36.274Z"
+  "merkleHash": "ae4fd8a0d6c08b2d9fbba73776278b14",
+  "saved": "2020-10-31T01:18:50.485Z"
 }
