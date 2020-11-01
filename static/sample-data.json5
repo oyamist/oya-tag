@@ -579,6 +579,21 @@
       "plant": "CIL",
       "name": "CIL-0905"
     },
+    "21694013-DEA1-454F-A5FB-4196916B3964": {
+      "guid": "21694013-dea1-454f-a5fb-4196916b3964",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-11-01T00:22:32.546Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0312",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0312"
+    },
     "216B7B72-BFB5-4EDD-8D9D-9D6F7ECD6E5F": {
       "guid": "216b7b72-bfb5-4edd-8d9d-9d6f7ecd6e5f",
       "type": "site",
@@ -2998,6 +3013,21 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0213"
     },
+    "BB7A5C68-2DBA-42C3-AE60-500D2DD44764": {
+      "guid": "bb7a5c68-2dba-42c3-ae60-500d2dd44764",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-11-01T00:22:32.546Z",
+          "applies": true,
+          "name": "A0312",
+          "note": "roots: 20cm folded"
+        }
+      ],
+      "id": "SSA-bb7a5c",
+      "plant": "SSA",
+      "name": "SSA-1031"
+    },
     "BBEE9EBB-8E4C-466F-94B9-CED3A926F6D1": {
       "guid": "bbee9ebb-8e4c-466f-94b9-ced3a926f6d1",
       "type": "site",
@@ -4198,6 +4228,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "ae4fd8a0d6c08b2d9fbba73776278b14",
-  "saved": "2020-10-31T01:18:50.485Z"
+  "merkleHash": "81b36a16063acbc341c9793cbf9d9f1a",
+  "saved": "2020-11-01T00:25:16.617Z"
 }
