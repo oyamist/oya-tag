@@ -1,5 +1,20 @@
 {
   "assetMap": {
+    "00251FCF-290F-4EE6-B317-2BDD9D1226A4": {
+      "guid": "00251fcf-290f-4ee6-b317-2bdd9d1226a4",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-11-23T01:04:29.531Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0323",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0323"
+    },
     "02EB1405-37F0-4302-ACD7-2FC438F6D5BF": {
       "guid": "02eb1405-37f0-4302-acd7-2fc438f6d5bf",
       "type": "crop",
@@ -65,6 +80,12 @@
           "applies": true,
           "name": "A0289",
           "note": "wick"
+        },
+        {
+          "date": "2020-11-03T00:42:58.926Z",
+          "applies": true,
+          "name": "end",
+          "note": "sent to raised bed for lack of vigor over two weeks"
         }
       ],
       "id": "TAT-052dc4",
@@ -266,6 +287,21 @@
       "site-type": "BKT2G",
       "name": "BKT2G-0253"
     },
+    "0F330B94-41AE-477F-A3FE-66A819EDA99F": {
+      "guid": "0f330b94-41ae-477f-a3fe-66a819eda99f",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-11-23T01:04:29.531Z",
+          "applies": true,
+          "name": "A0323",
+          "note": "sow: 3, wick: twine"
+        }
+      ],
+      "id": "BKW-0f330b",
+      "plant": "BKW",
+      "name": "BKW-1122"
+    },
     "105C0C72-E68B-49DF-8823-763375B23BF6": {
       "guid": "105c0c72-e68b-49df-8823-763375b23bf6",
       "type": "site",
@@ -397,6 +433,27 @@
       "id": "PMT-13fc1b",
       "plant": "PMT",
       "name": "PMT-0830"
+    },
+    "14FE33C6-A3FC-4CCC-836E-7B0A7F908663": {
+      "guid": "14fe33c6-a3fc-4ccc-836e-7b0a7f908663",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-11-13T00:03:18.022Z",
+          "applies": true,
+          "name": "A0317",
+          "note": "roots trimmed 10cm"
+        },
+        {
+          "date": "2020-11-23T17:53:24.840Z",
+          "applies": true,
+          "name": "end",
+          "note": "mold with dome\n"
+        }
+      ],
+      "id": "SSA-14fe33",
+      "plant": "SSA",
+      "name": "SSA-1112"
     },
     "1582E677-4452-4CD1-8CCD-AF1FCEF00413": {
       "guid": "1582e677-4452-4cd1-8ccd-af1fcef00413",
@@ -530,6 +587,21 @@
       "id": "FJ128",
       "name": "Fermenter, 128 oz (1 gallon) jar"
     },
+    "1A4DD852-50E3-4C3B-B432-13178B206049": {
+      "guid": "1a4dd852-50e3-4c3b-b432-13178b206049",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-11-04T00:10:33.927Z",
+          "applies": true,
+          "name": "A0313",
+          "note": ""
+        }
+      ],
+      "id": "CIL-1a4dd8",
+      "plant": "CIL",
+      "name": "CIL-1103"
+    },
     "1CBEEB99-6A99-49A0-A86A-53688E95C641": {
       "guid": "1cbeeb99-6a99-49a0-a86a-53688e95c641",
       "type": "site",
@@ -542,6 +614,21 @@
       ],
       "id": "A0229",
       "name": "BKT0229"
+    },
+    "1EE5F9CE-78B8-4FCD-8275-32C1F5BDCE07": {
+      "guid": "1ee5f9ce-78b8-4fcd-8275-32c1f5bdce07",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-11-20T02:40:39.092Z",
+          "applies": true,
+          "name": "A0320",
+          "note": "wick: 2 twine"
+        }
+      ],
+      "id": "MPS-1ee5f9",
+      "plant": "MPS",
+      "name": "MPS-1119"
     },
     "207AE49A-F038-4CBB-BF5B-5530329E80C2": {
       "guid": "207ae49a-f038-4cbb-bf5b-5530329e80c2",
@@ -1707,6 +1794,21 @@
       "site-type": "BKT2G",
       "name": "BKT2G-0231"
     },
+    "723759D3-7D4D-477C-BA6C-99FB5C013B11": {
+      "guid": "723759d3-7d4d-477c-ba6c-99fb5c013b11",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-11-20T02:40:39.092Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0320",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0320"
+    },
     "73B3BE90-0FA4-48CB-AC20-58656CDC05B1": {
       "guid": "73b3be90-0fa4-48cb-ac20-58656cdc05b1",
       "type": "crop",
@@ -1869,6 +1971,21 @@
       "id": "BCP-7bc6d9",
       "plant": "BCP",
       "name": "BCP-0425"
+    },
+    "7BDE23F3-8377-4586-84D4-104535118DB2": {
+      "guid": "7bde23f3-8377-4586-84d4-104535118db2",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-11-17T21:26:44.778Z",
+          "applies": true,
+          "name": "A0319",
+          "note": "short wick, dome"
+        }
+      ],
+      "id": "CIL-7bde23",
+      "plant": "CIL",
+      "name": "CIL-1117"
     },
     "7D12CB2F-E5D0-4951-817A-98BEADD09861": {
       "guid": "7d12cb2f-e5d0-4951-817a-98beadd09861",
@@ -2174,6 +2291,21 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0233"
     },
+    "87BF50E4-A43F-4D89-8D2A-B1CADE16DC7A": {
+      "guid": "87bf50e4-a43f-4d89-8d2a-b1cade16dc7a",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-11-13T00:03:18.022Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0317",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0317"
+    },
     "898E2920-76AD-41E5-B413-3F2E076FE231": {
       "guid": "898e2920-76ad-41e5-b413-3f2e076fe231",
       "type": "crop",
@@ -2392,6 +2524,21 @@
       "id": "A0228",
       "site-type": "NETPOT",
       "name": "NETPOT0228"
+    },
+    "97C7DFCD-783A-4E4D-9465-E193A3F927AB": {
+      "guid": "97c7dfcd-783a-4e4d-9465-e193a3f927ab",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-11-04T00:10:33.927Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0313",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0313"
     },
     "9800FEA1-8172-46D1-A920-95531B070AA2": {
       "guid": "9800fea1-8172-46d1-a920-95531b070aa2",
@@ -2943,6 +3090,21 @@
       "site-type": "ts32",
       "name": "Tray182"
     },
+    "B901F558-B28C-49D4-82CD-66D4D5675488": {
+      "guid": "b901f558-b28c-49d4-82cd-66d4d5675488",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-11-17T21:26:44.778Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0319",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0319"
+    },
     "B95548AC-706E-4B69-9EB4-0610E8F45E88": {
       "guid": "b95548ac-706e-4b69-9eb4-0610e8f45e88",
       "type": "site",
@@ -3022,6 +3184,12 @@
           "applies": true,
           "name": "A0312",
           "note": "roots: 20cm folded"
+        },
+        {
+          "date": "2020-11-23T17:54:26.651Z",
+          "applies": true,
+          "name": "end",
+          "note": "died"
         }
       ],
       "id": "SSA-bb7a5c",
@@ -3081,6 +3249,12 @@
           "name": "CML0812",
           "note": "https://www.westcoastseeds.com/products/cucamelon",
           "noteUrl": "https://www.westcoastseeds.com/products/cucamelon"
+        },
+        {
+          "date": "2020-11-23T01:12:12.137Z",
+          "applies": true,
+          "name": "end",
+          "note": "crunchy and tart. prefer sweeter."
         }
       ],
       "id": "CML",
@@ -3184,6 +3358,21 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0257"
     },
+    "C530DC4A-BF3B-4E00-8B18-546C88AAE2DE": {
+      "guid": "c530dc4a-bf3b-4e00-8b18-546c88aae2de",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-11-14T01:03:40.709Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0318",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0318"
+    },
     "C54EEE58-BB00-40D4-BA5E-99EB337F071A": {
       "guid": "c54eee58-bb00-40d4-ba5e-99eb337f071a",
       "type": "site",
@@ -3213,6 +3402,21 @@
       "id": "PHW20200701-5",
       "plant": "PHW",
       "name": "PHW0249"
+    },
+    "C75995AD-6B5D-4F77-8FE6-1B8478995A6A": {
+      "guid": "c75995ad-6b5d-4f77-8fe6-1b8478995a6a",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-10-29T09:00:00.000Z",
+          "applies": true,
+          "name": "MSH1029",
+          "note": "https://sandiegoseedcompany.com/shop/melon-sharlyn/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/melon-sharlyn/"
+        }
+      ],
+      "id": "MSH",
+      "name": "Melon, Sharlyn"
     },
     "C90A27ED-2848-44C2-A705-A20E35A1D343": {
       "guid": "c90a27ed-2848-44c2-a705-a20e35a1d343",
@@ -3589,6 +3793,21 @@
       "plant": "BRCC",
       "name": "BRCC-0728"
     },
+    "D6CF85FC-1D63-41F1-BFC8-D3E6E06D4301": {
+      "guid": "d6cf85fc-1d63-41f1-bfc8-d3e6e06d4301",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-11-23T01:04:29.531Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0322",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0322"
+    },
     "D82D5253-8D41-449D-AC2C-CBB7A784DDF5": {
       "guid": "d82d5253-8d41-449d-ac2c-cbb7a784ddf5",
       "type": "plant",
@@ -3739,6 +3958,21 @@
       "id": "C16",
       "name": "C16 SoupCup, Maple Trade TD 16oz clear deli container with lid"
     },
+    "E19713E5-1C79-4898-85E0-5B3DA2D9D8F9": {
+      "guid": "e19713e5-1c79-4898-85e0-5b3da2d9d8f9",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-10-29T09:00:00.000Z",
+          "applies": true,
+          "name": "BKW1029",
+          "note": "https://sandiegoseedcompany.com/shop/sale/bean-kentucky-wonder-pole",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/sale/bean-kentucky-wonder-pole"
+        }
+      ],
+      "id": "BKW",
+      "name": "Bean, Kentucky Wonder Pole"
+    },
     "E1E35351-0EBD-4659-BA02-7A86F8CD989B": {
       "guid": "e1e35351-0ebd-4659-ba02-7a86f8cd989b",
       "type": "plant",
@@ -3797,6 +4031,21 @@
       "id": "BTD20200423-3S",
       "plant": "BTD",
       "name": "BTD0215"
+    },
+    "E3DB2F3A-B50C-4235-BE52-76257305FEF9": {
+      "guid": "e3db2f3a-b50c-4235-be52-76257305fef9",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-11-03T00:41:02.052Z",
+          "applies": true,
+          "name": "A0298",
+          "note": "cutroots: 10"
+        }
+      ],
+      "id": "SSA-e3db2f",
+      "plant": "SSA",
+      "name": "SSA-1102"
     },
     "E4683454-7481-4348-92AC-E05A45011405": {
       "guid": "e4683454-7481-4348-92ac-e05a45011405",
@@ -4143,6 +4392,21 @@
       "id": "TWO",
       "name": "Onion, Tokyo White"
     },
+    "F92D2BB0-AC44-43AF-BABB-DD97219B12FE": {
+      "guid": "f92d2bb0-ac44-43af-babb-dd97219b12fe",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-11-21T09:00:00.000Z",
+          "applies": true,
+          "name": "A0322",
+          "note": "sow: 3, wick: twine"
+        }
+      ],
+      "id": "MSH-f92d2b",
+      "plant": "MSH",
+      "name": "MSH-1122"
+    },
     "FA32D9B0-3B77-413F-9307-1354D7575262": {
       "guid": "fa32d9b0-3b77-413f-9307-1354d7575262",
       "type": "site",
@@ -4157,6 +4421,21 @@
       "id": "A0227",
       "site-type": "NETPOT",
       "name": "NETPOT-0227"
+    },
+    "FB479CAE-D8B6-4CBA-A78C-FB577DF8930A": {
+      "guid": "fb479cae-d8b6-4cba-a78c-fb577df8930a",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-11-14T01:03:40.709Z",
+          "applies": true,
+          "name": "A0318",
+          "note": "sow: 4"
+        }
+      ],
+      "id": "BTD-fb479c",
+      "plant": "BTD",
+      "name": "BTD-1113"
     },
     "FBDB8725-C78A-40AE-9931-A6204394A57B": {
       "guid": "fbdb8725-c78a-40ae-9931-a6204394a57b",
@@ -4228,6 +4507,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "81b36a16063acbc341c9793cbf9d9f1a",
-  "saved": "2020-11-01T00:25:16.617Z"
+  "merkleHash": "395600d91c9891c772dbc283fca2b745",
+  "saved": "2020-11-23T17:55:21.462Z"
 }
