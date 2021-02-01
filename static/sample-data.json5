@@ -9,6 +9,12 @@
           "applies": true,
           "name": "started",
           "note": ""
+        },
+        {
+          "date": "2020-12-09T20:44:38.614Z",
+          "applies": true,
+          "name": "A0218",
+          "note": "height: 34"
         }
       ],
       "id": "A0323",
@@ -272,6 +278,21 @@
       "site-type": "C2Q",
       "name": "C2Q-0288"
     },
+    "0E5FE064-FCCA-4122-A422-23603173E4FA": {
+      "guid": "0e5fe064-fcca-4122-a422-23603173e4fa",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-12-16T20:39:44.865Z",
+          "applies": true,
+          "name": "A0335",
+          "note": ""
+        }
+      ],
+      "id": "TBK-0e5fe0",
+      "plant": "TBK",
+      "name": "TBK-1216"
+    },
     "0E9FE4C7-DB30-4B7D-8997-82C6E93A7E86": {
       "guid": "0e9fe4c7-db30-4b7d-8997-82c6e93a7e86",
       "type": "site",
@@ -527,6 +548,21 @@
       "site-type": "NETPOT",
       "name": "NETPOT-0278"
     },
+    "17A943E7-B126-4B5A-B4BB-6A2EAF9C8E66": {
+      "guid": "17a943e7-b126-4b5a-b4bb-6a2eaf9c8e66",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-12-08T09:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0329",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0329"
+    },
     "17BA536C-495A-480C-BA19-3E98E4ADC97D": {
       "guid": "17ba536c-495a-480c-ba19-3e98e4adc97d",
       "type": "site-type",
@@ -541,6 +577,21 @@
       ],
       "id": "PVC2",
       "name": "PVC 2\" Coupling"
+    },
+    "182B2F7E-2067-4EC6-BC48-355ED697AB9F": {
+      "guid": "182b2f7e-2067-4ec6-bc48-355ed697ab9f",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-12-22T18:46:57.163Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0337",
+      "site-type": "BKT2G",
+      "name": "BKT2G-0337"
     },
     "194EF27B-5B99-45E6-A8C6-CCB0A2F7E084": {
       "guid": "194ef27b-5b99-45e6-a8c6-ccb0a2f7e084",
@@ -766,6 +817,36 @@
       "site-type": "BKT2G",
       "name": "BKT2G-0254"
     },
+    "2AE04959-D26D-4543-A379-C704C7701E68": {
+      "guid": "2ae04959-d26d-4543-a379-c704c7701e68",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-11-30T21:43:21.325Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0325",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0325"
+    },
+    "2B122629-0556-48A8-9C9A-7082B591B112": {
+      "guid": "2b122629-0556-48a8-9c9a-7082b591b112",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-12-02T00:50:58.388Z",
+          "applies": true,
+          "name": "A0326",
+          "note": "wick: 1twine"
+        }
+      ],
+      "id": "CIL-2b1226",
+      "plant": "CIL",
+      "name": "CIL-1201"
+    },
     "2CD65827-4974-4CBB-96BC-1C5F3D792DA6": {
       "guid": "2cd65827-4974-4cbb-96bc-1c5f3d792da6",
       "type": "crop",
@@ -952,6 +1033,21 @@
       "id": "A0269",
       "site-type": "BKT2G",
       "name": "BKT2G-0269"
+    },
+    "3A410134-682E-46A6-B947-058310DD24F7": {
+      "guid": "3a410134-682e-46a6-b947-058310dd24f7",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-12-09T20:44:26.760Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0330",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0330"
     },
     "3B9C1534-FD22-4D89-AD73-3EB01662A492": {
       "guid": "3b9c1534-fd22-4d89-ad73-3eb01662a492",
@@ -1220,6 +1316,11 @@
           "applies": true,
           "name": "A0293",
           "note": "sow:3"
+        },
+        {
+          "date": "2021-01-02T18:40:34.206Z",
+          "applies": true,
+          "name": "end"
         }
       ],
       "id": "PLM-54225f",
@@ -1276,6 +1377,34 @@
       "id": "CML-54e92d",
       "plant": "CML",
       "name": "CML-0812"
+    },
+    "56D6A289-042E-4B56-A6BB-56F8FAE89678": {
+      "guid": "56d6a289-042e-4b56-a6bb-56f8fae89678",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-12-15T20:36:32.782Z",
+          "applies": true,
+          "name": "PYB1215",
+          "note": "Supermarket yellow bell pepper"
+        }
+      ],
+      "id": "PYB",
+      "name": "Pepper,  Yellow Bell"
+    },
+    "56F6012A-9539-4DB8-A508-37F874D62B77": {
+      "guid": "56f6012a-9539-4db8-a508-37f874d62b77",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2021-01-18T17:41:49.879Z",
+          "applies": true,
+          "name": "BAS0118",
+          "note": "From Jun."
+        }
+      ],
+      "id": "BAS",
+      "name": "Herb, Basil (Italian)"
     },
     "57179890-0B7A-40DF-859A-F80388E93B81": {
       "guid": "57179890-0b7a-40df-859a-f80388e93b81",
@@ -1365,6 +1494,21 @@
       "id": "BRCC-583df1",
       "plant": "BRCC",
       "name": "BRCC0227"
+    },
+    "58814C42-D0F1-4045-A0FF-82FB9A4CC1B3": {
+      "guid": "58814c42-d0f1-4045-a0ff-82fb9a4cc1b3",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-12-09T20:44:26.760Z",
+          "applies": true,
+          "name": "A0329",
+          "note": "sow: 3"
+        }
+      ],
+      "id": "FNL-58814c",
+      "plant": "FNL",
+      "name": "FNL-1209"
     },
     "5909F52B-049A-46D1-A813-4C567B428053": {
       "guid": "5909f52b-049a-46d1-a813-4c567b428053",
@@ -1472,6 +1616,21 @@
       "id": "CUKE-5cacc5",
       "plant": "CUKE",
       "name": "CUKE0197"
+    },
+    "5E8A7CF3-2D41-4405-B1F2-25281A1D2CF8": {
+      "guid": "5e8a7cf3-2d41-4405-b1f2-25281a1d2cf8",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2021-01-08T09:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0339",
+      "site-type": "NETPOT",
+      "name": "SITE-0339"
     },
     "5F9ACBB5-EB69-4C92-B8D5-7D1387755E24": {
       "guid": "5f9acbb5-eb69-4c92-b8d5-7d1387755e24",
@@ -1743,6 +1902,36 @@
       ],
       "id": "PCT",
       "name": "Tomato, Purple Cherokee"
+    },
+    "6AD9A06E-A7E6-4C98-B23E-0ECD56649F30": {
+      "guid": "6ad9a06e-a7e6-4c98-b23e-0ecd56649f30",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-12-15T09:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0335",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0335"
+    },
+    "6AF91D90-BCAD-4DF9-BDDC-A11C4D4024FB": {
+      "guid": "6af91d90-bcad-4df9-bddc-a11c4d4024fb",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-12-15T20:36:32.782Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0334",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0334"
     },
     "6DA00CBB-C130-4CB1-9679-AE5737ADD150": {
       "guid": "6da00cbb-c130-4cb1-9679-ae5737add150",
@@ -2388,6 +2577,21 @@
       "plant": "CKP",
       "name": "CKP-1008"
     },
+    "8DFF773E-ECE7-41F5-BF6E-375AC1FD5940": {
+      "guid": "8dff773e-ece7-41f5-bf6e-375ac1fd5940",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-12-06T09:00:00.000Z",
+          "applies": true,
+          "name": "A0330",
+          "note": ""
+        }
+      ],
+      "id": "TAT-8dff77",
+      "plant": "TAT",
+      "name": "TAT-1209"
+    },
     "8E22B533-9375-46CD-8836-A95C74B28AC9": {
       "guid": "8e22b533-9375-46cd-8836-a95c74b28ac9",
       "type": "crop",
@@ -2422,6 +2626,21 @@
       "id": "A0203",
       "site-type": "NETPOT",
       "name": "POT0203"
+    },
+    "8FF49DC2-D1A2-49A4-916E-D5192443B006": {
+      "guid": "8ff49dc2-d1a2-49a4-916e-d5192443b006",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-12-09T20:44:26.760Z",
+          "applies": true,
+          "name": "A0331",
+          "note": "wick: 2twine"
+        }
+      ],
+      "id": "CIL-8ff49d",
+      "plant": "CIL",
+      "name": "CIL-1209"
     },
     "92145392-3162-4D1C-A77C-24B065359E58": {
       "guid": "92145392-3162-4d1c-a77c-24b065359e58",
@@ -2567,6 +2786,21 @@
       "site-type": "NETPOT",
       "name": "POT0193"
     },
+    "99B182B9-4772-40E3-B98D-171BE6412229": {
+      "guid": "99b182b9-4772-40e3-b98d-171be6412229",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2021-01-02T18:40:26.664Z",
+          "applies": true,
+          "name": "A0293",
+          "note": ""
+        }
+      ],
+      "id": "CIL-99b182",
+      "plant": "CIL",
+      "name": "CIL-0102"
+    },
     "9AD8F449-4FD3-444C-B615-2C5F021CA75F": {
       "guid": "9ad8f449-4fd3-444c-b615-2c5f021ca75f",
       "type": "crop",
@@ -2632,6 +2866,21 @@
       "id": "A0224",
       "site-type": "TRAY",
       "name": "TRAY-0224"
+    },
+    "A1DDEFEF-DF0D-4F57-92E1-E9F522B9B08E": {
+      "guid": "a1ddefef-df0d-4f57-92e1-e9f522b9b08e",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-11-30T21:43:21.325Z",
+          "applies": true,
+          "name": "A0325",
+          "note": "sow: 3, wick: 2t"
+        }
+      ],
+      "id": "CUKE-a1ddef",
+      "plant": "CUKE",
+      "name": "CUKE-1130"
     },
     "A20FC9B0-17EF-4D87-8B70-8C0E5DF1DE0E": {
       "guid": "a20fc9b0-17ef-4d87-8b70-8c0e5df1de0e",
@@ -2762,6 +3011,21 @@
       "site-type": "TrayB",
       "name": "TRAYB-0284"
     },
+    "A72900C2-B886-4DAB-B2BA-57C5DC381838": {
+      "guid": "a72900c2-b886-4dab-b2ba-57c5dc381838",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-12-23T09:00:00.000Z",
+          "applies": true,
+          "name": "A0338",
+          "note": ""
+        }
+      ],
+      "id": "CIL-a72900",
+      "plant": "CIL",
+      "name": "CIL-1223"
+    },
     "A9B58DE3-8003-45DB-B864-4DA164113E02": {
       "guid": "a9b58de3-8003-45db-b864-4da164113e02",
       "type": "site",
@@ -2846,6 +3110,36 @@
       "id": "A0185",
       "name": "Tray0185"
     },
+    "ADA0E836-F20A-47A3-8F16-321CB567156C": {
+      "guid": "ada0e836-f20a-47a3-8f16-321cb567156c",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-12-02T00:50:58.388Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0326",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0326"
+    },
+    "ADDDB4A9-CE5A-4C96-8779-97AECDEED45D": {
+      "guid": "adddb4a9-ce5a-4c96-8779-97aecdeed45d",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-12-06T09:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0331",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0331"
+    },
     "AF336E0B-DE43-473E-BB88-189C7CE2716A": {
       "guid": "af336e0b-de43-473e-bb88-189c7ce2716a",
       "type": "site",
@@ -2884,6 +3178,12 @@
           "applies": true,
           "name": "A0295",
           "note": "sow:3, wick: 1"
+        },
+        {
+          "date": "2021-01-12T19:04:06.548Z",
+          "applies": true,
+          "name": "A0229",
+          "note": "vines: 1, cucumber: 1"
         }
       ],
       "id": "CUKE-afade9",
@@ -3030,6 +3330,21 @@
       "plant": "CIL",
       "name": "CIL-0721"
     },
+    "B5B5AEFE-51BA-4FF3-B2CB-C4D986CCD979": {
+      "guid": "b5b5aefe-51ba-4ff3-b2cb-c4d986ccd979",
+      "type": "plant",
+      "tagList": [
+        {
+          "date": "2020-10-29T09:00:00.000Z",
+          "applies": true,
+          "name": "FNL1029",
+          "note": "https://sandiegoseedcompany.com/shop/herbs/fennel-florence/",
+          "noteUrl": "https://sandiegoseedcompany.com/shop/herbs/fennel-florence/"
+        }
+      ],
+      "id": "FNL",
+      "name": "Fennel"
+    },
     "B7639137-A81C-4836-9679-38F20CED0BFA": {
       "guid": "b7639137-a81c-4836-9679-38f20ced0bfa",
       "type": "crop",
@@ -3119,6 +3434,21 @@
       "id": "A0264",
       "site-type": "NETPOT",
       "name": "NETPOT-0264"
+    },
+    "BA29F176-84C0-4E74-A125-C49205159121": {
+      "guid": "ba29f176-84c0-4e74-a125-c49205159121",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2021-01-09T21:41:56.059Z",
+          "applies": true,
+          "name": "A0339",
+          "note": ""
+        }
+      ],
+      "id": "TTC-ba29f1",
+      "plant": "TTC",
+      "name": "TTC-0109"
     },
     "BA8D0FEF-9841-416A-BB27-6B687D2D21EB": {
       "guid": "ba8d0fef-9841-416a-bb27-6b687d2d21eb",
@@ -3272,6 +3602,21 @@
       ],
       "id": "A0183",
       "name": "Tray0183"
+    },
+    "C0292943-436D-451B-98FB-F72A6BD86826": {
+      "guid": "c0292943-436d-451b-98fb-f72a6bd86826",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-12-15T20:36:32.782Z",
+          "applies": true,
+          "name": "A0334",
+          "note": "sow: 3"
+        }
+      ],
+      "id": "PYB-c02929",
+      "plant": "PYB",
+      "name": "PYB-1215"
     },
     "C0F1FF42-9F0E-4BD8-B43A-97B76FE5C4DC": {
       "guid": "c0f1ff42-9f0e-4bd8-b43a-97b76fe5c4dc",
@@ -3793,6 +4138,21 @@
       "plant": "BRCC",
       "name": "BRCC-0728"
     },
+    "D6985A1E-F969-40AB-BB8B-415F3301F99A": {
+      "guid": "d6985a1e-f969-40ab-bb8b-415f3301f99a",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-12-04T09:00:00.000Z",
+          "applies": true,
+          "name": "A0328",
+          "note": ""
+        }
+      ],
+      "id": "BMG-d6985a",
+      "plant": "BMG",
+      "name": "BMG-1204"
+    },
     "D6CF85FC-1D63-41F1-BFC8-D3E6E06D4301": {
       "guid": "d6cf85fc-1d63-41f1-bfc8-d3e6e06d4301",
       "type": "site",
@@ -4032,6 +4392,36 @@
       "plant": "BTD",
       "name": "BTD0215"
     },
+    "E3032C04-A80A-4E48-94DB-75D98C219D19": {
+      "guid": "e3032c04-a80a-4e48-94db-75d98c219d19",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-12-26T14:12:40.365Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0340",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0340"
+    },
+    "E3C8ACCF-65A5-4FE1-9641-19812188990C": {
+      "guid": "e3c8accf-65a5-4fe1-9641-19812188990c",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-12-04T09:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0328",
+      "site-type": "NETPOT",
+      "name": "NETPOT-0328"
+    },
     "E3DB2F3A-B50C-4235-BE52-76257305FEF9": {
       "guid": "e3db2f3a-b50c-4235-be52-76257305fef9",
       "type": "crop",
@@ -4220,6 +4610,21 @@
       "site-type": "TrayB",
       "name": "TRAYB-0294"
     },
+    "EF3B81FC-3BEF-4C22-B5E2-DC8871BDBECA": {
+      "guid": "ef3b81fc-3bef-4c22-b5e2-dc8871bdbeca",
+      "type": "crop",
+      "tagList": [
+        {
+          "date": "2020-12-26T14:12:40.365Z",
+          "applies": true,
+          "name": "A0340",
+          "note": "sow: ~10"
+        }
+      ],
+      "id": "PLM-ef3b81",
+      "plant": "PLM",
+      "name": "PLM-1226"
+    },
     "F0359D6F-1838-4268-8773-F1E0094457F1": {
       "guid": "f0359d6f-1838-4268-8773-f1e0094457f1",
       "type": "site-type",
@@ -4255,6 +4660,21 @@
       "id": "TAT-f072f3",
       "plant": "TAT",
       "name": "TAT-0822"
+    },
+    "F136CF9C-4FBE-4D38-A03C-DDD2BF941955": {
+      "guid": "f136cf9c-4fbe-4d38-a03c-ddd2bf941955",
+      "type": "site",
+      "tagList": [
+        {
+          "date": "2020-09-01T09:00:00.000Z",
+          "applies": true,
+          "name": "started",
+          "note": ""
+        }
+      ],
+      "id": "A0327",
+      "site-type": "TUPSQ2",
+      "name": "TUPSQ2-0327"
     },
     "F158BEE4-4230-487B-99CC-42F298E6C823": {
       "guid": "f158bee4-4230-487b-99cc-42f298e6c823",
@@ -4507,6 +4927,6 @@
   },
   "importUpdate": false,
   "guidAbbreviation": 6,
-  "merkleHash": "395600d91c9891c772dbc283fca2b745",
-  "saved": "2020-11-23T17:55:21.462Z"
+  "merkleHash": "065102ff2714b722e1675350cf283642",
+  "saved": "2021-02-01T21:25:31.136Z"
 }

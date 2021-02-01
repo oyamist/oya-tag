@@ -1,6 +1,6 @@
 {
   "name": "oya-tag",
-  "version": "0.1.61",
+  "version": "0.1.62",
   "description": "Tag that asset!",
   "author": "Karl Lew",
   "private": true,
@@ -16,7 +16,7 @@
     "test:test": "mocha -w -R min --inline-diffs -g TEST"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.12.1",
+    "@nuxtjs/axios": "^5.13.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@octokit/auth-token": "^2.4.2",
     "@octokit/rest": "^18.0.3",
